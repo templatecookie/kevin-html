@@ -1,8 +1,4 @@
 @use "../abstracts/colors" as * ;
-$primary: inherit;
-// .site-menu-main{
-// 	--nav-link-main : :#555555;
-// }
 .row-lg {
 	@media (min-width:992px) {
 		display: flex;
@@ -168,7 +164,7 @@ $primary: inherit;
 
 			&:hover {
 				>a {
-					color: $primary;
+					color: red;
 				}
 			}
 
@@ -195,7 +191,7 @@ $primary: inherit;
 
 	.sub-menu.megamenu {
 		@media (min-width:992px) {
-			background-color: $white;
+			background-color: white;
 			padding-top: 30px;
 			padding-bottom: 15px;
 			padding-left: 40px;
@@ -267,7 +263,7 @@ $primary: inherit;
 
 		.single-dropdown-block {
 			h3 {
-				color: rgba($header-link-color, 0.5) !important;
+				color: wheat!important;
 				font-size: 15px;
 				font-weight: 400;
 				letter-spacing: normal;
@@ -291,7 +287,7 @@ $primary: inherit;
 			}
 
 			a {
-				color: $header-link-color !important;
+				color: yellow !important;
 				font-size: 16px;
 				font-weight: 600;
 				letter-spacing: normal;
@@ -306,7 +302,7 @@ $primary: inherit;
 				}
 
 				&:hover {
-					color: $primary;
+					color: red;
 				}
 			}
 
@@ -333,7 +329,7 @@ $primary: inherit;
 				padding-right: 10px;
 
 				&:hover {
-					color: $primary !important;
+					color: red !important;
 				}
 			}
 		}
@@ -369,7 +365,7 @@ li.nav-item-has-children {
 				z-index: 99;
 				pointer-events: visible;
 				border-radius: 0px 0px 15px 15px;
-				border-top: 3px solid $primary;
+				border-top: 3px solid red;
 			}
 		}
 	}
@@ -427,7 +423,7 @@ li.nav-item-has-children {
 
 	.dark-mode-texts {
 		.mobile-menu-trigger span {
-			background-color: $white;
+			background-color: white;
 		}
 	}
 
@@ -435,7 +431,7 @@ li.nav-item-has-children {
 
 		.mobile-menu-trigger span:before,
 		.mobile-menu-trigger span:after {
-			background-color: $white;
+			background-color: white;
 		}
 	}
 
@@ -673,7 +669,7 @@ li.nav-item-has-children {
 
 .menu-block.active {
 	.nav-link-item {
-		color: $header-link-color !important;
+		color: yellow!important;
 	}
 }
 

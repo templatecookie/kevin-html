@@ -9,8 +9,6 @@ $input-btn-font-size:         $h6-font-size;
 $input-btn-line-height:       1.88;
 
 $input-btn-focus-width:       .2rem;
-$input-btn-focus-color:       rgba($primary, .25);
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
 $input-btn-padding-y-sm:      .25rem;
 $input-btn-padding-x-sm:      .5rem;
@@ -33,7 +31,6 @@ $form-group-margin-bottom: 1.25rem;
 $input-height:             4.375rem; //70px
 $label-margin-bottom : 0.9375rem;
 $input-color: gray;
-$custom-control-indicator-active-bg : $primary;
 $input-placeholder-color: rgba(37, 55, 63, 0.7);
 $input-border-color: rgba(128, 138, 142, 0.2);
 $input-font-weight : 400;
@@ -54,5 +51,3 @@ $input-focus-border-color:              $input-border-color;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                0;
-
-$form-check-input-checked-bg-color : $primary

@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $white;
+  background-color: white;
 }
 
 div#loading img {
@@ -103,7 +103,7 @@ div#loading img {
           z-index: 1000;
 
           a {
-            color: $header-link-color;
+            color: white;
           }
 
           .btn-link {
@@ -187,12 +187,6 @@ div#loading img {
     &-right {
       .menu-block {
         margin-left: auto;
-        @media (min-width:992px) {
-          margin-right: 30px;
-        }
-        @media (min-width:1200px) {
-          margin-right: 40px;
-        }
       }
 
       > .container-fluid {
@@ -210,17 +204,6 @@ div#loading img {
           }
         }
       }
-    }
-  }
-  &__brand {
-    .logo-white-black {
-      display: none;
-    }
-    .logo-white {
-      display: none;
-    }
-    .logo-black {
-      display: block;
     }
   }
 
@@ -248,7 +231,7 @@ div#loading img {
 
   &.dark-mode-texts {
     .menu-block.active .nav-link-item {
-      color: $header-link-color !important;
+      color: white !important;
     }
 
     .menu-social-share li {
@@ -276,7 +259,7 @@ div#loading img {
 
       &::before {
         content: "";
-        border-left: rgba($header-link-color, 0.5) !important;
+        border-left: rgba(red, 0.5) !important;
         position: absolute;
         left: 0;
         top: 50%;
@@ -342,20 +325,6 @@ div#loading img {
     }
   }
 }
-/* Header Logo Dark */
-.logo-dark-white {
-  .site-header__brand {
-    .logo-white-black {
-      display: block;
-    }
-    .logo-white {
-      display: none;
-    }
-    .logo-black {
-      display: none;
-    }
-  }
-}
 /* Header trigger Dark */
 .mobile-menu-trigger-dark {
   .mobile-menu-trigger {
@@ -364,6 +333,32 @@ div#loading img {
       &::before,
       &::after {
         background-color: black;
+      }
+    }
+  }
+}
+.developer-header{
+  .site-header__brand{
+    .logo{
+      display: flex;
+      align-items: center;
+      img{
+       min-width: 48px;
+       max-width: 48px;
+       min-height: 48px;
+       max-height: 48px;
+       object-fit: cover;
+       border-radius: 500px; 
+       margin-right: 12px;
+      }
+      .text{
+        color: var(--bs-gray-900);
+        white-space:nowrap;
+        font-weight: 700;
+        font-size: 18px;
+        @media (min-width:992px) {
+          font-size: 24px;
+        }
       }
     }
   }
