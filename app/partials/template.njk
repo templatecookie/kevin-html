@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>
+      {% if PAGE_INFO.page_title %}{{PAGE_INFO.page_title}}
+      {% else %}Bestkit - Multipurpose Landing Page Template{% endif %}
+    </title>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap , fonts & icons  -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/typography-font/typo.css"/>
+    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css"/>
+
+    <!-- Plugin'stylesheets  -->
+    <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+
+    {% block plugincss %}{% endblock %}
+    <!-- Vendor stylesheets  -->
+    <link rel="stylesheet" href="./css/main.css"/>
+
+  </head>
+
+  <body>
+   
+      {% include "components/preloader.njk" %}
+    <div class="site-wrapper overflow-hidden">
+      {% block main %}{% endblock %}
+    </div>
+
+    <!-- Plugin's Scripts -->
+    <!-- Custom stylesheet -->
+    <script src="./js/vendor.min.js"></script>
+    <script>
+      /**
+     * Replace all SVG images with inline SVG
+     */
+      $(document).ready(function () {
+        $('img[class*="make-it-inline"]').each(function () {
+          var $img = jQuery(this);
+          var imgURL = $img.attr('src');
+          var attributes = $img.prop("attributes");
+
+          $.get(imgURL, function (data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function () {
+              $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+          }, 'xml');
+        });
+      });
+    </script>
+    <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+    <script src="./plugins/aos/aos.min.js"></script>
+    <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+    <script src="./plugins/counter-up/waypoints.min.js"></script>
+    <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+    <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+    <!-- Activation Script -->
+    <script src="js/custom.js"></script>
+    <script src="js/slider-activations.js"></script>
+    {% if not PAGE_INFO.menuHide %}
+      <script src="js/menu.js"></script>
+    {% endif %}
+
+    {% block pluginjs %}{% endblock %}
+    {# <div class="templatecookie-btn">
+    <!-- Purchase Button -->
+      <a href="https://1.envato.market/5bqQG9" target="_blank" class="purchase-btn">
+        Purchase Now
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </span>
+      </a>
+    </div> #}
+  </body>
+
+</html>

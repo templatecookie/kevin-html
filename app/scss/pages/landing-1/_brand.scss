@@ -1,0 +1,16 @@
+.brand-section-01{
+    padding: 60px 0 30px;
+    @media (min-width:575px) {
+        padding: 80px 0 40px;
+    }
+    @media (min-width:922px) {
+        padding: 125px 0 65px;
+    }
+    &__title{
+        margin-bottom: 30px;
+        @media (min-width:922px) {
+            margin-bottom: 60px;
+        }
+    }
+}
+

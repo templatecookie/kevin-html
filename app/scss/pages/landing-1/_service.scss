@@ -1,0 +1,15 @@
+.service-section-01{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 125px 0 130px;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+}

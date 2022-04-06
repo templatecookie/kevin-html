@@ -1,0 +1,73 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-1.png",
+        author:"./image/l-1/author-1.png",
+        authorName:"Jhon Smith",
+        title:"Determing Marketing Budget Can be Frustrating."
+        },
+        {
+        id:2,
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-2.png",
+        author:"./image/l-1/author-2.png",
+        authorName:"Souja Flora",
+        title:"How to Win The Attention of New Clients: Tips & Tricks"
+        },
+        {
+        id:3,
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-3.png",
+        author:"./image/l-1/author-3.png",
+        authorName:"Jesica Lirona",
+        title:"Business Agencies vs Advertising Agencies"
+        }
+
+
+]%}
+<div class="blog-section-01">
+    <div class="container">
+        <div class="row align-items-center justify-content-center blog-section-01__content">
+            <div class="col-sm-6">
+                <div class="section-content-block text-center text-sm-start">
+                    <h6 class="subtitle text-primary mb-10">Blog & News</h6>
+                    <h2 class="title">Our Latest Blogs</h2>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="section-button text-center mt-4 mt-sm-0 text-sm-end">
+                    <a class="btn btn-1 btn-primary" href="blog.html">
+                        Read Our Blogs
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+                <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
+                    <a href="blog-details.html" class="d-block">
+                        {{Card.BlogCardOne({
+                        img:item.img,
+                        date:item.date,
+                        author:item.author,
+                        authorName:item.authorName,
+                        comment:item.comment,
+                        title:item.title
+                        })}}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

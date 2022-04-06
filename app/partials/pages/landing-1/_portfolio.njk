@@ -1,0 +1,90 @@
+{% macro render(args) %}
+    <div class="portfolio-section-01">
+        <div class="container">
+            <div class="row">
+                <div class="section-title-block text-center">
+                    <h6 class="subtitle mb-10 text-primary">Portfolio</h6>
+                    <h2 class="title">Some Of My Recent Works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-section-01__tab  portfolio-filter-menu text-center">
+                    <button class="btn active text-dark" data-filter="*">All</button>
+                    <button class="btn text-dark" data-filter=".portfolio-1">Web Development</button>
+                    <button class="btn text-dark" data-filter=".portfolio-2">Web Design</button>
+                    <button class="btn text-dark" data-filter=".portfolio-3">UI/UX Design</button>
+                </div>
+            </div>
+            <div class="row card-row portfolio-masonry portfolio-active">
+                <div class="col-lg-6 grid-item portfolio-1 portfolio-2">
+                    <a href="#" class="portfolio-card">
+                        <img src="./image/l-1/project-1.png" alt="portfolio" class="w-100">
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Development</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                            <div class="icon">                            
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-2 portfolio-3 portfolio-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="./image/l-1/project-2.png" alt="portfolio" class="w-100">
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                            <div class="icon">                            
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-3 portfolio-2">
+                    <a href="#" class="portfolio-card">
+                        <img src="./image/l-1/project-3.png" alt="portfolio" class="w-100">
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>UI/UX Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                            <div class="icon">                            
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-1 portfolio-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="./image/l-1/project-4.png" alt="portfolio" class="w-100">
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                            <div class="icon">                            
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

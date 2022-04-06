@@ -1,0 +1,118 @@
+@use "../../abstracts/mixins" as *;
+.testimonial-section-01{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0px;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0px;
+    }
+    &__slider{
+        position: relative;
+        .testimonial-slider--01{
+            &__control-buttons{
+                @media (max-width:992px) {
+                    display: none;
+                }
+                .button{
+                    position: absolute;
+                    top: 42%;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    &--prev{
+                        left: -95px;
+                        cursor: pointer;
+                    }
+                    &--next{
+                        right: -95px;
+                        cursor: pointer;           
+                    }
+               } 
+            }
+        }
+        .slick-dots-style-1{
+            .slick-dots {
+                margin-top: 25px;
+                @media (min-width:992px) {
+                    margin-top: 45px;
+                }
+            }
+        }
+    }
+}
+.testimonial-content{
+    text-align: center;
+    .client-img{
+        margin: auto;
+        @include square(80px,500px);
+        object-fit: cover;
+    }
+    .say-title{
+        margin:25px 0;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4;
+        @media (min-width:575px) {
+            font-size: 30px;
+        }
+        @media (min-width:992px) {
+            margin:45px 0;
+        }
+        @media (min-width:1200px) {
+            margin:45px -7px;
+        }
+    }
+    .client-info{
+        h6{
+            font-weight: 500;
+            line-height: 1.208333333333333;
+            font-size: 18px;
+            padding-bottom: 8px;
+            @media (min-width:575px) {
+                font-size: 24px;
+            }
+        }
+        span{
+            font-size: 16px;
+            line-height: 1.222222222222222;   
+            color: var(--bs-primary);
+            @media (min-width:575px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+.slick-dots-style-1{
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+          margin: 0 8px;
+        button {
+        display: block;
+          min-width: 5px;
+          max-width: 5px;
+          min-height: 5px;
+          max-height: 5px;
+          background: #008AFF;
+          border-radius: 500px;
+          text-indent: -9999px;
+          border: none;
+          opacity: 0.2;
+          transition: 0.4s;
+        }
+        &.slick-active {
+          button {
+            min-width: 22px;
+            max-width: 22px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }

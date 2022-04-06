@@ -1,0 +1,45 @@
+.cta-section-01{
+    .container{
+        @media (max-width:768px) {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        padding: 60px 0 60px;
+        @media (min-width:575px) {
+            padding: 78px;
+            padding-bottom: 78px;
+        }
+        @media (min-width:768px) {
+            border-radius: 5px;
+        }
+        @media (min-width:992px) {
+            flex-direction: row;
+            padding: 100px;
+            padding-bottom: 92px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(34, 45, 57,0.85);
+            z-index: -1;
+            @media (min-width:768px) {
+                border-radius: 5px;
+            }
+        }
+    }
+}
