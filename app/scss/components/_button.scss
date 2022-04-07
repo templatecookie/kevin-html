@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: center;
   transition: .3s;
+  svg{
+    margin-left: 12px;
+  }
   &:focus{
     box-shadow: none;
     outline: none;
@@ -26,9 +29,19 @@
     border: 2px solid var(--bs-primary-500);
     background: var(--bs-primary-500);
     color: white;
+    svg{
+      path{
+        transition: .3s;
+      }
+    }
     &:hover{
       background: transparent;
       color: var(--bs-primary-500);
+      svg{
+        path{
+          stroke: var(--bs-primary-500);
+        }
+      }
     }
   }
   &.btn-outline-primary{
@@ -123,36 +136,20 @@ button {
     }
   }
 }
-.w-180{
-  width: 180px !important;
+.link-video-btn{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+font-size: 16px;
+color: white !important;
+line-height: 24px;
+.line{
+  margin-right: 16px;
+  width: 39px;
+  height: 2px;
+  background: rgba(255, 255, 255,0.24)
 }
-.w-183{
-  width: 180px !important;
-}
-.w-140{
-  width: 140px !important;
-}
-.w-198{
-  width: 198px !important;
-}
-.w-210{
-  width: 210px !important;
-}
-.w-225{
-  width: 225px !important;
-}
-.video-btn{
-  display: block;
-  @include square(50px,500px);
-  @include flexAllCenter;
-  background: white;
-}
-.video-btn-two{
-  display: block;
-  @include square(60px,500px);
-  @include flexAllCenter;
-  background: var(--bs-primary);
-  @media (min-width:575px) {
-    @include square(100px,500px);
+  svg{
+margin-right: 12px;
   }
 }
