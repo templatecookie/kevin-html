@@ -1,43 +1,5 @@
 @use "../abstracts/colors" as *;
 @use "./menu";
-/*Preloader cs@s*/
-.site div#loading {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 9999999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-
-div#loading img {
-  z-index: 9999;
-  width: 25%;
-  @media (min-width: 576px) {
-    width: 17%;
-  }
-  @media (min-width: 768px) {
-    width: 15%;
-  }
-  @media (min-width: 992px) {
-    width: 7%;
-  }
-}
-
-.preloader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #ffffff !important;
-}
-
-.preloader img {
-  width: 500px;
-}
 
 /*Header Css StaRT*/
 
@@ -69,9 +31,6 @@ div#loading img {
 }
 
 .site-header {
-  @media (max-width: 992px) {
-    padding: 15px 0;
-  }
   &--absolute {
     position: absolute;
     top: 0;
@@ -206,81 +165,6 @@ div#loading img {
       }
     }
   }
-
-  .btn-group {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-  }
-}
-
-.header-btns {
-  @media (min-width: 480px) {
-    margin-right: 15px;
-  }
-
-  @media (min-width: 992px) {
-    margin-right: 0;
-  }
-}
-
-.dynamic-sticky-bg {
-  &.reveal-header {
-    background: var(--bg);
-  }
-
-  &.dark-mode-texts {
-    .menu-block.active .nav-link-item {
-      color: white !important;
-    }
-
-    .menu-social-share li {
-      a {
-        color: var(--color-headings-2);
-      }
-    }
-  }
-}
-
-.sticky-bg-white {
-  &.reveal-header {
-    background: #fff;
-
-    .dark-version-logo {
-      display: none !important;
-    }
-
-    .light-version-logo {
-      display: block !important;
-    }
-
-    .menu-sep-left {
-      position: relative;
-
-      &::before {
-        content: "";
-        border-left: rgba(red, 0.5) !important;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 2px;
-        height: 26px;
-        z-index: 9;
-      }
-    }
-  }
-}
-
-.notification-block {
-  position: relative;
-  .count {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: -4px;
-    margin-right: -5px;
-  }
 }
 
 .site-header--dark {
@@ -338,6 +222,7 @@ div#loading img {
   }
 }
 .developer-header{
+    margin: 32px 0;
   .site-header__brand{
     .logo{
       display: flex;
