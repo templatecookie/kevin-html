@@ -1,0 +1,78 @@
+.dev-footer-area{
+    padding: 100px 0;
+    .logo-wrapper{
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            img{
+                min-width: 48px;
+                max-width: 48px;
+                min-height: 48px;
+                max-height: 48px;
+                object-fit: cover;
+                border-radius: 500px;
+                margin-right: 12px;
+            }
+            .text{
+                color: var(--bs-gray-900);
+                white-space: nowrap;
+                font-weight: 700;
+                font-size: 18px;
+                @media (min-width:992px) {
+                    font-size: 24px;
+                }
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.444444444444444;
+            @media (min-width:575px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .dev-footer-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            &:not(&:last-child){
+                padding-bottom: 18px;
+            }
+            a{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.444444444444444;
+                transition: .3s;
+                color: var(--bs-gray-700);  
+                &:hover{
+                    color: var(--bs-gray-900);  
+                }
+            }
+        }
+    }
+}
+.dev-copyright-area{
+    &__wrapper{
+        box-shadow: inset 0px 1px 0px #E6E8EB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        @media (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+      p{
+        @media (max-width:768px) {
+            text-align: center;
+        }
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;  
+        color: var(--bs-gray-500);
+      }  
+    }
+}

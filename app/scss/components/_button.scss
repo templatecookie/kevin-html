@@ -153,3 +153,27 @@ line-height: 24px;
 margin-right: 12px;
   }
 }
+.coolerswitch-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  a{
+   max-width: 48px;
+   max-height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 48px;
+   min-width: 48px;
+   border-radius: 4px;
+   background: white;
+    &.active{
+      background: var(--bs-primary-500);
+      svg{
+        path{
+          stroke: white;
+        }
+      }
+    }
+  }
+}
