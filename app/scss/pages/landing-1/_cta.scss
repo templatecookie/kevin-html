@@ -3,17 +3,29 @@
     .container{
         @media (max-width:768px) {
             max-width: 100%;
-            padding: 0;
+            padding: 0px;
         }
     }
     &__wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        z-index: 1;
-        padding: 100px 0;
+        
+        padding: 100px 0px;
+        @media (min-width:1200px) {
+                flex-direction: row;
+            }
+        @media (max-width:768px) {
+            padding:0px  50px;
+        }
+        @media (max-width:432px) {
+            padding:0px  24px;
+        }
         .section-content-block{
+            padding-right: 40px;
+            @media (max-width:992px) {
+                margin-bottom: 50px;
+            }
+            @media (max-width:432px) {
+                padding-right: 0px;
+            }
             .title{
                 font-weight: 700;
                 font-size: 48px;
@@ -47,38 +59,54 @@
             }
         }
         .content-button{
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            justify-content: center;
+            @media (min-width:1024px) {
+                padding-left: 80px;
+            }
             &__one, &__two{
-                display: flex;
                 align-items: center;
-                justify-content: center;
-                border: 4px solid #2B384C;
-                box-sizing: border-box;
                 border-radius: 12px;
                 padding: 32px;
                 margin-bottom: 24px;
+                @media (max-width: 525px) {
+                    padding: 8px 16px;
+                }
+                svg{
+                        @media (max-width: 525px) {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
                 .content{
                     padding-left: 37px;
+                    padding-right: 10px;
                     color: #FFFFFF;
+                    @media (max-width: 525px) {
+                        padding-left: 16px;
+                    }
+                    
                     p{
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 14px;
                         text-transform: uppercase;
                         margin-bottom: 8px;
+                        @media (max-width: 525px) {
+                        font-size: 12px;
+                        margin-bottom: 0px;
+                    }
                     }
                     h3{
                         font-weight: 500;
                         font-size: 24px;
                         line-height: 32px;
-                        
+                        @media (max-width: 525px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
-            &__one{                
+            &__one{   
+                border: 4px solid #2B384C;             
                 .content{
                     p{
                     color: var(--bs-gray-500);
@@ -87,7 +115,7 @@
             }
             &__two{
                 background-color: var(--bs-primary-500);
-                border: 4px solid var(--bs-primary-500);
+                border:4px solid var(--bs-primary-500);
             }
         }
     }
