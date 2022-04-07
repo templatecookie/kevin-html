@@ -57,6 +57,21 @@ if (jQuery(".dev-project-slider").length > 0) {
             ],
         });
 }
+if (jQuery(".dev-testimonial-slider").length > 0) {
+    $(".dev-testimonial-slider")
+        .not(".slick-initialized")
+        .slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            prevArrow: $(".dev-testimonial-slider__control-buttons .button--prev"),
+            nextArrow: $(".dev-testimonial-slider__control-buttons .button--next"),
+        });
+}
 
 
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
