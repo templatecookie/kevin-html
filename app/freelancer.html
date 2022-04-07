@@ -2,6 +2,7 @@
 {# {% import "components/Header/_header.njk" as Header %} #}
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
 {% import "pages/landing-3/_footer.njk" as FooterSection %}
+{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
 {% block main %}
   <!-- Header Section Start -->
   {# {{Header.render(siteHeaderOne)}} #}
@@ -9,7 +10,10 @@
   <!-- Header Section Start -->
   {{HeroSection.render()}}
   <!-- Header Section End -->
-  <!-- Header Section Start -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Footer Section Start -->
   {{FooterSection.render()}}
-  <!-- Header Section End -->
+  <!-- Footer Section End -->
 {% endblock %}
