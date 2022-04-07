@@ -1,0 +1,236 @@
+.footer-section {
+  background-color: #132238;
+}
+
+.footer-top{
+  padding: 108px 0;
+  border-bottom: 1px solid #2B384C;
+  @media (max-width:1199px) {
+    padding: 80px 0;
+  }
+  
+  &-content{
+    padding-right: 205px;
+    @media (max-width:1199px) {
+      padding-right: 0;
+    }
+    @media (max-width:991px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width:767px) {
+      text-align: center;
+    }
+    h2{
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      font-family: 'Cardo', serif;
+      @media (max-width:991px) {
+        font-size: 48px;
+      }
+      @media (max-width:479px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+    p{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: #87909D;
+      margin-bottom: 40px;
+      @media (max-width:991px) {
+        font-size: 20px;
+      }
+      @media (max-width:479px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+  
+}
+
+.default-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 56px;
+  padding: 18px 32px;
+  letter-spacing: 0.02em;
+  color: #132238!important;
+  background-color: #FFFFFF;
+  img{
+    margin-left: 8px;
+  }
+}
+
+.marketplace-info{
+  &-item{
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    transition: all 0.4s;
+    &:hover{
+      background-color: #fff;
+    }
+    &:hover .marketplace-info-thumb.fiverr{
+      path{
+        fill: #1dbf73;
+      }
+    }
+    &:hover .marketplace-info-thumb.freelancher{
+      path{
+        fill: #29B2FE;
+      }
+    }
+    &:hover .marketplace-info-thumb.upwork{
+      path{
+        fill: #14a800;
+      }
+    }
+    &:hover .marketplace-info-data{
+      h4{
+        color: #132238;
+      }
+    }
+    &:hover .marketplace-info-data{
+      a{
+        color: #556070;
+      }
+    }
+  }
+  &-thumb{
+    margin-right: 30px;
+    path{
+      fill: #424E60;
+      transition: all 0.4s;
+    }
+  }
+  &-data{
+    h4{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+      transition: all 0.4s;
+      font-family: 'Cardo', serif;
+    }
+    a{
+      font-size: 14px;
+      line-height: 20px;
+      color: #87909D;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.footer-info {
+  padding: 100px 0;
+  border-bottom: 1px solid #2B384C;
+  @media (max-width:1199px) {
+    padding: 80px 0;
+  }
+  @media (max-width:767px) {
+    padding: 60px 0 80px;
+  }
+  &-item{
+    text-align: center;
+  }
+  &-thumb{
+    margin-bottom: 12px;
+  }
+  &-data{
+    p{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #697484;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    a{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #FFFFFF;
+      font-family: 'Cardo', serif;
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 48px 0;
+  @media (max-width:767px) {
+    padding: 35px 0;
+  }
+  &-content{
+    @media (max-width:767px) {
+      text-align:center;
+      margin-bottom: 20px;
+    }
+    h4{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      font-family: 'Cardo', serif;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #87909D;
+    }
+  }
+  &-menu{
+    text-align: center;
+    width: 100%;
+    @media (max-width:991px) {
+      text-align: left;
+    }
+    @media (max-width:767px) {
+      text-align:center;
+      margin-bottom: 20px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        display: inline-block;
+        margin: 0 12px;
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          font-weight: 400;
+          font-size: 16px;
+          color: #87909D;
+          transition: all 0.4s;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &-copywirght{
+    text-align: right;
+    width: 100%;
+    @media (max-width:991px) {
+      text-align:center;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      color: #A5ACB5;
+    }
+  }
+}
