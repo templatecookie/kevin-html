@@ -18,32 +18,30 @@
       font-size: 20px;
       line-height: 28px;
       margin-bottom: 15px;
-      @media (min-width:575px) {
-        font-size: 24px;
-      }
     }
     p{
       font-weight: 500;
       font-size: 16px;
       line-height: 1.555555555555556;
       margin-bottom: 25px;
-      @media (min-width:575px) {
-        font-size: 18px;
-      }
+      
     }
-    a{
-      position: relative;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 28px;
-      color: var(--bs-primary-500);
-      transition: .3s;
+    .btn{
+      padding: 0px;
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
-      i{
+      text-transform: none;
+      
+    }
+    .btn-primary{
+      background-color: transparent;
+      border: none;
+      color: var(--bs-primary-500);
+      svg{
         margin-left: 11.75px;
       }
+      
     }
   }
   &--02{

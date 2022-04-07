@@ -29,8 +29,20 @@
             }
             a{
                 text-transform: none;
-                i{
+                svg{
                     margin-left: 11.75px;
+                    path{
+                        &:hover{
+                            stroke: #1777E5;
+                        }
+                    }
+                }
+                &:hover{
+                    svg{
+                    path{
+                        stroke: #1777E5;
+                    }
+                }
                 }
             }
         }
@@ -55,6 +67,8 @@
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 14px;
+                        text-transform: uppercase;
+                        margin-bottom: 8px;
                     }
                     h3{
                         font-weight: 500;
