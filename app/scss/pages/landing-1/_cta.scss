@@ -1,36 +1,24 @@
 .cta-section-01{
     background-color: var(--bs-gray-900);
-    .container{
-        @media (max-width:768px) {
-            max-width: 100%;
-            padding: 0px;
-        }
-    }
-    &__wrapper{
-        
+    &__wrapper{ 
         padding: 100px 0px;
         @media (min-width:1200px) {
                 flex-direction: row;
             }
-        @media (max-width:768px) {
-            padding:0px  50px;
-        }
-        @media (max-width:432px) {
-            padding:0px  24px;
-        }
         .section-content-block{
             padding-right: 40px;
             @media (max-width:992px) {
                 margin-bottom: 50px;
             }
-            @media (max-width:432px) {
-                padding-right: 0px;
-            }
+
             .title{
                 font-weight: 700;
                 font-size: 48px;
                 line-height: 56px;
                 margin-bottom: 24px;
+                @media (max-width:525px){
+                    font-size: 36px;
+                }
             }
             .text{
                 font-weight: 400;
@@ -59,8 +47,9 @@
             }
         }
         .content-button{
-            @media (min-width:1024px) {
-                padding-left: 80px;
+            padding-left: 80px;
+            @media (max-width:992px) {
+                padding: 0px 24px;
             }
             &__one, &__two{
                 align-items: center;
