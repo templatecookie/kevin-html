@@ -2,7 +2,7 @@
 	"siteHeaderOne": {
 		"additional_header_class": "site-header--menu-right developer-header mobile-menu-trigger-dark",
 		"header_double_button": false,
-		"absolute_header": false,
+		"absolute_header": true,
 		"header_button": true,
 		"additional_button_classes": "site-header__btns--01",
 		"header_button_class": "header-text btn-primary",
