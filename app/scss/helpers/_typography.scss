@@ -29,11 +29,15 @@
 .dev-section-title{
   .title{
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 1.166666666666667;
     color: var(--bs-gray-900);
     padding-bottom: 15px;
+    @media (min-width:575px) {
+      font-size: 38px;
+    }
     @media (min-width:992px) {
+      font-size: 48px;
       padding-bottom: 24px;
     } 
   }

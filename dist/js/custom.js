@@ -24,7 +24,7 @@ if (jQuery(".dev-project-slider").length > 0) {
     $(".dev-project-slider")
         .not(".slick-initialized")
         .slick({
-            dots: false,
+            dots: true,
             infinite: true,
             speed: 800,
             slidesToShow: 3,
