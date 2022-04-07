@@ -4,24 +4,24 @@
 {% set cardData =[
         {
         id:1,
-        img:"./image/l-1/s-1.svg",
-        btnText:"Explore Service",
-        title:"Web Design",
-        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
+        img:"./image/l-1/service-1.png",
+        btnText:"Let's Work Together",
+        title:"Back-end Development",
+        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
         },
         {
         id:2,
-        img:"./image/l-1/s-2.svg",
-        btnText:"Explore Service",
-        title:"Web Development",
-        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
+        img:"./image/l-1/service-2.png",
+        btnText:"Let's Work Together",
+        title:"Front-end Development",
+        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
         },
         {
         id:3,
-        img:"./image/l-1/s-3.svg",
-        btnText:"Explore Service",
-        title:"UI/UX Design",
-        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
+        img:"./image/l-1/service-3.png",
+        btnText:"Let's Work Together",
+        title:"Content Writing",
+        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
         }
 
 
@@ -29,12 +29,12 @@
 <div class="service-section-01">
     <div class="container">
         <div class="section-title-block text-center">
-            <h6 class="subtitle text-primary mb-10">My Expertise</h6>
-            <h2 class="title">Awesome Services For You</h2>
+            <h2 class="title">My Services</h2>
+            <p class="text">Morbi risus elit, fringilla in cursus a, molestie non dui. Nunc accumsan gravida risus, ac semper libero mollis ut.</p>
         </div>
         <div class="row justify-content-center card-row">
             {% for item in cardData%}
-            <div class="col-xxl-4 col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
+            <div class="col-lg-4 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
                 {{Card.SerciceCard({
                     img:item.img,
                     title:item.title,

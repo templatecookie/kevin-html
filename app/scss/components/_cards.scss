@@ -1,39 +1,23 @@
 @use "../abstracts/mixins" as *;
 .card-service{
   background: var(--bs-white);
-  border: 1px solid #DEE7EE;
-  border-radius: 5px;
-  display: flex;
-  transition: .3s;
-  align-items: flex-start;
-  padding: 30px 25px;
-  @media (min-width:575px) {
-    flex-direction: row;
-    padding: 45px;
-    padding-top: 37px;
-  }
+  border-radius: 0px;
+  transition: .3s; 
+  padding: 40px;
+  border-radius: 8px;
   .card-image{
     margin-bottom: 15px;
-    @include square(60px,500px);
-    @include flexAllCenter;
-    background: #EBF6FF;
     transition: .3s;
-    @media (min-width:575px) {
-      margin-bottom: 0;
-      margin-right: 30px;
-    }
-    svg{
-      path{
-        transition: .3s;
-        stroke: var(--bs-primary);
-      }
+    img{
+      width: 100%;
     }
   }
   .card-body{
+    padding: 0px;
     .card-title{
       font-weight: 600;
       font-size: 20px;
-      line-height: 1.5;
+      line-height: 28px;
       margin-bottom: 15px;
       @media (min-width:575px) {
         font-size: 24px;
@@ -53,36 +37,13 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;
-      color: black;
+      color: var(primary-500);
       transition: .3s;
-      padding: 5px 0;
-      &::before{
-        position: absolute;
-        bottom: 0;
-        content: "";
-        height: 1px;
-        left: 0;
-        width: 0;
-        transition: .3s;
-        background: var(--bs-azure-radiance);
-      }
-      &:hover{
-        color: var(--bs-azure-radiance);
-        &::before{
-          width: 100%;
-        }
-      }
-    }
-  }
-  &:hover{
-    border-color: transparent;
-    filter: drop-shadow(0px 15px 30px rgba(210, 217, 224, 0.35));
-    .card-image{
-      background: var(--bs-primary);
-      svg{
-        path{
-          stroke: var(--bs-white);
-        }
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      i{
+        margin-left: 11.75px;
       }
     }
   }

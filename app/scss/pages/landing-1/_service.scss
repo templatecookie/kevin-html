@@ -1,5 +1,6 @@
 .service-section-01{
     padding: 60px 0;
+    background: rgba(0, 0, 0, 0.08);
     @media (min-width:575px) {
         padding: 80px 0;
     }
@@ -10,6 +11,20 @@
         margin-bottom: 35px;
         @media (min-width:992px) {
             margin-bottom: 70px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+        .text{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            width: 50%;
+            margin: 0px auto;
         }
     }
 }
