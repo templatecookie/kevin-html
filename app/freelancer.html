@@ -2,6 +2,8 @@
 {# {% import "components/Header/_header.njk" as Header %} #}
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
 {% import "pages/landing-3/_footer.njk" as FooterSection %}
+{% import "pages/landing-3/_case-study.njk" as CaseStudySection %}
+{% import "pages/landing-3/_service.njk" as ServiceSection %}
 {% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -10,6 +12,12 @@
   <!-- Header Section Start -->
   {{HeroSection.render()}}
   <!-- Header Section End -->
+  <!-- Case Study Section Start -->
+  {{CaseStudySection.render()}}
+  <!-- Case Study Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
