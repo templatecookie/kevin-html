@@ -26,3 +26,27 @@
     } 
   }
 }
+.dev-section-title{
+  .title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--bs-gray-900);
+    padding-bottom: 15px;
+    @media (min-width:992px) {
+      padding-bottom: 24px;
+    } 
+  }
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--bs-gray-700);
+    line-height: 1.4;
+    @media (min-width:768px) {
+      font-size: 18px;
+    }
+    @media (min-width:992px) {
+      font-size: 20px;
+    }
+  }
+}
