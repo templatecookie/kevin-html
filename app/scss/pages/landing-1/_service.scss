@@ -1,0 +1,86 @@
+.dev-service-area{
+    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.08);
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .area-title-block{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            color: #000000;
+            margin-bottom: 16px;
+            @media (max-width:525px){
+                font-size: 36px;
+                line-height: 48px;
+            }
+        }
+        .text{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0px auto;
+            @media (max-width:525px){
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.card-service{
+  background: var(--bs-white);
+  transition: .3s; 
+  padding: 40px;
+  border-radius: 8px;
+  @media (max-width:525px){
+      padding: 30px 20px;
+  }
+  .card-image{
+    margin-bottom: 15px;
+    transition: .3s;
+    img{
+      width: 100%;
+    }
+  }
+  .card-body{
+    padding: 0px;
+    .card-title{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    p{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.555555555555556;
+      margin-bottom: 25px;
+      
+    }
+    .btn{
+      padding: 0px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: none;
+      
+    }
+    .btn-primary{
+      background-color: transparent;
+      border: none;
+      color: var(--bs-primary-500);
+      svg{
+        margin-left: 11.75px;
+      }
+      
+    }
+  }
+}
