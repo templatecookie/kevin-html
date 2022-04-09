@@ -1,48 +1,73 @@
 {% macro render(args) %}
-{% import "components/cards.njk" as Card %}
 
-{% set cardData =[
-        {
-        id:1,
-        img:"./image/l-1/service-1.png",
-        btnText:"Let's Work Together",
-        title:"Back-end Development",
-        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
-        },
-        {
-        id:2,
-        img:"./image/l-1/service-2.png",
-        btnText:"Let's Work Together",
-        title:"Front-end Development",
-        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
-        },
-        {
-        id:3,
-        img:"./image/l-1/service-3.png",
-        btnText:"Let's Work Together",
-        title:"Content Writing",
-        text:"Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim."
-        }
-
-
-]%}
 <div class="dev-service-area">
     <div class="container">
-        <div class="area-title-block text-center">
-            <h2 class="title">My Services</h2>
-            <p class="text">Morbi risus elit, fringilla in cursus a, molestie non dui. Nunc accumsan gravida risus, ac semper libero mollis ut.</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="area-title-block text-center">
+                    <h2 class="title">My Services</h2>
+                    <p class="text">Morbi risus elit, fringilla in cursus a, molestie non dui. Nunc accumsan gravida risus, ac semper libero mollis ut.</p>
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center card-row">
-            {% for item in cardData%}
-            <div class="col-lg-4 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
-                {{Card.SerciceCard({
-                    img:item.img,
-                    title:item.title,
-                    btnText:item.btnText,
-                    text:item.text
-                })}}
+            <div class="col-lg-4 col-md-10 col-sm-11 col-xs-10">
+                <div>
+                    <div class="card card-service">
+                        <div class="card-service-wrapper">
+                            <div class="card-image">
+                                <img src="./image/l-1/service-1.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Back-end Development</h5>
+                                <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
+                                <a class="btn btn-primary" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            {% endfor %}
+            <div class="col-lg-4 col-md-10 col-sm-11 col-xs-10">
+                <div>
+                    <div class="card card-service">
+                        <div class="card-service-wrapper">
+                            <div class="card-image">
+                                <img src="./image/l-1/service-2.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Front-end Development</h5>
+                                <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
+                                <a class="btn btn-primary" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-10 col-sm-11 col-xs-10">
+                <div>
+                    <div class="card card-service">
+                        <div class="card-service-wrapper">
+                            <div class="card-image">
+                                <img src="./image/l-1/service-3.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Content Writing</h5>
+                                <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
+                                <a class="btn btn-primary" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>              
 </div>
