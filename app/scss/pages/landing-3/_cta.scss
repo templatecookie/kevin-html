@@ -138,10 +138,18 @@
 a.default-btn.black{
   color: white!important;
   background-color: var(--bs-gray-900);
+  border: 2px solid var(--bs-gray-900);
   svg{
     margin-left: 8px;
   }
   path{
     stroke: #fff;
+  }
+  &:hover path{
+    stroke: var(--bs-gray-900);
+  }
+  &:hover{
+    color: var(--bs-gray-900)!important;
+    background-color: transparent;
   }
 }

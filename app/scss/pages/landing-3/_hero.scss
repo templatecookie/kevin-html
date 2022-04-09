@@ -52,6 +52,8 @@
   cursor: pointer;
   img{
     margin-top: 15px;
+    position: relative;
+    animation: UpDown 2s linear infinite;
   }
   @media (max-width: 991px) {
     width: 175px;
@@ -60,5 +62,17 @@
   @media (max-width: 767px) {
     width: 140px;
     height: 140px;
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: .5em;
+  }
+  100% {
+    bottom: 0;
   }
 }

@@ -46,11 +46,8 @@
   &-slider{
     &-item{
       text-align: center;
-      padding: 0px 210px;
+      padding: 0px 130px;
       @media (max-width: 1199px) {
-        padding: 0 100px;
-      }
-      @media (max-width: 767px) {
         padding: 0;
       }
       img{
@@ -86,6 +83,10 @@
 }
 
 .flc-testimonial-slider{
+  padding: 0 80px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
   .prev-arrow, 
   .next-arrow {
     width: 56px;
