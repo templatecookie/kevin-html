@@ -1,0 +1,115 @@
+.section-title{
+  max-width: 480px;
+  margin: 0 auto 60px;
+  text-align: center;
+  @media (max-width:991px) {
+    margin: 0 auto 40px;
+  }
+
+  h2{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--bs-gray-900);
+    margin-bottom: 32px;
+    font-family: 'Cardo', serif;
+    @media (max-width:991px) {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    @media (max-width:479px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bs-gray-600);
+  }
+}
+
+.section-padding{
+  padding: 124px 0;
+  @media (max-width: 991px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 80px 0;
+  }
+}
+.flc-testimonial-section{
+  box-shadow: inset 0px 1px 0px #e6e8eb;
+}
+.flc-testimonial{
+  &-slider{
+    &-item{
+      text-align: center;
+      padding: 0px 210px;
+      @media (max-width: 1199px) {
+        padding: 0 100px;
+      }
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+      img{
+        margin: 0 auto 35px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--bs-gray-900) ;
+        @media (max-width: 991px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &-user{
+    margin-top: 32px;
+    span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-gray-900) ;
+      margin-bottom: 6px;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-500);
+    }
+  }
+}
+
+.flc-testimonial-slider{
+  .prev-arrow, 
+  .next-arrow {
+    width: 56px;
+    height: 56px;
+    background-image: url(../image/svg/Arrowleft.svg);
+    border: 2px solid #E6E8EB;
+    background-color: transparent;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    transform: translateY(-50%);
+    @media (max-width: 767px) {
+      display: none!important;
+    }
+  }
+  .next-arrow{
+    left: auto;
+    right: 0;
+    background-image: url(../image/svg/ArrowRight.svg);
+  }
+}
+

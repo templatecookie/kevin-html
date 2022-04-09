@@ -1,23 +1,8 @@
-"use strict";
-$(document).ready(function () {
-  $("select").niceSelect();
-  AOS.init({
-    once: true,
-  });
-});
-window.addEventListener("load", AOS.refresh);
+(function ($) {
+  "use strict";
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-      Counter Up Activation
-  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-$(".counter").counterUp({
-  delay: 10,
-  time: 1000,
-});
-
-
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-      Slick Slider Activation
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Slick Slider Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   $(".slick-slider").slick();
   if (jQuery(".dev-project-slider").length > 0) {
@@ -73,16 +58,65 @@ $(".counter").counterUp({
         nextArrow: $(".dev-testimonial-slider__control-buttons .button--next"),
       });
   }
+  if (jQuery(".flc-testimonial-slider").length > 0) {
+    $(".flc-testimonial-slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+        nextArrow: '<button class="slide-arrow next-arrow"></button>'
+      });
+  }
+  if (jQuery(".flc-client-slider").length > 0) {
+    $(".flc-client-slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        slidesToShow: 6,
+        arrows: false,
+        autoplay:true,
+        autoplaySpeed:1500,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 479,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+  }
+
+})(jQuery);
 
 
-// /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//       Preloader Activation
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-// $(window).load(function () {
-//   setTimeout(function () {
-//     $("#loader").fadeOut(500);
-//   }, 1000);
-//   setTimeout(function () {
-//     $("#loader").remove();
-//   }, 2000);
-// });
+
+
+
