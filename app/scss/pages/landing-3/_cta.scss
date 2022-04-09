@@ -1,4 +1,4 @@
-.cta-section{
+.flc-cta-section{
   z-index: 0;
   position: relative;
   &:before{
@@ -16,7 +16,7 @@
   }
 }
 
-.cta-left-content {
+.flc-cta-left-content {
   width: 648px;
   height: 648px;
   display: flex;
@@ -73,7 +73,7 @@
   }
 }
 
-.cta-right-content {
+.flc-cta-right-content {
   padding-left: 115px;
   @media (max-width: 1199px) {
     padding: 0;
