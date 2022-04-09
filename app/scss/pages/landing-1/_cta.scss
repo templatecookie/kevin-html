@@ -53,6 +53,8 @@
                 padding: 0px 24px;
             }
             &__one, &__two{
+                display: flex;
+                justify-content: space-around;
                 align-items: center;
                 border-radius: 12px;
                 padding: 32px;
@@ -66,9 +68,8 @@
                             height: 24px;
                         }
                     }
-                .content{
-                    padding-left: 37px;
-                    padding-right: 10px;
+                .content-button-text{
+                    padding:0px 10px;
                     color: #FFFFFF;
                     @media (max-width: 525px) {
                         padding-left: 16px;
