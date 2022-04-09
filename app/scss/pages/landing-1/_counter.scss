@@ -9,8 +9,9 @@
         }
         .dev-count-block{
             position: relative;
+            
             svg{
-                margin-bottom: 24px;
+                margin-bottom: 15px;
             }
             @media (min-width:768px) {
                 &::before{
@@ -21,10 +22,11 @@
                     transform: translateY(-50%);
                     height: 133px;
                     width: 1px;
-                    background:#DEE7EE;
+                    background:#E6E8EB;
                 }
             }
             .text{
+                font-family: 'Inter';
                 color: var(--bs-gray-700);
                 font-weight: 400;
                 font-size: 16px;
@@ -32,6 +34,7 @@
                 text-align: center;
             }
             .title{
+                font-family: 'Inter';
                 margin-bottom: 5px;
                 font-weight: 700;
                 font-size: 36px;
@@ -42,10 +45,10 @@
         }
         .col-md-3{
             &:last-child{
-            .count-block{
+            .dev-count-block{
                 &::before{
-                        display: none;
-                    }
+                    display: none;
+                }
                 }
             }
         }
