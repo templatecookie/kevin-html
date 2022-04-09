@@ -1,9 +1,12 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-1/_hero.njk" as HeroSection %}
+{% import "pages/landing-4/_hero.njk" as HeroSection %}
 
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeaderFour)}}
   <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
 {% endblock %}
