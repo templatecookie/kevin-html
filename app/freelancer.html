@@ -1,6 +1,8 @@
 {% extends "template.njk" %}
 {# {% import "components/Header/_header.njk" as Header %} #}
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
+{% import "pages/landing-3/_about.njk" as AboutSection %}
+{% import "pages/landing-3/_client.njk" as ClientSection %}
 {% import "pages/landing-3/_work-process.njk" as WpSection %}
 {% import "pages/landing-3/_cta.njk" as CtaSection %}
 {% import "pages/landing-3/_case-study.njk" as CaseStudySection %}
@@ -11,9 +13,16 @@
   <!-- Header Section Start -->
   {# {{Header.render(siteHeaderOne)}} #}
   <!-- Header Section End -->
+  
   <!-- Header Section Start -->
   {{HeroSection.render()}}
   <!-- Header Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- ClientSection Start -->
+  {{ClientSection.render()}}
+  <!-- ClientSection End -->
   <!-- Workprocess Start -->
   {{WpSection.render()}}
   <!-- Workprocess End -->

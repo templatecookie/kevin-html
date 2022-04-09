@@ -12,6 +12,7 @@
 .flc-work-process{
   &-item{
     padding: 32px;
+    position: relative;
     background-color: white;
     @media (max-width: 991px) {
       margin-bottom: 24px;
@@ -37,6 +38,16 @@
       line-height: 20px;
       color: var(--bs-gray-500);
     }
+  }
+  &-count{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    position: absolute;
+    top: 35px;
+    right: 32px;
+    color: var(--bs-gray-50);
+    font-family: 'Cardo', serif;
   }
 }
 .col-lg-3.col-md-6{

@@ -1,13 +1,12 @@
 
 .flc-hero-section{
   background-color: #F0F1F3;
-  height: 1124px;
 }
 .flc-hero-content{
   text-align: center;
   max-width: 872px;
   margin: 0 auto;
-  padding-top: 260px;
+  padding: 260px 0 360px;
   h1{
     font-weight: 400;
     font-size: 72px;
@@ -15,6 +14,22 @@
     text-align: center;
     color: var(--bs-gray-900);
     font-family: 'Cardo', serif;
+    @media (max-width: 1199px) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media (max-width: 991px) {
+      font-size: 48px;
+      line-height: 60px;
+    }
+    @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 }
 .flc-scroll-down {
@@ -37,5 +52,13 @@
   cursor: pointer;
   img{
     margin-top: 15px;
+  }
+  @media (max-width: 991px) {
+    width: 175px;
+    height: 175px;
+  }
+  @media (max-width: 767px) {
+    width: 140px;
+    height: 140px;
   }
 }
