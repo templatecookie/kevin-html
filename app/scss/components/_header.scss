@@ -248,3 +248,30 @@
     }
   }
 }
+.photographer-header{
+    margin: 24px 0;
+  .site-header__brand{
+    .logo{
+      display: flex;
+      align-items: center;
+      img{
+       min-width: 48px;
+       max-width: 48px;
+       min-height: 48px;
+       max-height: 48px;
+       object-fit: cover;
+       border-radius: 500px; 
+       margin-right: 12px;
+      }
+      .text{
+        color: white;
+        white-space:nowrap;
+        font-weight: 600;
+        font-size: 18px;
+        @media (min-width:992px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

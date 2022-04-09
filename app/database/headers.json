@@ -4,8 +4,21 @@
     "header_double_button":false,
     "absolute_header":false,
     "header_button":true,
+    "root":"./image/l-1/me.png",
+    "logoNeme":"Jamel Eusebio",
     "additional_button_classes":"site-header__btns--01",
     "header_button_class":"header-text btn-primary",
     "header_button_text" :"Contact"
+  },
+  "siteHeaderFour":{
+    "additional_header_class":"site-header--menu-right photographer-header mobile-menu-trigger-dark",
+    "header_double_button":false,
+    "absolute_header":true,
+    "header_button":true,
+    "root":"./image/l-4/logo.png",
+    "logoNeme":"Robert Warren",
+    "additional_button_classes":"site-header__btns--01",
+    "header_button_class":"header-text btn-primary",
+    "header_button_text" :"<img class='make-it-inline' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
   }
 }
