@@ -18,12 +18,20 @@
             line-height: 56px;
             color: #000000;
             margin-bottom: 16px;
+            @media (max-width:525px){
+                font-size: 36px;
+                line-height: 48px;
+            }
         }
         .text{
             font-weight: 400;
             font-size: 20px;
             line-height: 28px;
             margin: 0px auto;
+            @media (max-width:525px){
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
     }
 }
@@ -32,6 +40,9 @@
   transition: .3s; 
   padding: 40px;
   border-radius: 8px;
+  @media (max-width:525px){
+      padding: 30px 20px;
+  }
   .card-image{
     margin-bottom: 15px;
     transition: .3s;
