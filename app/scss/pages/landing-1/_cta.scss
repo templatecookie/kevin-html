@@ -34,14 +34,14 @@
                     margin-left: 11.75px;
                     path{
                         &:hover{
-                            stroke: #1777E5;
+                            stroke: var(--bs-primary-500);
                         }
                     }
                 }
                 &:hover{
                     svg{
                     path{
-                        stroke: #1777E5;
+                        stroke: var(--bs-primary-500);
                     }
                 }
                 }
@@ -79,7 +79,7 @@
                     }
                 .content-button-text{
                     padding:0px 10px;
-                    color: #FFFFFF;
+                    color: white;
                     @media (max-width: 525px) {
                         padding-left: 16px;
                     }
