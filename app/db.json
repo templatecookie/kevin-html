@@ -7,7 +7,7 @@
 		"root": "./image/l-1/me.png",
 		"logoNeme": "Jamel Eusebio",
 		"additional_button_classes": "site-header__btns--01",
-		"header_button_class": "header-text btn-primary",
+		"header_button_class": "d-btn d-btn-primary",
 		"header_button_text": "Contact"
 	},
 	"siteHeaderFour": {
@@ -18,7 +18,7 @@
 		"root": "./image/l-4/logo.png",
 		"logoNeme": "Robert Warren",
 		"additional_button_classes": "site-header__btns--01",
-		"header_button_class": "header-text btn-primary",
+		"header_button_class": "p-btn p-btn-primary",
 		"header_button_text": "<img class='make-it-inline' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
 	}
 }
