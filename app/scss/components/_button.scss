@@ -46,20 +46,17 @@
   }
 }
 .p-btn {
-  border-radius: 6px !important;
-  font-size: 14px;
-  font-weight: 700;
+  border-radius: 50px !important;
+  font-size: 16px;
+  font-weight: 600;
   display: inline-flex;
-  text-transform: uppercase;
-  padding: 1.1em 1.6em;
+  font-family: 'Barlow', sans-serif;
+  padding: .8em 2em;
   line-height: 1;
   width: max-content;
   align-items: center;
   justify-content: center;
   transition: .3s;
-  svg{
-    margin-left: 12px;
-  }
   &:focus{
     box-shadow: none;
     outline: none;
@@ -71,8 +68,8 @@
     }
   }
   &.p-btn-primary{
-    border: 2px solid var(--bs-primary-500);
-    background: var(--bs-primary-500);
+    border: 2px solid var(--bs-success-500);
+    background: var(--bs-success-500);
     color: white;
     svg{
       path{
@@ -80,11 +77,12 @@
       }
     }
     &:hover{
+      border-color: white;
       background: transparent;
-      color: var(--bs-primary-500);
+      color: white;
       svg{
         path{
-          stroke: var(--bs-primary-500);
+          stroke: white;
         }
       }
     }

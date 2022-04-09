@@ -16,6 +16,7 @@
                 font-size: 48px;
                 line-height: 56px;
                 margin-bottom: 24px;
+                color: white;
                 @media (max-width:525px){
                     font-size: 36px;
                 }
@@ -33,14 +34,14 @@
                     margin-left: 11.75px;
                     path{
                         &:hover{
-                            stroke: #1777E5;
+                            stroke: var(--bs-primary-500);
                         }
                     }
                 }
                 &:hover{
                     svg{
                     path{
-                        stroke: #1777E5;
+                        stroke: var(--bs-primary-500);
                     }
                 }
                 }
@@ -48,14 +49,25 @@
         }
         .content-button{
             padding-left: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width:992px) and (min-width:768px) {
+                flex-direction: row;
+            }
             @media (max-width:992px) {
                 padding: 0px 24px;
             }
             &__one, &__two{
+                display: flex;
+                justify-content: space-around;
                 align-items: center;
                 border-radius: 12px;
                 padding: 32px;
                 margin-bottom: 24px;
+                @media (max-width:1200px) and (min-width:768px) {
+                    padding: 10px 16px;
+                }
                 @media (max-width: 525px) {
                     padding: 8px 16px;
                 }
@@ -65,10 +77,9 @@
                             height: 24px;
                         }
                     }
-                .content{
-                    padding-left: 37px;
-                    padding-right: 10px;
-                    color: #FFFFFF;
+                .content-button-text{
+                    padding:0px 10px;
+                    color: white;
                     @media (max-width: 525px) {
                         padding-left: 16px;
                     }
