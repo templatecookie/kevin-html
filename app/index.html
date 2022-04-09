@@ -3,6 +3,7 @@
 {% import "pages/landing-1/_hero.njk" as HeroSection %}
 {% import "pages/landing-1/_project.njk" as ProjectSection %}
 {% import "pages/landing-1/_testimonial.njk" as TestimonialSection %}
+{% import "pages/landing-1/_counter.njk" as CounterSection %}
 {% import "pages/landing-1/_footer.njk" as FooterSection %}
 {% import "pages/landing-1/_service.njk" as ServiceSection %}
 {% import "pages/landing-1/_cta.njk" as ContactSection %}
@@ -16,9 +17,12 @@
   <!-- Project Section Start -->
   {{ProjectSection.render()}}
   <!-- Project Section End -->
-    <!-- Service Section Start -->
+  <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
