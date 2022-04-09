@@ -10,21 +10,12 @@
             @media (max-width:992px) {
                 margin-bottom: 50px;
             }
-
             .title{
-                font-weight: 700;
-                font-size: 48px;
-                line-height: 56px;
                 margin-bottom: 24px;
+                padding-bottom: 0px;
                 color: white;
-                @media (max-width:525px){
-                    font-size: 36px;
-                }
             }
             .text{
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 28px;
                 color: var(--bs-gray-400);
                 margin-bottom: 40px;
             }
@@ -48,7 +39,6 @@
             }
         }
         .content-button{
-            padding-left: 80px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -59,12 +49,14 @@
                 padding: 0px 24px;
             }
             &__one, &__two{
+                cursor: pointer;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 border-radius: 12px;
                 padding: 32px;
                 margin-bottom: 24px;
+                transition: .3s;
                 @media (max-width:1200px) and (min-width:768px) {
                     padding: 10px 16px;
                 }
@@ -84,7 +76,7 @@
                         padding-left: 16px;
                     }
                     
-                    p{
+                    text{
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 14px;
@@ -95,10 +87,13 @@
                         margin-bottom: 0px;
                     }
                     }
-                    h3{
+                    .title{
                         font-weight: 500;
                         font-size: 24px;
                         line-height: 32px;
+                        @media (max-width: 1200px) {
+                            font-size: 18px;
+                        }
                         @media (max-width: 525px) {
                             font-size: 16px;
                         }
@@ -112,10 +107,28 @@
                     color: var(--bs-gray-500);
                     }
                 }
+                &:hover{
+                    background-color: var(--bs-primary-500);
+                    border:4px solid var(--bs-primary-500);
+                    svg{
+                        path{
+                            stroke: white;
+                        }
+                    }
+                }
             }
             &__two{
                 background-color: var(--bs-primary-500);
                 border:4px solid var(--bs-primary-500);
+                &:hover{
+                    background-color: transparent;
+                    border:4px solid #2B384C;
+                    svg{
+                        path{
+                            stroke: var(--bs-primary-500);
+                        }
+                    }
+                }
             }
         }
     }
