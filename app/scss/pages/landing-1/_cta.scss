@@ -1,11 +1,11 @@
-.cta-section-01{
+.dev-cta-area{
     background-color: var(--bs-gray-900);
     &__wrapper{ 
         padding: 100px 0px;
         @media (min-width:1200px) {
                 flex-direction: row;
             }
-        .section-content-block{
+        .area-content-block{
             padding-right: 40px;
             @media (max-width:992px) {
                 margin-bottom: 50px;
