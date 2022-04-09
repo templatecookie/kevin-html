@@ -11,7 +11,7 @@
     "header_button_text" :"Contact"
   },
   "siteHeaderFour":{
-    "additional_header_class":"site-header--menu-right photographer-header mobile-menu-trigger-dark",
+    "additional_header_class":"site-header--menu-right photographer-header",
     "header_double_button":false,
     "absolute_header":true,
     "header_button":true,
