@@ -1,9 +1,9 @@
 
-.hero-section{
+.flc-hero-section{
   background-color: #F0F1F3;
   height: 1124px;
 }
-.hero-content{
+.flc-hero-content{
   text-align: center;
   max-width: 872px;
   margin: 0 auto;
@@ -13,11 +13,11 @@
     font-size: 72px;
     line-height: 80px;
     text-align: center;
-    color: #132238;
+    color: var(--bs-gray-900);
     font-family: 'Cardo', serif;
   }
 }
-.scroll-down {
+.flc-scroll-down {
   width: 200px;
   height: 202px;
   left: 860px;
@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: #132238;
+  color: var(--bs-gray-900);
   cursor: pointer;
   img{
     margin-top: 15px;

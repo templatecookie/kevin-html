@@ -1,8 +1,8 @@
 
-.service-section {
+.flc-service-section {
   box-shadow: inset 0px 1px 0px #e6e8eb;
 }
-.service {
+.flc-service {
   &-item{
     border: 1px solid #E6E8EB;
     padding: 40px;
@@ -18,7 +18,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;
-      color: #132238;
+      color: var(--bs-gray-900);
       margin-bottom: 15px;
       font-family: 'Cardo', serif;
     }
@@ -26,7 +26,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      color: #697484;
+      color: var(--bs-gray-500);
       margin-bottom: 24px;
     }
   }
@@ -36,13 +36,19 @@ a.icon-btn {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #132238;
+  color: var(--bs-gray-900);
   padding: 60px 0;
+  img{
+    transition: all 0.4s;
+  }
+  &:hover img{
+    margin-left: 3px;
+  }
 }
 
 @media (max-width: 991px) {
   .col-lg-4.col-md-6{
-    .service-item{
+    .flc-service-item{
       margin-bottom: 24px;
     }
     &:last-child .service-item{

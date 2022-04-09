@@ -14,7 +14,7 @@ CUSTOM PRE DEFINE FUNCTION
     return this.length;
   }
 
-  var testimonial_slider = $('.testimonial-slider');
+  var testimonial_slider = $('.flc-testimonial-slider');
   if (testimonial_slider.is_exist()) {
       testimonial_slider.not(".slick-initialized").slick({
       dots: false,
@@ -24,7 +24,7 @@ CUSTOM PRE DEFINE FUNCTION
       slidesToScroll: 1,
       arrows: true,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+      nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
   }
 

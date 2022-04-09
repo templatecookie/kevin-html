@@ -14,7 +14,7 @@
         return this.length;
     }
 
-    var testimonial_slider = $('.testimonial-slider');
+    var testimonial_slider = $('.flc-testimonial-slider');
     if (testimonial_slider.is_exist()) {
         testimonial_slider.not(".slick-initialized").slick({
             dots: false,

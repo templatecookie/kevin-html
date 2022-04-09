@@ -3,8 +3,9 @@
   text-align: left;
   margin-bottom: 50px;
 }
-.case-study-section {
+.flc-case-study-section {
   padding: 124px 0 100px;
+  box-shadow: inset 0px 1px 0px #e6e8eb;
   @media (max-width: 991px) {
     padding: 100px 0 80px;
   }
@@ -13,7 +14,7 @@
   }
   
 }
-.case-study {
+.flc-case-study {
   &-item{
     margin-bottom: 24px;
   }
@@ -23,7 +24,7 @@
     &:hover::before{
       opacity: 1;
     }
-    &:hover .case-study-data{
+    &:hover .flc-case-study-data{
       opacity: 1;
       top: 32px;
     }
@@ -60,7 +61,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 16px;
-        color: #FFFFFF;
+        color: white;
         opacity: 0.5;
         margin-right: 8px;
       }
@@ -69,14 +70,14 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 28px;
-      color: #FFFFFF;
+      color: white;
       margin-bottom: 16px;
     }
     p{
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      color: #FFFFFF;
+      color: white;
       opacity: 0.8;
       margin-bottom: 24px;
     }
@@ -88,7 +89,7 @@ a.icon-btn-white {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: white;
   svg{
     margin-left: 5px;
   }
