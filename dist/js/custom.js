@@ -134,6 +134,32 @@
                 ],
             });
     }
+    if (jQuery(".photographer-service--half-fluid").length > 0) {
+        $(".photographer-service--half-fluid").slick({
+            dots: false,
+            infinite: true,
+            speed: 900,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            arrows: false,
+        });
+    }
+    $(window).load(function() {
+        if (this.innerWidth > 600) {
+            const offestContainer = $(".container").offset().left;
+            $(".photographer-service--half-fluid").css("margin-left", offestContainer);
+        } else {
+            $(".photographer-service--half-fluid").css("margin-left", "0px");
+        }
+    });
+    $(window).on("resize", function() {
+        if (this.innerWidth > 600) {
+            const offestContainer = $(".container").offset().left;
+            $(".photographer-service--half-fluid").css("margin-left", offestContainer);
+        } else {
+            $(".photographer-service--half-fluid").css("margin-left", "0px");
+        }
+    });
 
 
 })(jQuery);
