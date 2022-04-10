@@ -45,7 +45,7 @@
     }
   }
 }
-.p-btn {
+.pg-btn {
   border-radius: 50px !important;
   font-size: 16px;
   font-weight: 600;
@@ -67,7 +67,7 @@
       outline: none;
     }
   }
-  &.p-btn-primary{
+  &.pg-btn-primary{
     border: 2px solid var(--bs-success-500);
     background: var(--bs-success-500);
     color: white;
@@ -77,12 +77,12 @@
       }
     }
     &:hover{
-      border-color: white;
+      border-color: var(--bs-success-500);
       background: transparent;
-      color: white;
+      color: var(--bs-success-500);
       svg{
         path{
-          stroke: white;
+          stroke: var(--bs-success-500);
         }
       }
     }
