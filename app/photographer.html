@@ -1,6 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
+{% import "pages/landing-4/_service.njk" as ServiceSection %}
 {% import "pages/landing-4/_post.njk" as PostSection %}
 {% import "pages/landing-4/_contact.njk" as ContactSection %}
 {% import "pages/landing-4/_footer.njk" as FooterSection %}
@@ -12,6 +13,9 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
   <!-- Post Section Start -->
   {{PostSection.render()}}
   <!-- Post Section End -->
