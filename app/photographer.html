@@ -1,6 +1,8 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
+{% import "pages/landing-4/_post.njk" as PostSection %}
+{% import "pages/landing-4/_about.njk" as AboutSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -9,4 +11,10 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- Hero Section Start -->
+  {{AboutSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Post Section Start -->
+  {{PostSection.render()}}
+  <!-- Post Section End -->
 {% endblock %}

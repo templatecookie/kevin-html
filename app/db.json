@@ -11,14 +11,14 @@
 		"header_button_text": "Contact"
 	},
 	"siteHeaderFour": {
-		"additional_header_class": "site-header--menu-right photographer-header mobile-menu-trigger-dark",
+		"additional_header_class": "site-header--menu-right photographer-header",
 		"header_double_button": false,
 		"absolute_header": true,
 		"header_button": true,
 		"root": "./image/l-4/logo.png",
 		"logoNeme": "Robert Warren",
 		"additional_button_classes": "site-header__btns--01",
-		"header_button_class": "p-btn p-btn-primary",
-		"header_button_text": "<img class='make-it-inline' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
+		"header_button_class": "pg-btn pg-btn-primary",
+		"header_button_text": "<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
 	}
 }
