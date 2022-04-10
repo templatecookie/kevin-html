@@ -1,0 +1,46 @@
+.photographer-pricing-area{
+    background-color: var(--bs-gray-50);
+    
+    margin: 50px auto;
+    &__table{
+        background-color: white;
+        padding: 48px;
+        @media (max-width:1024px) {
+            padding: 15px;
+        }
+        .price{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.25;
+            color: var(--bs-success-500);
+            padding-bottom: 24px;
+        }
+        .title{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.4;
+            color:  var(--bs-gray-900);
+            padding-bottom: 12px;
+        }
+        .description{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color:  var(--bs-gray-600);
+            padding-bottom: 32px;
+            border-bottom: 1px solid #E6E8EB;
+        }
+        .list{
+            list-style: none;
+            padding-top: 32px;
+            padding-left: 0;
+            li{
+               svg{
+                   margin-right: 11px;
+               }
+            }
+        }
+    }
+}

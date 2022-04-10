@@ -1,0 +1,23 @@
+
+.photographer-gallery-area{
+    a{
+        margin-bottom: 24px;
+        display: block;
+        width: 100%;
+    }
+    
+    @media (max-width:425px){
+        .col{
+            padding-left: .5rem;
+            padding-right: .5rem;
+            a{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @media (max-width:375px){
+        .col{
+            width: 100%;
+        }
+    }
+}
