@@ -3,6 +3,7 @@
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
 {% import "pages/landing-4/_post.njk" as PostSection %}
 {% import "pages/landing-4/_about.njk" as AboutSection %}
+{% import "pages/landing-4/_blogs.njk" as BlogsSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -11,9 +12,12 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- Hero Section Start -->
+  <!-- About Section Start -->
   {{AboutSection.render()}}
-  <!-- Hero Section End -->
+  <!-- About Section End -->
+  <!-- Blogs Section Start -->
+  {{BlogsSection.render()}}
+  <!-- Blogs Section End -->
   <!-- Post Section Start -->
   {{PostSection.render()}}
   <!-- Post Section End -->
