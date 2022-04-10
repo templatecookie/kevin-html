@@ -1,10 +1,14 @@
 (function($) {
     "use strict";
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        Nice Select
+        Nice Select Activation
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
     $("select").niceSelect();
 
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        datepicker Activation
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    $('#datepicker').datepicker();
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         AOS Activation
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -130,5 +134,6 @@
                 ],
             });
     }
+
 
 })(jQuery);
