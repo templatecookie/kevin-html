@@ -1,8 +1,10 @@
 .photographer-contact-area {
     background: var(--bs-gray-50);
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 20px;
     @media (min-width:575px) {
-        padding-top: 60px;
+        padding-top: 80px;
+        padding-bottom: 0;
 
     }
 

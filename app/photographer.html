@@ -3,6 +3,7 @@
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
 {% import "pages/landing-4/_post.njk" as PostSection %}
 {% import "pages/landing-4/_contact.njk" as ContactSection %}
+{% import "pages/landing-4/_footer.njk" as FooterSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -17,4 +18,7 @@
   <!-- Contact Section Start -->
   {{ContactSection.render()}}
   <!-- Contact Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
 {% endblock %}
