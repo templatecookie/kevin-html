@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
 
 
 
@@ -10,6 +12,7 @@
 $enable-responsive-font-sizes: true;
 $font-family: 'Inter', sans-serif;
 $font-family-2: 'Cardo', serif;
+$font-family-3: 'Barlow', sans-serif;
 $font-family-base: $font-family;
 
 //custom font-family
