@@ -18,7 +18,7 @@
 		"root": "./image/l-4/logo.png",
 		"logoNeme": "Robert Warren",
 		"additional_button_classes": "site-header__btns--01",
-		"header_button_class": "p-btn p-btn-primary",
+		"header_button_class": "pg-btn pg-btn-primary",
 		"header_button_text": "<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
 	}
 }
