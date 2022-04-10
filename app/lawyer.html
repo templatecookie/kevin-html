@@ -7,8 +7,8 @@
 {% import "pages/landing-6/_cta.njk" as CtaSection %}
 {% import "pages/landing-6/_case-study.njk" as CaseStudySection %}
 {% import "pages/landing-6/_service.njk" as ServiceSection %}
-{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
-{% import "pages/landing-6/_footer.njk" as FooterSection %} #}
+{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %} #}
+{% import "pages/landing-6/_footer.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
   {# {{Header.render(siteHeaderOne)}} #}
@@ -39,6 +39,6 @@
   {# {{TestimonialSection.render()}} #}
   <!-- Testimonial Section End -->
   <!-- Footer Section Start -->
-  {# {{FooterSection.render()}} #}
+  {{FooterSection.render()}} 
   <!-- Footer Section End -->
 {% endblock %}

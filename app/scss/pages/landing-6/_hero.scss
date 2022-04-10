@@ -1,3 +1,18 @@
+
+h2{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--bs-gray-900);
+  font-family: 'Barlow', sans-serif;
+}
+p{
+  font-weight: 400;
+  color: var(--bs-gray-700);
+  font-family: 'Barlow', sans-serif;
+}
+
 .law-section-padding{
   padding: 100px 0;
   @media (max-width:991px) {
