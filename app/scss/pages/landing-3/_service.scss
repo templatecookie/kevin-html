@@ -1,0 +1,59 @@
+
+.flc-service-section {
+  box-shadow: inset 0px 1px 0px #e6e8eb;
+}
+.flc-service {
+  &-item{
+    border: 1px solid #E6E8EB;
+    padding: 40px;
+    @media (max-width: 1199px) {
+      padding: 30px;
+    }
+  }
+  &-thumb{
+    margin-bottom: 40px;
+  }
+  &-data{
+    h4{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--bs-gray-900);
+      margin-bottom: 15px;
+      font-family: 'Cardo', serif;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-500);
+      margin-bottom: 24px;
+    }
+  }
+}
+a.icon-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--bs-gray-900);
+  padding: 60px 0;
+  img{
+    transition: all 0.4s;
+  }
+  &:hover img{
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-4.col-md-6{
+    .flc-service-item{
+      margin-bottom: 24px;
+    }
+    &:last-child .service-item{
+      margin-bottom: 0;
+    }
+  }
+}
+

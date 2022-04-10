@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as *;
 @use "../bs-customization/colors" as *;
-.btn {
+.d-btn {
   border-radius: 6px !important;
   font-size: 14px;
   font-weight: 700;
@@ -25,7 +25,7 @@
       outline: none;
     }
   }
-  &.btn-primary{
+  &.d-btn-primary{
     border: 2px solid var(--bs-primary-500);
     background: var(--bs-primary-500);
     color: white;
@@ -44,78 +44,47 @@
       }
     }
   }
-  &.btn-outline-primary{
-    border: 2px solid #DEE7EE;
-    color: var(--bs-primary);
-    transition: .3s;
-    svg{
-        margin-left: 15px;
-        path{
-            stroke: var(--bs-primary) !important;
-            transition: .3s;
-        }
-    }
-    &:hover{
-        background: var(--bs-primary) !important;
-        border-color:var(--bs-primary);
-        color: white;
-        svg{
-            path{
-                stroke: white !important;
-            }
-        }
+}
+.p-btn {
+  border-radius: 50px !important;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  font-family: 'Barlow', sans-serif;
+  padding: .8em 2em;
+  line-height: 1;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  &:active{
+    &:focus{
+      box-shadow: none;
+      outline: none;
     }
   }
-  &.btn-secondary{
-    border: 2px solid var(--bs-secondary);
-    background: var(--bs-secondary);
+  &.p-btn-primary{
+    border: 2px solid var(--bs-success-500);
+    background: var(--bs-success-500);
     color: white;
     svg{
-      margin-left: 15px;
       path{
         transition: .3s;
-        stroke: white;
       }
     }
     &:hover{
+      border-color: white;
       background: transparent;
-      border-color: #DEE7EE ;
-      color: #222D39;
+      color: white;
       svg{
-        margin-left: 15px;
         path{
-          stroke: #222D39;
+          stroke: white;
         }
       }
-    }
-  }
-  &.btn-outline-secondary{
-    border: 2px solid #DEE7EE;
-    color: #222D39;
-    transition: .3s;
-    svg{
-        margin-left: 15px;
-        path{
-            stroke: #222D39;
-            transition: .3s;
-        }
-    }
-    &:hover{
-        background: var(--bs-secondary) !important;
-        border-color:var(--bs-secondary);
-        color: white;
-        svg{
-            path{
-                stroke: white;
-            }
-        }
-    }
-  }
-}
-.svg-white{
-  svg{
-    path{
-      stroke: white !important;
     }
   }
 }
@@ -136,7 +105,7 @@ button {
     }
   }
 }
-.link-video-btn{
+.d-video-link-btn{
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -153,7 +122,7 @@ line-height: 24px;
 margin-right: 12px;
   }
 }
-.video-btn{
+.d-video-btn{
   background: white;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.24);
   @include square(88px,500px);
