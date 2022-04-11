@@ -1,0 +1,24 @@
+.law-about-section{
+  background-color: var(--bs-gray-50);
+}
+.law-about{
+  &-thumb{
+    img{
+      width: 100%;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+  &-content{
+    h2, 
+    p{
+      margin-bottom: 32px;
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+      }
+    }
+    
+  }
+  
+}
