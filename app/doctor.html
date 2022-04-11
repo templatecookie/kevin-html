@@ -2,6 +2,7 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-5/_hero.njk" as HeroSection %}
 {% import "pages/landing-5/_about.njk" as AboutSection %}
+{% import "pages/landing-5/_work.njk" as WorkSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -13,4 +14,7 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render()}}
+  <!-- Work Section End -->
 {% endblock %}

@@ -159,6 +159,7 @@
   }
 }
 .doctor-section-title{
+  text-align: center;
   .title{
     font-weight: 700;
     margin-bottom: 15px;
@@ -174,6 +175,14 @@
       font-size: 48px;
       
     }
+  }
+  .line{
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: var(--bs-gray-100);
+    margin: 24px auto;
+    
   }
   .text{
     font-weight: 400;
