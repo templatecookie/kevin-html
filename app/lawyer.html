@@ -6,7 +6,9 @@
 {% import "pages/landing-6/_counter.njk" as CounterSection %}
 {% import "pages/landing-6/_about.njk" as AboutSection %}
 {% import "pages/landing-6/_awards.njk" as AwardsSection %}
+{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %} 
 {% import "pages/landing-6/_blog.njk" as BlogSection %} 
+{% import "pages/landing-6/_contact.njk" as ContactSection %} 
 {% import "pages/landing-6/_footer.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
@@ -31,18 +33,15 @@
   <!-- Awards Start -->
   {{AwardsSection.render()}}
   <!-- Awards End -->
-  <!-- Case Study Section Start -->
-  {# {{CaseStudySection.render()}} #}
-  <!-- Case Study Section End -->
-  <!-- Service Section Start -->
-  {# {{ServiceSection.render()}} #}
-  <!-- Service Section End -->
   <!-- Testimonial Section Start -->
-  {# {{TestimonialSection.render()}} #}
+  {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
   <!-- Blog Section Start -->
   {{BlogSection.render()}} 
   <!-- Blog Section End -->
+  <!-- Contact Section Start -->
+  {{ContactSection.render()}}
+  <!-- Contact Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}} 
   <!-- Footer Section End -->

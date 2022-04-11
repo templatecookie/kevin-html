@@ -1,5 +1,10 @@
 .law-experiences-section{
   padding: 0 0 100px;
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
   @media (max-width:991px) {
     padding: 0 0 80px;
   }

@@ -1,5 +1,10 @@
 .law-footer-section{
   background-color: var(--bs-gray-900);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
 }
 .law-footer-top{
   padding: 100px 0 40px;
