@@ -1,5 +1,17 @@
 
 .photographer-gallery-area{
+    padding: 60px 0;
+    box-shadow: inset 0px 1px 0px #e6e8eb;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .photographer-section-title{
+            margin-bottom: 50px;
+     
+    }
     a{
         margin-bottom: 24px;
         display: block;
