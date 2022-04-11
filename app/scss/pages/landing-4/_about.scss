@@ -167,12 +167,15 @@
             }
             .git-btn{
                 .pg-btn {
-                    padding: 10px 20px;
+                    padding: 8px 12px;
+                    font-size: 12px;
                     @media(min-width:1200px){
                         padding: 0.6em 1.6em;
+                        font-size: 14px;
                     }
-                    @media(min-width:1320px){
+                    @media(min-width:1400px){
                         padding: 0.8em 2em;
+                        font-size: 16px;
                     }
                     &:focus{
                       box-shadow: none;
@@ -194,7 +197,13 @@
                         }
                       }
                       span{
-                          margin-left: 18px;
+                          margin-left: 8px;
+                          @media (min-width:1200px){
+                              margin-left: 12px;
+                          }
+                          @media (min-width:1400px){
+                            margin-left: 18px;
+                        }
                       }
                       &:hover{
                         background: white;
@@ -208,46 +217,55 @@
                     }
                   }
             }
-            .social-btn{
-                list-style: none;
-                padding-left: 0px;
+            .social-link{
                 margin: 0;
-                display: flex; 
-                align-items: center; 
-                @media (min-width: 425px) {
-                    padding-left: 24px;
-                }  
-                    li{
-                        align-self: center;
-                        padding-top: 6px;
-                        a{
-                            display: inline-block;
-                            border: 2px solid var(--bs-success-50);
-                            box-sizing: border-box;
-                            border-radius: 100px;
-                            width: 36px;
-                            height: 36px;
-                            position: relative;
-                            @media (min-width: 1200px){
-                                width: 48px;
-                                height: 48px; 
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                @media(min-width:992px){
+                    margin-left: 12px;
+                }
+                @media(min-width:1200px){
+                    margin-left: 18px;
+                }
+                @media(min-width:1400px){
+                    margin-left: 24px;
+                }
+                li{
+                    .media-item{
+                        min-height: 36px;
+                        max-height: 36px;
+                        min-width: 36px;
+                        min-height: 36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid #EAF7ED;
+                        border-radius: 500px;
+                        background: white; 
+                        transition: .3s;
+                        @media(min-width: 1400px){
+                            min-height: 48px;
+                            max-height: 48px;
+                            min-width: 48px;
+                            min-height: 48px;
+                        }
+                        i{
+                            color: var(--bs-success-500);
+                            transition: .3s;
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            background: var(--bs-success-500);
+                            i{
+                                color: white;
                             }
-                            svg{
-                                position: absolute;
-                                left: 50%;
-                                top: 50%;
-                                transform: translate(-50%, -50%);
-                                @media (max-width:1200px){
-                                    width: 12px !important;
-                                    height: 12px !important;
-                                }
-                            }
-                            
                         }
                     }
-                    li:not(:last-child){
-                        margin-right: 8px;
-                    }
+                }
             }
         }
     }
