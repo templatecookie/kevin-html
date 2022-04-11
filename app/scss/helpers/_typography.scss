@@ -129,14 +129,17 @@
     color: var(--bs-gray-900);
     line-height: 100%;
     font-family: 'JetBrains Mono', sans-serif;
-    @media (min-width:768px) {
+    padding-bottom: 20px;
+    @media (min-width:575px) {
       font-size: 40px;
+      padding-bottom: 30px;
     }
     @media (min-width:768px) {
       font-size: 50px;
       
     }
     @media (min-width:992px) {
+      padding-bottom: 40px;
       font-size: 60px;
       
     }
