@@ -3,6 +3,8 @@
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
 {% import "pages/landing-4/_service.njk" as ServiceSection %}
 {% import "pages/landing-4/_post.njk" as PostSection %}
+{% import "pages/landing-4/_about.njk" as AboutSection %}
+{% import "pages/landing-4/_blogs.njk" as BlogsSection %}
 {% import "pages/landing-4/_contact.njk" as ContactSection %}
 {% import "pages/landing-4/_footer.njk" as FooterSection %}
 
@@ -13,6 +15,12 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Blogs Section Start -->
+  {{BlogsSection.render()}}
+  <!-- Blogs Section End -->
   <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
