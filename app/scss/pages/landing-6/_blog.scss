@@ -3,7 +3,12 @@
 }
 .law-section-title{
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
   margin-bottom: 50px;
+  @media (max-width: 991px) {
+    margin-bottom: 35px;
+  }
 }
 
 .law-blog{
@@ -63,14 +68,24 @@ a.law-icon-blue-btn {
   line-height: 1;
   align-items: center;
   width: 157px;
+  transition: all 0.4s;
   justify-content: center;
   text-transform: uppercase;
   color: var(--bs-primary-500);
   border: 2px solid var(--bs-primary-50);
   font-family: 'Barlow', sans-serif;
+  &:hover{
+    color: white;
+    border: 2px solid var(--bs-primary-500);
+    background-color: var(--bs-primary-500);
+  }
+  &:hover path{
+    stroke: white;
+  }
   svg{
     margin-left: 7px;
     path{
+      transition: all 0.4s;
       stroke: var(--bs-primary-500);
     }
   }
