@@ -1,3 +1,11 @@
+.law-awards-section{
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
+}
+
 .law-awards{
   &-item{
     display: flex;
@@ -95,6 +103,7 @@
     }
     p{
       color: var(--bs-gray-500);
+      font-family: 'Barlow', sans-serif;
     }
   }
 }

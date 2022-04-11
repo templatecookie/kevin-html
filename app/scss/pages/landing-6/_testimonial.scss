@@ -1,52 +1,17 @@
-.section-title{
-  max-width: 480px;
-  margin: 0 auto 60px;
-  text-align: center;
-  @media (max-width:991px) {
-    margin: 0 auto 40px;
-  }
 
-  h2{
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    color: var(--bs-gray-900);
-    margin-bottom: 32px;
-    font-family: 'Cardo', serif;
-    @media (max-width:991px) {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    @media (max-width:479px) {
-      font-size: 36px;
-      line-height: 48px;
-    }
-  }
-  p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--bs-gray-600);
-  }
-}
-
-.section-padding{
-  padding: 124px 0;
-  @media (max-width: 991px) {
-    padding: 100px 0;
-  }
-  @media (max-width: 767px) {
-    padding: 80px 0;
-  }
-}
-.flc-testimonial-section{
+.law-testimonial-section{
   box-shadow: inset 0px 1px 0px #e6e8eb;
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
 }
-.flc-testimonial{
+.law-testimonial{
   &-slider{
     &-item{
       text-align: center;
-      padding: 0px 130px;
+      padding: 0px 110px;
       @media (max-width: 1199px) {
         padding: 0;
       }
@@ -58,6 +23,7 @@
         font-size: 24px;
         line-height: 32px;
         color: var(--bs-gray-900) ;
+        font-family: 'Barlow', sans-serif;
         @media (max-width: 991px) {
           font-size: 20px;
         }
@@ -73,12 +39,14 @@
       color: var(--bs-gray-900) ;
       margin-bottom: 6px;
       display: block;
+      font-family: 'Barlow', sans-serif;
     }
     p{
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       color: var(--bs-gray-500);
+      font-family: 'Barlow', sans-serif;
     }
   }
 }
@@ -115,3 +83,10 @@
   }
 }
 
+.law-testimonial-slider{
+  .prev-arrow, 
+  .next-arrow {
+    border: 2px solid var(--bs-primary-50);
+    background-color: var(--bs-primary-50);
+  }
+}

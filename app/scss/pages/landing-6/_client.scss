@@ -1,4 +1,9 @@
 .law-client-section{
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
   h3{
     line-height: 1.25;
     font-weight: 400;

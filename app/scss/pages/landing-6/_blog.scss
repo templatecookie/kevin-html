@@ -1,5 +1,10 @@
 .law-blog-section{
   background-color: var(--bs-gray-50);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
 }
 .law-section-title{
   text-align: center;
@@ -8,6 +13,25 @@
   margin-bottom: 50px;
   @media (max-width: 991px) {
     margin-bottom: 35px;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--bs-gray-900);
+    font-family: 'Barlow', sans-serif;
+    @media (max-width: 557px) {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--bs-gray-700);
+    font-family: 'Barlow', sans-serif;
   }
 }
 
@@ -47,7 +71,7 @@
       margin-bottom: 12px;
       font-family: 'Barlow', sans-serif;
       a{
-        color: var(--bs-gray-700);
+        color: var(--bs-gray-900);
       }
     }
     p{
@@ -55,6 +79,7 @@
       font-size: 16px;
       line-height: 1.5;
       margin-bottom: 24px;
+      color: var(--bs-gray-700);
       font-family: 'Barlow', sans-serif;
     }
   }

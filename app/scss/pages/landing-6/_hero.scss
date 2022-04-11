@@ -1,23 +1,5 @@
 
-h2{
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.2;
-  margin-bottom: 24px;
-  color: var(--bs-gray-900);
-  font-family: 'Barlow', sans-serif;
-  @media (max-width: 557px) {
-    font-size: 30px;
-    margin-bottom: 16px;
-  }
-}
-p{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--bs-gray-700);
-  font-family: 'Barlow', sans-serif;
-}
+
 
 .law-section-padding{
   padding: 100px 0;
@@ -30,14 +12,14 @@ p{
 }
 
 .law-hero-section{
-  background-color: var(--bs-secondary-50)
-}
-.container{
-  @media (min-width: 1400px) {
-    max-width: 1170px;
+  background-color: var(--bs-secondary-50);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
   }
-  
 }
+
 .law-hero{
   &-content{
     @media (max-width: 991px) {
