@@ -1,0 +1,51 @@
+{% macro render(args) %}
+  <div class="law-contact-section law-section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+            <div class="law-contact-form">
+              <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Adrees">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="#" id="#">
+                                <option data-display="Pricing Plans" value="1">Pricing Plans</option>
+                                <option value="2">$100</option>
+                                <option value="3">$100</option>
+                                <option value="4">$100</option>
+                                <option value="5">$100</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <input id="datepicker" class="form-control" placeholder="Date" />
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                              <textarea name="#" class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

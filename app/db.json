@@ -4,8 +4,7 @@
 		"header_double_button": false,
 		"absolute_header": false,
 		"header_button": true,
-		"root": "./image/l-1/me.png",
-		"logoNeme": "Jamel Eusebio",
+		"root": "<img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>",
 		"additional_button_classes": "site-header__btns--01",
 		"header_button_class": "d-btn d-btn-primary",
 		"header_button_text": "Contact"
@@ -15,10 +14,19 @@
 		"header_double_button": false,
 		"absolute_header": true,
 		"header_button": true,
-		"root": "./image/l-4/logo.png",
-		"logoNeme": "Robert Warren",
+		"root": "<img src='./image/l-4/logo.png' alt='logo'> <span class='text'>Robert Warren</span>",
 		"additional_button_classes": "site-header__btns--01",
-		"header_button_class": "p-btn p-btn-primary",
+		"header_button_class": "pg-btn pg-btn-primary",
 		"header_button_text": "<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
+	},
+	"siteHeaderFive": {
+		"additional_header_class": "site-header--menu-right doctor-header mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": true,
+		"root": "<span class='text'>RALPH <br> EDWARDS.</span>",
+		"additional_button_classes": "site-header__btns--01 ms-lg-4",
+		"header_button_class": "dc-btn dc-btn-primary w-107",
+		"header_button_text": "Contact"
 	}
 }

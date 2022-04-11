@@ -3,6 +3,12 @@
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
 {% import "pages/landing-4/_gallery.njk" as GallerySection %}
 {% import "pages/landing-4/_pricing.njk" as PricingSection %}
+{% import "pages/landing-4/_service.njk" as ServiceSection %}
+{% import "pages/landing-4/_post.njk" as PostSection %}
+{% import "pages/landing-4/_about.njk" as AboutSection %}
+{% import "pages/landing-4/_blogs.njk" as BlogsSection %}
+{% import "pages/landing-4/_contact.njk" as ContactSection %}
+{% import "pages/landing-4/_footer.njk" as FooterSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -17,4 +23,22 @@
   <!-- Pricing Section Start -->
   {{PricingSection.render()}}
   <!-- Pricing Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Blogs Section Start -->
+  {{BlogsSection.render()}}
+  <!-- Blogs Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
+  <!-- Post Section Start -->
+  {{PostSection.render()}}
+  <!-- Post Section End -->
+  <!-- Contact Section Start -->
+  {{ContactSection.render()}}
+  <!-- Contact Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
 {% endblock %}

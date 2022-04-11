@@ -241,7 +241,7 @@
         white-space:nowrap;
         font-weight: 700;
         font-size: 18px;
-        @media (min-width:992px) {
+        @media (min-width:575px) {
           font-size: 24px;
         }
       }
@@ -269,7 +269,7 @@
         font-weight: 600;
         font-family:'Barlow', sans-serif;
         font-size: 18px;
-        @media (min-width:992px) {
+        @media (min-width:575px) {
           font-size: 24px;
         }
       }
@@ -283,6 +283,50 @@
       color: var(--bs-gray-400);
       &:hover{
         color: white;
+      }
+    }
+  }
+}
+.doctor-header{
+    margin: 32px 0;
+    .site-navbar{
+      align-items: end;
+    }
+  .site-header__brand{
+    .logo{
+      display: block;
+      padding: 20px;
+      background: var(--bs-gray-900);
+      padding-top: 45px;
+      @media (min-width:992px) {
+        padding-top: 56px;
+      }
+      .text{
+        font-family: 'JetBrains Mono', sans-serif;
+        font-weight: 700;
+        line-height: 108%;
+        color: white;
+        font-size: 18px;
+        @media (min-width:575px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .site-menu-main{
+    @media (min-width:992px) {
+      border-right: 1px solid var(--bs-gray-100);
+      padding-right: 12px;
+    }
+    .nav-link-item{
+      font-weight: 500;
+      font-size: 16px;
+      padding: 8px 16px;
+      line-height: 24px;
+      font-family:'Barlow', sans-serif;
+      color: var(--bs-gray-700);
+      &:hover{
+        background: var(--bs-secondary-200);
       }
     }
   }
