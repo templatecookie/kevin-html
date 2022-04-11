@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Kevin - Personal Portfolio Template
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Section Start -->
+    <!-- Header Section End -->
+    <!-- Header Section Start -->
+    <div class="law-hero-section law-section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-7 d-flex align-items-center">
+            <div class="law-hero-content">
+              <h1>Hello, I’m a professional lawyer for almost <span> 13 years.</span></h1>
+              <p>Phasellus malesuada nibh sit amet leo blandit finibus. Ut lorem neque, egestas vel nisi ut, pharetra venenatis enim.</p>
+              <div class="law-btn-wrap">
+                <a class="law-default-btn icon-right" href="">
+                  Book Appointments
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#132238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#132238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="law-default-btn icon-left" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1777E5" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path d="M15 12L10.5 9V15L15 12Z" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Customer Feedback
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-5">
+            <div class="law-hero-thumb">
+              <img src="./image/lawyer/hero-thumb.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Section End -->
+    <!-- About Section Start -->
+    <!-- About Section End -->
+    <!-- ClientSection Start -->
+    <!-- ClientSection End -->
+    <!-- Workprocess Start -->
+    <!-- Workprocess End -->
+    <!-- CtaSection Start -->
+    <!-- CtaSection End -->
+    <!-- Case Study Section Start -->
+    <!-- Case Study Section End -->
+    <!-- Service Section Start -->
+    <!-- Service Section End -->
+    <!-- Testimonial Section Start -->
+    <!-- Testimonial Section End -->
+    <!-- Footer Section Start -->
+    <!-- Footer Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="./plugins/gijgo/js/gijgo.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

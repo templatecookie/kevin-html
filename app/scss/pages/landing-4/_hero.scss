@@ -26,6 +26,17 @@
             @media (min-width:768px) {
                 margin-top: 32px;
             }
+            a{
+                &:hover{
+                    border-color: white !important;
+                    color: white;
+                    svg{
+                        path{
+                            stroke: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }
