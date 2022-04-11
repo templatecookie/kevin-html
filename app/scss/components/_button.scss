@@ -77,12 +77,12 @@
       }
     }
     &:hover{
-      border-color: white;
+      border-color: var(--bs-success-500);
       background: transparent;
-      color: white;
+      color: var(--bs-success-500);
       svg{
         path{
-          stroke: white;
+          stroke: var(--bs-success-500);
         }
       }
     }

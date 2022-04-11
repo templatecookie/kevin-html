@@ -1,0 +1,44 @@
+{% extends "template.njk" %}
+{# {% import "components/Header/_header.njk" as Header %} #}
+{% import "pages/landing-6/_hero.njk" as HeroSection %}
+{# {% import "pages/landing-6/_about.njk" as AboutSection %}
+{% import "pages/landing-6/_client.njk" as ClientSection %}
+{% import "pages/landing-6/_work-process.njk" as WpSection %}
+{% import "pages/landing-6/_cta.njk" as CtaSection %}
+{% import "pages/landing-6/_case-study.njk" as CaseStudySection %}
+{% import "pages/landing-6/_service.njk" as ServiceSection %}
+{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
+{% import "pages/landing-6/_footer.njk" as FooterSection %} #}
+{% block main %}
+  <!-- Header Section Start -->
+  {# {{Header.render(siteHeaderOne)}} #}
+  <!-- Header Section End -->
+  
+  <!-- Header Section Start -->
+  {{HeroSection.render()}}
+  <!-- Header Section End -->
+  <!-- About Section Start -->
+  {# {{AboutSection.render()}} #}
+  <!-- About Section End -->
+  <!-- ClientSection Start -->
+  {# {{ClientSection.render()}} #}
+  <!-- ClientSection End -->
+  <!-- Workprocess Start -->
+  {# {{WpSection.render()}} #}
+  <!-- Workprocess End -->
+  <!-- CtaSection Start -->
+  {# {{CtaSection.render()}} #}
+  <!-- CtaSection End -->
+  <!-- Case Study Section Start -->
+  {# {{CaseStudySection.render()}} #}
+  <!-- Case Study Section End -->
+  <!-- Service Section Start -->
+  {# {{ServiceSection.render()}} #}
+  <!-- Service Section End -->
+  <!-- Testimonial Section Start -->
+  {# {{TestimonialSection.render()}} #}
+  <!-- Testimonial Section End -->
+  <!-- Footer Section Start -->
+  {# {{FooterSection.render()}} #}
+  <!-- Footer Section End -->
+{% endblock %}
