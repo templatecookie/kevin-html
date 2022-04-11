@@ -288,7 +288,10 @@
   }
 }
 .doctor-header{
-    margin: 32px 0;
+    margin: 22px 0;
+    @media (min-width:992px) {
+      margin: 32px 0;
+    }
     .site-navbar{
       align-items: end;
     }
