@@ -10,7 +10,10 @@
     .doctor-section-title{
         text-align: left;
         .title{
-            font-size: 36px;
+            font-size: 24px;
+            @media (min-width: 768px){
+                font-size: 36px;
+            }
             @media (min-width: 1400px){
                 font-size: 48px;
             }
@@ -85,7 +88,7 @@
                     padding: 0;
                     border-radius: 500px;
                     background: var(--bs-gray-200)!important;
-                    opacity: 0.2;
+                    opacity: 1;
                     color: transparent;
                     font-size: 0;
                     transition: .3s;
@@ -96,11 +99,13 @@
                 }
         
                 &.slick-active {
-                    background: var(--bs-gray-900)!important;
-                    opacity: 1;
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 500px;
+                    button{
+                        background: var(--bs-gray-900)!important;
+                        opacity: 1;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 500px;
+                    }
                 }
             }
         }
@@ -113,6 +118,12 @@
             flex-direction: column;
             margin-bottom: 12px;
             @media (min-width: 425px){
+                flex-direction: row;
+            }
+            @media (min-width: 768px){
+                flex-direction: column;
+            }
+            @media (min-width: 992px){
                 flex-direction: row;
             }
             p{

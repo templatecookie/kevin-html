@@ -14,7 +14,7 @@
         .doctor-footer{
             .site-footer__brand{
                 .logo{
-                    display: block;
+                    display: inline-block;
                     padding: 20px;
                     background: white;
                     padding-top: 45px;
@@ -28,6 +28,10 @@
             }
         }
         .footer-widget{
+            margin-top: 20px;
+            @media(min-width: 992px){
+                margin-top: 0px;
+            }
             .widget-title{
                 color: white;
                 font-weight: 500;
@@ -46,7 +50,14 @@
                     margin: 0;
                     padding: 0;
                     li{
-                        display: inline-block;
+                        display: block;
+                        margin: 0;
+                        margin-bottom: 12px;
+                        padding: 0;
+                        @media (min-width: 992px){
+                            display: inline-block;
+                            margin-bottom: 0px;
+                        }
                         a{
                             
                             font-weight: 600;
@@ -67,6 +78,7 @@
                     padding: 0;
                         li{
                             display: inline-block;
+                            
                             a{
                                 color: white;
                                 padding: 14px;
@@ -80,7 +92,6 @@
             }
         }
         .footer-widget-one{
-            padding-left: 24px;
             @media(min-width: 992px){
                 padding-left: 48px;
             }
@@ -91,9 +102,12 @@
         .text{
             text-align: center;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 1.5;
             color: var(--bs-gray-300);
+            @media(min-width: 992px){
+                font-size: 16px;
+            }
         }
     }
 }
