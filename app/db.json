@@ -16,7 +16,7 @@
 		"header_button": true,
 		"root": "<div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline' alt='logo'></div> <div class='text-wrapper'><p>Hano Kurou</p><span>UI/ux designer</span></div>",
 		"additional_button_classes": "ui-header-btn",
-		"header_button_class": "ui-btn ui-btn-primary ms-3",
+		"header_button_class": "ui-btn ui-btn-primary ms-lg-3",
 		"header_button_text": "<img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message"
 	},
 	"siteHeaderFour": {

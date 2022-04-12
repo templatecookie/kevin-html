@@ -1,1 +1,61 @@
 
+.ui-hero-area{
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    @media (min-width:575px) {
+        padding-top: 80px;
+    }
+    @media (min-width:992px) {
+        padding: 0;
+    }
+    .ui-display-title{
+        @media (min-width:1400px) {
+            padding-top: 200px;
+        }
+    }
+    .buttton-group{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-top: 32px;
+        @media (max-width:480px) {
+            flex-direction: column;
+        }
+    }
+    &__image-group{
+        position: relative;
+        &--ellipse{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            z-index: -1;
+            img{
+                width: 100%;
+            }
+        }
+        @media (min-width:1400px) {
+            margin-right: -6px;
+        }
+    }
+    &__ellipse-1{
+        top: 0;
+        left: 0;
+        width: 28%;
+        z-index: -1;
+    }
+    &__ellipse-2{
+        top: 0;
+        right: 0;
+        width: 30%;
+        z-index: -1;
+    }
+    &__ellipse-3{
+        bottom: 0;
+        left: 0;
+        width: 24.5%;
+        z-index: -1;
+    }
+}
