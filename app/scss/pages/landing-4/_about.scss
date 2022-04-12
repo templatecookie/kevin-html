@@ -46,6 +46,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 text-align: center;
+                padding: 0;
                 margin: 20px 0px;
                 @media (min-width: 525px){
                     display: grid;
@@ -61,7 +62,7 @@
                 }
                 
                 li{
-                    margin-bottom: 0px;
+                    margin-bottom: 10px;
                     @media (min-width: 768px){
                         margin-bottom: 8px;
                     }
@@ -159,6 +160,11 @@
         .photographer-contact-info{
             display: flex;
             align-items: center;
+            flex-direction: column;
+            padding-left: 0px;
+            @media (min-width: 425px){
+                flex-direction: row;
+            }
             .git-btn{
                 .pg-btn {
                     padding: 10px 20px;
@@ -204,10 +210,13 @@
             }
             .social-btn{
                 list-style: none;
-                padding-left: 24px;
+                padding-left: 0px;
                 margin: 0;
                 display: flex; 
-                align-items: center;   
+                align-items: center; 
+                @media (min-width: 425px) {
+                    padding-left: 24px;
+                }  
                     li{
                         align-self: center;
                         padding-top: 6px;

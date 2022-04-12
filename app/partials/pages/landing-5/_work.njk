@@ -1,0 +1,81 @@
+{% macro render(args) %}
+    <div class="doctor-work-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <div class="doctor-section-title">
+                        <h2 class="title">My Working History</h2>
+                        <span class="line"></span>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus leo vel augue suscipit bibendum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="doctor-work-area__slider">
+                <div class="doctor-work-slider">
+                    <div class="single-item">
+                        <a href="#" class="doctor-work-card d-block">
+                            <div class="image">
+                                <img src="./image/l-5/01.png" alt="image" class="w-100">
+                            </div>
+                            <div class="content">
+                                <span class="subtitle text-primary-500">CURRENTLY WORKING</span>
+                                <h2 class="title">Singapore General Hospital</h2>
+                                <p class="text">Donec ut imperdiet augue, ac rhoncus arcu. In ac mauris commodo, ultrices felis vitae, tempor eros.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-item">
+                        <a href="#" class="doctor-work-card d-block">
+                            <div class="image">
+                                <img src="./image/l-5/02.png" alt="image" class="w-100">
+                            </div>
+                            <div class="content">
+                                <span class="subtitle text-gray-500">Jan,2019 to March,2021</span>
+                                <h2 class="title">University of Tokyo Hospital</h2>
+                                <p class="text">Donec ut imperdiet augue, ac rhoncus arcu. In ac mauris commodo, ultrices felis vitae, tempor eros.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-item">
+                        <a href="#" class="doctor-work-card d-block">
+                            <div class="image">
+                                <img src="./image/l-5/03.png" alt="image" class="w-100">
+                            </div>
+                            <div class="content">
+                                <span class="subtitle text-gray-500">Mar,2017 to Dec,2018</span>
+                                <h2 class="title">Johns Hopkins Hospital</h2>
+                                <p class="text">Donec ut imperdiet augue, ac rhoncus arcu. In ac mauris commodo, ultrices felis vitae, tempor eros.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="single-item">
+                        <a href="#" class="doctor-work-card d-block">
+                            <div class="image">
+                                <img src="./image/l-5/02.png" alt="image" class="w-100">
+                            </div>
+                            <div class="content">
+                                <span class="subtitle text-gray-500">Jan,2019 to March,2021</span>
+                                <h2 class="title">University of Tokyo Hospital</h2>
+                                <p class="text">Donec ut imperdiet augue, ac rhoncus arcu. In ac mauris commodo, ultrices felis vitae, tempor eros.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="doctor-work-slider__control-buttons">
+                    <button class="button button--prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.25 12H3.75" stroke="#132238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#132238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    <button class="button button--next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 12H20.25" stroke="#132238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#132238" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

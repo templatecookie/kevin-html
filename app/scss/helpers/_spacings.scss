@@ -28,6 +28,14 @@
   }
 }
 
+.doctor-card-row {
+  margin-bottom: -64px;
+
+  [class^="col"] {
+    margin-bottom: 64px;
+  }
+}
+
 .featre-card-bottom {
   margin-bottom: -50px;
 

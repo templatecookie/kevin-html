@@ -1,6 +1,9 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-5/_hero.njk" as HeroSection %}
+{% import "pages/landing-5/_about.njk" as AboutSection %}
+{% import "pages/landing-5/_work.njk" as WorkSection %}
+{% import "pages/landing-5/_award.njk" as AwardSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -9,4 +12,13 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render()}}
+  <!-- Work Section End -->
+  <!-- Award Section Start -->
+  {{AwardSection.render()}}
+  <!-- Award Section End -->
 {% endblock %}

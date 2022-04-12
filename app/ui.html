@@ -1,0 +1,16 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-2/_hero.njk" as HeroSection %}
+{% import "pages/landing-2/_logo.njk" as LogoSection %}
+
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderTwo)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Logo Section Start -->
+  {{LogoSection.render()}}
+  <!-- Logo Section End -->
+{% endblock %}
