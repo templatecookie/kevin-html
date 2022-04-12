@@ -88,6 +88,37 @@
     }
   }
 }
+.dc-btn {
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-flex;
+  font-family: 'JetBrains Mono', sans-serif;
+  padding: 1.2em 1.9em;
+  line-height: 1;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  &:active{
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  &.dc-btn-primary{
+    border: 2px solid var(--bs-secondary-500);
+    background: var(--bs-secondary-500);
+    color: var(--bs-gray-900);
+    &:hover{
+      background: white;
+    }
+  }
+}
 button {
   &:focus {
     outline: none;
@@ -152,3 +183,4 @@ margin-right: 12px;
     }
   }
 }
+

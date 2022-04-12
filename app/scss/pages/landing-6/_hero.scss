@@ -1,3 +1,6 @@
+
+
+
 .law-section-padding{
   padding: 100px 0;
   @media (max-width:991px) {
@@ -9,14 +12,14 @@
 }
 
 .law-hero-section{
-  background-color: var(--bs-secondary-50)
-}
-.container{
-  @media (min-width: 1400px) {
-    max-width: 1170px;
+  background-color: var(--bs-secondary-50);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
   }
-  
 }
+
 .law-hero{
   &-content{
     @media (max-width: 991px) {
