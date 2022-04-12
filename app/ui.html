@@ -1,7 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-2/_hero.njk" as HeroSection %}
-{% import "pages/landing-2/_logo.njk" as LogoSection %}
+{% import "pages/landing-2/_project.njk" as ProjectSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -10,7 +10,7 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- Logo Section Start -->
-  {{LogoSection.render()}}
-  <!-- Logo Section End -->
+  <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
 {% endblock %}
