@@ -9,12 +9,14 @@
     }
     .photographer-section-title{
         .title{
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 1.22;
             text-align: center;
-            color: var(--bs-gray-900);
-            margin-bottom: 50px;
+            margin-bottom: 15px;
+            @media(min-width:768px){
+                margin-bottom: 30px;
+            }
+            @media(min-width: 992px){
+                margin-bottom: 50px;
+            }
         }
         
     }

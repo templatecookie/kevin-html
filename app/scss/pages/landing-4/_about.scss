@@ -166,6 +166,10 @@
                 flex-direction: row;
             }
             .git-btn{
+                margin-bottom: 20px;
+                @media (min-width: 425px){
+                    margin-bottom: 0px;
+                }
                 .pg-btn {
                     padding: 8px 12px;
                     font-size: 12px;
@@ -189,6 +193,7 @@
                     }
                     &.pg-btn-primary{
                       border: 2px solid var(--bs-success-500);
+                      border-radius: 100px;
                       background: var(--bs-success-500);
                       color: white;
                       svg{
@@ -225,7 +230,7 @@
                 align-items: center;
                 gap: 12px;
                 flex-wrap: wrap;
-                @media(min-width:992px){
+                @media(min-width:425px){
                     margin-left: 12px;
                 }
                 @media(min-width:1200px){
