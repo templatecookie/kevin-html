@@ -102,6 +102,43 @@
                 ],
             });
     }
+    if (jQuery(".doctor-event-slider").length > 0) {
+        $(".doctor-event-slider")
+            .not(".slick-initialized")
+            .slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                prevArrow: $(".doctor-event-slider__control-buttons .button--prev"),
+                nextArrow: $(".doctor-event-slider__control-buttons .button--next"),
+                responsive: [{
+                        breakpoint: 1399,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+    }
     if (jQuery(".dev-testimonial-slider").length > 0) {
         $(".dev-testimonial-slider")
             .not(".slick-initialized")

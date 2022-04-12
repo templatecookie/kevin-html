@@ -4,6 +4,9 @@
 {% import "pages/landing-5/_about.njk" as AboutSection %}
 {% import "pages/landing-5/_work.njk" as WorkSection %}
 {% import "pages/landing-5/_award.njk" as AwardSection %}
+{% import "pages/landing-5/_event.njk" as EventSection %}
+{% import "pages/landing-5/_cta.njk" as CtaSection %}
+{% import "pages/landing-5/_footer.njk" as FooterSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,4 +24,13 @@
   <!-- Award Section Start -->
   {{AwardSection.render()}}
   <!-- Award Section End -->
+  <!-- Event Section Start -->
+  {{EventSection.render()}}
+  <!-- Event Section End -->
+  <!-- CTA Section Start -->
+  {{CtaSection.render()}}
+  <!-- CTA Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
 {% endblock %}
