@@ -10,15 +10,21 @@
     }
     .photographer-section-title{
             margin-bottom: 50px;
-     
     }
-    a{
+    .gellery-btn{
+        display: flex;
+        margin-bottom: 20px;
+        @media(min-width:768){
+            justify-content: start;
+        }
+    }
+    .gallery-img a{
         margin-bottom: 24px;
         display: block;
         width: 100%;
     }
     
-    @media (max-width:425px){
+    @media (max-width:575px){
         .col{
             padding-left: .5rem;
             padding-right: .5rem;

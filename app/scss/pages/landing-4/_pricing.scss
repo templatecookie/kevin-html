@@ -20,13 +20,18 @@
         @media (max-width:1024px) {
             padding: 15px;
         }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
         .price{
             font-family: 'Barlow', sans-serif;
             font-weight: 600;
             font-size: 32px;
             line-height: 1.25;
             color: var(--bs-success-500);
-            padding-bottom: 24px;
         }
         .recomend{
             border-radius: 50px !important;
@@ -62,6 +67,7 @@
             padding-bottom: 12px;
         }
         .description{
+            font-family: 'Barlow', sans-serif;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.5;
@@ -74,6 +80,8 @@
             padding-top: 32px;
             padding-left: 0;
             li{
+                display: flex;
+                align-items: center;
                svg{
                    margin-right: 11px;
                }
@@ -86,7 +94,11 @@
                 del{
                     color: var(--bs-gray-300);
                 }
+                &:last-child{
+                    padding-bottom: 32px;
+                }
             }
         }
+       
     }
 }
