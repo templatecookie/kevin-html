@@ -1,0 +1,44 @@
+.doctor-testimonial-area{
+    padding: 100px 0;
+    background-color: #132238;
+    &__review{
+        padding: 100px 10px 100px 0;
+        .title{
+            font-family: 'JetBrains Mono';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: var(--bs-secondary-500);
+            padding-bottom: 50px;
+        }
+        .text{
+            font-family: 'JetBrains Mono';
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 1.25;
+            color: white;
+            padding-bottom: 50px;
+        }
+        .name{
+            font-family: 'JetBrains Mono';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.33;
+            color: white;
+            padding-bottom: 10px;
+        }
+        .designation{
+            font-family: 'JetBrains Mono';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: var(--bs-gray-300);
+        }
+    }
+    &__client{
+        display: flex;
+        justify-content: end;
+    }
+}
