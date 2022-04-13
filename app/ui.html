@@ -1,7 +1,10 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-2/_hero.njk" as HeroSection %}
-{% import "pages/landing-2/_logo.njk" as LogoSection %}
+{% import "pages/landing-2/_project.njk" as ProjectSection %}
+{% import "pages/landing-2/_about.njk" as AboutSection %}
+{% import "pages/landing-2/_award.njk" as AwardSection %}
+{% import "pages/landing-2/_service.njk" as ServiceSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -10,7 +13,16 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- Logo Section Start -->
-  {{LogoSection.render()}}
-  <!-- Logo Section End -->
+  <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Award Section Start -->
+  {{AwardSection.render()}}
+  <!-- Award Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
 {% endblock %}
