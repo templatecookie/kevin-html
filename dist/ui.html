@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Kevin - Personal Portfolio Template
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Section Start -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right ui-header mobile-menu-trigger-dark">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html" class="logo">
+              <div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline' alt='logo'></div>
+              <div class='text-wrapper'>
+                <p>Hano Kurou</p><span>UI/ux designer</span>
+              </div>
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Home</i>
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Project
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Services
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Resume
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Testimonial
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">About
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Article
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button header-btn ui-header-btn">
+              <a class="ui-btn ui-btn-primary ms-lg-3" href="">
+                <img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Header Section End -->
+    <!-- Hero Section Start -->
+    <div class="position-relative">
+      <div class="ui-hero-area">
+        <div class="container">
+          <div class="row justify-content-center align-items-center align-items-xxl-start">
+            <div class="col-xxl-5 col-lg-7 col-xs-11 col-sm-10">
+              <div class="ui-display-title text-center text-xs-start">
+                <h1 class="title">
+                  👋 Hey There, I’m <span>Hano kurōu</span>
+                </h1>
+                <p class="text">Product Designer and UI/UX in Tokyo. I’m specialize in User Experience Design, User Research, Product Design, and User Interface Design.</p>
+                <div class="buttton-group">
+                  <a href="#" class="ui-btn ui-btn-primary">View Projects
+                    <svg width="24" class="ms-2" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <a href="#" class="ui-btn ui-btn-primary">
+                    <svg width="24" class="me-2" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12 3.75V14.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Download CV
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-md-6 col-sm-8 col-9 col-lg-5 offset-xxl-1">
+              <div class="ui-hero-area__image-group">
+                <img src="./image/l-2/me.png" alt="me" class="mw-100">
+                <div class="ui-hero-area__image-group--ellipse">
+                  <img src="./image/l-2/ellipse-4.png" alt="ellipse">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-hero-area__ellipse-1 position-absolute">
+          <img src="./image/l-2/ellipse-1.png" alt="ellipse" class="w-100">
+        </div>
+        <div class="ui-hero-area__ellipse-2 position-absolute">
+          <img src="./image/l-2/ellipse-2.png" alt="ellipse" class="w-100">
+        </div>
+        <div class="ui-hero-area__ellipse-3 position-absolute">
+          <img src="./image/l-2/ellipse-3.png" alt="ellipse" class="w-100">
+        </div>
+      </div>
+      <div class="ui-logo-area">
+        <div class="container">
+          <div class="ui-logo-area-title text-center text-md-start">
+            <h2 class="title">I work with over 279+ happy <br class="d-none d-xs-block">clients all over the world.</h2>
+          </div>
+          <div class="row card-row">
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/dribbble.png" alt="dribbble" class="mx-100">
+              </div>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/microsoft.png" alt="microsoft" class="mx-100">
+              </div>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/spotify.png" alt="spotify" class="mx-100">
+              </div>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/medium.png" alt="medium" class="mx-100">
+              </div>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/tumblr.png" alt="tumblr" class="mx-100">
+              </div>
+            </div>
+            <div class="col-6 col-xs-4 col-lg-2">
+              <div class="ui-single-logo">
+                <img src="./image/l-2/google.png" alt="google" class="mx-100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Project Section Start -->
+    <div class="ui-project-area">
+      <div class="container-fluid">
+        <div class="ui-section-title">
+          <h2 class="title m-0">Recent Project</h2>
+        </div>
+        <div class="ui-project-area__slider">
+          <div class="ui-project-slider--half-fluid">
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-1.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Design / Brand Identity</span>
+                  </div>
+                  <h2 class="title">Merry Christmas - Website</h2>
+                  <p class="text">Nitrx is global social networking website admin dashboard. Designed to track users, post, story & daily Activities. Hope you guys like it.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-2.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Desing / UX Design</span>
+                  </div>
+                  <h2 class="title">Relik - Admin Dashboard</h2>
+                  <p class="text">👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-3.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>Web Design / UX Design</span>
+                  </div>
+                  <h2 class="title">Jobpilot - Job Portal</h2>
+                  <p class="text">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-2.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Desing / UX Design</span>
+                  </div>
+                  <h2 class="title">Relik - Admin Dashboard</h2>
+                  <p class="text">👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-3.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>Web Design / UX Design</span>
+                  </div>
+                  <h2 class="title">Jobpilot - Job Portal</h2>
+                  <p class="text">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-1.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Design / Brand Identity</span>
+                  </div>
+                  <h2 class="title">Merry Christmas - Website</h2>
+                  <p class="text">Nitrx is global social networking website admin dashboard. Designed to track users, post, story & daily Activities. Hope you guys like it.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-2.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Desing / UX Design</span>
+                  </div>
+                  <h2 class="title">Relik - Admin Dashboard</h2>
+                  <p class="text">👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-3.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>Web Design / UX Design</span>
+                  </div>
+                  <h2 class="title">Jobpilot - Job Portal</h2>
+                  <p class="text">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-1.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Design / Brand Identity</span>
+                  </div>
+                  <h2 class="title">Merry Christmas - Website</h2>
+                  <p class="text">Nitrx is global social networking website admin dashboard. Designed to track users, post, story & daily Activities. Hope you guys like it.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="ui-project-card">
+                <div class="card-image">
+                  <img src="./image/l-2/project-2.png" alt="projec" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="meta">
+                    <span>UI Desing / UX Design</span>
+                  </div>
+                  <h2 class="title">Relik - Admin Dashboard</h2>
+                  <p class="text">👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.</p>
+                  <a href="#" class="link-btn">View Case Study <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui-project-slider--half-fluid__control-buttons">
+            <button class="button button--prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.25 12H3.75" stroke="#8A43FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#8A43FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="button button--next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Section End -->
+    <!-- About Section Start -->
+    <div class="ui-about-area">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-7 col-md-10 col-lg-6 mb-5 mb-lg-0">
+            <div class="ui-about-area__iamge-group">
+              <img src="./image/l-2/about.png" alt="about" class="w-100">
+              <div class="social-media-group">
+                <h6 class="title">🌍 Follow me social media</h6>
+                <ul class="social-link">
+                  <li class="fb">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8548 9.99551C19.8548 4.55039 15.4406 0.13623 9.99551 0.13623C4.55039 0.13623 0.13623 4.55039 0.13623 9.99551C0.13623 15.4406 4.55039 19.8548 9.99551 19.8548C9.33243 19.8548 8.68482 19.7889 8.05841 19.664V12.157H6.45047V9.47646H8.05841V7.86737C8.05841 5.68058 8.96616 4.38041 11.5456 4.38041H13.693V7.06116H12.3507C11.3466 7.06116 11.2802 7.43556 11.2802 8.13464L11.2766 9.47625H13.7081L13.4235 12.1565H11.2766V19.772C10.9006 19.8208 10.5223 19.8481 10.1434 19.8537C15.5203 19.7747 19.8548 15.3913 19.8548 9.99551Z" fill="url(#paint0_linear_1493_5841)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_1493_5841" x1="9.99551" y1="-0.0434155" x2="9.99551" y2="20.6956" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#00B2FF" />
+                          <stop offset="1" stop-color="#006AFF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li class="twitter">
+                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.25938 18.1791C14.8261 18.1791 18.964 11.8982 18.964 6.45171C18.964 6.27333 18.9604 6.09578 18.9524 5.91895C19.7575 5.33523 20.4524 4.61248 21.0044 3.7846C20.2673 4.11294 19.4741 4.33392 18.642 4.43356C19.4913 3.9233 20.1434 3.11605 20.451 2.15382C19.6435 2.63379 18.76 2.97214 17.8388 3.1543C17.0881 2.35313 16.0194 1.85205 14.836 1.85205C12.5642 1.85205 10.722 3.6979 10.722 5.9732C10.722 6.29668 10.7581 6.61122 10.8287 6.91303C7.40968 6.74065 4.37794 5.10052 2.34894 2.60661C1.98349 3.23562 1.79128 3.95051 1.79192 4.67826C1.79192 6.10827 2.51814 7.37063 3.62257 8.10919C2.96929 8.0892 2.33035 7.9124 1.75948 7.59366C1.75886 7.61097 1.75886 7.62782 1.75886 7.64631C1.75886 9.64242 3.17685 11.309 5.05917 11.6867C4.70565 11.7832 4.34085 11.8319 3.97443 11.8317C3.70982 11.8317 3.45193 11.8056 3.2013 11.7574C3.72502 13.3951 5.24367 14.5869 7.0442 14.6202C5.6362 15.7259 3.86257 16.3845 1.93488 16.3845C1.60695 16.3847 1.2793 16.3657 0.953613 16.3274C2.77424 17.4966 4.93606 18.1788 7.25958 18.1788" fill="#1DA1F2" />
+                    </svg>
+                  </li>
+                  <li class="linkedin">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 2.52683C0 1.88498 0.225232 1.35547 0.675676 0.938288C1.12612 0.52109 1.71172 0.3125 2.43243 0.3125C3.14029 0.3125 3.71299 0.517874 4.15058 0.92866C4.60102 1.35227 4.82625 1.90423 4.82625 2.58459C4.82625 3.20075 4.60747 3.71421 4.16988 4.12499C3.71944 4.5486 3.12741 4.76041 2.39382 4.76041H2.37452C1.66666 4.76041 1.09396 4.5486 0.656371 4.12499C0.218784 3.70138 0 3.16865 0 2.52683ZM0.250965 19.375V6.51261H4.53668V19.375H0.250965ZM6.9112 19.375H11.1969V12.1928C11.1969 11.7435 11.2484 11.397 11.3513 11.1531C11.5315 10.7166 11.805 10.3476 12.1718 10.0459C12.5386 9.74424 12.9987 9.59342 13.5521 9.59342C14.9936 9.59342 15.7143 10.5626 15.7143 12.5009V19.375H20V12.0003C20 10.1005 19.5496 8.65955 18.6486 7.67754C17.7477 6.69554 16.5573 6.20453 15.0772 6.20453C13.417 6.20453 12.1236 6.91697 11.1969 8.34184V8.38035H11.1776L11.1969 8.34184V6.51261H6.9112C6.93693 6.92338 6.94981 8.20062 6.94981 10.3444C6.94981 12.4881 6.93693 15.4983 6.9112 19.375Z" fill="#006699" />
+                    </svg>
+                  </li>
+                  <li class="insta">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.66767 10C6.66767 8.15912 8.15959 6.6664 10.0005 6.6664C11.8413 6.6664 13.3341 8.15912 13.3341 10C13.3341 11.8409 11.8413 13.3336 10.0005 13.3336C8.15959 13.3336 6.66767 11.8409 6.66767 10ZM4.8656 10C4.8656 12.836 7.16447 15.1349 10.0005 15.1349C12.8365 15.1349 15.1353 12.836 15.1353 10C15.1353 7.164 12.8365 4.86512 10.0005 4.86512C7.16447 4.86512 4.8656 7.164 4.8656 10ZM14.1386 4.66152C14.1385 4.89886 14.2088 5.13089 14.3406 5.32829C14.4724 5.52568 14.6597 5.67956 14.879 5.77047C15.0982 5.86138 15.3395 5.88525 15.5723 5.83904C15.805 5.79283 16.0189 5.67862 16.1868 5.51087C16.3547 5.34311 16.4691 5.12934 16.5155 4.89658C16.5619 4.66382 16.5382 4.42253 16.4475 4.20322C16.3567 3.98392 16.203 3.79644 16.0057 3.6645C15.8084 3.53257 15.5764 3.4621 15.3391 3.462H15.3386C15.0205 3.46215 14.7154 3.58856 14.4904 3.81347C14.2654 4.03837 14.1389 4.34339 14.1386 4.66152V4.66152ZM5.96048 18.1398C4.98552 18.0954 4.4556 17.933 4.10344 17.7958C3.63656 17.614 3.30344 17.3975 2.9532 17.0478C2.60296 16.698 2.38616 16.3652 2.2052 15.8983C2.06792 15.5463 1.90552 15.0162 1.8612 14.0413C1.81272 12.9872 1.80304 12.6706 1.80304 10.0001C1.80304 7.3296 1.81352 7.01384 1.8612 5.95888C1.9056 4.98392 2.0692 4.45488 2.2052 4.10184C2.38696 3.63496 2.60344 3.30184 2.9532 2.9516C3.30296 2.60136 3.63576 2.38456 4.10344 2.2036C4.45544 2.06632 4.98552 1.90392 5.96048 1.8596C7.01455 1.81112 7.33119 1.80144 10.0005 1.80144C12.6697 1.80144 12.9867 1.81192 14.0417 1.8596C15.0166 1.904 15.5457 2.0676 15.8987 2.2036C16.3656 2.38456 16.6987 2.60184 17.0489 2.9516C17.3992 3.30136 17.6152 3.63496 17.7969 4.10184C17.9342 4.45384 18.0966 4.98392 18.1409 5.95888C18.1894 7.01384 18.1991 7.3296 18.1991 10.0001C18.1991 12.6706 18.1894 12.9863 18.1409 14.0413C18.0965 15.0162 17.9333 15.5462 17.7969 15.8983C17.6152 16.3652 17.3987 16.6983 17.0489 17.0478C16.6992 17.3972 16.3656 17.614 15.8987 17.7958C15.5467 17.933 15.0166 18.0954 14.0417 18.1398C12.9876 18.1882 12.6709 18.1979 10.0005 18.1979C7.32999 18.1979 7.01423 18.1882 5.96048 18.1398V18.1398ZM5.87768 0.06056C4.81312 0.10904 4.08568 0.27784 3.4504 0.52504C2.79248 0.78032 2.23552 1.1228 1.67896 1.67848C1.12241 2.23416 0.780807 2.792 0.525527 3.44992C0.278328 4.0856 0.109528 4.81264 0.0610482 5.8772C0.0117683 6.94344 0.000488281 7.28432 0.000488281 10C0.000488281 12.7157 0.0117683 13.0566 0.0610482 14.1228C0.109528 15.1874 0.278328 15.9144 0.525527 16.5501C0.780807 17.2076 1.12249 17.7661 1.67896 18.3215C2.23544 18.877 2.79248 19.219 3.4504 19.475C4.08688 19.7222 4.81312 19.891 5.87768 19.9394C6.94447 19.9879 7.28479 20 10.0005 20C12.7161 20 13.057 19.9887 14.1233 19.9394C15.1879 19.891 15.9149 19.7222 16.5505 19.475C17.2081 19.219 17.7654 18.8772 18.322 18.3215C18.8785 17.7658 19.2194 17.2076 19.4754 16.5501C19.7226 15.9144 19.8922 15.1874 19.9399 14.1228C19.9884 13.0558 19.9996 12.7157 19.9996 10C19.9996 7.28432 19.9884 6.94344 19.9399 5.8772C19.8914 4.81256 19.7226 4.0852 19.4754 3.44992C19.2194 2.7924 18.8776 2.23504 18.322 1.67848C17.7663 1.12192 17.2081 0.78032 16.5513 0.52504C15.9149 0.27784 15.1878 0.10824 14.1241 0.06056C13.0578 0.01208 12.7169 0 10.0013 0C7.28559 0 6.94447 0.01128 5.87768 0.06056Z" fill="url(#paint0_radial_1493_5876)" />
+                      <path d="M6.66767 10C6.66767 8.15912 8.15959 6.6664 10.0005 6.6664C11.8413 6.6664 13.3341 8.15912 13.3341 10C13.3341 11.8409 11.8413 13.3336 10.0005 13.3336C8.15959 13.3336 6.66767 11.8409 6.66767 10ZM4.8656 10C4.8656 12.836 7.16447 15.1349 10.0005 15.1349C12.8365 15.1349 15.1353 12.836 15.1353 10C15.1353 7.164 12.8365 4.86512 10.0005 4.86512C7.16447 4.86512 4.8656 7.164 4.8656 10ZM14.1386 4.66152C14.1385 4.89886 14.2088 5.13089 14.3406 5.32829C14.4724 5.52568 14.6597 5.67956 14.879 5.77047C15.0982 5.86138 15.3395 5.88525 15.5723 5.83904C15.805 5.79283 16.0189 5.67862 16.1868 5.51087C16.3547 5.34311 16.4691 5.12934 16.5155 4.89658C16.5619 4.66382 16.5382 4.42253 16.4475 4.20322C16.3567 3.98392 16.203 3.79644 16.0057 3.6645C15.8084 3.53257 15.5764 3.4621 15.3391 3.462H15.3386C15.0205 3.46215 14.7154 3.58856 14.4904 3.81347C14.2654 4.03837 14.1389 4.34339 14.1386 4.66152V4.66152ZM5.96048 18.1398C4.98552 18.0954 4.4556 17.933 4.10344 17.7958C3.63656 17.614 3.30344 17.3975 2.9532 17.0478C2.60296 16.698 2.38616 16.3652 2.2052 15.8983C2.06792 15.5463 1.90552 15.0162 1.8612 14.0413C1.81272 12.9872 1.80304 12.6706 1.80304 10.0001C1.80304 7.3296 1.81352 7.01384 1.8612 5.95888C1.9056 4.98392 2.0692 4.45488 2.2052 4.10184C2.38696 3.63496 2.60344 3.30184 2.9532 2.9516C3.30296 2.60136 3.63576 2.38456 4.10344 2.2036C4.45544 2.06632 4.98552 1.90392 5.96048 1.8596C7.01455 1.81112 7.33119 1.80144 10.0005 1.80144C12.6697 1.80144 12.9867 1.81192 14.0417 1.8596C15.0166 1.904 15.5457 2.0676 15.8987 2.2036C16.3656 2.38456 16.6987 2.60184 17.0489 2.9516C17.3992 3.30136 17.6152 3.63496 17.7969 4.10184C17.9342 4.45384 18.0966 4.98392 18.1409 5.95888C18.1894 7.01384 18.1991 7.3296 18.1991 10.0001C18.1991 12.6706 18.1894 12.9863 18.1409 14.0413C18.0965 15.0162 17.9333 15.5462 17.7969 15.8983C17.6152 16.3652 17.3987 16.6983 17.0489 17.0478C16.6992 17.3972 16.3656 17.614 15.8987 17.7958C15.5467 17.933 15.0166 18.0954 14.0417 18.1398C12.9876 18.1882 12.6709 18.1979 10.0005 18.1979C7.32999 18.1979 7.01423 18.1882 5.96048 18.1398V18.1398ZM5.87768 0.06056C4.81312 0.10904 4.08568 0.27784 3.4504 0.52504C2.79248 0.78032 2.23552 1.1228 1.67896 1.67848C1.12241 2.23416 0.780807 2.792 0.525527 3.44992C0.278328 4.0856 0.109528 4.81264 0.0610482 5.8772C0.0117683 6.94344 0.000488281 7.28432 0.000488281 10C0.000488281 12.7157 0.0117683 13.0566 0.0610482 14.1228C0.109528 15.1874 0.278328 15.9144 0.525527 16.5501C0.780807 17.2076 1.12249 17.7661 1.67896 18.3215C2.23544 18.877 2.79248 19.219 3.4504 19.475C4.08688 19.7222 4.81312 19.891 5.87768 19.9394C6.94447 19.9879 7.28479 20 10.0005 20C12.7161 20 13.057 19.9887 14.1233 19.9394C15.1879 19.891 15.9149 19.7222 16.5505 19.475C17.2081 19.219 17.7654 18.8772 18.322 18.3215C18.8785 17.7658 19.2194 17.2076 19.4754 16.5501C19.7226 15.9144 19.8922 15.1874 19.9399 14.1228C19.9884 13.0558 19.9996 12.7157 19.9996 10C19.9996 7.28432 19.9884 6.94344 19.9399 5.8772C19.8914 4.81256 19.7226 4.0852 19.4754 3.44992C19.2194 2.7924 18.8776 2.23504 18.322 1.67848C17.7663 1.12192 17.2081 0.78032 16.5513 0.52504C15.9149 0.27784 15.1878 0.10824 14.1241 0.06056C13.0578 0.01208 12.7169 0 10.0013 0C7.28559 0 6.94447 0.01128 5.87768 0.06056Z" fill="url(#paint1_radial_1493_5876)" />
+                      <defs>
+                        <radialGradient id="paint0_radial_1493_5876" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(2.6576 20.0945) scale(26.1083)">
+                          <stop offset="0.09" stop-color="#FA8F21" />
+                          <stop offset="0.78" stop-color="#D82D7E" />
+                        </radialGradient>
+                        <radialGradient id="paint1_radial_1493_5876" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12.1296 20.9905) scale(20.5769)">
+                          <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0" />
+                          <stop offset="1" stop-color="#8C3AAA" />
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li class="dribbble">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 10C0 8.18666 0.44668 6.51334 1.34 4.98C2.23334 3.44666 3.44668 2.23334 4.98 1.34C6.51334 0.44666 8.18668 0 10 0C11.8133 0 13.4867 0.44666 15.02 1.34C16.5533 2.23334 17.7667 3.44666 18.66 4.98C19.5533 6.51334 20 8.18666 20 10C20 11.8133 19.5533 13.4867 18.66 15.02C17.7667 16.5533 16.5533 17.7667 15.02 18.66C13.4867 19.5533 11.8133 20 10 20C8.18668 20 6.51334 19.5533 4.98 18.66C3.44668 17.7667 2.23334 16.5533 1.34 15.02C0.44668 13.4867 0 11.8133 0 10ZM1.66 10C1.66 12.08 2.36 13.9133 3.76 15.5C4.4 14.2467 5.41334 13.0533 6.8 11.92C8.18668 10.7867 9.54 10.0733 10.86 9.78C10.66 9.31334 10.4667 8.89334 10.28 8.52C7.98668 9.25334 5.50668 9.62 2.84 9.62C2.32 9.62 1.93334 9.61334 1.68 9.6C1.68 9.65334 1.67668 9.72 1.67 9.8C1.66334 9.88 1.66 9.94666 1.66 10ZM1.92 7.94C2.21334 7.96666 2.64668 7.98 3.22 7.98C5.44668 7.98 7.56 7.68 9.56 7.08C8.54668 5.28 7.43334 3.78 6.22 2.58C5.16668 3.11334 4.26334 3.85334 3.51 4.8C2.75668 5.74666 2.22668 6.79334 1.92 7.94ZM4.9 16.58C6.40668 17.7533 8.10668 18.34 10 18.34C10.9867 18.34 11.9667 18.1533 12.94 17.78C12.6733 15.5 12.1533 13.2933 11.38 11.16C10.1533 11.4267 8.91668 12.1 7.67 13.18C6.42334 14.26 5.5 15.3933 4.9 16.58ZM7.96 1.94C9.13334 3.15334 10.22 4.66666 11.22 6.48C13.0333 5.72 14.4 4.75334 15.32 3.58C13.7733 2.3 12 1.66 10 1.66C9.32 1.66 8.64 1.75334 7.96 1.94ZM11.94 7.9C12.14 8.32666 12.3667 8.86666 12.62 9.52C13.6067 9.42666 14.68 9.38 15.84 9.38C16.6667 9.38 17.4867 9.4 18.3 9.44C18.1933 7.62666 17.54 6.01334 16.34 4.6C15.4733 5.89334 14.0067 6.99334 11.94 7.9ZM13.12 10.92C13.8 12.8933 14.26 14.92 14.5 17C15.5533 16.32 16.4133 15.4467 17.08 14.38C17.7467 13.3133 18.1467 12.16 18.28 10.92C17.3067 10.8533 16.42 10.82 15.62 10.82C14.8867 10.82 14.0533 10.8533 13.12 10.92Z" fill="#DD3E7B" />
+                    </svg>
+                  </li>
+                  <li class="behance">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.92433 3.69873C6.52359 3.69873 7.06993 3.75144 7.56344 3.85706C8.05696 3.96258 8.47994 4.13568 8.8324 4.37578C9.18485 4.61617 9.45807 4.93572 9.65196 5.33444C9.84584 5.73316 9.94278 6.22552 9.94278 6.81172C9.94278 7.44494 9.79882 7.97254 9.51099 8.39452C9.22297 8.8166 8.79718 9.16241 8.23324 9.43215C9.00867 9.65497 9.58733 10.045 9.96929 10.6017C10.3509 11.1587 10.5422 11.8301 10.5422 12.6154C10.5422 13.2485 10.4189 13.7968 10.172 14.26C9.92538 14.7233 9.59323 15.1014 9.17635 15.3941C8.75917 15.6874 8.28326 15.9041 7.74872 16.0451C7.21084 16.186 6.65693 16.2569 6.1008 16.2559H0.00244141V3.69873H5.92433ZM5.57187 8.78156C6.06539 8.78156 6.47067 8.66436 6.788 8.42976C7.10524 8.19536 7.26381 7.81421 7.26381 7.28661C7.26381 6.99361 7.21099 6.75312 7.10524 6.56554C6.9995 6.37806 6.85854 6.23121 6.68226 6.12589C6.50598 6.02027 6.30329 5.94729 6.07419 5.90596C5.83855 5.86444 5.59967 5.84386 5.36038 5.84447H2.76955V8.78166H5.57187V8.78156ZM5.73044 14.1103C6.00056 14.1103 6.25917 14.0838 6.50588 14.0311C6.75259 13.9783 6.96988 13.8903 7.15807 13.7672C7.34585 13.6443 7.49571 13.477 7.60746 13.2659C7.71901 13.055 7.77484 12.7853 7.77484 12.4569C7.77484 11.8123 7.59256 11.3521 7.2285 11.0764C6.86414 10.8009 6.38243 10.663 5.78327 10.663H2.76955V14.1101L5.73044 14.1103V14.1103ZM14.0245 13.8465C14.4004 14.2103 14.941 14.3917 15.646 14.3917C16.151 14.3917 16.5859 14.2659 16.95 14.0136C17.3143 13.7619 17.5376 13.4949 17.6198 13.2134H19.8229C19.4705 14.3037 18.9298 15.0836 18.2015 15.5524C17.4728 16.0215 16.5915 16.2559 15.5576 16.2559C14.8409 16.2559 14.1945 16.1416 13.6189 15.9129C13.043 15.6844 12.5553 15.3589 12.1561 14.9369C11.7566 14.5149 11.4481 14.011 11.2307 13.4245C11.0133 12.8384 10.9048 12.1934 10.9048 11.4899C10.9048 10.8101 11.0162 10.177 11.2396 9.59068C11.4626 9.00458 11.7798 8.49744 12.1915 8.06927C12.6024 7.6415 13.0932 7.30438 13.6631 7.0581C14.2329 6.81182 14.8644 6.68883 15.5577 6.68883C16.3333 6.68883 17.0088 6.83827 17.5847 7.13726C18.1603 7.43615 18.6333 7.83817 19.0035 8.34191C19.3736 8.84615 19.6407 9.42077 19.8056 10.0654C19.9701 10.7104 20.0286 11.3844 19.9819 12.0879H13.4078C13.4429 12.8967 13.6482 13.4832 14.0245 13.8465V13.8465ZM16.8532 9.06288C16.5537 8.73474 16.0982 8.57042 15.4874 8.57042C15.0878 8.57042 14.756 8.638 14.4917 8.77267C14.2273 8.90774 14.0157 9.07446 13.857 9.27392C13.6985 9.47338 13.5867 9.68452 13.5222 9.90704C13.4575 10.1299 13.4193 10.3292 13.4076 10.505H17.4789C17.3614 9.8718 17.1529 9.39122 16.8532 9.06288V9.06288ZM12.9802 4.33634H18.067V5.74374H12.9802V4.33634Z" fill="#1769FF" />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-10 col-lg-6">
+            <div class="ui-about-area__content">
+              <ul class="content">
+                <li class="text-danger-500">🔥 Designer</li>
+                <li class="text-primary-500">📚 Instructor</li>
+                <li class="text-tertiary-500">🎤 Podcaster</li>
+              </ul>
+              <h2 class="title">I'm a Professional UI/UX Designer Based on Tokyo.</h2>
+              <p class="text">
+                <span class="d-block pb-2">Aliquam interdum vehicula ornare. Donec condimentum gravida purus sit amet lobortis.</span> Proin a dui ac augue pulvinar malesuada. Quisque ac velit non gravida elementum a vel ex. Vivamus finibus ex in venenatis pellentesque. Phasellus nec porta enim. Donec id purus id est efficitur pulvinar. Duis nec tempus ligula.
+              </p>
+              <a href="#" class="ui-btn ui-btn-primary">
+                <svg width="24" class="me-2" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.0625 10.3125L12 14.25L15.9375 10.3125" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 3.75V14.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+    <!-- Award Section Start -->
+    <div class="ui-award-area">
+      <div class="container">
+        <div class="ui-section-title text-start">
+          <h2 class="title">Honor & Awards</h2>
+          <p class="text">Proin a dui ac augue pulvinar malesuada. Quisque ac velit <br> non ligula gravida elementum
+                a vel ex.</p>
+        </div>
+        <div class="row ui-card-row justify-content-center">
+          <div class="col-lg-4 col-10 col-md-6">
+            <div class="ui-award-card">
+              <img src="./image/l-2/award-1.png" alt="award" class="mw-100">
+              <div class="content">
+                <h6>UX Designer Awards 2022</h6>
+                <p>I proudly present all winners and nominees of the first participation call for the UX Design Awards 2022!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-10 col-md-6">
+            <div class="ui-award-card">
+              <img src="./image/l-2/award-2.png" alt="award" class="mw-100">
+              <div class="content">
+                <h6>UI Designer of The Day</h6>
+                <p>I proudly present all winners and nominees of the first participation call for the UX Design Awards 2022!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-10 col-md-6">
+            <div class="ui-award-card">
+              <img src="./image/l-2/award-3.png" alt="award" class="mw-100">
+              <div class="content">
+                <h6>Best UI/UX Designer of May 2021</h6>
+                <p>I proudly present all winners and nominees of the first participation call for the UX Design Awards 2022!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Award Section End -->
+    <!-- Service Section Start -->
+    <div class="ui-service-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6 col-md-10 mb-5 mb-lg-5">
+            <div class="ui-section-title">
+              <span class="badge">✅&nbsp;&nbsp;&nbsp;99.96% Client Satisfaction</span>
+              <h2 class="title">Services i provide</h2>
+              <p class="text pe-xxl-7">
+                <span class="d-block pb-2">
+                                I will help you with fingin a solution and solve your problems, We use process design to create digital product. besids that also help their business.
+                            </span>
+                We use process design to create digital products. besids that also help their business
+              </p>
+              <a href="#" class="ui-btn ui-btn-primary">Let’s Work Together
+                <svg width="24" class="ms-2" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-xxl-5 col-xl-6 col-lg-6 offset-xxl-2 offset-xl-1">
+            <div class="ui-service-area__widget">
+              <div class="ui-widget-card border-secondary-100">
+                <div class="image">
+                  <img class="mw-100" src="./image/l-2/illustration-2.png" alt="icon">
+                </div>
+                <div class="content">
+                  <h2 class="title">User Experience Design</h2>
+                  <span>150+ Projects
+                                    •
+                                    129+ Happy Customer</span>
+                </div>
+              </div>
+              <div class="ui-widget-card border-primary-50">
+                <div class="image">
+                  <img class="mw-100" src="./image/l-2/illustration.png" alt="icon">
+                </div>
+                <div class="content">
+                  <h2 class="title">Product Design</h2>
+                  <span>150+ Projects
+                                    •
+                                    129+ Happy Customer</span>
+                </div>
+              </div>
+              <div class="ui-widget-card border-danger-50">
+                <div class="image">
+                  <img class="mw-100" src="./image/l-2/illustration-1.png" alt="icon">
+                </div>
+                <div class="content">
+                  <h2 class="title">User Interface Design</h2>
+                  <span>150+ Projects
+                                    •
+                                    129+ Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="./plugins/gijgo/js/gijgo.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

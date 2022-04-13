@@ -1,0 +1,102 @@
+
+.ui-hero-area{
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+    @media (min-width:575px) {
+        padding-top: 80px;
+    }
+    @media (min-width:992px) {
+        padding: 0;
+    }
+    .ui-display-title{
+        @media (min-width:1400px) {
+            padding-top: 200px;
+        }
+    }
+    .buttton-group{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-top: 32px;
+        @media (max-width:480px) {
+            flex-direction: column;
+        }
+    }
+    &__image-group{
+        position: relative;
+        &--ellipse{
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            z-index: -1;
+            img{
+                width: 100%;
+            }
+        }
+        @media (min-width:1400px) {
+            margin-right: -6px;
+        }
+    }
+    &__ellipse-1{
+        top: 0;
+        left: 0;
+        width: 28%;
+        z-index: -1;
+    }
+    &__ellipse-2{
+        top: 0;
+        right: 0;
+        width: 30%;
+        z-index: -1;
+    }
+    &__ellipse-3{
+        bottom: 0;
+        left: 0;
+        width: 24.5%;
+        z-index: -1;
+    }
+}
+.ui-logo-area{
+    @media (min-width:1400px) {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+    z-index: 99;
+    border: 2px solid #FFFFFF;
+      backdrop-filter: blur(72px);
+      padding: 64px 0;
+      .ui-logo-area-title{
+          margin-bottom: 32px;
+        .title{
+          font-family: 'Sora', sans-serif;
+          color: var(--bs-gray-900);
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+        }  
+      }
+  
+  }
+  .ui-single-logo{
+      background: white;
+      border-radius: 12px;
+      padding: 16px 0;
+      backdrop-filter: blur(32px);
+      transition: .3s;
+      img{
+        transition: .3s;
+        filter: grayscale(100%);
+      }
+      &:hover{
+          img{
+            filter: grayscale(0%);
+          }
+        box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);  
+      }
+  }

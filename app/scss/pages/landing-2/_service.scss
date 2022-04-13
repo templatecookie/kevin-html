@@ -1,0 +1,96 @@
+.ui-service-area{
+    padding: 60px 0;
+    background: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
+        @media (min-width:1200px) {
+        padding: 120px 0;
+        
+    }
+    .ui-section-title{
+       text-align: start; 
+       .badge{
+        background: var(--bs-secondary-300);
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;  
+        text-transform: uppercase;
+        color: var(--bs-gray-900); 
+        padding: 10px 16px;
+        margin-bottom: 15px;
+        @media (mi-width:992px) {
+            margin-bottom: 24px;
+        }
+       }
+       .title{
+           padding-bottom: 25px;
+           @media (mi-width:992px) {
+               padding-bottom: 32px;
+           }
+       }
+       .ui-btn{
+        margin-top: 25px;
+        @media (mi-width:992px) {
+            margin-top: 32px;
+        } 
+       }
+    }
+    &__widget{
+        .ui-widget-card {
+         &:not(&:last-child){
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+.ui-widget-card{
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 30px 25px;
+    background: white;
+    border-width: 4px;
+    border-radius: 16px;
+    border-style: solid;
+    flex-wrap: wrap;
+    @media (min-width:992px) {
+        padding: 32px;
+        gap: 24px;
+    }
+    .content{
+        .title{
+            font-family: 'Sora';
+            color: var(--bs-gray-900);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            padding-bottom: 12px;
+        }
+        span{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Sora';
+        }
+    }
+    &:hover{
+        border-color: transparent;
+        box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+    }
+}
+.border-secondary-100{
+    border-color: var(--bs-secondary-100);
+}
+.border-primary-50{
+    border-color: var(--bs-primary-50);
+}
+.border-danger-50{
+    border-color: var(--bs-danger-50);
+}

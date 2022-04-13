@@ -12,6 +12,11 @@
     @media (min-width:1200px) {
         padding: 0;
     }
+    &__iamge-group{
+        @media (min-width:1400px) {
+            margin-right: -90px;
+        }
+    }
     .buttton-group{
         display: flex;
         gap: 24px;

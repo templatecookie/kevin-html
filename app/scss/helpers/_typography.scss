@@ -192,3 +192,69 @@
     font-family: 'JetBrains Mono', sans-serif;
   }
 }
+.ui-display-title{
+  .title{
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--bs-gray-900);
+    line-height: 112%;
+    font-family: 'Sora', sans-serif;
+    padding-bottom: 20px;
+    @media (min-width:575px) {
+      font-size: 44px;
+      padding-bottom: 25px;
+    }
+    @media (min-width:768px) {
+      font-size: 54px;
+      
+    }
+    @media (min-width:992px) {
+      padding-bottom: 32px;
+      font-size: 64px;
+      
+    }
+    span{
+      color: var(--bs-tertiary-500);
+      text-decoration: underline;
+    }
+  }
+  .text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--bs-gray-900);
+    font-family: 'Sora', sans-serif;
+    @media (min-width:575px) {
+      font-size: 18px;
+    }
+    @media (min-width:768px) {
+      font-size: 20px;
+    }
+  }
+}
+.ui-section-title{
+  text-align: center;
+  .title{
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: var(--bs-gray-900);
+    line-height: 117%;
+    font-family: 'Sora', sans-serif;
+    @media (min-width:768px) {
+      font-size: 38px;
+      
+    }
+    @media (min-width:992px) {
+      font-size: 48px;
+      
+    }
+  }
+  .text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-gray-600);
+    font-family: 'Sora', sans-serif;
+  }
+}

@@ -238,6 +238,71 @@
       $(".photographer-service--half-fluid").css("margin-left", "0px");
     }
   });
+  if (jQuery(".ui-project-slider--half-fluid").length > 0) {
+    $(".ui-project-slider--half-fluid").slick({
+      dots: false,
+      infinite: true,
+      speed: 900,
+      slidesToShow: 7,
+      slidesToScroll: 2,
+      arrows: true,
+      prevArrow: $(".ui-project-slider--half-fluid__control-buttons .button--prev"),
+      nextArrow: $(".ui-project-slider--half-fluid__control-buttons .button--next"),
+      responsive: [
+        {
+          breakpoint: 1360,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+  $(window).load(function () {
+    if (this.innerWidth > 600) {
+      const offestContainer = $(".container").offset().left;
+      $(".ui-project-slider--half-fluid").css("margin-left", offestContainer);
+    } else {
+      $(".ui-project-slider--half-fluid").css("margin-left", "0px");
+    }
+  });
+  $(window).on("resize", function () {
+    if (this.innerWidth > 600) {
+      const offestContainer = $(".container").offset().left;
+      $(".ui-project-slider--half-fluid").css("margin-left", offestContainer);
+    } else {
+      $(".ui-project-slider--half-fluid").css("margin-left", "0px");
+    }
+  });
 
 
 })(jQuery);
