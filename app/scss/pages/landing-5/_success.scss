@@ -1,0 +1,38 @@
+.doctor-success-area{
+    margin: 100px auto;
+    &__content{
+        .title{
+            font-family: 'JetBrains Mono';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 1.17;
+            color: var(--bs-gray-900);
+            padding-bottom: 48px;
+        }
+        .text{
+            font-family: 'JetBrains Mono';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--bs-gray-600);
+            padding-bottom: 50px;
+        }
+    }
+    &__featured{
+            background: var(--bs-secondary-50);
+            border: 4px solid var(--bs-secondary-500);
+            box-sizing: border-box;
+            padding: 56px;
+            .quotes{
+                padding-bottom: 32px;
+            }
+            .text{
+                font-family: 'JetBrains Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.33;
+                color: var(--bs-gray-900);
+            }
+    }
+}

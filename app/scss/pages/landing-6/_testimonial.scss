@@ -1,0 +1,92 @@
+
+.law-testimonial-section{
+  box-shadow: inset 0px 1px 0px #e6e8eb;
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
+}
+.law-testimonial{
+  &-slider{
+    &-item{
+      text-align: center;
+      padding: 0px 110px;
+      @media (max-width: 1199px) {
+        padding: 0;
+      }
+      img{
+        margin: 0 auto 35px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--bs-gray-900) ;
+        font-family: 'Barlow', sans-serif;
+        @media (max-width: 991px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &-user{
+    margin-top: 32px;
+    span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-gray-900) ;
+      margin-bottom: 6px;
+      display: block;
+      font-family: 'Barlow', sans-serif;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-500);
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+}
+
+.flc-testimonial-slider{
+  padding: 0 80px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  .prev-arrow, 
+  .next-arrow {
+    width: 56px;
+    height: 56px;
+    background-image: url(../image/svg/Arrowleft.svg);
+    border: 2px solid #E6E8EB;
+    background-color: transparent;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    transform: translateY(-50%);
+    @media (max-width: 767px) {
+      display: none!important;
+    }
+  }
+  .next-arrow{
+    left: auto;
+    right: 0;
+    background-image: url(../image/svg/ArrowRight.svg);
+  }
+}
+
+.law-testimonial-slider{
+  .prev-arrow, 
+  .next-arrow {
+    border: 2px solid var(--bs-primary-50);
+    background-color: var(--bs-primary-50);
+  }
+}

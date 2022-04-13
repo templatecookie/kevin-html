@@ -4,21 +4,39 @@
     "header_double_button":false,
     "absolute_header":false,
     "header_button":true,
-    "root":"./image/l-1/me.png",
-    "logoNeme":"Jamel Eusebio",
-    "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"header-text btn-primary",
-    "header_button_text" :"Contact"
+    "root":"<img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>",
+    "additional_button_classes":"developer-header-btn",
+    "header_button_class":"d-btn d-btn-primary",
+    "header_button_text" :"Send message"
+  },
+  "siteHeaderTwo":{
+    "additional_header_class":"site-header--menu-right ui-header mobile-menu-trigger-dark",
+    "header_double_button":false,
+    "absolute_header":false,
+    "header_button":true,
+    "root":"<div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline' alt='logo'></div> <div class='text-wrapper'><p>Hano Kurou</p><span>UI/ux designer</span></div>",
+    "additional_button_classes":"ui-header-btn",
+    "header_button_class":"ui-btn ui-btn-primary ms-lg-3",
+    "header_button_text" :"<img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message"
   },
   "siteHeaderFour":{
-    "additional_header_class":"site-header--menu-right photographer-header mobile-menu-trigger-dark",
+    "additional_header_class":"site-header--menu-right photographer-header",
     "header_double_button":false,
     "absolute_header":true,
     "header_button":true,
-    "root":"./image/l-4/logo.png",
-    "logoNeme":"Robert Warren",
-    "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"header-text btn-primary",
-    "header_button_text" :"<img class='make-it-inline' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
+    "root":"<img src='./image/l-4/logo.png' alt='logo'> <span class='text'>Robert Warren</span>",
+    "additional_button_classes":"photographer-header-btn",
+    "header_button_class":"pg-btn pg-btn-primary",
+    "header_button_text" :"<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
+  },
+  "siteHeaderFive":{
+    "additional_header_class":"site-header--menu-right doctor-header mobile-menu-trigger-dark",
+    "header_double_button":false,
+    "absolute_header":false,
+    "header_button":true,
+    "root":"<span class='text'>RALPH <br> EDWARDS.</span>",
+    "additional_button_classes":"doctor-header-btn ms-lg-4",
+    "header_button_class":"dc-btn dc-btn-primary w-107",
+    "header_button_text" :"Contact"
   }
 }

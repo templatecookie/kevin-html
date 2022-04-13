@@ -1,0 +1,104 @@
+.photographer-pricing-area{
+    background-color: var(--bs-gray-50);
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .photographer-section-title{
+        .title{
+            margin-bottom: 50px;
+        }
+        
+    }
+    .photographer-pricing-card{
+        margin-bottom: 20px;
+        background-color: white;
+        padding: 48px;
+        @media (max-width:1024px) {
+            padding: 15px;
+        }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .price{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.25;
+            color: var(--bs-success-500);
+        }
+        .recomend{
+            border-radius: 50px !important;
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-flex;
+            font-family: "Barlow", sans-serif;
+            padding: 0.8em 2em;
+            line-height: 1;
+            width: max-content;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            color: var(--bs-success-500);
+            border:  1.5px solid var(--bs-success-100);
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+            &:active{
+                &:focus{
+                box-shadow: none;
+                outline: none;
+                }
+            }
+        }
+        .title{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.4;
+            color:  var(--bs-gray-900);
+            padding-bottom: 12px;
+        }
+        .description{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color:  var(--bs-gray-600);
+            padding-bottom: 32px;
+            border-bottom: 1px solid #E6E8EB;
+        }
+        .list{
+            list-style: none;
+            padding-top: 32px;
+            padding-left: 0;
+            li{
+                display: flex;
+                align-items: center;
+               svg{
+                   margin-right: 11px;
+               }
+               font-family: 'Barlow', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                color: var(--bs-gray-900);
+                padding-bottom: 16px;
+                del{
+                    color: var(--bs-gray-300);
+                }
+                &:last-child{
+                    padding-bottom: 32px;
+                }
+            }
+        }
+       
+    }
+}

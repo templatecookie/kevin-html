@@ -42,8 +42,7 @@ Available variables
         <!-- Brand Logo-->
         <div class="site-header__brand">
           <a href="index.html" class="logo">
-            <img src="{{ settings.root }}" alt="logo">
-            <span class="text">{{ settings.logoNeme }}</span>
+            {{ settings.root | safe }}
           </a>
         </div>
         <div class="menu-block-wrapper {{' ' + settings.menu_wrapper_class if  settings.menu_wrapper_class}}">
@@ -65,7 +64,7 @@ Available variables
         {% endif %}
         {% if settings.header_button %}
           <div class="header-button header-btn {{  settings.additional_button_classes}}">
-            <a class="btn {{ settings.header_button_class}}" href="{{settings.link | safe}}">
+            <a class="{{ settings.header_button_class}}" href="{{settings.link | safe}}">
               {{ settings.header_button_text | safe}}
             </a>
           </div>

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -75,6 +79,16 @@
   --bs-danger-700: #993737;
   --bs-danger-800: #662525;
   --bs-danger-900: #331212;
+  --bs-tertiary-50: #F3ECFF;
+  --bs-tertiary-100: #E8D9FF;
+  --bs-tertiary-200: #D0B4FF;
+  --bs-tertiary-300: #B98EFF;
+  --bs-tertiary-400: #A169FF;
+  --bs-tertiary-500: #8A43FF;
+  --bs-tertiary-600: #6E36CC;
+  --bs-tertiary-700: #532899;
+  --bs-tertiary-800: #371B66;
+  --bs-tertiary-900: #1C0D33;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;

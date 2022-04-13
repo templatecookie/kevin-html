@@ -1,0 +1,26 @@
+.flc-client-section{
+  h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 65px;
+    text-align: center;
+    font-family: 'Cardo', serif;
+    @media (max-width:  991px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.flc-client-slider-item{
+  text-align: center;
+  &:hover path{
+    fill: #DD3E7B;
+  }
+  a{
+    path{
+      fill: var(--bs-gray-300);
+      transition: all 0.4s;
+    }
+  }
+}

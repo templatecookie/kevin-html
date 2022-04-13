@@ -1,55 +1,57 @@
 .dev-counter-section{
-    .dev-counter-wrapper{
-        padding: 60px 0;
-        @media (min-width:575px) {
-            padding: 80px 0;
-        }
-        @media (min-width:992px) {
-            padding: 100px 0;
-        }
-        .dev-count-block{
-            position: relative;
-            
-            svg{
-                margin-bottom: 15px;
-            }
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .dev-count-block{
+        position: relative;
+        svg{
+            margin-bottom: 10px;
             @media (min-width:768px) {
-                &::before{
-                    position: absolute;
-                    top: 50%;
-                    content: "";
-                    right: -13px;
-                    transform: translateY(-50%);
-                    height: 149px;
-                    width: 1px;
-                    background:#E6E8EB;
-                }
-            }
-            .text{
-                font-family: 'Inter';
-                color: var(--bs-gray-700);
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: center;
-            }
-            .title{
-                font-family: 'Inter';
-                margin-bottom: 5px;
-                font-weight: 700;
-                font-size: 36px;
-                line-height: 44px;
-                text-align: center;
-                color: var(--bs-gray-900);
+                margin-bottom: 24px;
             }
         }
-        .col-md-3{
-            &:last-child{
-            .dev-count-block{
-                &::before{
-                    display: none;
-                }
-                }
+        @media (min-width:768px) {
+            &::before{
+                position: absolute;
+                top: 50%;
+                content: "";
+                right: -13px;
+                transform: translateY(-50%);
+                height: 149px;
+                width: 1px;
+                background:#E6E8EB;
+            }
+        }
+        .text{
+            color: var(--bs-gray-700);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .title{
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 122%;
+            text-align: center;
+            color: var(--bs-gray-900);
+            @media (min-width:992px) {
+                font-size: 36px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .col-md-3{
+        &:last-child{
+        .dev-count-block{
+            &::before{
+                display: none;
+            }
             }
         }
     }

@@ -1,61 +1,83 @@
 {% macro render(args) %}
-    <div class="dev-counter-section">
-        <div class="container">
-            <div class="dev-counter-wrapper">
-                    <div class="row align-items-center card-row">
-                    <div class="col-md-3 col-6">
-                        <div class="dev-count-block  text-center">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 33L24 43.5L42 33" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 24L24 34.5L42 24" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 15L24 25.5L42 15L24 4.5L6 15Z" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <h3 class="title"><span class="counter">23</span>+</h3>
-                            <p class="text">Years of Experience</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="dev-count-block  text-center">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40.5 13.5H7.5C6.67157 13.5 6 14.1716 6 15V39C6 39.8284 6.67157 40.5 7.5 40.5H40.5C41.3284 40.5 42 39.8284 42 39V15C42 14.1716 41.3284 13.5 40.5 13.5Z" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.5 13.5V10.5C31.5 9.70435 31.1839 8.94129 30.6213 8.37868C30.0587 7.81607 29.2956 7.5 28.5 7.5H19.5C18.7044 7.5 17.9413 7.81607 17.3787 8.37868C16.8161 8.94129 16.5 9.70435 16.5 10.5V13.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M42 23.6812C36.5293 26.8451 30.3197 28.5074 24 28.4999C17.6791 28.5164 11.4673 26.8534 6 23.6812" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21.75 22.5H26.25" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <h3 class="title"><span class="counter">325</span>+</h3>
-                            <p class="text">Completed Projects</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="dev-count-block  text-center">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17.25 22.5C18.4926 22.5 19.5 21.4926 19.5 20.25C19.5 19.0074 18.4926 18 17.25 18C16.0074 18 15 19.0074 15 20.25C15 21.4926 16.0074 22.5 17.25 22.5Z" fill="#1777E5"/>
-                            <path d="M28.5 20.25H33" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.8 28.5C31.007 29.8661 29.8691 31 28.5003 31.7882C27.1314 32.5764 25.5795 32.9913 24 32.9913C22.4204 32.9913 20.8685 32.5764 19.4996 31.7882C18.1308 31 16.9929 29.8661 16.2 28.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+<div class="dev-counter-section">
+    <div class="container">
+        <div class="row align-items-center card-row">
+            <div class="col-md-3 col-6">
+                <div class="dev-count-block  text-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 33L24 43.5L42 33" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 24L24 34.5L42 24" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 15L24 25.5L42 15L24 4.5L6 15Z" stroke="#1777E5" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="title"><span class="counter">23</span>+</h3>
+                    <p class="text">Years of Experience</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="dev-count-block  text-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M40.5 13.5H7.5C6.67157 13.5 6 14.1716 6 15V39C6 39.8284 6.67157 40.5 7.5 40.5H40.5C41.3284 40.5 42 39.8284 42 39V15C42 14.1716 41.3284 13.5 40.5 13.5Z"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M31.5 13.5V10.5C31.5 9.70435 31.1839 8.94129 30.6213 8.37868C30.0587 7.81607 29.2956 7.5 28.5 7.5H19.5C18.7044 7.5 17.9413 7.81607 17.3787 8.37868C16.8161 8.94129 16.5 9.70435 16.5 10.5V13.5"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M42 23.6812C36.5293 26.8451 30.3197 28.5074 24 28.4999C17.6791 28.5164 11.4673 26.8534 6 23.6812"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.75 22.5H26.25" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="title"><span class="counter">325</span>+</h3>
+                    <p class="text">Completed Projects</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="dev-count-block  text-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42Z"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.25 22.5C18.4926 22.5 19.5 21.4926 19.5 20.25C19.5 19.0074 18.4926 18 17.25 18C16.0074 18 15 19.0074 15 20.25C15 21.4926 16.0074 22.5 17.25 22.5Z"
+                            fill="#1777E5" />
+                        <path d="M28.5 20.25H33" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M31.8 28.5C31.007 29.8661 29.8691 31 28.5003 31.7882C27.1314 32.5764 25.5795 32.9913 24 32.9913C22.4204 32.9913 20.8685 32.5764 19.4996 31.7882C18.1308 31 16.9929 29.8661 16.2 28.5"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
 
-                            <h3 class="title"><span class="counter">279</span>+</h3>
-                            <p class="text">Happy Clients</p>
-                        </div>
-                    </div>
-                  
-                    <div class="col-md-3 col-6">
-                        <div class="dev-count-block  text-center">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.4999 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22.5 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M28.5001 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6.00012 40.5H39.0001" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.6189 40.4998C12.748 39.1824 10.3156 37.0688 8.61053 34.4098C6.90548 31.7509 5.99947 28.6584 6.00012 25.4998V16.4998H39.0001V25.4998C39.0008 28.6584 38.0948 31.7509 36.3897 34.4098C34.6847 37.0688 32.2522 39.1824 29.3814 40.4998" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M39.0002 16.4998C40.5915 16.4998 42.1176 17.1319 43.2428 18.2571C44.368 19.3823 45.0002 20.9085 45.0002 22.4998V23.9998C45.0002 25.5911 44.368 27.1172 43.2428 28.2424C42.1176 29.3676 40.5915 29.9998 39.0002 29.9998H38.3627" stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <h3 class="title"><span class="counter">1652</span>+</h3>
-                            <p class="text">Hours of Work</p>
-                        </div>
-                    </div>
+                    <h3 class="title"><span class="counter">279</span>+</h3>
+                    <p class="text">Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="dev-count-block  text-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4999 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22.5 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M28.5001 4.5V10.5" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6.00012 40.5H39.0001" stroke="#1777E5" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M15.6189 40.4998C12.748 39.1824 10.3156 37.0688 8.61053 34.4098C6.90548 31.7509 5.99947 28.6584 6.00012 25.4998V16.4998H39.0001V25.4998C39.0008 28.6584 38.0948 31.7509 36.3897 34.4098C34.6847 37.0688 32.2522 39.1824 29.3814 40.4998"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M39.0002 16.4998C40.5915 16.4998 42.1176 17.1319 43.2428 18.2571C44.368 19.3823 45.0002 20.9085 45.0002 22.4998V23.9998C45.0002 25.5911 44.368 27.1172 43.2428 28.2424C42.1176 29.3676 40.5915 29.9998 39.0002 29.9998H38.3627"
+                            stroke="#1777E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="title"><span class="counter">1652</span>+</h3>
+                    <p class="text">Hours of Work</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endmacro %}

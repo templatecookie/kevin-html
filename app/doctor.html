@@ -1,0 +1,36 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-5/_hero.njk" as HeroSection %}
+{% import "pages/landing-5/_about.njk" as AboutSection %}
+{% import "pages/landing-5/_work.njk" as WorkSection %}
+{% import "pages/landing-5/_award.njk" as AwardSection %}
+{% import "pages/landing-5/_book.njk" as BookSection %}
+{% import "pages/landing-5/_success.njk" as SuccessSection %}
+{% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
+
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderFive)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render()}}
+  <!-- Work Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Award Section Start -->
+  {{AwardSection.render()}}
+  <!-- Award Section End -->
+  <!-- Book Section Start -->
+  {{BookSection.render()}}
+  <!-- Book Section End -->
+  <!-- Success Section Start -->
+  {{SuccessSection.render()}}
+  <!-- Success Section End -->
+{% endblock %}
