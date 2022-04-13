@@ -2,6 +2,7 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-2/_hero.njk" as HeroSection %}
 {% import "pages/landing-2/_project.njk" as ProjectSection %}
+{% import "pages/landing-2/_about.njk" as AboutSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -13,4 +14,7 @@
   <!-- Project Section Start -->
   {{ProjectSection.render()}}
   <!-- Project Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
 {% endblock %}
