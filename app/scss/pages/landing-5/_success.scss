@@ -3,6 +3,15 @@
     &__content{
         .doctor-section-title {
             text-align: left;
+            .title{
+                font-size: 32px;
+                @media (min-width:768px){
+                    font-size: 40px;
+                }
+                @media (min-width:1200px){
+                    font-size: 48px;
+                }
+            }
         }
         .doctor-section-title .line {
             margin: 24px 0;
@@ -12,6 +21,7 @@
             align-items: center;
             justify-content: start;
             margin-top: 30px;
+            margin-bottom: 30px;
             gap: 16px;
             @media (min-widht:992px) {
                 margin-top: 50px;
@@ -87,7 +97,13 @@
             background: var(--bs-secondary-50);
             border: 4px solid var(--bs-secondary-500);
             box-sizing: border-box;
-            padding: 56px;
+            padding: 28px;
+            @media (min-width:768px){
+                padding: 42px;
+            }
+            @media (min-width:1200px){
+                padding: 56px;
+            }
             .quotes{
                 padding-bottom: 32px;
             }
@@ -95,7 +111,13 @@
                 font-family: 'JetBrains Mono';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 18px;
+                @media (min-width:768px){
+                    font-size: 20px;
+                }
+                @media (min-width:1200px){
+                    font-size: 24px;
+                }
                 line-height: 1.33;
                 color: var(--bs-gray-900);
             }
