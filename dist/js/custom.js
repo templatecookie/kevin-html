@@ -102,6 +102,43 @@
                 ],
             });
     }
+    if (jQuery(".doctor-success-slider").length > 0) {
+        $(".doctor-success-slider")
+            .not(".slick-initialized")
+            .slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                prevArrow: $(".doctor-success-slider__control-buttons .button--prev"),
+                nextArrow: $(".doctor-success-slider__control-buttons .button--next"),
+                responsive: [{
+                        breakpoint: 1399,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 420,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+    }
     if (jQuery(".dev-testimonial-slider").length > 0) {
         $(".dev-testimonial-slider")
             .not(".slick-initialized")
