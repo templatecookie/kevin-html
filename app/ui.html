@@ -5,6 +5,7 @@
 {% import "pages/landing-2/_about.njk" as AboutSection %}
 {% import "pages/landing-2/_award.njk" as AwardSection %}
 {% import "pages/landing-2/_service.njk" as ServiceSection %}
+{% import "pages/landing-2/_calltoaction.njk" as CalltoactionSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -25,4 +26,7 @@
   <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
+  <!-- Call to Action Section Start -->
+  {{CalltoactionSection.render()}}
+  <!-- Call to Action Section End -->
 {% endblock %}
