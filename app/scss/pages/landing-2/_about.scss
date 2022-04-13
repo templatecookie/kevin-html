@@ -14,6 +14,14 @@
         @media (min-width:1200px) {
             margin-left: -70px;
         }
+        .social-media-group{
+            @media (min-width:1200px) {
+                position: absolute;
+                bottom: 32px;
+                left: 32px;
+                left: 102px;
+            }
+        }
     }
     &__content{
         .content{
@@ -63,12 +71,7 @@
     }
 }
 .social-media-group{
-    @media (min-width:1200px) {
-        position: absolute;
-        bottom: 32px;
-        left: 32px;
-        left: 102px;
-    }
+    display: inline-block;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.7);
     border: 3px solid #FFFFFF;
@@ -80,6 +83,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        padding-bottom: 16px;
     }
     .social-link{
         margin: 0;
@@ -90,15 +94,95 @@
         flex-wrap: wrap;
         gap: 8px;
         li{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border-radius: 4px;
-            max-width: 48px;
-            max-height: 48px;
-            min-width: 48px;
-            min-height: 48px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                border-radius: 4px;
+                max-width: 48px;
+                max-height: 48px;
+                min-width: 48px;
+                min-height: 48px;
+                transition: .3s !important;
+                svg{
+                    path{
+                       transition: .3s !important;
+                    }
+                }
+            }
+            &.fb{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
+                    }
+                }
+            }
+            &.twitter{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: #1DA1F2;
+                    }
+                }
+            }
+            &.linkedin{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: #006699;
+                    }
+                }
+            }
+            &.insta{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: radial-gradient(102.89% 102.88% at 60.65% 104.95%, rgba(140, 58, 170, 0) 64%, #8C3AAA 100%), radial-gradient(130.55% 130.54% at 13.29% 100.47%, #FA8F21 9%, #D82D7E 78%), #006699;;
+                    }
+                }
+            }
+            &.dribbble{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background:#DD3E7B;
+                    }
+                }
+            }
+            &.behance{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background:#1769FF;
+                    }
+                }
+            }
         }
     }
 }

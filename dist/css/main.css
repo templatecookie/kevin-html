@@ -565,13 +565,13 @@
 
 @-webkit-keyframes particle-animation-1 {
   100% {
-    transform: translate3d(17vw, 18vh, 82px);
+    transform: translate3d(35vw, 22vh, 43px);
   }
 }
 
 @keyframes particle-animation-1 {
   100% {
-    transform: translate3d(17vw, 18vh, 82px);
+    transform: translate3d(35vw, 22vh, 43px);
   }
 }
 .particle:nth-child(1) {
@@ -579,18 +579,18 @@
           animation: particle-animation-1 60s infinite;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
-  transform: translate3d(75vw, 83vh, 15px);
+  transform: translate3d(31vw, 14vh, 40px);
 }
 
 @-webkit-keyframes particle-animation-2 {
   100% {
-    transform: translate3d(87vw, 78vh, 36px);
+    transform: translate3d(5vw, 62vh, 63px);
   }
 }
 
 @keyframes particle-animation-2 {
   100% {
-    transform: translate3d(87vw, 78vh, 36px);
+    transform: translate3d(5vw, 62vh, 63px);
   }
 }
 .particle:nth-child(2) {
@@ -598,18 +598,18 @@
           animation: particle-animation-2 60s infinite;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
-  transform: translate3d(79vw, 80vh, 63px);
+  transform: translate3d(85vw, 82vh, 54px);
 }
 
 @-webkit-keyframes particle-animation-3 {
   100% {
-    transform: translate3d(69vw, 43vh, 57px);
+    transform: translate3d(74vw, 78vh, 51px);
   }
 }
 
 @keyframes particle-animation-3 {
   100% {
-    transform: translate3d(69vw, 43vh, 57px);
+    transform: translate3d(74vw, 78vh, 51px);
   }
 }
 .particle:nth-child(3) {
@@ -617,18 +617,18 @@
           animation: particle-animation-3 60s infinite;
   -webkit-animation-delay: -0.6s;
           animation-delay: -0.6s;
-  transform: translate3d(31vw, 15vh, 8px);
+  transform: translate3d(37vw, 82vh, 36px);
 }
 
 @-webkit-keyframes particle-animation-4 {
   100% {
-    transform: translate3d(20vw, 87vh, 18px);
+    transform: translate3d(70vw, 74vh, 82px);
   }
 }
 
 @keyframes particle-animation-4 {
   100% {
-    transform: translate3d(20vw, 87vh, 18px);
+    transform: translate3d(70vw, 74vh, 82px);
   }
 }
 .particle:nth-child(4) {
@@ -636,18 +636,18 @@
           animation: particle-animation-4 60s infinite;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  transform: translate3d(54vw, 90vh, 63px);
+  transform: translate3d(26vw, 3vh, 47px);
 }
 
 @-webkit-keyframes particle-animation-5 {
   100% {
-    transform: translate3d(3vw, 31vh, 51px);
+    transform: translate3d(36vw, 74vh, 25px);
   }
 }
 
 @keyframes particle-animation-5 {
   100% {
-    transform: translate3d(3vw, 31vh, 51px);
+    transform: translate3d(36vw, 74vh, 25px);
   }
 }
 .particle:nth-child(5) {
@@ -655,18 +655,18 @@
           animation: particle-animation-5 60s infinite;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
-  transform: translate3d(81vw, 4vh, 10px);
+  transform: translate3d(29vw, 68vh, 14px);
 }
 
 @-webkit-keyframes particle-animation-6 {
   100% {
-    transform: translate3d(19vw, 46vh, 94px);
+    transform: translate3d(58vw, 76vh, 52px);
   }
 }
 
 @keyframes particle-animation-6 {
   100% {
-    transform: translate3d(19vw, 46vh, 94px);
+    transform: translate3d(58vw, 76vh, 52px);
   }
 }
 .particle:nth-child(6) {
@@ -674,18 +674,18 @@
           animation: particle-animation-6 60s infinite;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
-  transform: translate3d(48vw, 32vh, 20px);
+  transform: translate3d(66vw, 53vh, 71px);
 }
 
 @-webkit-keyframes particle-animation-7 {
   100% {
-    transform: translate3d(76vw, 65vh, 26px);
+    transform: translate3d(7vw, 74vh, 96px);
   }
 }
 
 @keyframes particle-animation-7 {
   100% {
-    transform: translate3d(76vw, 65vh, 26px);
+    transform: translate3d(7vw, 74vh, 96px);
   }
 }
 .particle:nth-child(7) {
@@ -693,18 +693,18 @@
           animation: particle-animation-7 60s infinite;
   -webkit-animation-delay: -1.4s;
           animation-delay: -1.4s;
-  transform: translate3d(48vw, 79vh, 27px);
+  transform: translate3d(73vw, 79vh, 36px);
 }
 
 @-webkit-keyframes particle-animation-8 {
   100% {
-    transform: translate3d(1vw, 69vh, 32px);
+    transform: translate3d(59vw, 65vh, 47px);
   }
 }
 
 @keyframes particle-animation-8 {
   100% {
-    transform: translate3d(1vw, 69vh, 32px);
+    transform: translate3d(59vw, 65vh, 47px);
   }
 }
 .particle:nth-child(8) {
@@ -712,18 +712,18 @@
           animation: particle-animation-8 60s infinite;
   -webkit-animation-delay: -1.6s;
           animation-delay: -1.6s;
-  transform: translate3d(62vw, 28vh, 32px);
+  transform: translate3d(41vw, 37vh, 86px);
 }
 
 @-webkit-keyframes particle-animation-9 {
   100% {
-    transform: translate3d(2vw, 52vh, 99px);
+    transform: translate3d(31vw, 34vh, 53px);
   }
 }
 
 @keyframes particle-animation-9 {
   100% {
-    transform: translate3d(2vw, 52vh, 99px);
+    transform: translate3d(31vw, 34vh, 53px);
   }
 }
 .particle:nth-child(9) {
@@ -731,18 +731,18 @@
           animation: particle-animation-9 60s infinite;
   -webkit-animation-delay: -1.8s;
           animation-delay: -1.8s;
-  transform: translate3d(84vw, 75vh, 63px);
+  transform: translate3d(39vw, 5vh, 67px);
 }
 
 @-webkit-keyframes particle-animation-10 {
   100% {
-    transform: translate3d(53vw, 43vh, 49px);
+    transform: translate3d(4vw, 85vh, 60px);
   }
 }
 
 @keyframes particle-animation-10 {
   100% {
-    transform: translate3d(53vw, 43vh, 49px);
+    transform: translate3d(4vw, 85vh, 60px);
   }
 }
 .particle:nth-child(10) {
@@ -750,18 +750,18 @@
           animation: particle-animation-10 60s infinite;
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
-  transform: translate3d(82vw, 31vh, 82px);
+  transform: translate3d(65vw, 38vh, 15px);
 }
 
 @-webkit-keyframes particle-animation-11 {
   100% {
-    transform: translate3d(83vw, 83vh, 10px);
+    transform: translate3d(75vw, 88vh, 11px);
   }
 }
 
 @keyframes particle-animation-11 {
   100% {
-    transform: translate3d(83vw, 83vh, 10px);
+    transform: translate3d(75vw, 88vh, 11px);
   }
 }
 .particle:nth-child(11) {
@@ -769,18 +769,18 @@
           animation: particle-animation-11 60s infinite;
   -webkit-animation-delay: -2.2s;
           animation-delay: -2.2s;
-  transform: translate3d(46vw, 77vh, 14px);
+  transform: translate3d(27vw, 38vh, 24px);
 }
 
 @-webkit-keyframes particle-animation-12 {
   100% {
-    transform: translate3d(61vw, 81vh, 6px);
+    transform: translate3d(12vw, 58vh, 71px);
   }
 }
 
 @keyframes particle-animation-12 {
   100% {
-    transform: translate3d(61vw, 81vh, 6px);
+    transform: translate3d(12vw, 58vh, 71px);
   }
 }
 .particle:nth-child(12) {
@@ -788,18 +788,18 @@
           animation: particle-animation-12 60s infinite;
   -webkit-animation-delay: -2.4s;
           animation-delay: -2.4s;
-  transform: translate3d(57vw, 64vh, 87px);
+  transform: translate3d(58vw, 55vh, 23px);
 }
 
 @-webkit-keyframes particle-animation-13 {
   100% {
-    transform: translate3d(44vw, 32vh, 63px);
+    transform: translate3d(38vw, 20vh, 15px);
   }
 }
 
 @keyframes particle-animation-13 {
   100% {
-    transform: translate3d(44vw, 32vh, 63px);
+    transform: translate3d(38vw, 20vh, 15px);
   }
 }
 .particle:nth-child(13) {
@@ -807,18 +807,18 @@
           animation: particle-animation-13 60s infinite;
   -webkit-animation-delay: -2.6s;
           animation-delay: -2.6s;
-  transform: translate3d(70vw, 68vh, 32px);
+  transform: translate3d(19vw, 82vh, 33px);
 }
 
 @-webkit-keyframes particle-animation-14 {
   100% {
-    transform: translate3d(51vw, 49vh, 49px);
+    transform: translate3d(72vw, 18vh, 38px);
   }
 }
 
 @keyframes particle-animation-14 {
   100% {
-    transform: translate3d(51vw, 49vh, 49px);
+    transform: translate3d(72vw, 18vh, 38px);
   }
 }
 .particle:nth-child(14) {
@@ -826,18 +826,18 @@
           animation: particle-animation-14 60s infinite;
   -webkit-animation-delay: -2.8s;
           animation-delay: -2.8s;
-  transform: translate3d(75vw, 55vh, 75px);
+  transform: translate3d(52vw, 42vh, 94px);
 }
 
 @-webkit-keyframes particle-animation-15 {
   100% {
-    transform: translate3d(19vw, 2vh, 95px);
+    transform: translate3d(38vw, 81vh, 55px);
   }
 }
 
 @keyframes particle-animation-15 {
   100% {
-    transform: translate3d(19vw, 2vh, 95px);
+    transform: translate3d(38vw, 81vh, 55px);
   }
 }
 .particle:nth-child(15) {
@@ -845,18 +845,18 @@
           animation: particle-animation-15 60s infinite;
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
-  transform: translate3d(48vw, 81vh, 24px);
+  transform: translate3d(55vw, 38vh, 3px);
 }
 
 @-webkit-keyframes particle-animation-16 {
   100% {
-    transform: translate3d(90vw, 50vh, 28px);
+    transform: translate3d(60vw, 11vh, 81px);
   }
 }
 
 @keyframes particle-animation-16 {
   100% {
-    transform: translate3d(90vw, 50vh, 28px);
+    transform: translate3d(60vw, 11vh, 81px);
   }
 }
 .particle:nth-child(16) {
@@ -864,18 +864,18 @@
           animation: particle-animation-16 60s infinite;
   -webkit-animation-delay: -3.2s;
           animation-delay: -3.2s;
-  transform: translate3d(22vw, 28vh, 29px);
+  transform: translate3d(70vw, 49vh, 30px);
 }
 
 @-webkit-keyframes particle-animation-17 {
   100% {
-    transform: translate3d(16vw, 53vh, 70px);
+    transform: translate3d(40vw, 82vh, 3px);
   }
 }
 
 @keyframes particle-animation-17 {
   100% {
-    transform: translate3d(16vw, 53vh, 70px);
+    transform: translate3d(40vw, 82vh, 3px);
   }
 }
 .particle:nth-child(17) {
@@ -883,18 +883,18 @@
           animation: particle-animation-17 60s infinite;
   -webkit-animation-delay: -3.4s;
           animation-delay: -3.4s;
-  transform: translate3d(75vw, 90vh, 57px);
+  transform: translate3d(2vw, 72vh, 16px);
 }
 
 @-webkit-keyframes particle-animation-18 {
   100% {
-    transform: translate3d(87vw, 36vh, 51px);
+    transform: translate3d(23vw, 40vh, 81px);
   }
 }
 
 @keyframes particle-animation-18 {
   100% {
-    transform: translate3d(87vw, 36vh, 51px);
+    transform: translate3d(23vw, 40vh, 81px);
   }
 }
 .particle:nth-child(18) {
@@ -902,18 +902,18 @@
           animation: particle-animation-18 60s infinite;
   -webkit-animation-delay: -3.6s;
           animation-delay: -3.6s;
-  transform: translate3d(65vw, 64vh, 64px);
+  transform: translate3d(50vw, 14vh, 79px);
 }
 
 @-webkit-keyframes particle-animation-19 {
   100% {
-    transform: translate3d(51vw, 26vh, 16px);
+    transform: translate3d(45vw, 48vh, 6px);
   }
 }
 
 @keyframes particle-animation-19 {
   100% {
-    transform: translate3d(51vw, 26vh, 16px);
+    transform: translate3d(45vw, 48vh, 6px);
   }
 }
 .particle:nth-child(19) {
@@ -921,18 +921,18 @@
           animation: particle-animation-19 60s infinite;
   -webkit-animation-delay: -3.8s;
           animation-delay: -3.8s;
-  transform: translate3d(80vw, 60vh, 20px);
+  transform: translate3d(24vw, 88vh, 75px);
 }
 
 @-webkit-keyframes particle-animation-20 {
   100% {
-    transform: translate3d(40vw, 85vh, 54px);
+    transform: translate3d(85vw, 85vh, 22px);
   }
 }
 
 @keyframes particle-animation-20 {
   100% {
-    transform: translate3d(40vw, 85vh, 54px);
+    transform: translate3d(85vw, 85vh, 22px);
   }
 }
 .particle:nth-child(20) {
@@ -940,18 +940,18 @@
           animation: particle-animation-20 60s infinite;
   -webkit-animation-delay: -4s;
           animation-delay: -4s;
-  transform: translate3d(46vw, 23vh, 34px);
+  transform: translate3d(12vw, 32vh, 63px);
 }
 
 @-webkit-keyframes particle-animation-21 {
   100% {
-    transform: translate3d(70vw, 34vh, 85px);
+    transform: translate3d(90vw, 49vh, 60px);
   }
 }
 
 @keyframes particle-animation-21 {
   100% {
-    transform: translate3d(70vw, 34vh, 85px);
+    transform: translate3d(90vw, 49vh, 60px);
   }
 }
 .particle:nth-child(21) {
@@ -959,18 +959,18 @@
           animation: particle-animation-21 60s infinite;
   -webkit-animation-delay: -4.2s;
           animation-delay: -4.2s;
-  transform: translate3d(53vw, 56vh, 100px);
+  transform: translate3d(17vw, 27vh, 88px);
 }
 
 @-webkit-keyframes particle-animation-22 {
   100% {
-    transform: translate3d(9vw, 86vh, 82px);
+    transform: translate3d(73vw, 85vh, 98px);
   }
 }
 
 @keyframes particle-animation-22 {
   100% {
-    transform: translate3d(9vw, 86vh, 82px);
+    transform: translate3d(73vw, 85vh, 98px);
   }
 }
 .particle:nth-child(22) {
@@ -978,18 +978,18 @@
           animation: particle-animation-22 60s infinite;
   -webkit-animation-delay: -4.4s;
           animation-delay: -4.4s;
-  transform: translate3d(50vw, 2vh, 51px);
+  transform: translate3d(18vw, 70vh, 96px);
 }
 
 @-webkit-keyframes particle-animation-23 {
   100% {
-    transform: translate3d(36vw, 8vh, 35px);
+    transform: translate3d(90vw, 5vh, 80px);
   }
 }
 
 @keyframes particle-animation-23 {
   100% {
-    transform: translate3d(36vw, 8vh, 35px);
+    transform: translate3d(90vw, 5vh, 80px);
   }
 }
 .particle:nth-child(23) {
@@ -997,18 +997,18 @@
           animation: particle-animation-23 60s infinite;
   -webkit-animation-delay: -4.6s;
           animation-delay: -4.6s;
-  transform: translate3d(85vw, 6vh, 24px);
+  transform: translate3d(78vw, 58vh, 58px);
 }
 
 @-webkit-keyframes particle-animation-24 {
   100% {
-    transform: translate3d(41vw, 58vh, 34px);
+    transform: translate3d(64vw, 40vh, 41px);
   }
 }
 
 @keyframes particle-animation-24 {
   100% {
-    transform: translate3d(41vw, 58vh, 34px);
+    transform: translate3d(64vw, 40vh, 41px);
   }
 }
 .particle:nth-child(24) {
@@ -1016,18 +1016,18 @@
           animation: particle-animation-24 60s infinite;
   -webkit-animation-delay: -4.8s;
           animation-delay: -4.8s;
-  transform: translate3d(51vw, 5vh, 67px);
+  transform: translate3d(14vw, 80vh, 88px);
 }
 
 @-webkit-keyframes particle-animation-25 {
   100% {
-    transform: translate3d(51vw, 23vh, 28px);
+    transform: translate3d(78vw, 88vh, 75px);
   }
 }
 
 @keyframes particle-animation-25 {
   100% {
-    transform: translate3d(51vw, 23vh, 28px);
+    transform: translate3d(78vw, 88vh, 75px);
   }
 }
 .particle:nth-child(25) {
@@ -1035,18 +1035,18 @@
           animation: particle-animation-25 60s infinite;
   -webkit-animation-delay: -5s;
           animation-delay: -5s;
-  transform: translate3d(85vw, 26vh, 91px);
+  transform: translate3d(21vw, 12vh, 94px);
 }
 
 @-webkit-keyframes particle-animation-26 {
   100% {
-    transform: translate3d(69vw, 52vh, 38px);
+    transform: translate3d(52vw, 27vh, 13px);
   }
 }
 
 @keyframes particle-animation-26 {
   100% {
-    transform: translate3d(69vw, 52vh, 38px);
+    transform: translate3d(52vw, 27vh, 13px);
   }
 }
 .particle:nth-child(26) {
@@ -1054,18 +1054,18 @@
           animation: particle-animation-26 60s infinite;
   -webkit-animation-delay: -5.2s;
           animation-delay: -5.2s;
-  transform: translate3d(48vw, 55vh, 85px);
+  transform: translate3d(73vw, 4vh, 62px);
 }
 
 @-webkit-keyframes particle-animation-27 {
   100% {
-    transform: translate3d(26vw, 76vh, 55px);
+    transform: translate3d(26vw, 6vh, 7px);
   }
 }
 
 @keyframes particle-animation-27 {
   100% {
-    transform: translate3d(26vw, 76vh, 55px);
+    transform: translate3d(26vw, 6vh, 7px);
   }
 }
 .particle:nth-child(27) {
@@ -1073,18 +1073,18 @@
           animation: particle-animation-27 60s infinite;
   -webkit-animation-delay: -5.4s;
           animation-delay: -5.4s;
-  transform: translate3d(3vw, 65vh, 85px);
+  transform: translate3d(36vw, 42vh, 52px);
 }
 
 @-webkit-keyframes particle-animation-28 {
   100% {
-    transform: translate3d(31vw, 34vh, 64px);
+    transform: translate3d(29vw, 76vh, 54px);
   }
 }
 
 @keyframes particle-animation-28 {
   100% {
-    transform: translate3d(31vw, 34vh, 64px);
+    transform: translate3d(29vw, 76vh, 54px);
   }
 }
 .particle:nth-child(28) {
@@ -1092,18 +1092,18 @@
           animation: particle-animation-28 60s infinite;
   -webkit-animation-delay: -5.6s;
           animation-delay: -5.6s;
-  transform: translate3d(15vw, 48vh, 33px);
+  transform: translate3d(4vw, 19vh, 70px);
 }
 
 @-webkit-keyframes particle-animation-29 {
   100% {
-    transform: translate3d(50vw, 37vh, 97px);
+    transform: translate3d(75vw, 31vh, 12px);
   }
 }
 
 @keyframes particle-animation-29 {
   100% {
-    transform: translate3d(50vw, 37vh, 97px);
+    transform: translate3d(75vw, 31vh, 12px);
   }
 }
 .particle:nth-child(29) {
@@ -1111,18 +1111,18 @@
           animation: particle-animation-29 60s infinite;
   -webkit-animation-delay: -5.8s;
           animation-delay: -5.8s;
-  transform: translate3d(16vw, 19vh, 30px);
+  transform: translate3d(11vw, 21vh, 83px);
 }
 
 @-webkit-keyframes particle-animation-30 {
   100% {
-    transform: translate3d(85vw, 26vh, 9px);
+    transform: translate3d(67vw, 53vh, 85px);
   }
 }
 
 @keyframes particle-animation-30 {
   100% {
-    transform: translate3d(85vw, 26vh, 9px);
+    transform: translate3d(67vw, 53vh, 85px);
   }
 }
 .particle:nth-child(30) {
@@ -1130,7 +1130,7 @@
           animation: particle-animation-30 60s infinite;
   -webkit-animation-delay: -6s;
           animation-delay: -6s;
-  transform: translate3d(48vw, 46vh, 67px);
+  transform: translate3d(5vw, 5vh, 88px);
 }
 
 @-webkit-keyframes rotation {
@@ -4689,6 +4689,14 @@ button:focus {
     margin-left: -70px;
   }
 }
+@media (min-width: 1200px) {
+  .ui-about-area__iamge-group .social-media-group {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    left: 102px;
+  }
+}
 .ui-about-area__content .content {
   flex-wrap: wrap;
   display: flex;
@@ -4743,6 +4751,7 @@ button:focus {
 }
 
 .social-media-group {
+  display: inline-block;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.7);
   border: 3px solid #FFFFFF;
@@ -4751,19 +4760,12 @@ button:focus {
           backdrop-filter: blur(32px);
   padding: 32px;
 }
-@media (min-width: 1200px) {
-  .social-media-group {
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
-    left: 102px;
-  }
-}
 .social-media-group .title {
   color: var(--bs-gray-900);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 16px;
 }
 .social-media-group .social-link {
   margin: 0;
@@ -4774,7 +4776,7 @@ button:focus {
   flex-wrap: wrap;
   gap: 8px;
 }
-.social-media-group .social-link li {
+.social-media-group .social-link li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4784,6 +4786,46 @@ button:focus {
   max-height: 48px;
   min-width: 48px;
   min-height: 48px;
+  transition: 0.3s !important;
+}
+.social-media-group .social-link li a svg path {
+  transition: 0.3s !important;
+}
+.social-media-group .social-link li.fb a:hover {
+  background: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
+}
+.social-media-group .social-link li.fb a:hover svg path {
+  fill: white;
+}
+.social-media-group .social-link li.twitter a:hover {
+  background: #1DA1F2;
+}
+.social-media-group .social-link li.twitter a:hover svg path {
+  fill: white;
+}
+.social-media-group .social-link li.linkedin a:hover {
+  background: #006699;
+}
+.social-media-group .social-link li.linkedin a:hover svg path {
+  fill: white;
+}
+.social-media-group .social-link li.insta a:hover {
+  background: radial-gradient(102.89% 102.88% at 60.65% 104.95%, rgba(140, 58, 170, 0) 64%, #8C3AAA 100%), radial-gradient(130.55% 130.54% at 13.29% 100.47%, #FA8F21 9%, #D82D7E 78%), #006699;
+}
+.social-media-group .social-link li.insta a:hover svg path {
+  fill: white;
+}
+.social-media-group .social-link li.dribbble a:hover {
+  background: #DD3E7B;
+}
+.social-media-group .social-link li.dribbble a:hover svg path {
+  fill: white;
+}
+.social-media-group .social-link li.behance a:hover {
+  background: #1769FF;
+}
+.social-media-group .social-link li.behance a:hover svg path {
+  fill: white;
 }
 
 .ui-award-area {
@@ -4958,6 +5000,152 @@ button:focus {
 
 .border-danger-50 {
   border-color: var(--bs-danger-50);
+}
+
+.ui-skill-area {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: inset 0px 2px 0px #FFF4ED;
+  z-index: 1;
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
+  .ui-skill-area {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 992px) {
+  .ui-skill-area {
+    padding: 100px 0;
+  }
+}
+@media (min-width: 992px) {
+  .ui-skill-area {
+    padding: 120px 0;
+  }
+}
+.ui-skill-area__content .ui-section-title {
+  margin-bottom: 28px;
+}
+@media (min-width: 992px) {
+  .ui-skill-area__content .ui-section-title {
+    margin-bottom: 48px;
+  }
+}
+.ui-skill-area__image-group {
+  text-align: center;
+  position: relative;
+}
+@media (min-width: 575px) {
+  .ui-skill-area__image-group {
+    text-align: end;
+  }
+}
+@media (min-width: 575px) {
+  .ui-skill-area__image-group .tools-group {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+}
+.ui-skill-area #skill-bar-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 992px) {
+  .ui-skill-area #skill-bar-wrapper {
+    gap: 36px;
+  }
+}
+.ui-skill-area #skill-bar-wrapper .text-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ui-skill-area #skill-bar-wrapper .text-wrapper .text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.ui-skill-area #skill-bar-wrapper .text-wrapper .count-tag {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Sora", sans-serif;
+}
+.ui-skill-area #skill-bar-wrapper .skillbar-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+}
+.ui-skill-area #skill-bar-wrapper .skills {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 5px;
+  width: 0px;
+}
+.ui-skill-area__ellipse-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  z-index: -1;
+}
+.ui-skill-area__ellipse-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22%;
+  z-index: -1;
+}
+
+.tools-group {
+  text-align: start !important;
+  display: inline-block;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  padding: 32px;
+}
+.tools-group .title {
+  color: var(--bs-gray-900);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+.tools-group .tools-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tools-group .tools-item li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 4px;
+  max-width: 48px;
+  max-height: 48px;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .photographer-hero-area {
