@@ -10,12 +10,22 @@
     .doctor-section-title{
         text-align: left;
         .title{
+            font-family: 'JetBrains Mono', sans-serif;
             font-size: 24px;
+            margin-bottom: 24px;
             @media (min-width: 768px){
                 font-size: 36px;
             }
             @media (min-width: 1400px){
                 font-size: 48px;
+            }
+            &:after{
+                content: "";
+                margin-top: 24px;
+                display: block;
+                width: 200px;
+                height: 1px;
+                background: var(--bs-gray-200);
             }
         }
         margin-bottom: 30px;
@@ -130,6 +140,7 @@
                 gap: 24px;
             }
             p{
+                font-family: 'JetBrains Mono', sans-serif;
                 svg{
                     padding-right: 6px;
                 }
@@ -143,6 +154,7 @@
         }
         .event-content{
             .title{
+                font-family: 'JetBrains Mono', sans-serif;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 1.4;
@@ -150,6 +162,7 @@
                 color: var(--bs-gray-900);
             }
             .text{
+                font-family: 'JetBrains Mono', sans-serif;
                 color: var(--bs-gray-600);
             }
         }
