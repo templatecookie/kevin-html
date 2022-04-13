@@ -1,24 +1,89 @@
 .doctor-success-area{
     margin: 100px auto;
     &__content{
-        .title{
-            font-family: 'JetBrains Mono';
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 1.17;
-            color: var(--bs-gray-900);
-            padding-bottom: 48px;
+        .doctor-section-title {
+            text-align: left;
         }
-        .text{
-            font-family: 'JetBrains Mono';
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-            color: var(--bs-gray-600);
-            padding-bottom: 50px;
+        .doctor-section-title .line {
+            margin: 24px 0;
+        }
+        .doctor-success-slider__control-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 30px;
+            gap: 16px;
+            @media (min-widht:992px) {
+                margin-top: 50px;
+            }
+            .button{
+               max-width: 56px;
+               min-width: 56px;
+               max-height: 56px;
+               min-height: 56px;
+               transition: .3s;
+               border-radius: 50%;
+               background: transparent;
+               border: 2px solid var(--bs-secondary-500); 
+               svg{
+                   path{
+                       transition: .3s;
+                   }
+               }
+               &:hover{
+                   background: var(--bs-secondary-500);
+                   svg{
+                       path{
+                           stroke: white;
+                       }
+                   }
+               }
+            }
+           
+        }
+        .doctor-work-slider{
+            // .slick-slide {
+            //     margin: 0 12px;
+            // }
+            // .slick-list {
+            //     margin: 0 -12px;
+            // }
+            &__control-buttons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                gap: 16px;
+                @media (min-widht:992px) {
+                    margin-top: 50px;
+                }
+                .button{
+                   max-width: 56px;
+                   min-width: 56px;
+                   max-height: 56px;
+                   min-height: 56px;
+                   transition: .3s;
+                   border-radius: 50%;
+                   background: transparent;
+                   border: 2px solid var(--bs-secondary-500); 
+                   svg{
+                       path{
+                           transition: .3s;
+                       }
+                   }
+                   &:hover{
+                       background: var(--bs-secondary-500);
+                       svg{
+                           path{
+                               stroke: white;
+                           }
+                       }
+                   }
+                }
+            }
         }
     }
-    &__featured{
+    &__slider{
             background: var(--bs-secondary-50);
             border: 4px solid var(--bs-secondary-500);
             box-sizing: border-box;
@@ -33,6 +98,53 @@
                 font-size: 24px;
                 line-height: 1.33;
                 color: var(--bs-gray-900);
+            }
+            .slick-dots {
+                padding: 0;
+                margin: 0;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (min-width:992px) {
+                margin-top: 50px;
+                position: absolute;
+                left: -245px;
+                top: 77%;
+                }
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 8px;
+                    transition: .3s;
+                    button {
+                        border: 3px;
+                        list-style: none;
+                        width: 6px;
+                        height: 6px;
+                        padding: 0;
+                        border-radius: 500px;
+                        background: var(--bs-gray-200)!important;
+                        opacity: 1;
+                        color: transparent;
+                        font-size: 0;
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+            
+                    &.slick-active {
+                        button{
+                            background: var(--bs-gray-900)!important;
+                            opacity: 1;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 500px;
+                        }
+                    }
+                }
             }
     }
 }
