@@ -4,6 +4,7 @@
 {% import "pages/landing-2/_project.njk" as ProjectSection %}
 {% import "pages/landing-2/_about.njk" as AboutSection %}
 {% import "pages/landing-2/_award.njk" as AwardSection %}
+{% import "pages/landing-2/_service.njk" as ServiceSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,4 +22,7 @@
   <!-- Award Section Start -->
   {{AwardSection.render()}}
   <!-- Award Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
 {% endblock %}
