@@ -154,6 +154,21 @@
                 nextArrow: $(".dev-testimonial-slider__control-buttons .button--next"),
             });
     }
+    if (jQuery(".doctor-testimonial-slider").length > 0) {
+        $(".doctor-testimonial-slider")
+            .not(".slick-initialized")
+            .slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+            });
+    }
     if (jQuery(".flc-testimonial-slider").length > 0) {
         $(".flc-testimonial-slider")
             .not(".slick-initialized")
