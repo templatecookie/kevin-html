@@ -119,21 +119,21 @@
         nextArrow: $(".doctor-event-slider__control-buttons .button--next"),
         responsive: [
           {
-            breakpoint: 1399,
+            breakpoint: 1400,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
             },
           },
           {
-            breakpoint: 991,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
             },
           },
           {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
