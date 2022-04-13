@@ -1,8 +1,13 @@
 {% macro render(args) %}
-    <div class="doctor-book-area" style="background-image: url('./image/l-5/book-bg.png')">
+    <div class="doctor-book-area">
         <div class="container">
-            <div class="row  justify-content-center ">
-                    <div class="col-md-6  offset-md-6">
+            <div class="row  justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <div class="doctor-book-area__image">
+                            <img src="./image/l-5/book.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="doctor-book-area__feature">
                             <div class="doctor-book-area__feature-top">
                                 <h3 class="title">The Highly Sensitive Person</h3>
@@ -10,7 +15,6 @@
                                     When a military doctor tracks down his former fiancee's kidnapped niece, he discovers a complex human trafficking ring in Goa. He then weaves an intricate trap to capture the perpetrators.
                                 </p>
                                 <div class="writer d-flex align-items-center">
-                                    {# <div class="writer-img"></div> #}
                                     <img class="img-fluid" src="./image/l-5/writer.png" alt="">
                                     <div class="writer-info">
                                         <p class="title">Written by:</p>
