@@ -167,6 +167,18 @@
       }
     }
   }
+  &.ui-btn-outline-primary{
+      color: var(--bs-tertiary-500);
+      border: 2px solid var(--bs-tertiary-50);
+      box-sizing: border-box;
+      border-radius: 8px;
+      svg{
+        margin-left: 12px;
+      }
+      &:hover{
+          border: 2px solid var(--bs-tertiary-500);
+      }
+  }
 }
 button {
   &:focus {

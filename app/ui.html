@@ -6,6 +6,8 @@
 {% import "pages/landing-2/_award.njk" as AwardSection %}
 {% import "pages/landing-2/_service.njk" as ServiceSection %}
 {% import "pages/landing-2/_skill.njk" as SkillSection %}
+{% import "pages/landing-2/_work.njk" as WorkSection %}
+{% import "pages/landing-2/_blog.njk" as BlogSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -29,4 +31,10 @@
   <!-- Skill Section Start -->
   {{SkillSection.render()}}
   <!-- Skill Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render()}}
+  <!-- Work Section End -->
+  <!-- Blog Section Start -->
+  {{BlogSection.render()}}
+  <!-- Blog Section End -->
 {% endblock %}
