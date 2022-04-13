@@ -9,6 +9,7 @@
 {% import "pages/landing-2/_work.njk" as WorkSection %}
 {% import "pages/landing-2/_blog.njk" as BlogSection %}
 {% import "pages/landing-2/_contact.njk" as ContactSection %}
+{% import "pages/landing-2/_cta.njk" as CtaSection %}
 {% import "pages/landing-2/_footer.njk" as FooterSection %}
 
 {% block main %}
@@ -36,6 +37,9 @@
   <!-- Work Section Start -->
   {{WorkSection.render()}}
   <!-- Work Section End -->
+  <!--Cta Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section End -->
   <!-- Blog Section Start -->
   {{BlogSection.render()}}
   <!-- Blog Section End -->
