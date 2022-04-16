@@ -7,6 +7,9 @@
 {% import "pages/landing-5/_event.njk" as EventSection %}
 {% import "pages/landing-5/_cta.njk" as CtaSection %}
 {% import "pages/landing-5/_footer.njk" as FooterSection %}
+{% import "pages/landing-5/_book.njk" as BookSection %}
+{% import "pages/landing-5/_success.njk" as SuccessSection %}
+{% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,6 +24,9 @@
   <!-- Work Section Start -->
   {{WorkSection.render()}}
   <!-- Work Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
   <!-- Award Section Start -->
   {{AwardSection.render()}}
   <!-- Award Section End -->
@@ -33,4 +39,10 @@
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End -->
+  <!-- Book Section Start -->
+  {{BookSection.render()}}
+  <!-- Book Section End -->
+  <!-- Success Section Start -->
+  {{SuccessSection.render()}}
+  <!-- Success Section End -->
 {% endblock %}

@@ -104,36 +104,36 @@
         ],
       });
   }
-  if (jQuery(".doctor-event-slider").length > 0) {
-    $(".doctor-event-slider")
+  if (jQuery(".doctor-success-slider").length > 0) {
+    $(".doctor-success-slider")
       .not(".slick-initialized")
       .slick({
         dots: true,
         infinite: true,
         speed: 800,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         fade: false,
-        prevArrow: $(".doctor-event-slider__control-buttons .button--prev"),
-        nextArrow: $(".doctor-event-slider__control-buttons .button--next"),
+        prevArrow: $(".doctor-success-slider__control-buttons .button--prev"),
+        nextArrow: $(".doctor-success-slider__control-buttons .button--next"),
         responsive: [
           {
-            breakpoint: 1400,
+            breakpoint: 1399,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
             },
           },
           {
-            breakpoint: 992,
+            breakpoint: 991,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
             },
           },
           {
-            breakpoint: 768,
+            breakpoint: 420,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -155,6 +155,21 @@
         fade: true,
         prevArrow: $(".dev-testimonial-slider__control-buttons .button--prev"),
         nextArrow: $(".dev-testimonial-slider__control-buttons .button--next"),
+      });
+  }
+  if (jQuery(".doctor-testimonial-slider").length > 0) {
+    $(".doctor-testimonial-slider")
+      .not(".slick-initialized")
+      .slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
       });
   }
   if (jQuery(".flc-testimonial-slider").length > 0) {
@@ -303,25 +318,6 @@
       $(".ui-project-slider--half-fluid").css("margin-left", "0px");
     }
   });
-  $(window).scroll(function() {
-    var hT = $('#skill-bar-wrapper').offset().top,
-        hH = $('#skill-bar-wrapper').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-1.4*wH)){
-        jQuery(document).ready(function(){
-            jQuery('.skillbar-container').each(function(){
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 5000); // 5 seconds
-            });
-        });
-    }
- });
+
 
 })(jQuery);
-
-
-
-
-
