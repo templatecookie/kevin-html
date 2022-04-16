@@ -8,17 +8,18 @@
         padding: 100px 0;
     }
     .photographer-section-title{
-        .title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
             margin-bottom: 50px;
         }
         
     }
     .photographer-pricing-card{
-        margin-bottom: 20px;
+        height: 100%;
         background-color: white;
-        padding: 48px;
-        @media (max-width:1024px) {
-            padding: 15px;
+        padding: 48px 25px;
+        @media (min-width:1024px) {
+            padding: 48px 30px;
         }
         &-top{
             display: flex;

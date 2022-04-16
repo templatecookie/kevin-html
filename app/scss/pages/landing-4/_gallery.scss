@@ -9,13 +9,17 @@
         padding: 100px 0;
     }
     .photographer-section-title{
-            margin-bottom: 50px;
+        margin-bottom: 30px;
+        @media(min-width:768px){
+                margin-bottom: 50px;
+
+            }
     }
     .gellery-btn{
         display: flex;
         margin-bottom: 20px;
-        @media(min-width:768){
-            justify-content: flex-start;
+        @media(min-width:768px){
+            justify-content: flex-end;
         }
     }
     .gallery-img a{
