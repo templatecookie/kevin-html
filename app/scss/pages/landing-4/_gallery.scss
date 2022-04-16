@@ -15,7 +15,7 @@
         display: flex;
         margin-bottom: 20px;
         @media(min-width:768){
-            justify-content: start;
+            justify-content: flex-start;
         }
     }
     .gallery-img a{

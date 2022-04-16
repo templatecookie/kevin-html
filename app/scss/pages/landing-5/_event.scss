@@ -43,7 +43,7 @@
         &__control-buttons{
             display: flex;
             align-items: center;
-            justify-content: end;
+            justify-content: flex-end;
             margin-top: 30px;
             gap: 16px;
             @media (min-widht:992px) {

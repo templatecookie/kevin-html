@@ -10,6 +10,25 @@
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
     $('#datepicker').datepicker();
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        Skill-bar Activation
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    $(window).scroll(function() {
+        var hT = $('#skill-bar-wrapper').offset().top,
+            hH = $('#skill-bar-wrapper').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT + hH - 1.4 * wH)) {
+            jQuery(document).ready(function() {
+                jQuery('.skillbar-container').each(function() {
+                    jQuery(this).find('.skills').animate({
+                        width: jQuery(this).attr('data-percent')
+                    }, 5000); // 5 seconds
+                });
+            });
+        }
+    });
+
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         AOS Activation
     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
     AOS.init({
@@ -167,6 +186,43 @@
                 slidesToScroll: 1,
                 arrows: false,
                 fade: true,
+            });
+    }
+    if (jQuery(".doctor-event-slider").length > 0) {
+        $(".doctor-event-slider")
+            .not(".slick-initialized")
+            .slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: false,
+                prevArrow: $(".doctor-event-slider__control-buttons .button--prev"),
+                nextArrow: $(".doctor-event-slider__control-buttons .button--next"),
+                responsive: [{
+                        breakpoint: 1400,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
             });
     }
     if (jQuery(".flc-testimonial-slider").length > 0) {
