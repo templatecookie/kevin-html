@@ -369,6 +369,31 @@
             $(".ui-project-slider--half-fluid").css("margin-left", "0px");
         }
     });
+    if (jQuery(".ui-testimonial-slider").length > 0) {
+        $(".ui-testimonial-slider")
+            .not(".slick-initialized")
+            .slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: true,
+                dots: false,
+                speed: 300,
+                centerPadding: '-20px',
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: true,
+                prevArrow: $(".ui-testimonial-slider__control-buttons .button--prev"),
+                nextArrow: $(".ui-testimonial-slider__control-buttons .button--next"),
+                responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        centerPadding: '20px',
+                        slidesToShow: 1,
+                    }
+                }, ]
+            });
+    }
 
 
 })(jQuery);
