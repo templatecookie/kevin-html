@@ -394,3 +394,118 @@
     }
   }
 }
+.lawyer-header{
+  .container{
+    @media (min-width:1400px) {
+      max-width: 1170px;
+    }
+  }
+  @media (max-width:992px) {
+      margin: 22px 0;
+    }
+  .site-header{
+    &__brand{
+      .logo{
+        display:flex;
+        align-items: center;
+        .icon{
+          margin-right: 16px;
+          max-width:56px;
+          min-width:56px;
+          min-height:56px;
+          max-height:56px;
+          justify-content: center;
+          display: flex;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 24px;
+          align-items: center;
+          color: white !important;
+          background: var(--bs-primary-500);
+          border-radius: 4px;
+        }
+        .text-wrapper{
+          p{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            white-space: nowrap;
+            color: var(--bs-gray-900);
+            text-transform: uppercase;
+            font-size: 18px;
+            @media (min-width:575px) {
+              font-size: 20px;
+            }
+          }
+          span{
+            text-transform: capitalize;
+            font-family: 'Barlow', sans-serif;
+            white-space: nowrap;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-700);
+          }
+        }
+      }
+    }
+    &__social{
+      @media (max-width:991px) {
+        justify-content: center;
+        margin-top: 55px;
+      }
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      a{
+        min-width: 48px;
+        max-width: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        background: var(--bs-primary-50);
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        justify-content: center;
+        color: var(--bs-primary-500);
+        border-radius: 4px;
+        &:hover{
+          background: var(--bs-primary-500);
+          color: white;
+        }
+      }
+    }
+  }
+  .site-menu-main{
+    .nav-link-item{
+      font-weight: 500;
+      font-size: 16px;
+      padding: 16px 12px;
+      position: relative;
+      @media (min-width:992px) {
+        padding: 40px 12px;
+      }
+      line-height: 24px;
+      font-family:'Barlow', sans-serif;
+      color: var(--bs-gray-500);
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        transition: .3s;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        background: var(--bs-primary-500);
+      }
+      &:hover{
+        color: var(--bs-primary-500);
+        @media (min-width:992px) {
+          &::before{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

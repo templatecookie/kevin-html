@@ -38,5 +38,13 @@
 		"additional_button_classes": "doctor-header-btn ms-lg-4",
 		"header_button_class": "dc-btn dc-btn-primary w-107",
 		"header_button_text": "Contact"
+	},
+	"siteHeaderSix": {
+		"additional_header_class": "site-header--menu-center lawyer-header mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": false,
+		"header_social_button": true,
+		"root": "<div class='icon'>W</div> <div class='text-wrapper'><p>Winston Potter</p><span>Professional Lawyer</span></div>"
 	}
 }
