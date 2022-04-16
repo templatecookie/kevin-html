@@ -62,8 +62,17 @@
                 flex-direction: row;
                 gap: 24px;
             }
+            p{
+                span{
+                    font-weight: 300;
+                    font-family: 'Sora', sans-serif;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
         }
         &-title{
+            font-family: 'Sora', sans-serif;
             margin-bottom: 16px;
             font-weight: 400;
             font-size: 20px;
@@ -73,6 +82,7 @@
             }
         }
         &-text{
+            font-family: 'Sora', sans-serif;
             margin-bottom: 24px;
             font-weight: 300;
             font-size: 14px;
