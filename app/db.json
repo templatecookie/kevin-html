@@ -19,6 +19,14 @@
 		"header_button_class": "ui-btn ui-btn-primary ms-lg-3",
 		"header_button_text": "<img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message"
 	},
+	"siteHeaderThree": {
+		"additional_header_class": "site-header--menu-center freelancer-header mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": false,
+		"header_social_button": true,
+		"root": "<div class='text-wrapper'><p>Marvin Richard</p><span>UI/UX & Product Designer</span></div>"
+	},
 	"siteHeaderFour": {
 		"additional_header_class": "site-header--menu-right photographer-header",
 		"header_double_button": false,

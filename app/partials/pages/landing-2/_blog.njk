@@ -1,150 +1,148 @@
 {% macro render(args) %}
     <div class="ui-blog-area">
+        <div class="ui-blog-area__ellipse-1">
+            <img src="./image/l-2/ellipse-8.png" alt="ellips" class="w-100">
+        </div>
+        <div class="ui-blog-area__ellipse-2">
+            <img src="./image/l-2/ellipse-9.png" alt="ellips" class="w-100">
+        </div>
         <div class="container">
             <div class="ui-section-title">
                 <h2 class="title">Latest Articles</h2>
                 <p class="text">Nam malesuada est elementum nibh tristique, non ornare <br class="d-none d-lg-block"> lacus mollis. Sed lectus nulla, ultrices in gravida in.</p>
             </div>
-            <div class="blog-wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10 gy-5 gy-lg-0">
-                        <div class="blog-card">
-                            <article>
-                                <div class="feature-img">
-                                    <a href="#">
-                                        <img src="./image/l-2/blog-01.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-meta">
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>17 Oct, 2020</span>
-                                        </p>
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>5 min read</span>
-                                        </p>
-                                    </div>
-                                    <h2 class="blog-content-title">
-                                        <a href="#" class="title">Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.</a>
-                                    </h2>
-                                    <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
-                                    <div class="blog-content-btn">
-                                        <a href="#" class="ui-btn ui-btn-outline-primary">
-                                            <span>Read More</span>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+            <div class="row justify-content-center card-row">
+                <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10">
+                    <div class="ui-blog-card">
+                        <div class="feature-img">
+                            <a href="#">
+                                <img src="./image/l-2/blog-01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-content-meta">
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>17 Oct, 2020</span>
+                                </p>
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>5 min read</span>
+                                </p>
+                            </div>
+                            <h2 class="blog-content-title">
+                                <a href="#" class="title">Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.</a>
+                            </h2>
+                            <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
+                            <div class="blog-content-btn">
+                                <a href="#" class="ui-btn ui-btn-outline-primary">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10 gy-5 gy-lg-0">
-                        <div class="card blog-card">
-                            <article>
-                                <div class="feature-img">
-                                    <a href="#">
-                                        <img src="./image/l-2/blog-02.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-meta">
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>17 Oct, 2020</span>
-                                        </p>
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>5 min read</span>
-                                        </p>
-                                    </div>
-                                    <h2 class="blog-content-title">
-                                        <a href="#" class="title">
-                                            Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.
-                                        </a>
-                                    </h2>
-                                    <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
-                                    <div class="blog-content-btn">
-                                        <a href="#" class="ui-btn ui-btn-outline-primary">
-                                            <span>Read More</span>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10">
+                    <div class="ui-blog-card">
+                        <div class="feature-img">
+                            <a href="#">
+                                <img src="./image/l-2/blog-02.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-content-meta">
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>17 Oct, 2020</span>
+                                </p>
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>5 min read</span>
+                                </p>
+                            </div>
+                            <h2 class="blog-content-title">
+                                <a href="#" class="title">
+                                    Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.
+                                </a>
+                            </h2>
+                            <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
+                            <div class="blog-content-btn">
+                                <a href="#" class="ui-btn ui-btn-outline-primary">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10 gy-5 gy-lg-0">
-                        <div class="card blog-card">
-                            <article>
-                                <div class="feature-img">
-                                    <a href="#">
-                                        <img src="./image/l-2/blog-03.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-meta">
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>17 Oct, 2020</span>
-                                        </p>
-                                        <p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            <span>5 min read</span>
-                                        </p>
-                                    </div>
-                                    <h2 class="blog-content-title">
-                                        <a href="#" class="title">Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.</a>
-                                    </h2>
-                                    <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
-                                    <div class="blog-content-btn">
-                                        <a href="#" class="ui-btn ui-btn-outline-primary">
-                                            <span>Read More</span>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-11 col-xs-10">
+                    <div class="ui-blog-card">
+                        <div class="feature-img">
+                            <a href="#">
+                                <img src="./image/l-2/blog-03.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-content-meta">
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 2.25V5.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.75 8.25H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>17 Oct, 2020</span>
+                                </p>
+                                <p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 10.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.5 13.5H16.5" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 3.75V20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>5 min read</span>
+                                </p>
+                            </div>
+                            <h2 class="blog-content-title">
+                                <a href="#" class="title">Duis magna risus, convallis vel purus eu, sollicidin volutpat velit.</a>
+                            </h2>
+                            <p class="blog-content-text">Praesent turpis quam, dapibus id diam a, cursus lobortis mi. Praesent nec lorem eget nisi sodales vehicula etiam sagittis dapibus.</p>
+                            <div class="blog-content-btn">
+                                <a href="#" class="ui-btn ui-btn-outline-primary">
+                                    <span>Read More</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 12H20.25" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#8A43FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
