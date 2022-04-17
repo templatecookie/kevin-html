@@ -247,6 +247,31 @@
       }
     }
   }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-primary-500);
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-primary-500);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-primary-500);
+          }
+        }
+      }
+    }
+  }
 }
 .photographer-header{
     margin: 24px 0;
@@ -283,6 +308,31 @@
       color: var(--bs-gray-400);
       &:hover{
         color: white;
+      }
+    }
+  }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-success-500);
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-success-500);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-success-500);
+          }
+        }
       }
     }
   }
@@ -330,6 +380,31 @@
       color: var(--bs-gray-700);
       &:hover{
         background: var(--bs-secondary-200);
+      }
+    }
+  }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-secondary-500);
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-secondary-500);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-secondary-500);
+          }
+        }
       }
     }
   }
@@ -390,6 +465,31 @@
       color: var(--bs-gray-600);
       &:hover{
         color: var(--bs-gray-900);
+      }
+    }
+  }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-tertiary-500);
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-tertiary-500);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-tertiary-500);
+          }
+        }
       }
     }
   }
@@ -508,6 +608,31 @@
       }
     }
   }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-primary-500);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-primary-500);
+          }
+        }
+      }
+    }
+  }
 }
 .freelancer-header{
   margin: 25px 0;
@@ -579,6 +704,31 @@
       color: var(--bs-gray-600);
       &:hover{
         color: var(--bs-gray-900);
+      }
+    }
+  }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-gray-900);
+        }
+      }
+    }
+  }
+  .site-menu-main {
+    .sub-menu {
+      &--item {
+        >a {
+          &:hover{
+            color: var(--bs-gray-900);
+          }
+        }
+        &:hover {
+          >a {
+            color: var(--bs-gray-900);
+          }
+        }
       }
     }
   }

@@ -136,15 +136,15 @@
 			}
 
 			>a {
+				font-size: 14px;
 				color: #222D39;
-				transition: 0.3s;
+				transition: 0.4s;
 				padding-left: 10px;
 				padding-right: 10px;
-				padding-top: 15px;
-				padding-bottom: 15px;
+				padding-top: 10px;
+				padding-bottom: 10px;
 				align-items: center;
 				@media (min-width:992px) {
-					transition: 0.4s;
 					padding-top: 7px;
 					padding-bottom: 10px;
 					padding-left: 25px;
@@ -162,7 +162,7 @@
 					justify-content: center;
 				}
 				&:hover{
-					color: #008AFF !important;
+					color: #008AFF;
 				}
 			}
 
@@ -332,7 +332,7 @@
 				padding-right: 10px;
 
 				&:hover {
-					color: red !important;
+					color: green !important;
 				}
 			}
 		}
@@ -368,7 +368,7 @@ li.nav-item-has-children {
 				z-index: 99;
 				pointer-events: visible;
 				border-radius: 0px 0px 15px 15px;
-				border-top: 3px solid red;
+				border-top: 3px solid;
 			}
 		}
 	}
