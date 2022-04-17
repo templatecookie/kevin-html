@@ -1,0 +1,31 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/project/_gallery.njk" as GallerySecton %}
+{% import "pages/project/_banner.njk" as BannerSecton %}
+{% import "pages/developer/_project.njk" as ProjectSection %}
+{% import "pages/project/_project-details.njk" as ProjectDetails %}
+{% import "pages/developer/_footer.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(developer)}}
+  <!-- Header Section End -->
+  <!-- Banner Section Start -->
+  {{BannerSecton.render()}}
+  <!-- Banner Section End -->
+  <!-- Project Detail Section Start -->
+  {{ProjectDetails.render()}}
+  <!-- Project Detail Section End -->
+  <!-- Gallery Section Start -->
+  {{GallerySecton.render()}}
+  <!-- Gallery Section End -->
+    <!-- Project Section Start -->
+  {{ProjectSection.render({
+    titleChange:"Related Projects"
+  })}}
+  <!-- Project Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render({
+    sectionClass:"dev-footer-area--modifi"
+  })}}
+  <!-- Footer Section End -->
+{% endblock %}
