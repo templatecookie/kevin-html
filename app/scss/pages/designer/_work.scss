@@ -26,6 +26,7 @@
         padding: 32px;
     }
     .icon{
+        transition: .3s;
         background: white;
         margin-bottom: 32px;
         min-height: 80px;
@@ -36,6 +37,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        svg{
+            path{
+                transition: .3s;
+            }
+        }
         &-1{
             box-shadow: 0px 16px 48px rgba(138, 67, 255, 0.16);  
         }
@@ -68,21 +74,55 @@
     }
     &-1{
         &:hover{
+            .icon{
+               background: var(--bs-tertiary-500);
+               svg{
+                   path{
+                       stroke: white;
+                   }
+               }
+            }
             box-shadow: 0px 24px 88px rgba(138, 67, 255, 0.16);
         }
     }
     &-2{
         &:hover{
+            .icon{
+                background: var(--bs-primary-500);
+                svg{
+                    path{
+                        stroke: white;
+                    }
+                }
+                
+            }
             box-shadow: 0px 24px 88px rgba(23, 119, 229, 0.16);
         }
     }
     &-3{
         &:hover{
+            .icon{
+                background: var(--bs-warning-500);
+                svg{
+                    path{
+                        stroke: white;
+                    }
+                }
+                
+            }
             box-shadow: 0px 24px 88px rgba(255, 148, 77, 0.16);          
         }
     }
     &-4{
         &:hover{
+            .icon{
+                background: var(--bs-success-500);
+                svg{
+                    path{
+                        stroke: white;
+                    }
+                }
+            }
             box-shadow: 0px 24px 88px rgba(45, 178, 74, 0.16);
         }
     }
