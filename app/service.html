@@ -1,8 +1,5 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/developer/_hero.njk" as HeroSection %}
-{% import "pages/developer/_project.njk" as ProjectSection %}
-{% import "pages/developer/_testimonial.njk" as TestimonialSection %}
 {% import "pages/developer/_counter.njk" as CounterSection %}
 {% import "pages/developer/_footer.njk" as FooterSection %}
 {% import "pages/developer/_service.njk" as ServiceSection %}
@@ -26,7 +23,8 @@
   <!-- Work Section Start -->
   {{WorkSection.render({
     sectionClass:"bg-gray-50",
-    cardClass:"ui-work-card--modifi"
+    cardClass:"ui-work-card--modifi",
+    titleChange:"My work process"
   })}}
   <!-- Work Section End -->
   <!-- Company info Section Start -->
