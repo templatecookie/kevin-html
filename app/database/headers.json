@@ -1,15 +1,15 @@
 {
-  "siteHeaderOne":{
+  "developer":{
     "additional_header_class":"site-header--menu-right developer-header mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":false,
     "header_button":true,
     "root":"<img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>",
-    "additional_button_classes":"developer-header-btn",
+    "additional_button_classes":"developer-header-btn ms-lg-2",
     "header_button_class":"d-btn d-btn-primary",
     "header_button_text" :"Send message"
   },
-  "siteHeaderTwo":{
+  "designer":{
     "additional_header_class":"site-header--menu-right ui-header mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":false,
@@ -19,7 +19,7 @@
     "header_button_class":"ui-btn ui-btn-primary ms-lg-3",
     "header_button_text" :"<img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message"
   },
-  "siteHeaderThree":{
+  "freelancer":{
     "additional_header_class":"site-header--menu-center freelancer-header mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":true,
@@ -27,7 +27,7 @@
     "header_social_button":true,
     "root":"<div class='text-wrapper'><p>Marvin Richard</p><span>UI/UX & Product Designer</span></div>"
   },
-  "siteHeaderFour":{
+  "photographer":{
     "additional_header_class":"site-header--menu-right photographer-header",
     "header_double_button":false,
     "absolute_header":true,
@@ -37,7 +37,7 @@
     "header_button_class":"pg-btn pg-btn-primary",
     "header_button_text" :"<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
   },
-  "siteHeaderFive":{
+  "doctor":{
     "additional_header_class":"site-header--menu-right doctor-header mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":false,
@@ -47,7 +47,7 @@
     "header_button_class":"dc-btn dc-btn-primary w-107",
     "header_button_text" :"Contact"
   },
-  "siteHeaderSix":{
+  "lawyer":{
     "additional_header_class":"site-header--menu-center lawyer-header mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":false,

@@ -1,19 +1,19 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-5/_hero.njk" as HeroSection %}
-{% import "pages/landing-5/_about.njk" as AboutSection %}
-{% import "pages/landing-5/_work.njk" as WorkSection %}
-{% import "pages/landing-5/_award.njk" as AwardSection %}
-{% import "pages/landing-5/_event.njk" as EventSection %}
-{% import "pages/landing-5/_cta.njk" as CtaSection %}
-{% import "pages/landing-5/_footer.njk" as FooterSection %}
-{% import "pages/landing-5/_book.njk" as BookSection %}
-{% import "pages/landing-5/_success.njk" as SuccessSection %}
-{% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
+{% import "pages/doctor/_hero.njk" as HeroSection %}
+{% import "pages/doctor/_about.njk" as AboutSection %}
+{% import "pages/doctor/_work.njk" as WorkSection %}
+{% import "pages/doctor/_award.njk" as AwardSection %}
+{% import "pages/doctor/_event.njk" as EventSection %}
+{% import "pages/doctor/_cta.njk" as CtaSection %}
+{% import "pages/doctor/_footer.njk" as FooterSection %}
+{% import "pages/doctor/_book.njk" as BookSection %}
+{% import "pages/doctor/_success.njk" as SuccessSection %}
+{% import "pages/doctor/_testimonial.njk" as TestimonialSection %}
 
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(siteHeaderFive)}}
+  {{Header.render(doctor)}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
