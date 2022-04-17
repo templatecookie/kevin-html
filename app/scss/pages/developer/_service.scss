@@ -14,7 +14,7 @@
         }
     }
 }
-.card-service{
+.dev-card-service{
   background: white;
   transition: .3s; 
   padding: 40px;
@@ -60,13 +60,12 @@
         content: "";
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         transition: .3s;
-        width: 100%;
+        width: 0%;
         height: 1.5px;
         background: #125FB7;
-        opacity: 0;
-        visibility: hidden;
       }
       svg{
         margin-left: 8px;
@@ -82,10 +81,14 @@
           }
         } 
         &::before{
-          opacity: 1;
-          visibility: visible;
+          width: 100%;
         }
       }
+    }
+  }
+  &--modifi{
+    &:hover{
+      box-shadow: 0px 16px 80px rgba(19, 34, 56, 0.12);
     }
   }
 }

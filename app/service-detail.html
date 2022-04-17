@@ -1,0 +1,35 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/developer/_hero.njk" as HeroSection %}
+{% import "pages/developer/_project.njk" as ProjectSection %}
+{% import "pages/developer/_testimonial.njk" as TestimonialSection %}
+{% import "pages/developer/_counter.njk" as CounterSection %}
+{% import "pages/developer/_footer.njk" as FooterSection %}
+{% import "pages/developer/_service.njk" as ServiceSection %}
+{% import "pages/developer/_cta.njk" as ContactSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(developer)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Contact Section Start -->
+  {{ContactSection.render()}}
+  <!-- Contact Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+{% endblock %}
