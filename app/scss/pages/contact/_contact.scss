@@ -38,18 +38,13 @@
             }
             .contact-form{
                 .input-buttton{
-                    .ui-btn.ui-btn-primary {
-                        color: white;
-                        background: var(--bs-primary-500);
-                    }
-                    .ui-btn.ui-btn-primary:hover {
+                  
+                    .d-btn.d-btn-primary:hover {
                         box-shadow: none;
                         color: var(--bs-primary-500);
                         background: var(--bs-primary-50);
                     }
-                    .ui-btn.ui-btn-primary:hover svg path {
-                        stroke: var(--bs-primary-500);
-                    }
+                    
                 }
                 
             }
