@@ -62,52 +62,62 @@
             }
         }
     }
-    &__company-info{
-        padding-top: 60px;
+}
+.dev-company-info{
+    padding-top: 60px;
+    @media (min-width:768px) {
+        padding-top: 80px;
+    }
+    @media (min-width:992px) {
+        padding-top: 100px;
+    }
+    &--text{
+        .title{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;  
+            color: var(--bs-gray-900);
+            margin-bottom: 15px;
+            @media (min-width:992px) {
+                margin-bottom: 24px;
+            }
+        }
+        .text{
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--bs-gray-700);
+            line-height: 24px;
+        }
+    }
+    &--logo{
+        .logo-wrapper{
+            @media (max-width:768px) {
+                display: flex;
+                gap: 24px;
+                margin: 0;
+                justify-content: center;
+            }
+        }
+        .logo{
+            border-radius: 12px;
+            background: white;
+            padding: 15px 0;
+            @media (min-width:992px) {
+                padding: 24px 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &--modifi{
+        background: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.5) 100%);
+        padding-bottom: 60px;
         @media (min-width:768px) {
-            padding-top: 80px;
+            padding-bottom: 56px;
         }
         @media (min-width:992px) {
-            padding-top: 100px;
-        }
-        &--text{
-            .title{
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 40px;  
-                color: var(--bs-gray-900);
-                margin-bottom: 15px;
-                @media (min-width:992px) {
-                    margin-bottom: 24px;
-                }
-            }
-            .text{
-                font-weight: 400;
-                font-size: 16px;
-                color: var(--bs-gray-700);
-                line-height: 24px;
-            }
-        }
-        &--logo{
-            .logo-wrapper{
-                @media (max-width:768px) {
-                    display: flex;
-                    gap: 24px;
-                    margin: 0;
-                    justify-content: center;
-                }
-            }
-            .logo{
-                border-radius: 12px;
-                background: white;
-                padding: 15px 0;
-                @media (min-width:992px) {
-                    padding: 24px 0;
-                }
-                img{
-                    width: 100%;
-                }
-            }
+            padding-bottom: 76px;
         }
     }
 }
