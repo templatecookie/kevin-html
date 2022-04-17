@@ -7,6 +7,7 @@
 {% import "pages/developer/_footer.njk" as FooterSection %}
 {% import "pages/developer/_service.njk" as ServiceSection %}
 {% import "pages/service/_tools.njk" as ToolsSection %}
+{% import "pages/designer/_work.njk" as WorkSection %}
 {% import "pages/developer/_cta.njk" as ContactSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -21,6 +22,12 @@
   <!-- Tools Section Start -->
   {{ToolsSection.render()}}
   <!-- Tools Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render({
+    sectionClass:"bg-gray-50",
+    cardClass:"ui-work-card--modifi"
+  })}}
+  <!-- Work Section End -->
   <!-- Counter Section Start -->
   {{CounterSection.render()}}
   <!-- Counter Section End -->
