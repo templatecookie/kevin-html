@@ -7,7 +7,7 @@
     "root":"<img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>",
     "additional_button_classes":"developer-header-btn ms-lg-2",
     "header_button_class":"d-btn d-btn-primary",
-    "header_button_text" :"Send message"
+    "header_button_text" :"Contact"
   },
   "designer":{
     "additional_header_class":"site-header--menu-right ui-header mobile-menu-trigger-dark",

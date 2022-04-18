@@ -1,0 +1,17 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/project/_case-study.njk" as CaseStudy %}
+{% import "pages/developer/_footer.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(developer)}}
+  <!-- Header Section End -->
+  <!-- Case Study Section Start -->
+  {{CaseStudy.render(developer)}}
+  <!-- Case Study Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render({
+    sectionClass:"dev-footer-area--modifi"
+  })}}
+  <!-- Footer Section End -->
+{% endblock %}
