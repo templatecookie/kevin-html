@@ -1,0 +1,25 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/article/_banner.njk" as BannerSecton %}
+{% import "pages/article/_project.njk" as ProjectSection %}
+{% import "pages/article/_article-details.njk" as ArticleDetails %}
+{% import "pages/developer/_footer.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(developer)}}
+  <!-- Header Section End -->
+  <!-- Banner Section Start -->
+  {{BannerSecton.render()}}
+  <!-- Banner Section End -->
+  <!-- Article Detail Section Start -->
+  {{ArticleDetails.render()}}
+  <!-- Article Detail Section End -->
+    <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render({
+    sectionClass:"dev-footer-area--modifi"
+  })}}
+  <!-- Footer Section End -->
+{% endblock %}

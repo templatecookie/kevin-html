@@ -126,3 +126,11 @@
 .bg-ui-linear-gradient{
   background: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
 }
+.box-shadow-hover-none{
+  &:hover{
+    box-shadow: none !important;
+  }
+}
+small{
+  font-size: inherit;
+}
