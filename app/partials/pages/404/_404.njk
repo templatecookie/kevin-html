@@ -1,12 +1,13 @@
 {% macro render(args) %}
 <div class="error-page-area">
-    <div class="error-page-area__content text-center">
+    <div class="container">
+            <div class="error-page-area__content text-center">
         <div class="error_img ">
             <img src="./image/404.png" alt="error" class="img-fluid">
         </div>
         <div class="error_content ">
             <h2 class="title">Page not found...</h2>
-            <p class="desc">Something went wrong. It’s look that your requested could not be found. It’s look like the link is broken or the page is removed.</p>
+            <p class="desc">Something went wrong. It’s look that your requested could not <br class="d-none d-sm-block"> be found. It’s look like the link is broken or the page is removed.</p>
         </div>
         <div class="goHome-buttton">
             <button type="submit" class="d-btn-primary border-0 d-btn"> 
@@ -17,6 +18,6 @@
             </button>
         </div>
     </div>
-        
+    </div>        
 </div>
 {% endmacro %}
