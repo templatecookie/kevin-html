@@ -1,12 +1,17 @@
 
 .dev-contact-area{
-    @media (min-width:575px) {
-        padding-bottom: 0;
-        &::before{
-           display: none!important;
-        }
-        }
-        &__wrapper {
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    &::before{
+        display: none!important;
+    }
+    &__wrapper {
+            padding: 0 !important;
             position: relative;
             &--ellipse{
                display: none!important;
@@ -37,8 +42,10 @@
                 }
             }
             .contact-form{
+                @media (min-width:992px) {
+                    padding-left: 100px;
+                }
                 .input-buttton{
-                  
                     .d-btn.d-btn-primary:hover {
                         box-shadow: none;
                         color: var(--bs-primary-500);

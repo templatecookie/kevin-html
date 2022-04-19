@@ -3559,7 +3559,17 @@ button:focus {
 }
 
 .dev-footer-area {
-  padding: 100px 0;
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
+  .dev-footer-area {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 992px) {
+  .dev-footer-area {
+    padding: 100px 0;
+  }
 }
 .dev-footer-area .logo-wrapper .logo {
   display: flex;
@@ -9628,15 +9638,24 @@ p.law-copywright {
   }
 }
 
-@media (min-width: 575px) {
+.dev-contact-area {
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
   .dev-contact-area {
-    padding-bottom: 0;
-  }
-  .dev-contact-area::before {
-    display: none !important;
+    padding: 80px 0;
   }
 }
+@media (min-width: 992px) {
+  .dev-contact-area {
+    padding: 100px 0;
+  }
+}
+.dev-contact-area::before {
+  display: none !important;
+}
 .dev-contact-area__wrapper {
+  padding: 0 !important;
   position: relative;
 }
 .dev-contact-area__wrapper--ellipse {
@@ -9666,6 +9685,11 @@ p.law-copywright {
 }
 .dev-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item:hover i {
   color: white;
+}
+@media (min-width: 992px) {
+  .dev-contact-area__wrapper .contact-form {
+    padding-left: 100px;
+  }
 }
 .dev-contact-area__wrapper .contact-form .input-buttton .d-btn.d-btn-primary:hover {
   box-shadow: none;
