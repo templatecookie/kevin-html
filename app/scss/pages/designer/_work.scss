@@ -1,5 +1,4 @@
 .ui-work-area{
-    background-color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 80px 0;
@@ -124,6 +123,27 @@
                 }
             }
             box-shadow: 0px 24px 88px rgba(45, 178, 74, 0.16);
+        }
+    }
+    &--modifi{
+        .icon{
+            border-radius: 12px;
+            box-shadow: none !important;
+            &-1{
+                background: var(--bs-tertiary-100);
+            }
+            &-2{
+                background: var(--bs-primary-100);
+            }
+            &-3{
+                background: var(--bs-warning-100);
+            }
+            &-4{
+                background: var(--bs-success-100);
+            }
+        }
+        &:hover{
+            box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.12);
         }
     }
 }

@@ -1,14 +1,12 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/developer/_hero.njk" as HeroSection %}
-{% import "pages/developer/_project.njk" as ProjectSection %}
-{% import "pages/developer/_testimonial.njk" as TestimonialSection %}
 {% import "pages/developer/_counter.njk" as CounterSection %}
 {% import "pages/developer/_footer.njk" as FooterSection %}
 {% import "pages/developer/_service.njk" as ServiceSection %}
 {% import "pages/service/_tools.njk" as ToolsSection %}
 {% import "pages/designer/_work.njk" as WorkSection %}
 {% import "pages/developer/_cta.njk" as ContactSection %}
+{% import "components/_mixed.njk" as MixtComponent %}
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(developer)}}
@@ -25,9 +23,15 @@
   <!-- Work Section Start -->
   {{WorkSection.render({
     sectionClass:"bg-gray-50",
-    cardClass:"ui-work-card--modifi"
+    cardClass:"ui-work-card--modifi",
+    titleChange:"My work process"
   })}}
   <!-- Work Section End -->
+  <!-- Company info Section Start -->
+  {{MixtComponent.companyInfo({
+    sectionClass:"dev-company-info--modifi"
+  })}}
+  <!-- Company info Section End -->
   <!-- Counter Section Start -->
   {{CounterSection.render()}}
   <!-- Counter Section End -->

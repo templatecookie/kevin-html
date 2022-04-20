@@ -1,71 +1,63 @@
+{% import "components/cards.njk" as Card %}
+{% set toolDataOne = [
+    {
+        img:"./image/innerpage/html.png",
+        text:"HTML 5"
+    },
+    {
+        img:"./image/innerpage/figma.png",
+        text:"Figma"
+    },
+    {
+        img:"./image/innerpage/notion.png",
+        text:"Notion"
+    },
+    {
+        img:"./image/innerpage/css.png",
+        text:"CSS 3"
+    },
+    {
+        img:"./image/innerpage/javascript.png",
+        text:"Javascript"
+    },
+    {
+        img:"./image/innerpage/vue.png",
+        text:"Vue Js"
+    },
+    {
+        img:"./image/innerpage/github.png",
+        text:"Github"
+    },
+    {
+        img:"./image/innerpage/angular.png",
+        text:"Angular"
+    },
+    {
+        img:"./image/innerpage/bootstrap.png",
+        text:"Bootstrap"
+    },
+    {
+        img:"./image/innerpage/pocket.png",
+        text:"Pocket"
+    }
+
+]%}
 {% macro render(args) %}
     <div class="tools-area">
         <div class="container">
                 <div class="dev-section-title text-center">
-                    <h2 class="title">Latest Case Study</h2>
-                    <p class="text pr-xxl-88">Nulla ex augue, rhoncus sit amet rutrum ut, vestibulum non <br class="d-none d-xs-block"> nisl. Etiam imperdiet quam pretium rhoncus aliquam.</p>
+                    <h2 class="title">Tools I Use</h2>
+                    <p class="text">Nulla ex augue, rhoncus sit amet rutrum ut, vestibulum non <br class="d-none d-xs-block"> nisl. Etiam imperdiet quam pretium rhoncus aliquam.</p>
                 </div>
             <div class="row card-row">
+                {% for item in toolDataOne %}
                 <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/html.png" alt="html" class="mw-100">
-                        <h6 class="title">HTML 5</h6>
-                    </div>
+                    {{Card.toolsCard({
+                        img:item.img,
+                        text:item.text
+                    })}}
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/figma.png" alt="html" class="mw-100">
-                        <h6 class="title">Figma</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/notion.png" alt="html" class="mw-100">
-                        <h6 class="title">Notion</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/css.png" alt="html" class="mw-100">
-                        <h6 class="title">CSS 3</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/javascript.png" alt="html" class="mw-100">
-                        <h6 class="title">Javascript</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/vue.png" alt="html" class="mw-100">
-                        <h6 class="title">Vue Js</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/github.png" alt="html" class="mw-100">
-                        <h6 class="title">Github</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/angular.png" alt="html" class="mw-100">
-                        <h6 class="title">Angular</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/bootstrap.png" alt="html" class="mw-100">
-                        <h6 class="title">Bootstrap</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="tools-card">
-                        <img src="./image/innerpage/Pocket.png" alt="html" class="mw-100">
-                        <h6 class="title">Pocket</h6>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

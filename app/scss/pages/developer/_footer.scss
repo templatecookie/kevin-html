@@ -1,5 +1,11 @@
 .dev-footer-area{
-    padding: 100px 0;
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
     .logo-wrapper{
         .logo{
             display: flex;
@@ -52,6 +58,9 @@
                 }
             }
         }
+    }
+    &--modifi{
+        box-shadow: inset 0px 1px 0px #E6E8EB;   
     }
 }
 .dev-copyright-area{

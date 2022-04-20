@@ -1,0 +1,48 @@
+{% import "components/cards.njk" as Card %}
+{% set toolDataOne = [
+    {
+        img:"./image/innerpage/html.png",
+        text:"HTML 5"
+    },
+    {
+        img:"./image/innerpage/figma.png",
+        text:"Figma"
+    },
+    {
+        img:"./image/innerpage/notion.png",
+        text:"Notion"
+    },
+    {
+        img:"./image/innerpage/css.png",
+        text:"CSS 3"
+    },
+    {
+        img:"./image/innerpage/javascript.png",
+        text:"Javascript"
+    },
+    {
+        img:"./image/innerpage/vue.png",
+        text:"Vue Js"
+    }
+
+]%}
+{% macro render(args) %}
+    <div class="tools-area">
+        <div class="container">
+                <div class="dev-section-title text-center">
+                    <h2 class="title">Tools I Use</h2>
+                    <p class="text">Nulla ex augue, rhoncus sit amet rutrum ut, vestibulum non <br class="d-none d-xs-block"> nisl. Etiam imperdiet quam pretium rhoncus aliquam.</p>
+                </div>
+            <div class="row card-row">
+                {% for item in toolDataOne %}
+                <div class="col-6 col-md-3 col-lg-2">
+                    {{Card.toolsCard({
+                        img:item.img,
+                        text:item.text
+                    })}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

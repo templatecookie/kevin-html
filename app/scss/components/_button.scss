@@ -44,6 +44,18 @@
       }
     }
   }
+  &.d-btn-outline-primary{
+    color: var(--bs-primary-500);
+    border: 2px solid var(--bs-primary-50);
+    box-sizing: border-box;
+    border-radius: 8px;
+    svg{
+      margin-left: 12px;
+    }
+    &:hover{
+        border: 2px solid var(--bs-primary-500);
+    }
+}
 }
 .pg-btn {
   border-radius: 50px !important;
@@ -264,3 +276,22 @@ margin-right: 12px;
   }
 }
 
+.load-more-btn{
+  border: 2px solid var(--bs-primary-50);
+  display: inline-flex;
+  line-height: 1;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1.1em 1.6em;
+  color: var(--bs-primary-500);
+  background: var(--bs-primary-50);
+  border-radius: 8px;
+  transition: .3s;
+  &:hover{
+    background: transparent;
+  }
+}

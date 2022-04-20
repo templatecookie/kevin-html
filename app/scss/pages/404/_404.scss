@@ -1,0 +1,62 @@
+.error-page-area{
+    height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content{
+        
+        .error_content{
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 20px;
+            @media (min-width:992px){
+                width: 60%;
+                padding: 0;
+                margin: 40px auto;
+            }
+            @media (min-width:1200px){
+                width: 45%;
+                padding: 0;
+            }
+           
+            .title{
+                padding-bottom: 15px;
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 25px;
+                @media (min-width:575px){
+                    font-size: 45px;
+                    padding-bottom: 24px;
+                }
+                @media (min-width:768px){
+                    font-size: 48px;
+                }
+                line-height: 1.17;
+                text-align: center;
+                color: var(--bs-gray-900);
+            }
+            .desc{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.44;
+                text-align: center;
+                color: var(--bs-gray-700);
+            }
+            
+        }
+        .goHome-buttton{
+            .d-btn{
+                svg{
+                    margin-right: 12px;
+                  }
+            }
+            .d-btn.d-btn-primary:hover {
+                box-shadow: none;
+                color: var(--bs-primary-500);
+                background: var(--bs-primary-50);
+            }
+        }
+    }
+}
