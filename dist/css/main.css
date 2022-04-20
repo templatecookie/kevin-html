@@ -8264,12 +8264,20 @@ a.icon-btn:hover img {
 }
 
 .doctor-book-area {
-  background-color: #132238;
-  padding: 100px auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--bs-gray-900);
   background-size: cover;
   position: relative;
+  padding: 60px 0;
+}
+@media (min-width: 992px) {
+  .doctor-book-area {
+    padding: 80px 0;
+  }
+}
+@media (min-width: 992px) {
+  .doctor-book-area {
+    padding: 100px 0;
+  }
 }
 @media (min-width: 1200px) {
   .doctor-book-area::before {
@@ -8283,35 +8291,17 @@ a.icon-btn:hover img {
     z-index: 1;
   }
 }
-@media (min-width: 1200px) {
-  .doctor-book-area__image img {
-    position: relative;
-    z-index: 2;
+.doctor-book-area__image {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 1400px) {
+  .doctor-book-area__image {
+    margin-left: -100px;
   }
 }
 .doctor-book-area__feature {
   position: relative;
-  padding: 100px 5px 100px 5px;
-}
-.doctor-book-area__feature::after {
-  display: none;
-  content: "";
-  position: absolute;
-  top: 100px;
-  bottom: 100px;
-  left: 0;
-  width: 1px;
-  background-color: var(--bs-gray-700);
-}
-@media (min-width: 992px) {
-  .doctor-book-area__feature::after {
-    display: block;
-  }
-}
-@media (min-width: 992px) {
-  .doctor-book-area__feature {
-    padding: 100px 5px 100px 50px;
-  }
 }
 .doctor-book-area__feature-top .title {
   font-family: "JetBrains Mono";
@@ -8359,6 +8349,9 @@ a.icon-btn:hover img {
   line-height: 1.5;
   color: white;
 }
+.doctor-book-area__feature-bottom-list:not(.doctor-book-area__feature-bottom-list:last-child) {
+  margin-bottom: 24px;
+}
 .doctor-book-area__feature-bottom-list .title {
   font-family: "JetBrains Mono";
   font-weight: 600;
@@ -8374,7 +8367,18 @@ a.icon-btn:hover img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--bs-gray-400);
-  padding-bottom: 24px;
+}
+@media (min-width: 1400px) {
+  .doctor-book-area::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 466px;
+    width: 1px;
+    transform: translate(-50%, -50%);
+    background-color: var(--bs-gray-700);
+  }
 }
 
 .doctor-success-area {
