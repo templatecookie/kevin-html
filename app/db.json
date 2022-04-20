@@ -14,10 +14,10 @@
 		"header_double_button": false,
 		"absolute_header": false,
 		"header_button": true,
-		"root": "<div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline' alt='logo'></div> <div class='text-wrapper'><p>Hano Kurou</p><span>UI/ux designer</span></div>",
+		"root": "<div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline'></div> <div class='text-wrapper'><p>Hano Kurou</p><span>UI/ux designer</span></div>",
 		"additional_button_classes": "ui-header-btn",
 		"header_button_class": "ui-btn ui-btn-primary ms-lg-3",
-		"header_button_text": "<img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message"
+		"header_button_text": "<img src='./image/l-2/envelope.svg' class='make-it-inline me-2'> Send message"
 	},
 	"freelancer": {
 		"additional_header_class": "site-header--menu-center freelancer-header mobile-menu-trigger-dark",
@@ -35,7 +35,7 @@
 		"root": "<img src='./image/l-4/logo.png' alt='logo'> <span class='text'>Robert Warren</span>",
 		"additional_button_classes": "photographer-header-btn",
 		"header_button_class": "pg-btn pg-btn-primary",
-		"header_button_text": "<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg' alt='mail'> +1-202-555-0120"
+		"header_button_text": "<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg'> +1-202-555-0120"
 	},
 	"doctor": {
 		"additional_header_class": "site-header--menu-right doctor-header mobile-menu-trigger-dark",
