@@ -4,7 +4,21 @@
       Nice Select Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   $("select").niceSelect();
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      AOS Activation
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  AOS.init({
+    once: true,
+  });
+  window.addEventListener("load", AOS.refresh);
   
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        Counter Up Activation
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
   /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       datepicker Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -27,22 +41,6 @@
         });
     }
  });
-
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-      AOS Activation
-  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  AOS.init({
-    once: true,
-  });
-  window.addEventListener("load", AOS.refresh);
-  
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        Counter Up Activation
-    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1000,
-  });
   /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   Slick Slider Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
