@@ -3446,7 +3446,7 @@ button:focus {
     padding: 40px;
   }
 }
-.dev-testimonial-card .content blockquote {
+.dev-testimonial-card .content .icon {
   margin-bottom: 23px;
 }
 .dev-testimonial-card .content .text {
