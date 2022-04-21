@@ -48,7 +48,8 @@
                 transition: .3s;
                 color: var(--bs-gray-700);  
                 &:hover{
-                    color: var(--bs-gray-900);  
+                    color: var(--bs-gray-900); 
+                    font-weight: 600; 
                 }
             }
         }

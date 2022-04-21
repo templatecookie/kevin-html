@@ -107,6 +107,12 @@
             }
             img{
                 width: 100%;
+                filter: grayscale(100%);
+            }
+            &:hover{
+                img{
+                    filter: grayscale(0);
+                } 
             }
         }
     }

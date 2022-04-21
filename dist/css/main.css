@@ -2916,6 +2916,10 @@ button:focus {
 }
 .dev-company-info--logo .logo img {
   width: 100%;
+  filter: grayscale(100%);
+}
+.dev-company-info--logo .logo:hover img {
+  filter: grayscale(0);
 }
 .dev-company-info--modifi {
   background: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.5) 100%);
@@ -2989,7 +2993,7 @@ button:focus {
 }
 @media (min-width: 1400px) {
   .dev-cta-area .button-group {
-    padding-left: 88px;
+    padding-left: 130px;
   }
 }
 .dev-cta-area .button-group .content-button {
@@ -3125,7 +3129,7 @@ button:focus {
   transform: translateX(-50%);
   transition: 0.3s;
   width: 0%;
-  height: 1.5px;
+  height: 2px;
   background: #125FB7;
 }
 .dev-card-service .card-body .link-btn svg {
@@ -3592,6 +3596,7 @@ button:focus {
 }
 .dev-footer-area .dev-footer-list li a:hover {
   color: var(--bs-gray-900);
+  font-weight: 600;
 }
 .dev-footer-area--modifi {
   box-shadow: inset 0px 1px 0px #E6E8EB;
