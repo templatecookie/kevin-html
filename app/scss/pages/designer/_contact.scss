@@ -131,6 +131,7 @@
             &__cotacat-block{
                 background: var(--bs-tertiary-50);
                 padding: 32px;
+                border-radius: 6px;
                 .title{
                     font-family:"Sora", sans-serif !important;
                     font-weight: 600;
@@ -191,7 +192,7 @@
             }
             .input-group{
                 .form-control{
-                    border-radius: 0;
+                    border-radius: 6px;
                     padding: 18px;
                    border: 1px solid var(--bs-gray-100); 
                    height: 48px;
@@ -219,7 +220,7 @@
                 background: white !important;
                 color: var(--bs-gray-400);
                 height: 48px;
-                border-radius: 0;
+                border-radius: 6px;
                 border: 1px solid var(--bs-gray-100);
                 .list{
                     width: 100%;

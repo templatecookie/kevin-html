@@ -3918,7 +3918,7 @@ button:focus {
   font-size: 16px;
   position: relative;
   line-height: 24px;
-  padding: 6px 0;
+  padding: 10px 0;
   transition: 0.3s;
   color: var(--bs-tertiary-500);
   width: -webkit-fit-content;
@@ -3970,6 +3970,7 @@ button:focus {
 @media (min-width: 1200px) {
   .ui-about-area {
     padding: 90px 120px;
+    padding-bottom: 110px;
   }
 }
 .ui-about-area__iamge-group {
@@ -4210,6 +4211,7 @@ button:focus {
   text-align: start;
 }
 .ui-service-area .ui-section-title .badge {
+  font-family: "Sora";
   background: var(--bs-secondary-300);
   border-radius: 4px;
   font-weight: 400;
@@ -4826,6 +4828,7 @@ button:focus {
 .ui-contact-area__wrapper .contact-content__cotacat-block {
   background: var(--bs-tertiary-50);
   padding: 32px;
+  border-radius: 6px;
 }
 .ui-contact-area__wrapper .contact-content__cotacat-block .title {
   font-family: "Sora", sans-serif !important;
@@ -4881,7 +4884,7 @@ button:focus {
   margin-bottom: 32px;
 }
 .ui-contact-area__wrapper .contact-form .input-group .form-control {
-  border-radius: 0;
+  border-radius: 6px;
   padding: 18px;
   border: 1px solid var(--bs-gray-100);
   height: 48px;
@@ -4914,7 +4917,7 @@ button:focus {
   background: white !important;
   color: var(--bs-gray-400);
   height: 48px;
-  border-radius: 0;
+  border-radius: 6px;
   border: 1px solid var(--bs-gray-100);
 }
 .ui-contact-area__wrapper .contact-form .nice-select .list {

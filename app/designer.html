@@ -1,59 +1,54 @@
-{% extends "template.njk" %}
-{% import "components/Header/_header.njk" as Header %}
-{% import "pages/designer/_hero.njk" as HeroSection %}
-{% import "pages/designer/_project.njk" as ProjectSection %}
-{% import "pages/designer/_about.njk" as AboutSection %}
-{% import "pages/designer/_award.njk" as AwardSection %}
-{% import "pages/designer/_service.njk" as ServiceSection %}
-{% import "pages/designer/_skill.njk" as SkillSection %}
-{% import "pages/designer/_work.njk" as WorkSection %}
-{% import "pages/designer/_blog.njk" as BlogSection %}
-{% import "pages/designer/_testimonial.njk" as TestimonialSection %}
-{% import "pages/designer/_contact.njk" as ContactSection %}
-{% import "pages/designer/_cta.njk" as CtaSection %}
-{% import "pages/designer/_footer.njk" as FooterSection %}
-
-{% block main %}
-  <!-- Header Section Start -->
-  {{Header.render(designer)}}
-  <!-- Header Section End -->
-  <!-- Hero Section Start -->
-  {{HeroSection.render()}}
-  <!-- Hero Section End -->
-  <!-- Project Section Start -->
-  {{ProjectSection.render()}}
-  <!-- Project Section End -->
-  <!-- About Section Start -->
-  {{AboutSection.render()}}
-  <!-- About Section End -->
-  <!-- Award Section Start -->
-  {{AwardSection.render()}}
-  <!-- Award Section End -->
-  <!-- Service Section Start -->
-  {{ServiceSection.render()}}
-  <!-- Service Section End -->
-  <!-- Skill Section Start -->
-  {{SkillSection.render()}}
-  <!-- Skill Section End -->
-  <!-- Work Section Start -->
-  {{WorkSection.render({
-    sectionClass:"bg-ui-linear-gradient", 
-    titleChange:"My work process"
-    })}}
-  <!-- Work Section End -->
-  <!-- Testimonial Section Start -->
-  {{TestimonialSection.render()}}
-  <!-- Testimonial Section End -->
-  <!--Cta Section Start -->
-  {{CtaSection.render()}}
-  <!-- Cta Section End -->
-  <!-- Blog Section Start -->
-  {{BlogSection.render()}}
-  <!-- Blog Section End -->
-    <!-- Contact Section Start -->
-  {{ContactSection.render()}}
-  <!-- Contact Section End -->
-  <!-- Footer Section Start -->
-  {{FooterSection.render()}}
-  <!-- Footer Section End -->
+{% extends "template.njk" %} {% import "components/Header/_header.njk" as Header
+%} {% import "pages/designer/_hero.njk" as HeroSection %} {% import
+"pages/designer/_project.njk" as ProjectSection %} {% import
+"pages/designer/_about.njk" as AboutSection %} {% import
+"pages/designer/_award.njk" as AwardSection %} {% import
+"pages/designer/_service.njk" as ServiceSection %} {% import
+"pages/designer/_skill.njk" as SkillSection %} {% import
+"pages/designer/_work.njk" as WorkSection %} {% import
+"pages/designer/_blog.njk" as BlogSection %} {% import
+"pages/designer/_testimonial.njk" as TestimonialSection %} {% import
+"pages/designer/_contact.njk" as ContactSection %} {% import
+"pages/designer/_cta.njk" as CtaSection %} {% import
+"pages/designer/_footer.njk" as FooterSection %} {% block main %}
+<!-- Header Section Start -->
+{{Header.render(designer)}}
+<!-- Header Section End -->
+<!-- Hero Section Start -->
+{{HeroSection.render()}}
+<!-- Hero Section End -->
+<!-- Project Section Start -->
+{{ProjectSection.render()}}
+<!-- Project Section End -->
+<!-- About Section Start -->
+{{AboutSection.render()}}
+<!-- About Section End -->
+<!-- Award Section Start -->
+{{AwardSection.render()}}
+<!-- Award Section End -->
+<!-- Service Section Start -->
+{{ServiceSection.render()}}
+<!-- Service Section End -->
+<!-- Work Section Start -->
+{{WorkSection.render({ sectionClass:"bg-ui-linear-gradient", titleChange:"My
+work process" })}}
+<!-- Work Section End -->
+<!-- Skill Section Start -->
+{{SkillSection.render()}}
+<!-- Skill Section End -->
+<!-- Testimonial Section Start -->
+{{TestimonialSection.render()}}
+<!-- Testimonial Section End -->
+<!--Cta Section Start -->
+{{CtaSection.render()}}
+<!-- Cta Section End -->
+<!-- Blog Section Start -->
+{{BlogSection.render()}}
+<!-- Blog Section End -->
+<!-- Contact Section Start -->
+{{ContactSection.render()}}
+<!-- Contact Section End -->
+<!-- Footer Section Start -->
+{{FooterSection.render()}}
+<!-- Footer Section End -->
 {% endblock %}
