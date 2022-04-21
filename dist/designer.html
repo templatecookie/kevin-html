@@ -8,7 +8,7 @@
   <title>
     Kevin - Personal Portfolio Template
   </title>
-  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="./plugins/slick/slick.min.css">
   <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
   <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body data-theme-mode-panel-active data-theme="light">
   <div class="site-wrapper overflow-hidden">
     <!-- Header Section Start -->
     <!-- Header Area -->
@@ -33,7 +33,7 @@
           <!-- Brand Logo-->
           <div class="site-header__brand">
             <a href="index.html" class="logo">
-              <div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline' alt='logo'></div>
+              <div class='icon'><img src='./image/l-2/stack.svg' class='make-it-inline'></div>
               <div class='text-wrapper'>
                 <p>Hano Kurou</p><span>UI/ux designer</span>
               </div>
@@ -95,7 +95,7 @@
                       </a>
                       <ul class="sub-menu" id="submenu-11">
                         <li class="sub-menu--item">
-                          <a href="error.html">404</a>
+                          <a href="404.html">404</a>
                         </li>
                       </ul>
                     </li>
@@ -116,7 +116,7 @@
                 <li class="nav-item nav-item-has-children">
                   <a href="#" class="nav-link-item drop-trigger">Projects <i class="fas fa-angle-down"></i>
                   </a>
-                  <ul class="sub-menu" id="submenu-12">
+                  <ul class="sub-menu" id="submenu-13">
                     <li class="sub-menu--item">
                       <a href="project.html">Project</a>
                     </li>
@@ -133,7 +133,7 @@
             </nav>
             <div class="header-button header-btn ui-header-btn">
               <a class="ui-btn ui-btn-primary ms-lg-3" href="">
-                <img src='./image/l-2/envelope.svg' class='make-it-inline me-2' alt='logo'> Send message
+                <img src='./image/l-2/envelope.svg' class='make-it-inline me-2'> Send message
               </a>
             </div>
           </div>
@@ -469,7 +469,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8548 9.99551C19.8548 4.55039 15.4406 0.13623 9.99551 0.13623C4.55039 0.13623 0.13623 4.55039 0.13623 9.99551C0.13623 15.4406 4.55039 19.8548 9.99551 19.8548C9.33243 19.8548 8.68482 19.7889 8.05841 19.664V12.157H6.45047V9.47646H8.05841V7.86737C8.05841 5.68058 8.96616 4.38041 11.5456 4.38041H13.693V7.06116H12.3507C11.3466 7.06116 11.2802 7.43556 11.2802 8.13464L11.2766 9.47625H13.7081L13.4235 12.1565H11.2766V19.772C10.9006 19.8208 10.5223 19.8481 10.1434 19.8537C15.5203 19.7747 19.8548 15.3913 19.8548 9.99551Z" fill="url(#paint0_linear_1493_5841)" />
                         <defs>
                           <linearGradient id="paint0_linear_1493_5841" x1="9.99551" y1="-0.0434155" x2="9.99551" y2="20.6956" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00B2FF" />
+                            <stop offset="100%" stop-color="#00B2FF" />
                             <stop offset="1" stop-color="#006AFF" />
                           </linearGradient>
                         </defs>
@@ -1247,7 +1247,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6">
-                  <select name="#" id="#">
+                  <select name="services" id="services">
                     <option data-display="Services" value="1">Services</option>
                     <option value="2">$100</option>
                     <option value="3">$100</option>
@@ -1257,7 +1257,7 @@
                 </div>
                 <div class="col-xs-6">
                   <div class="input-group">
-                    <select name="#" id="#">
+                    <select name="budgets" id="budgets">
                       <option data-display="Budgets" value="1">Budgets</option>
                       <option value="2">$100</option>
                       <option value="3">$100</option>
@@ -1355,12 +1355,10 @@
   <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
   <script src="./plugins/counter-up/waypoints.min.js"></script>
   <script src="./plugins/slick/slick.min.js"></script>
-  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
-  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
   <script src="./plugins/gijgo/js/gijgo.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
-  <script src="js/slider-activations.js"></script>
   <script src="js/menu.js"></script>
 </body>
 

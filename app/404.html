@@ -1,0 +1,8 @@
+{% extends "template.njk" %}
+{% import "pages/404/_404.njk" as 404Section %}
+{% block main %}
+  
+  <!-- Page not found Section Start -->
+  {{404Section.render()}}
+  <!-- Page not found Section End -->
+{% endblock %}

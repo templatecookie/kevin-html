@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Kevin - Personal Portfolio Template
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden">
+    <!-- Page not found Section Start -->
+    <div class="error-page-area">
+      <div class="container">
+        <div class="error-page-area__content text-center">
+          <div class="error_img ">
+            <img src="./image/404.png" alt="error" class="img-fluid">
+          </div>
+          <div class="error_content ">
+            <h2 class="title">Page not found...</h2>
+            <p class="desc">Something went wrong. It’s look that your requested could not <br class="d-none d-sm-block"> be found. It’s look like the link is broken or the page is removed.</p>
+          </div>
+          <div class="goHome-buttton">
+            <button type="submit" class="d-btn-primary border-0 d-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.25 19.5V15C14.25 14.801 14.171 14.6103 14.0303 14.4696C13.8897 14.329 13.6989 14.25 13.5 14.25H10.5C10.3011 14.25 10.1103 14.329 9.96967 14.4696C9.82902 14.6103 9.75 14.801 9.75 15V19.5C9.75 19.6989 9.67098 19.8896 9.53033 20.0303C9.38968 20.1709 9.19891 20.25 9 20.25H4.5C4.30109 20.25 4.11032 20.1709 3.96967 20.0303C3.82902 19.8896 3.75 19.6989 3.75 19.5V10.8281C3.75168 10.7243 3.77411 10.6219 3.81597 10.5269C3.85783 10.4319 3.91828 10.3462 3.99375 10.275L11.4937 3.45933C11.632 3.33284 11.8126 3.2627 12 3.2627C12.1874 3.2627 12.368 3.33284 12.5062 3.45933L20.0062 10.275C20.0817 10.3462 20.1422 10.4319 20.184 10.5269C20.2259 10.6219 20.2483 10.7243 20.25 10.8281V19.5C20.25 19.6989 20.171 19.8896 20.0303 20.0303C19.8897 20.1709 19.6989 20.25 19.5 20.25H15C14.8011 20.25 14.6103 20.1709 14.4697 20.0303C14.329 19.8896 14.25 19.6989 14.25 19.5Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Go to home
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page not found Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/gijgo/js/gijgo.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

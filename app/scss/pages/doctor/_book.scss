@@ -1,10 +1,14 @@
 .doctor-book-area{
-    background-color: #132238;
-    padding: 100px auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: var(--bs-gray-900);
     background-size: cover;
     position: relative;
+    padding: 60px 0;
+    @media (min-width:992px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
     &::before{
         // display: none;
         @media(min-width:1200px){
@@ -19,35 +23,15 @@
         }
     }
     &__image{
-        img{
-            // display: none;
-            @media (min-width: 1200px){
-                position: relative;
-                z-index: 2;
-            }
+        position: relative;
+        z-index: 2;
+        @media (min-width:1400px) {
+            margin-left: -100px;
         }
     }
     &__feature{
-        //border-left: 1px solid var(--bs-gray-700);
         position: relative;
-        &::after{
-            display: none;
-            content: "";
-            position: absolute;
-            top: 100px;
-            bottom: 100px;
-            left: 0;
-            width: 1px;
-            background-color: var(--bs-gray-700);
-            @media (min-width:992px){
-               display: block;
-            }
 
-        }
-        padding: 100px 5px 100px 5px;
-        @media (min-width:992px){
-            padding: 100px 5px 100px 50px;
-        }
         &-top{
             .title{
                 font-family: 'JetBrains Mono';
@@ -98,6 +82,9 @@
         }
         &-bottom{
             &-list{
+                &:not(&:last-child){
+                    margin-bottom: 24px;
+                }
                 .title{
                     font-family: 'JetBrains Mono';
                     font-weight: 600;
@@ -113,9 +100,21 @@
                     font-size: 16px;
                     line-height: 1.5;
                     color: var(--bs-gray-400);
-                    padding-bottom: 24px;
                 }
             }
         }
+    }
+    &::after{
+        @media (min-width:1400px) {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 466px;
+            width: 1px;
+            transform: translate(-50%, -50%);
+            background-color: var(--bs-gray-700);
+        }
+
     }
 }

@@ -4,31 +4,7 @@
       Nice Select Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   $("select").niceSelect();
-  
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-      datepicker Activation
-  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  $('#datepicker').datepicker();
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-      Skill-bar Activation
-  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  $(window).scroll(function() {
-    var hT = $('#skill-bar-wrapper').offset().top,
-        hH = $('#skill-bar-wrapper').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-1.4*wH)){
-        jQuery(document).ready(function(){
-            jQuery('.skillbar-container').each(function(){
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 5000); // 5 seconds
-            });
-        });
-    }
- });
-
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       AOS Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
   AOS.init({
@@ -43,6 +19,10 @@
     delay: 10,
     time: 1000,
   });
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      datepicker Activation
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  $('#datepicker').datepicker();
   /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   Slick Slider Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

@@ -9,7 +9,7 @@
       {% if PAGE_INFO.page_title %}{{PAGE_INFO.page_title}}
       {% else %}Kevin - Personal Portfolio Template{% endif %}
     </title>
-    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon"/>
 
     <!-- Bootstrap , fonts & icons  -->
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -25,11 +25,11 @@
 
     {% block plugincss %}{% endblock %}
     <!-- Vendor stylesheets  -->
-    <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="css/main.css">
 
   </head>
 
-  <body>
+  <body data-theme-mode-panel-active data-theme="light">
    
       {% include "components/preloader.njk" %}
     <div class="site-wrapper overflow-hidden">
@@ -73,12 +73,10 @@
     <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
     <script src="./plugins/counter-up/waypoints.min.js"></script>
     <script src="./plugins/slick/slick.min.js"></script>
-    <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
-    <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="./plugins/gijgo/js/gijgo.min.js"></script>
+    <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
     <!-- Activation Script -->
     <script src="js/custom.js"></script>
-    <script src="js/slider-activations.js"></script>
     {% if not PAGE_INFO.menuHide %}
       <script src="js/menu.js"></script>
     {% endif %}
