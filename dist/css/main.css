@@ -1318,6 +1318,7 @@ small {
     display: flex;
     margin-bottom: 0;
     padding-left: 0;
+    margin-right: 24px;
   }
 }
 .site-menu-main li {
@@ -4009,10 +4010,30 @@ button:focus {
 }
 .ui-about-area__iamge-group {
   position: relative;
+  margin-bottom: 75px;
+}
+@media (min-width: 992px) {
+  .ui-about-area__iamge-group {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   .ui-about-area__iamge-group {
     margin-left: -70px;
+  }
+}
+@media (min-width: 768px) {
+  .ui-about-area__iamge-group .social-media-group {
+    position: absolute;
+    bottom: -70px;
+    left: 140px;
+  }
+}
+@media (min-width: 992px) {
+  .ui-about-area__iamge-group .social-media-group {
+    position: absolute;
+    bottom: -70px;
+    left: 22px;
   }
 }
 @media (min-width: 1200px) {
@@ -4069,6 +4090,7 @@ button:focus {
 }
 .ui-about-area__content .ui-btn {
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   .ui-about-area__content .ui-btn {
@@ -4843,7 +4865,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 500px;
+  border-radius: 8px;
   background: var(--bs-tertiary-50);
 }
 .ui-contact-area__wrapper .contact-content__info-block a .icon svg path {
@@ -5680,7 +5702,7 @@ html {
 @media (max-width: 1199px) {
   .flc-cta-left-content {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 .flc-cta-left-content h4 {
@@ -5716,6 +5738,7 @@ html {
   line-height: 48px;
   color: var(--bs-primary-500);
   font-family: "Cardo", serif;
+  border-bottom: 2px solid var(--bs-primary-500);
 }
 @media (max-width: 767px) {
   .flc-cta-left-content a {
@@ -6361,7 +6384,6 @@ a.icon-btn:hover img {
 
 .photographer-hero-area {
   position: relative;
-  margin-bottom: 500px;
   padding: 125px 0 60px;
   background-position: left center;
   background-size: cover;
@@ -6634,8 +6656,13 @@ a.icon-btn:hover img {
 .photographer-pricing-area .photographer-pricing-card .list li:last-child {
   padding-bottom: 32px;
 }
+<<<<<<< HEAD
 .photographer-pricing-area .photographer-pricing-card .pg-btn svg path {
   stroke: var(--bs-success-500);
+=======
+.photographer-pricing-area .photographer-pricing-card .pg-btn.pg-btn-outline-primary {
+  width: 100%;
+>>>>>>> 57e8304044ca0a709074a353ab8d961e156e8d76
 }
 
 .photographer-post-area {
@@ -6967,6 +6994,9 @@ a.icon-btn:hover img {
     margin-left: 24px;
   }
 }
+.photographer-about-area .photographer-info-block .photographer-contact-info .social-link li {
+  margin-right: -4px;
+}
 .photographer-about-area .photographer-info-block .photographer-contact-info .social-link li .media-item {
   min-height: 36px;
   max-height: 36px;
@@ -7063,15 +7093,19 @@ a.icon-btn:hover img {
   }
 }
 .photographer-blog-area .card-blog .content .meta {
+  font-family: "Barlow";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 8px;
 }
 .photographer-blog-area .card-blog .content .short-desc {
+  font-family: "Barlow";
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
+  padding-bottom: 32px;
 }
 .photographer-blog-area .card-blog:hover .content {
   transform: translateY(0%);
@@ -7429,6 +7463,9 @@ a.icon-btn:hover img {
     width: 138.4%;
   }
 }
+.photographer-service-area__slider .photographer-service--half-fluid .slick-slide {
+  margin-right: 20px;
+}
 @media (min-width: 575px) {
   .photographer-service-area__slider .photographer-service--half-fluid .slick-list {
     width: 138.4%;
@@ -7585,12 +7622,20 @@ a.icon-btn:hover img {
     flex-direction: column;
   }
 }
+.doctor-about-area__featured {
+  border: 1px solid #E6E8EB;
+  box-sizing: border-box;
+  padding: 24px;
+  width: 122%;
+}
 .doctor-about-area__featured .title {
+  font-family: "JetBrains Mono";
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  color: var(--bs-gray-900);
+  color: var(--bs-gray-500);
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .doctor-about-area__featured .logo-group {
   display: flex;

@@ -48,15 +48,20 @@
                     padding: 16px;
                 }
                 .meta{
+                    font-family: 'Barlow';
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 1.43;
                     color: rgba(255, 255, 255, 0.7);
+                    padding-bottom: 8px;
+                    
                 }
                 .short-desc{
+                    font-family: 'Barlow';
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 1.4;
+                    padding-bottom: 32px;
                 }
             }
             &:hover {
