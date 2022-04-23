@@ -1,6 +1,6 @@
 /*=== Media Query ===*/
 .theme-mode-panel-open .mode-switcher-panel-wrapper {
-  transform: translate(0);
+  transform: translateX(0) translateY(-50%);
 }
 
 .mode-switcher-panel-wrapper {
@@ -22,6 +22,8 @@
         display: inline-block;
         padding-right: 10px;
         color: #333;
+        font-size: 14px;
+        font-weight: 700;
         background: #fff;
         padding-bottom: 10px;
         margin-bottom: 0;
@@ -42,7 +44,7 @@
       display: -webkit-box;
       display: flex;
       flex-wrap: wrap;
-      margin: -7px -7px 13px;
+      margin: -7px -7px 0px;
       .color-item{
         display: inline-block;
         position: relative;
@@ -75,42 +77,6 @@
             opacity: 1;
             visibility: visible;
           }
-        }
-        &.red{
-          background: #f51e46;
-        }
-        &.blue{
-          background: #0068e1;
-        }
-        &.bondi-blue{
-          background: #0095b6;
-        }
-        &.cornflower{
-          background: #6453f7;
-        }
-        &.violet{
-          background: #723881;
-        }
-        &.yellow{
-          background: #fa9928;
-        }
-        &.orange{
-          background: #f8008c;
-        }
-        &.green{
-          background: #fd6602;
-        }
-        &.pink{
-          background: #59b210;
-        }
-        &.black{
-          background: #ff749f;
-        }
-        &.indigo{
-          background: #2a3447;
-        }
-        &.magenta{
-          background: #4b0082;
         }
       }
     }
@@ -163,7 +129,7 @@
 .position-fixed-right {
   position: fixed;
   right: 0;
-  transform: translateX(100%);
-  top: 30%;
+  transform: translateY(-50%) translateX(100%);
+  top: 50%;
   z-index: 99;
 }

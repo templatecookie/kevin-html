@@ -25,6 +25,12 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            svg{
+                path{
+                    fill: var(--bs-primary-500);
+                    stroke: var(--bs-primary-500);
+                }
+            }
         }
     }
     &__slider{
@@ -97,6 +103,11 @@
         }
         .icon{
             margin-bottom: 23px;
+            svg{
+                path{
+                    fill: var(--bs-primary-500);
+                }
+            }
         }
         .text{
             font-weight: 400;
@@ -137,6 +148,9 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+            span{
+                color: var(--bs-primary-500);
+            }
         }
     }
 }
