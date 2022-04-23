@@ -41,6 +41,10 @@
         }
         path{
           transition: all 0.4s;
+          stroke: var(--bs-primary-500);
+          .fill{
+            fill: var(--bs-primary-500) !important;
+          }
         }
         &:hover path{
           stroke: white;

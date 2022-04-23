@@ -79,6 +79,18 @@ $(document).ready(function(){
     {
       selector: '.primary-color',
       variable: '--bs-tertiary-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-gray-900'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-success-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-secondary-500'
     }
   ]
   const root = document.documentElement;

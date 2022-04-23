@@ -2134,7 +2134,7 @@ small {
   display: flex;
   align-items: center;
 }
-.photographer-header .site-header__brand .logo img {
+.photographer-header .site-header__brand .logo .icon {
   min-width: 48px;
   max-width: 48px;
   min-height: 48px;
@@ -2143,8 +2143,18 @@ small {
      object-fit: cover;
   border-radius: 500px;
   margin-right: 12px;
+  border: 2px solid var(--bs-success-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.photographer-header .site-header__brand .logo .text {
+.photographer-header .site-header__brand .logo .icon span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--bs-success-500);
+}
+.photographer-header .site-header__brand .logo .text-wrapper p {
   color: white;
   white-space: nowrap;
   font-weight: 600;
@@ -2152,7 +2162,7 @@ small {
   font-size: 18px;
 }
 @media (min-width: 575px) {
-  .photographer-header .site-header__brand .logo .text {
+  .photographer-header .site-header__brand .logo .text-wrapper p {
     font-size: 24px;
   }
 }
@@ -2628,7 +2638,7 @@ small {
   color: white;
 }
 .pg-btn.pg-btn-outline-primary:hover svg path {
-  stroke: white;
+  stroke: white !important;
 }
 
 .dc-btn {
@@ -2800,10 +2810,13 @@ button:focus {
   font-weight: 600;
   font-size: 16px;
   padding: 1.1em 1.6em;
-  color: var(--bs-primary-500);
+  color: var(--bs-primary-500) !important;
   background: var(--bs-primary-50);
   border-radius: 8px;
   transition: 0.3s;
+}
+.load-more-btn svg path {
+  stroke: var(--bs-primary-500) !important;
 }
 .load-more-btn:hover {
   background: transparent;
@@ -6621,6 +6634,9 @@ a.icon-btn:hover img {
 .photographer-pricing-area .photographer-pricing-card .list li:last-child {
   padding-bottom: 32px;
 }
+.photographer-pricing-area .photographer-pricing-card .pg-btn svg path {
+  stroke: var(--bs-success-500);
+}
 
 .photographer-post-area {
   box-shadow: inset 0px 1px 0px #E6E8EB;
@@ -7172,6 +7188,9 @@ a.icon-btn:hover img {
   justify-content: center;
   border-radius: 500px;
   background: var(--bs-success-50);
+}
+.photographer-contact-area__wrapper .contact-content__info-block a .icon svg path {
+  stroke: var(--bs-success-500);
 }
 .photographer-contact-area__wrapper .contact-content__info-block a .text span {
   color: var(--bs-gray-600);
@@ -8804,12 +8823,15 @@ img {
 .law-video-thumb img {
   width: 100%;
 }
-.law-video-thumb a.law-video-play-btn {
-  display: inline-block;
+.law-video-thumb .law-video-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.law-video-thumb .law-video-play-btn svg path {
+  fill: var(--bs-primary-500);
+  stroke: var(--bs-primary-500);
 }
 
 .law-experiences-data-item {
@@ -9014,6 +9036,10 @@ img {
 }
 .law-awards-item.left-awards .law-awards-thumb path {
   transition: all 0.4s;
+  stroke: var(--bs-primary-500);
+}
+.law-awards-item.left-awards .law-awards-thumb path .fill {
+  fill: var(--bs-primary-500) !important;
 }
 .law-awards-item.left-awards .law-awards-thumb:hover path {
   stroke: white;
@@ -9453,11 +9479,47 @@ a.law-icon-blue-btn svg path {
   }
 }
 
-@media (max-width: 575px) {
-  .law-footer-logo {
-    text-align: center;
-    margin-bottom: 30px;
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo .icon {
+  margin-right: 16px;
+  max-width: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  max-height: 56px;
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  align-items: center;
+  color: white !important;
+  background: var(--bs-primary-500);
+  border-radius: 4px;
+}
+.logo .text-wrapper p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+@media (min-width: 575px) {
+  .logo .text-wrapper p {
+    font-size: 20px;
   }
+}
+.logo .text-wrapper span {
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bs-gray-300);
 }
 
 .law-footer-menu {
