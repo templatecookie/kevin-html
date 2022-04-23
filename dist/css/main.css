@@ -595,6 +595,30 @@ small {
   font-size: inherit;
 }
 
+.text-bg-dev-linear-gradient {
+  color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+}
+
+.bg-bg-dev-linear-gradient {
+  background-color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+}
+
+.text-bg-dev-services {
+  color: rgba(222, 228, 218, 0.7);
+}
+
+.bg-bg-dev-services {
+  background-color: rgba(222, 228, 218, 0.7);
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
 .text-gray-50 {
   color: #F0F1F3;
 }
@@ -672,6 +696,14 @@ small {
 }
 
 .bg-gray-900 {
+  background-color: #132238 !important;
+}
+
+.text-gray-900-2 {
+  color: #132238 !important;
+}
+
+.bg-gray-900-2 {
   background-color: #132238 !important;
 }
 
@@ -1911,6 +1943,10 @@ small {
   }
 }
 /*Header Css StaRT*/
+.site-header {
+  background-color: var(--bs-white);
+}
+
 .site-navbar {
   display: flex;
   position: relative;
@@ -2089,7 +2125,7 @@ small {
 }
 
 .developer-header {
-  margin: 32px 0;
+  padding: 32px 0;
 }
 .developer-header .site-header__brand .logo {
   display: flex;
@@ -2824,7 +2860,8 @@ button:focus {
 }
 
 .dev-hero-area {
-  background: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+  background: var(--bs-bg-dev-linear-gradient);
+  background-color: var(--bs-white);
   padding-bottom: 60px;
 }
 @media (min-width: 768px) {
@@ -2942,7 +2979,7 @@ button:focus {
 }
 .dev-company-info--logo .logo {
   border-radius: 12px;
-  background: white;
+  background: var(--bs-white);
   padding: 15px 0;
 }
 @media (min-width: 992px) {
@@ -2953,6 +2990,7 @@ button:focus {
 .dev-company-info--logo .logo img {
   width: 100%;
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 .dev-company-info--logo .logo:hover img {
   filter: grayscale(0);
@@ -2973,7 +3011,7 @@ button:focus {
 }
 
 .dev-cta-area {
-  background-color: var(--bs-gray-900);
+  background-color: var(--bs-gray-900-2);
   padding: 60px 0px;
 }
 @media (min-width: 575px) {
@@ -3088,7 +3126,7 @@ button:focus {
 
 .dev-service-area {
   padding: 60px 0;
-  background: rgba(222, 228, 218, 0.7);
+  background: var(--bs-bg-dev-services);
 }
 @media (min-width: 575px) {
   .dev-service-area {
@@ -3110,7 +3148,7 @@ button:focus {
 }
 
 .dev-card-service {
-  background: white;
+  background: var(--bs-white);
   transition: 0.3s;
   padding: 40px;
   border-radius: 8px;
@@ -3190,6 +3228,7 @@ button:focus {
 }
 
 .dev-project-area {
+  background: var(--bs-white);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -3230,7 +3269,6 @@ button:focus {
   transition: 0.3s;
   max-height: 56px;
   border-radius: 500%;
-  background: transparent;
   border: 2px solid var(--bs-primary-500);
 }
 .dev-project-area .dev-project-slider__control-buttons .button svg path {
@@ -3362,6 +3400,7 @@ button:focus {
 }
 
 .dev-testimonial-area {
+  background: var(--bs-white);
   box-shadow: inset 0px 1px 0px #E6E8EB;
   padding: 60px 0;
 }
@@ -3529,6 +3568,7 @@ button:focus {
 
 .dev-counter-section {
   padding: 60px 0;
+  background: var(--bs-white);
 }
 @media (min-width: 575px) {
   .dev-counter-section {
@@ -3596,6 +3636,7 @@ button:focus {
 }
 
 .dev-footer-area {
+  background: var(--bs-white);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -3635,6 +3676,7 @@ button:focus {
   }
 }
 .dev-footer-area .logo-wrapper p {
+  color: var(--bs-gray-700);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4444444444;
@@ -3661,12 +3703,14 @@ button:focus {
 }
 .dev-footer-area .dev-footer-list li a:hover {
   color: var(--bs-gray-900);
-  font-weight: 600;
 }
 .dev-footer-area--modifi {
   box-shadow: inset 0px 1px 0px #E6E8EB;
 }
 
+.dev-copyright-area {
+  background: var(--bs-white);
+}
 .dev-copyright-area__wrapper {
   box-shadow: inset 0px 1px 0px #E6E8EB;
   display: flex;
@@ -10333,7 +10377,7 @@ blockquote .content .name {
 }
 
 .dev-project-area .dev-project-slider__control-buttons .button {
-  background: white;
+  background: var(--bs-white);
 }
 .dev-project-area .d-btn-outline-primary svg path {
   stroke: var(--bs-primary-500);
@@ -10425,8 +10469,48 @@ blockquote .content .name {
   outline: none;
 }
 
-.mode-switcher-panel .buttons button.active {
-  background-color: #ced4e7;
+.mode-switcher-panel .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mode-switcher-panel .buttons .switcher-btn {
+  position: relative;
+  min-height: 48px;
+  min-width: 48px;
+  max-height: 48px;
+  max-width: 48px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+.mode-switcher-panel .buttons .switcher-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+.mode-switcher-panel .buttons .switcher-btn.lite::before {
+  background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17.625C15.1066 17.625 17.625 15.1066 17.625 12C17.625 8.8934 15.1066 6.375 12 6.375C8.8934 6.375 6.375 8.8934 6.375 12C6.375 15.1066 8.8934 17.625 12 17.625Z' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 3.375V1.5' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.89707 5.89707L4.5752 4.5752' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3.375 12H1.5' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.89707 18.103L4.5752 19.4249' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 20.625V22.5' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.1035 18.103L19.4254 19.4249' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.625 12H22.5' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.1035 5.89707L19.4254 4.5752' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.mode-switcher-panel .buttons .switcher-btn.dark::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.3156 14.3062C18.8431 14.7191 17.2872 14.7326 15.8078 14.3454C14.3283 13.9582 12.9786 13.1841 11.8972 12.1027C10.8158 11.0214 10.0418 9.67162 9.65454 8.19216C9.26729 6.7127 9.28083 5.15683 9.69374 3.68433C8.24199 4.0884 6.92144 4.86578 5.86363 5.93904C4.80581 7.01231 4.04765 8.34399 3.66467 9.80144C3.28168 11.2589 3.28724 12.7913 3.68078 14.2459C4.07432 15.7006 4.84211 17.0267 5.90767 18.0923C6.97324 19.1578 8.29939 19.9256 9.75403 20.3192C11.2087 20.7127 12.741 20.7183 14.1985 20.3353C15.656 19.9523 16.9876 19.1941 18.0609 18.1363C19.1342 17.0785 19.9115 15.758 20.3156 14.3062Z' stroke='%23697484' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.mode-switcher-panel .buttons .switcher-btn.active {
+  background-color: #1777E5;
+}
+.mode-switcher-panel .buttons .switcher-btn.active.lite::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17.625C15.1066 17.625 17.625 15.1066 17.625 12C17.625 8.8934 15.1066 6.375 12 6.375C8.8934 6.375 6.375 8.8934 6.375 12C6.375 15.1066 8.8934 17.625 12 17.625Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 3.375V1.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.89683 5.89683L4.57495 4.57495' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3.375 12H1.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.89683 18.1031L4.57495 19.425' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 20.625V22.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.1031 18.1031L19.425 19.425' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.625 12H22.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.1031 5.89683L19.425 4.57495' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.mode-switcher-panel .buttons .switcher-btn.active.dark::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.3156 14.3062C18.8431 14.7191 17.2872 14.7326 15.8078 14.3454C14.3283 13.9582 12.9786 13.1841 11.8972 12.1027C10.8158 11.0214 10.0418 9.67162 9.65454 8.19216C9.26729 6.7127 9.28083 5.15683 9.69374 3.68433C8.24199 4.0884 6.92144 4.86578 5.86363 5.93904C4.80581 7.01231 4.04765 8.34399 3.66467 9.80144C3.28168 11.2589 3.28724 12.7913 3.68078 14.2459C4.07432 15.7006 4.84211 17.0267 5.90767 18.0923C6.97324 19.1578 8.29939 19.9256 9.75403 20.3192C11.2087 20.7127 12.741 20.7183 14.1985 20.3353C15.656 19.9523 16.9876 19.1941 18.0609 18.1363C19.1342 17.0785 19.9115 15.758 20.3156 14.3062Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 .mode-switcher-panel .switcher-minimize-button {
@@ -10466,6 +10550,77 @@ blockquote .content .name {
   transform: translateY(-50%) translateX(100%);
   top: 50%;
   z-index: 99;
+}
+
+body[data-theme=dark], .dark-bg, .dark-mode-texts {
+  --bs-white:#132238;
+  --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
+  --bs-gray-900:#fff;
+  --bs-gray-600:#fff;
+  --bs-gray-700:#A5ACB5;
+  --bs-bg-dev-services:#05182E;
+  --bs-primary-50:#2B384C;
+  --bs-gray-900-2:#2B384C;
+  --bs-gray-800:#132238;
+}
+
+.light-version-logo, .light-shape {
+  display: none;
+}
+
+.dark-version-logo, .dark-shape {
+  display: none;
+}
+
+.default-logo, .default-shape {
+  display: block;
+}
+
+body[data-theme=dark] [data-force-dark-mode], .dark-bg [data-force-dark-mode], .dark-mode-texts [data-force-dark-mode] {
+  background: #171a23 !important;
+}
+body[data-theme=dark] .dark-version-logo, .dark-bg .dark-version-logo, .dark-mode-texts .dark-version-logo {
+  display: block;
+}
+body[data-theme=dark] .light-shape, .dark-bg .light-shape, .dark-mode-texts .light-shape {
+  display: none !important;
+}
+body[data-theme=dark] .dark-shape, .dark-bg .dark-shape, .dark-mode-texts .dark-shape {
+  display: block !important;
+}
+body[data-theme=dark] .light-mode-texts .dark-version-logo, .dark-bg .light-mode-texts .dark-version-logo, .dark-mode-texts .light-mode-texts .dark-version-logo {
+  display: none;
+}
+body[data-theme=dark] .light-mode-texts .light-version-logo, .dark-bg .light-mode-texts .light-version-logo, .dark-mode-texts .light-mode-texts .light-version-logo {
+  display: block;
+}
+body[data-theme=dark] .default-logo, body[data-theme=dark] .default-shape, .dark-bg .default-logo, .dark-bg .default-shape, .dark-mode-texts .default-logo, .dark-mode-texts .default-shape {
+  display: none;
+}
+
+body[data-theme=light] .light-version-logo, .light-bg .light-version-logo, .light-mode-texts .light-version-logo {
+  display: block;
+}
+body[data-theme=light] .light-shape, .light-bg .light-shape, .light-mode-texts .light-shape {
+  display: block !important;
+}
+body[data-theme=light] .dark-shape, .light-bg .dark-shape, .light-mode-texts .dark-shape {
+  display: none !important;
+}
+body[data-theme=light] .dark-mode-texts .light-shape, .light-bg .dark-mode-texts .light-shape, .light-mode-texts .dark-mode-texts .light-shape {
+  display: none !important;
+}
+body[data-theme=light] .dark-mode-texts .dark-shape, .light-bg .dark-mode-texts .dark-shape, .light-mode-texts .dark-mode-texts .dark-shape {
+  display: block !important;
+}
+body[data-theme=light] .dark-mode-texts .dark-version-logo, .light-bg .dark-mode-texts .dark-version-logo, .light-mode-texts .dark-mode-texts .dark-version-logo {
+  display: block;
+}
+body[data-theme=light] .dark-mode-texts .light-version-logo, .light-bg .dark-mode-texts .light-version-logo, .light-mode-texts .dark-mode-texts .light-version-logo {
+  display: none;
+}
+body[data-theme=light] .default-logo, body[data-theme=light] .default-shape, .light-bg .default-logo, .light-bg .default-shape, .light-mode-texts .default-logo, .light-mode-texts .default-shape {
+  display: none;
 }
 
 /*********** CSS TABLE OF CONTENTS *******************

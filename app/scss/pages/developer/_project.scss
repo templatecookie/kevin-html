@@ -1,4 +1,5 @@
 .dev-project-area {
+    background: var(--bs-white);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 80px 0;
@@ -33,7 +34,6 @@
                transition: .3s;
                max-height: 56px;
                border-radius: 500%;
-               background: transparent;
                border: 2px solid var(--bs-primary-500); 
                svg{
                    path{
