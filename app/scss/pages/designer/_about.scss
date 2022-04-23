@@ -12,10 +12,25 @@
     }
     &__iamge-group{
         position: relative;
+        margin-bottom: 75px;
+        @media (min-width:992px) {
+            margin-bottom: 0;
+        }
         @media (min-width:1200px) {
             margin-left: -70px;
         }
         .social-media-group{
+            @media (min-width:768px) {
+                position: absolute;
+                bottom: -70px;
+                left: 140px;
+            }
+            @media (min-width:992px) {
+                position: absolute;
+                bottom: -70px;
+                left: 22px;
+            }
+            
             @media (min-width:1200px) {
                 position: absolute;
                 bottom: 32px;
@@ -65,6 +80,7 @@
         }
         .ui-btn{
             margin-top: 25px;
+            margin-bottom: 20px;
             @media (min-width:992px) {
                 margin-top: 32px;
             }

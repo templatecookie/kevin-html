@@ -83,6 +83,7 @@
     border: 2px solid var(--bs-success-500);
     background: var(--bs-success-500);
     color: white;
+   
     svg{
       path{
         transition: .3s;
@@ -92,6 +93,7 @@
       border-color: var(--bs-success-500);
       background: transparent;
       color: var(--bs-success-500);
+      
       svg{
         path{
           stroke: var(--bs-success-500);

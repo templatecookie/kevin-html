@@ -312,7 +312,7 @@
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                     },
                 },
@@ -366,12 +366,19 @@
                 prevArrow: $(".ui-testimonial-slider__control-buttons .button--prev"),
                 nextArrow: $(".ui-testimonial-slider__control-buttons .button--next"),
                 responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        centerPadding: '20px',
-                        slidesToShow: 1,
-                    }
-                }, ]
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            centerPadding: '20px',
+                            slidesToShow: 1,
+                        }
+                    },
+                ]
             });
     }
 
