@@ -595,6 +595,30 @@ small {
   font-size: inherit;
 }
 
+.text-bg-dev-linear-gradient {
+  color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+}
+
+.bg-bg-dev-linear-gradient {
+  background-color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+}
+
+.text-bg-dev-services {
+  color: rgba(222, 228, 218, 0.7);
+}
+
+.bg-bg-dev-services {
+  background-color: rgba(222, 228, 218, 0.7);
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
 .text-gray-50 {
   color: #F0F1F3;
 }
@@ -672,6 +696,14 @@ small {
 }
 
 .bg-gray-900 {
+  background-color: #132238 !important;
+}
+
+.text-gray-900-2 {
+  color: #132238 !important;
+}
+
+.bg-gray-900-2 {
   background-color: #132238 !important;
 }
 
@@ -1911,6 +1943,10 @@ small {
   }
 }
 /*Header Css StaRT*/
+.site-header {
+  background-color: var(--bs-white);
+}
+
 .site-navbar {
   display: flex;
   position: relative;
@@ -2089,7 +2125,7 @@ small {
 }
 
 .developer-header {
-  margin: 32px 0;
+  padding: 32px 0;
 }
 .developer-header .site-header__brand .logo {
   display: flex;
@@ -2780,7 +2816,7 @@ button:focus {
   align-items: center;
   gap: 10px;
 }
-.coolerswitch-btn a {
+.coolerswitch-btn a, .coolerswitch-btn button {
   max-width: 48px;
   max-height: 48px;
   display: flex;
@@ -2791,10 +2827,10 @@ button:focus {
   border-radius: 4px;
   background: white;
 }
-.coolerswitch-btn a.active {
+.coolerswitch-btn a.active, .coolerswitch-btn button.active {
   background: var(--bs-primary-500);
 }
-.coolerswitch-btn a.active svg path {
+.coolerswitch-btn a.active svg path, .coolerswitch-btn button.active svg path {
   stroke: white;
 }
 
@@ -2824,7 +2860,8 @@ button:focus {
 }
 
 .dev-hero-area {
-  background: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+  background: var(--bs-bg-dev-linear-gradient);
+  background-color: var(--bs-white);
   padding-bottom: 60px;
 }
 @media (min-width: 768px) {
@@ -2942,7 +2979,7 @@ button:focus {
 }
 .dev-company-info--logo .logo {
   border-radius: 12px;
-  background: white;
+  background: var(--bs-white);
   padding: 15px 0;
 }
 @media (min-width: 992px) {
@@ -2953,6 +2990,7 @@ button:focus {
 .dev-company-info--logo .logo img {
   width: 100%;
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 .dev-company-info--logo .logo:hover img {
   filter: grayscale(0);
@@ -2973,7 +3011,7 @@ button:focus {
 }
 
 .dev-cta-area {
-  background-color: var(--bs-gray-900);
+  background-color: var(--bs-gray-900-2);
   padding: 60px 0px;
 }
 @media (min-width: 575px) {
@@ -3088,7 +3126,7 @@ button:focus {
 
 .dev-service-area {
   padding: 60px 0;
-  background: rgba(222, 228, 218, 0.7);
+  background: var(--bs-bg-dev-services);
 }
 @media (min-width: 575px) {
   .dev-service-area {
@@ -3110,7 +3148,7 @@ button:focus {
 }
 
 .dev-card-service {
-  background: white;
+  background: var(--bs-white);
   transition: 0.3s;
   padding: 40px;
   border-radius: 8px;
@@ -3190,6 +3228,7 @@ button:focus {
 }
 
 .dev-project-area {
+  background: var(--bs-white);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -3230,7 +3269,6 @@ button:focus {
   transition: 0.3s;
   max-height: 56px;
   border-radius: 500%;
-  background: transparent;
   border: 2px solid var(--bs-primary-500);
 }
 .dev-project-area .dev-project-slider__control-buttons .button svg path {
@@ -3362,6 +3400,7 @@ button:focus {
 }
 
 .dev-testimonial-area {
+  background: var(--bs-white);
   box-shadow: inset 0px 1px 0px #E6E8EB;
   padding: 60px 0;
 }
@@ -3529,6 +3568,7 @@ button:focus {
 
 .dev-counter-section {
   padding: 60px 0;
+  background: var(--bs-white);
 }
 @media (min-width: 575px) {
   .dev-counter-section {
@@ -3596,6 +3636,7 @@ button:focus {
 }
 
 .dev-footer-area {
+  background: var(--bs-white);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -3635,6 +3676,7 @@ button:focus {
   }
 }
 .dev-footer-area .logo-wrapper p {
+  color: var(--bs-gray-700);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4444444444;
@@ -3661,12 +3703,14 @@ button:focus {
 }
 .dev-footer-area .dev-footer-list li a:hover {
   color: var(--bs-gray-900);
-  font-weight: 600;
 }
 .dev-footer-area--modifi {
   box-shadow: inset 0px 1px 0px #E6E8EB;
 }
 
+.dev-copyright-area {
+  background: var(--bs-white);
+}
 .dev-copyright-area__wrapper {
   box-shadow: inset 0px 1px 0px #E6E8EB;
   display: flex;
@@ -6656,13 +6700,11 @@ a.icon-btn:hover img {
 .photographer-pricing-area .photographer-pricing-card .list li:last-child {
   padding-bottom: 32px;
 }
-<<<<<<< HEAD
 .photographer-pricing-area .photographer-pricing-card .pg-btn svg path {
   stroke: var(--bs-success-500);
-=======
+}
 .photographer-pricing-area .photographer-pricing-card .pg-btn.pg-btn-outline-primary {
   width: 100%;
->>>>>>> 57e8304044ca0a709074a353ab8d961e156e8d76
 }
 
 .photographer-post-area {
@@ -10335,7 +10377,7 @@ blockquote .content .name {
 }
 
 .dev-project-area .dev-project-slider__control-buttons .button {
-  background: white;
+  background: var(--bs-white);
 }
 .dev-project-area .d-btn-outline-primary svg path {
   stroke: var(--bs-primary-500);
@@ -10468,6 +10510,110 @@ blockquote .content .name {
   transform: translateY(-50%) translateX(100%);
   top: 50%;
   z-index: 99;
+}
+
+body[data-theme=dark], .dark-bg, .dark-mode-texts {
+  --bs-white:#132238;
+  --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
+  --bs-gray-900:#fff;
+  --bs-gray-600:#fff;
+  --bs-gray-700:#A5ACB5;
+  --bs-bg-dev-services:#05182E;
+  --bs-primary-50:#2B384C;
+  --bs-gray-900-2:#2B384C;
+  --bs-gray-800:#132238;
+}
+
+.light-version-logo, .light-shape {
+  display: none;
+}
+
+.dark-version-logo, .dark-shape {
+  display: none;
+}
+
+.default-logo, .default-shape {
+  display: block;
+}
+
+body[data-theme=dark] [data-force-dark-mode], .dark-bg [data-force-dark-mode], .dark-mode-texts [data-force-dark-mode] {
+  background: #171a23 !important;
+}
+body[data-theme=dark] .dark-version-logo, .dark-bg .dark-version-logo, .dark-mode-texts .dark-version-logo {
+  display: block;
+}
+body[data-theme=dark] .light-shape, .dark-bg .light-shape, .dark-mode-texts .light-shape {
+  display: none !important;
+}
+body[data-theme=dark] .dark-shape, .dark-bg .dark-shape, .dark-mode-texts .dark-shape {
+  display: block !important;
+}
+body[data-theme=dark] .light-mode-texts .dark-version-logo, .dark-bg .light-mode-texts .dark-version-logo, .dark-mode-texts .light-mode-texts .dark-version-logo {
+  display: none;
+}
+body[data-theme=dark] .light-mode-texts .light-version-logo, .dark-bg .light-mode-texts .light-version-logo, .dark-mode-texts .light-mode-texts .light-version-logo {
+  display: block;
+}
+body[data-theme=dark] .default-logo, body[data-theme=dark] .default-shape, .dark-bg .default-logo, .dark-bg .default-shape, .dark-mode-texts .default-logo, .dark-mode-texts .default-shape {
+  display: none;
+}
+
+body[data-theme=light] .light-version-logo, .light-bg .light-version-logo, .light-mode-texts .light-version-logo {
+  display: block;
+}
+body[data-theme=light] .light-shape, .light-bg .light-shape, .light-mode-texts .light-shape {
+  display: block !important;
+}
+body[data-theme=light] .dark-shape, .light-bg .dark-shape, .light-mode-texts .dark-shape {
+  display: none !important;
+}
+body[data-theme=light] .dark-mode-texts .light-shape, .light-bg .dark-mode-texts .light-shape, .light-mode-texts .dark-mode-texts .light-shape {
+  display: none !important;
+}
+body[data-theme=light] .dark-mode-texts .dark-shape, .light-bg .dark-mode-texts .dark-shape, .light-mode-texts .dark-mode-texts .dark-shape {
+  display: block !important;
+}
+body[data-theme=light] .dark-mode-texts .dark-version-logo, .light-bg .dark-mode-texts .dark-version-logo, .light-mode-texts .dark-mode-texts .dark-version-logo {
+  display: block;
+}
+body[data-theme=light] .dark-mode-texts .light-version-logo, .light-bg .dark-mode-texts .light-version-logo, .light-mode-texts .dark-mode-texts .light-version-logo {
+  display: none;
+}
+body[data-theme=light] .default-logo, body[data-theme=light] .default-shape, .light-bg .default-logo, .light-bg .default-shape, .light-mode-texts .default-logo, .light-mode-texts .default-shape {
+  display: none;
+}
+
+.heading-color {
+  color: var(--color-headings);
+}
+
+.heading-color-opacity {
+  color: var(--color-headings-opacity);
+}
+
+.text-color {
+  color: var(--color-texts);
+}
+
+.text-color-opacity {
+  color: var(--color-texts-opacity);
+}
+
+.bg-default-2 {
+  background: var(--bg-9);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.border-top {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+body {
+  color: var(--color-texts-opacity);
+  background-color: var(--bg);
 }
 
 /*********** CSS TABLE OF CONTENTS *******************

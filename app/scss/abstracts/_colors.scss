@@ -1,4 +1,4 @@
-
+$white:#fff;
 $primary-50:#E8F1FC;
 $primary-100:#D1E4FA;
 $primary-200:#A2C9F5;
@@ -75,11 +75,17 @@ $gray-600: #556070 !important;
 $gray-700: #424E60 !important;
 $gray-800: #2B384C !important;
 $gray-900: #132238 !important;
+$gray-900-2: #132238 !important;
+
+$bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+$bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
 $btn-link-color: $secondary-500;
 $custom-colors: (
-
+"bg-dev-linear-gradient":$bg-dev-linear-gradient,
+"bg-dev-services":$bg-dev-services,
+"white":white,
 "gray-50":$gray-50,
 "gray-100":$gray-100,
 "gray-200":$gray-200,
@@ -90,6 +96,7 @@ $custom-colors: (
 "gray-700":$gray-700,
 "gray-800":$gray-800,
 "gray-900":$gray-900,
+"gray-900-2":$gray-900-2,
 
 "primary-50":$primary-50,
 "primary-100":$primary-100,

@@ -2,7 +2,9 @@
 @use "./menu";
 
 /*Header Css StaRT*/
-
+.site-header{
+  background-color: var(--bs-white);
+}
 .site-navbar {
   display: flex;
   position: relative;
@@ -222,7 +224,7 @@
   }
 }
 .developer-header{
-    margin: 32px 0;
+    padding: 32px 0;
   .site-header__brand{
     .logo{
       display: flex;
