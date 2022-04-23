@@ -16,7 +16,7 @@ const mode_panel_init= () => {
     $('body').append(`
     <div class="position-fixed-right mode-switcher-panel-wrapper">
     <div class="position-relative mode-switcher-panel">
-      <div class="panel-group">
+      <div class="panel-group mb-3">
         <div class="panel-title">
           <h6 class="title">Primary Color</h6>
         </div>
@@ -40,12 +40,8 @@ const mode_panel_init= () => {
           <h6 class="title">Change Version</h6>
         </div>
         <div class="buttons">
-          <button class="${defaultActive && 'active'} switcher-btn" data-theme-mode="light">
-            Light
-          </button>
-          <button class="${bodyactive == 'dark' && 'active'} switcher-btn" data-theme-mode="dark">
-            dark
-          </button>
+          <button class="${defaultActive && 'active'} switcher-btn lite" data-theme-mode="light"></button>
+          <button class="${bodyactive == 'dark' && 'active'} switcher-btn dark" data-theme-mode="dark"></button>
         </div>
       </div>
       <button class="switcher-minimize-button">
