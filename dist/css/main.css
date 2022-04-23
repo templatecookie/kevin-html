@@ -10208,7 +10208,7 @@ blockquote .content .name {
 
 /*=== Media Query ===*/
 .theme-mode-panel-open .mode-switcher-panel-wrapper {
-  transform: translate(0);
+  transform: translateX(0) translateY(-50%);
 }
 
 .mode-switcher-panel-wrapper {
@@ -10233,6 +10233,8 @@ blockquote .content .name {
   display: inline-block;
   padding-right: 10px;
   color: #333;
+  font-size: 14px;
+  font-weight: 700;
   background: #fff;
   padding-bottom: 10px;
   margin-bottom: 0;
@@ -10251,7 +10253,7 @@ blockquote .content .name {
 .mode-switcher-panel .panel-group .color-skin {
   display: flex;
   flex-wrap: wrap;
-  margin: -7px -7px 13px;
+  margin: -7px -7px 0px;
 }
 .mode-switcher-panel .panel-group .color-skin .color-item {
   display: inline-block;
@@ -10283,42 +10285,6 @@ blockquote .content .name {
 .mode-switcher-panel .panel-group .color-skin .color-item.active::after {
   opacity: 1;
   visibility: visible;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.red {
-  background: #f51e46;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.blue {
-  background: #0068e1;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.bondi-blue {
-  background: #0095b6;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.cornflower {
-  background: #6453f7;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.violet {
-  background: #723881;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.yellow {
-  background: #fa9928;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.orange {
-  background: #f8008c;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.green {
-  background: #fd6602;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.pink {
-  background: #59b210;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.black {
-  background: #ff749f;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.indigo {
-  background: #2a3447;
-}
-.mode-switcher-panel .panel-group .color-skin .color-item.magenta {
-  background: #4b0082;
 }
 
 .mode-switcher-panel .buttons button:focus {
@@ -10364,8 +10330,8 @@ blockquote .content .name {
 .position-fixed-right {
   position: fixed;
   right: 0;
-  transform: translateX(100%);
-  top: 30%;
+  transform: translateY(-50%) translateX(100%);
+  top: 50%;
   z-index: 99;
 }
 
