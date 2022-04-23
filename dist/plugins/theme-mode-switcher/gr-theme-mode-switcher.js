@@ -75,6 +75,10 @@ $(document).ready(function(){
     {
       selector: '.primary-color',
       variable: '--bs-primary-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-tertiary-500'
     }
   ]
   const root = document.documentElement;

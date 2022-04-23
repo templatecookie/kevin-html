@@ -89,6 +89,15 @@
             line-height: 1.43;
             color: var(--bs-gray-700);
         }
+        &-btn{
+            a{
+                svg{
+                    path{
+                        stroke: var(--bs-tertiary-500);
+                    }
+                }
+            }
+        }
     }
     &:hover{
         box-shadow: 0px 24px 64px rgba(19, 34, 56, 0.12);

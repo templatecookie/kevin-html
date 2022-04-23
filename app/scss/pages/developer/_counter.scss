@@ -9,6 +9,13 @@
     .dev-count-block{
         position: relative;
         svg{
+            path{
+                transition: .3s;
+                stroke: var(--bs-primary-500);
+            }
+            .fill{
+                fill: var(--bs-primary-500);
+            }
             margin-bottom: 10px;
             @media (min-width:768px) {
                 margin-bottom: 24px;

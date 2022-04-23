@@ -85,6 +85,7 @@
                border: 2px solid var(--bs-tertiary-500); 
                svg{
                    path{
+                       stroke: var(--bs-tertiary-500);
                        transition: .3s;
                    }
                }

@@ -105,6 +105,11 @@
                         justify-content: center;
                         border-radius: 500px;
                         background: var(--bs-tertiary-50);
+                        svg{
+                            path{
+                                stroke: var(--bs-tertiary-500);
+                            }
+                        }
                     }
 
                     .text {

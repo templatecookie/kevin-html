@@ -3058,6 +3058,7 @@ button:focus {
   }
 }
 .dev-cta-area .button-group .content-button svg path {
+  stroke: var(--bs-primary-500);
   transition: 0.3s;
 }
 .dev-cta-area .button-group .content-button:hover {
@@ -3159,6 +3160,7 @@ button:focus {
 }
 .dev-card-service .card-body .link-btn svg path {
   transition: 0.3s;
+  stroke: var(--bs-primary-500);
 }
 .dev-card-service .card-body .link-btn:hover {
   color: var(--bs-primary-600);
@@ -3381,6 +3383,10 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.dev-testimonial-area__image .video-button svg path {
+  fill: var(--bs-primary-500);
+  stroke: var(--bs-primary-500);
+}
 .dev-testimonial-area__slider {
   position: relative;
 }
@@ -3453,6 +3459,9 @@ button:focus {
 .dev-testimonial-card .content .icon {
   margin-bottom: 23px;
 }
+.dev-testimonial-card .content .icon svg path {
+  fill: var(--bs-primary-500);
+}
 .dev-testimonial-card .content .text {
   font-weight: 400;
   font-size: 18px;
@@ -3500,6 +3509,9 @@ button:focus {
   font-size: 16px;
   line-height: 24px;
 }
+.dev-testimonial-card .client-info .text span {
+  color: var(--bs-primary-500);
+}
 
 .dev-counter-section {
   padding: 60px 0;
@@ -3519,6 +3531,13 @@ button:focus {
 }
 .dev-counter-section .dev-count-block svg {
   margin-bottom: 10px;
+}
+.dev-counter-section .dev-count-block svg path {
+  transition: 0.3s;
+  stroke: var(--bs-primary-500);
+}
+.dev-counter-section .dev-count-block svg .fill {
+  fill: var(--bs-primary-500);
 }
 @media (min-width: 768px) {
   .dev-counter-section .dev-count-block svg {
@@ -3852,6 +3871,7 @@ button:focus {
   background: white;
 }
 .ui-project-area__slider .ui-project-slider--half-fluid__control-buttons .button svg path {
+  stroke: var(--bs-tertiary-500);
   transition: 0.3s;
 }
 .ui-project-area__slider .ui-project-slider--half-fluid__control-buttons .button:hover {
@@ -3941,6 +3961,7 @@ button:focus {
   margin-left: 8px;
 }
 .ui-project-card .card-body .link-btn svg path {
+  stroke: var(--bs-tertiary-500);
   transition: 0.3s;
 }
 .ui-project-card .card-body .link-btn:hover {
@@ -4682,6 +4703,9 @@ button:focus {
   line-height: 1.43;
   color: var(--bs-gray-700);
 }
+.ui-blog-card .blog-content-btn a svg path {
+  stroke: var(--bs-tertiary-500);
+}
 .ui-blog-card:hover {
   box-shadow: 0px 24px 64px rgba(19, 34, 56, 0.12);
 }
@@ -4808,6 +4832,9 @@ button:focus {
   justify-content: center;
   border-radius: 500px;
   background: var(--bs-tertiary-50);
+}
+.ui-contact-area__wrapper .contact-content__info-block a .icon svg path {
+  stroke: var(--bs-tertiary-500);
 }
 .ui-contact-area__wrapper .contact-content__info-block a .text span {
   color: var(--bs-gray-600);
@@ -5028,6 +5055,7 @@ button:focus {
   border: 2px solid var(--bs-tertiary-500);
 }
 .ui-testimonial-section__slider .ui-testimonial-slider__control-buttons .button svg path {
+  stroke: var(--bs-tertiary-500);
   transition: 0.3s;
 }
 .ui-testimonial-section__slider .ui-testimonial-slider__control-buttons .button:hover {
@@ -5118,7 +5146,7 @@ button:focus {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 11;
   padding: 60px 0;
 }
 @media (min-width: 768px) {
