@@ -68,7 +68,7 @@
 .dev-copyright-area{
     background: var(--bs-white);
     &__wrapper{
-        box-shadow: inset 0px 1px 0px #E6E8EB;
+        box-shadow: inset 0px 1px 0px var(--bs-border-one);
         display: flex;
         align-items: center;
         justify-content: space-between;

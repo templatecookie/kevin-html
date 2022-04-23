@@ -81,8 +81,11 @@ $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
+$border-one:#e6e8eb;
+
 $btn-link-color: $secondary-500;
 $custom-colors: (
+"border-one":$border-one,
 "bg-dev-linear-gradient":$bg-dev-linear-gradient,
 "bg-dev-services":$bg-dev-services,
 "white":white,

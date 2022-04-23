@@ -19,6 +19,7 @@
   --bs-white: white;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
+  --bs-border-one: #e6e8eb;
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
   --bs-bg-dev-services: rgba(222, 228, 218, 0.7);
   --bs-gray-50: #F0F1F3;
