@@ -1,4 +1,7 @@
 .ui-about-area{
+    position: relative;
+    z-index: 11;
+    background: var(--bs-white);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 60px 0;
@@ -63,6 +66,7 @@
             font-family: 'Sora', sans-serif;
             font-weight: 600;
             margin-bottom: 26px;
+            color: var(--bs-gray-900);
             line-height: 122%;
             margin-bottom: 25px;
             @media (min-width:992px) {
@@ -70,6 +74,7 @@
             }
         }
         .text{
+            color: var(--bs-gray-900);
             font-family: 'Sora', sans-serif;
             font-weight: 300;
             line-height: 144%; 
@@ -83,6 +88,20 @@
             margin-bottom: 20px;
             @media (min-width:992px) {
                 margin-top: 32px;
+            }
+        }
+    }
+    &__ellips{
+        width: 18%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: auto;
+        z-index: -1;
+        svg{
+            width: 100%;
+            circle{
+                fill: var(--bs-ellips-1);
             }
         }
     }

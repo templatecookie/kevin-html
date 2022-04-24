@@ -60,8 +60,8 @@
         bottom: -38%;
         left: -20%;
         min-width: 45.2%;
-        max-width: 45.2%;
         min-height: 79%;
+        max-width: 45.2%;
         max-height: 79%;
         z-index: -2;
         background: var(--bs-bg-ui-linear-gradient-2);
@@ -69,6 +69,9 @@
     }
 }
 .ui-logo-area{
+    @media (max-width:1400px) {
+        position: relative;
+    }
     @media (min-width:1400px) {
         bottom: 0;
         left: 0;
