@@ -1,5 +1,5 @@
 .ui-blog-area{
-    background: linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
+    background: var(--bs-bg-ui-linear-gradient-7);
     position: relative;
     z-index: 1;
     padding: 60px 0;
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 32px 20px;
-    background: white;
+    background: var(--bs-white);
     border-radius: 14px;
     @media (min-width:992px) {
         padding: 32px;
