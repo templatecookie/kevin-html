@@ -53,4 +53,10 @@ body[data-theme="dark"]{
       box-shadow: 0px 48px 88px rgba(0, 0, 0, 0.12);
     }
   }
+  .ui-btn.ui-btn-outline-primary{
+    border-color: #2B384C;
+    &:hover{
+      border-color: var(--bs-tertiary-500);
+    }
+  }
 }

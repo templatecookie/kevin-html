@@ -4939,6 +4939,7 @@ button:focus {
   }
 }
 .ui-blog-card .blog-content-meta p span {
+  color: var(--bs-gray-900);
   font-weight: 300;
   font-family: "Sora", sans-serif;
   font-size: 14px;
@@ -10743,6 +10744,12 @@ blockquote .content .name {
 body[data-theme=dark] .ui-contact-area__wrapper {
   border-color: #2B384C;
   box-shadow: 0px 48px 88px rgba(0, 0, 0, 0.12);
+}
+body[data-theme=dark] .ui-btn.ui-btn-outline-primary {
+  border-color: #2B384C;
+}
+body[data-theme=dark] .ui-btn.ui-btn-outline-primary:hover {
+  border-color: var(--bs-tertiary-500);
 }
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
