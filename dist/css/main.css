@@ -6203,7 +6203,52 @@ a.icon-btn-white path {
   }
 }
 .flc-service-thumb {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+}
+.flc-service-thumb .icon-1 .st0 {
+  fill: var(--bs-gray-500);
+}
+.flc-service-thumb .icon-1 .st1 {
+  fill: var(--bs-gray-900);
+}
+.flc-service-thumb .icon-1 .st2 {
+  fill-opacity: 0;
+}
+.flc-service-thumb .icon-1 .st3 {
+  fill: none;
+}
+.flc-service-thumb .icon-2 .st0 {
+  fill: var(--bs-gray-900);
+}
+.flc-service-thumb .icon-2 .st1 {
+  fill: var(--bs-gray-500);
+}
+.flc-service-thumb .icon-2 .st2 {
+  fill: var(--bs-gray-900);
+}
+.flc-service-thumb .icon-2 .st3 {
+  fill: none;
+  stroke: var(--bs-gray-900);
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.flc-service-thumb .icon-3 .st0 {
+  fill: var(--bs-gray-500);
+}
+.flc-service-thumb .icon-3 .st1 {
+  fill: var(--bs-gray-900);
+}
+.flc-service-thumb .icon-3 .st2 {
+  fill: var(--bs-gray-500);
+}
+.flc-service-thumb .icon-3 .st3 {
+  fill: var(--bs-gray-500);
 }
 .flc-service-data h4 {
   font-weight: 700;
