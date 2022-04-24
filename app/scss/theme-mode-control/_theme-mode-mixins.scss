@@ -6,6 +6,7 @@
   --bs-bg-ui-linear-gradient-2:linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
   --bs-bg-ui-linear-gradient-3:linear-gradient(180deg, #132238 0%, #2B384C 100%);
   --bs-bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.04) 0%, rgba(243, 236, 255, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(19, 34, 56, 0.8) 0%, rgba(43, 56, 76, 0.8) 100%), #132238;
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-600-2:#87909D;
@@ -22,6 +23,7 @@
   --bs-secondary-300:#FFD91A;
   --bs-secondary-100:#2B384C;
   --bs-danger-50:#2B384C;
+  --bs-opacity-2:0.2;
 }
 
 @mixin dark-mode {

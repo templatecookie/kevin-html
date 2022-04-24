@@ -83,6 +83,7 @@ $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba
 $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
 $bg-ui-linear-gradient-3:linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
 $bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+$bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
@@ -92,6 +93,7 @@ $border-two:#fff;
 $ellips-1:#E8F1FC;
 $ellips-2:#F3ECFF;
 
+$opacity-2:1;
 
 $btn-link-color: $secondary-500;
 $custom-colors: (
@@ -101,6 +103,7 @@ $custom-colors: (
 "bg-ui-linear-gradient-2":$bg-ui-linear-gradient-2,
 "bg-ui-linear-gradient-3":$bg-ui-linear-gradient-3,
 "bg-ui-linear-gradient-4":$bg-ui-linear-gradient-4,
+"bg-ui-linear-gradient-5":$bg-ui-linear-gradient-5,
 
 
 "border-one":$border-one,
@@ -108,6 +111,8 @@ $custom-colors: (
 
 "ellips-1":$ellips-1,
 "ellips-2":$ellips-2,
+
+"opacity-2":$opacity-2,
 
 "bg-dev-services":$bg-dev-services,
 

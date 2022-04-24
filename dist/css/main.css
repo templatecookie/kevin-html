@@ -635,6 +635,14 @@ small {
   background-color: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
 }
 
+.text-bg-ui-linear-gradient-5 {
+  color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+}
+
+.bg-bg-ui-linear-gradient-5 {
+  background-color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+}
+
 .text-border-one {
   color: #e6e8eb;
 }
@@ -665,6 +673,14 @@ small {
 
 .bg-ellips-2 {
   background-color: #F3ECFF;
+}
+
+.text-opacity-2 {
+  color: 1;
+}
+
+.bg-opacity-2 {
+  background-color: 1;
 }
 
 .text-bg-dev-services {
@@ -4535,8 +4551,8 @@ button:focus {
 
 .ui-skill-area {
   position: relative;
-  background: #FFFFFF;
-  box-shadow: inset 0px 2px 0px #FFF4ED;
+  background: var(--bs-white);
+  box-shadow: inset 0px 2px 0px var(--bs-border-one);
   z-index: 1;
   padding: 60px 0;
 }
@@ -4597,6 +4613,7 @@ button:focus {
   justify-content: space-between;
 }
 .ui-skill-area #skill-bar-wrapper .text-wrapper .text {
+  color: var(--bs-gray-900);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -4631,6 +4648,7 @@ button:focus {
   left: 0;
   width: 20%;
   z-index: -1;
+  opacity: var(--bs-opacity-2);
 }
 .ui-skill-area__ellipse-2 {
   position: absolute;
@@ -4638,6 +4656,7 @@ button:focus {
   right: 0;
   width: 22%;
   z-index: -1;
+  opacity: var(--bs-opacity-2);
 }
 
 .tools-group {
@@ -5173,7 +5192,7 @@ button:focus {
 }
 
 .ui-testimonial-section {
-  background: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+  background: var(--bs-bg-ui-linear-gradient-5);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -5244,7 +5263,7 @@ button:focus {
 }
 .ui-testimonial-section__slider .ui-testimonial-slider .slick-current .ui-testimonial-card .card-image img {
   border-radius: 500px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid var(--bs-white);
   filter: drop-shadow(0px 16px 48px rgba(18, 95, 183, 0.32));
 }
 .ui-testimonial-section__slider .ui-testimonial-slider__control-buttons {
@@ -5282,7 +5301,7 @@ button:focus {
 }
 
 .ui-testimonial-card {
-  background: white;
+  background: var(--bs-white);
   text-align: center;
   border-radius: 16px;
   padding: 30px;
@@ -10696,6 +10715,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-bg-ui-linear-gradient-2:linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
   --bs-bg-ui-linear-gradient-3:linear-gradient(180deg, #132238 0%, #2B384C 100%);
   --bs-bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.04) 0%, rgba(243, 236, 255, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(19, 34, 56, 0.8) 0%, rgba(43, 56, 76, 0.8) 100%), #132238;
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-600-2:#87909D;
@@ -10712,6 +10732,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-secondary-300:#FFD91A;
   --bs-secondary-100:#2B384C;
   --bs-danger-50:#2B384C;
+  --bs-opacity-2:0.2;
 }
 
 .light-version-logo, .light-shape {
