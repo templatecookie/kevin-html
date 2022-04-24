@@ -3,8 +3,11 @@
   --bs-white:#132238;
   --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
   --bs-bg-ui-linear-gradient:linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
+  --bs-bg-ui-linear-gradient-2:linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
+  --bs-bg-ui-linear-gradient-3:linear-gradient(180deg, #132238 0%, #2B384C 100%);
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
+  --bs-gray-600-2:#87909D;
   --bs-gray-700:#A5ACB5;
   --bs-bg-dev-services:#05182E;
   --bs-primary-50:#2B384C;
@@ -12,6 +15,8 @@
   --bs-gray-800:#132238;
   --bs-border-one:#2B384C;
   --bs-primary-500-2:#132238;
+  --bs-border-two:#000;
+  --bs-ellips-1:#2B384C;
 }
 
 @mixin dark-mode {

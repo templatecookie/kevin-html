@@ -21,7 +21,11 @@
   --bs-gray-dark: #343a40;
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
   --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+  --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
+  --bs-bg-ui-linear-gradient-3: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
   --bs-border-one: #e6e8eb;
+  --bs-border-two: #fff;
+  --bs-ellips-1: #E8F1FC;
   --bs-bg-dev-services: rgba(222, 228, 218, 0.7);
   --bs-gray-50: #F0F1F3;
   --bs-gray-100: #E6E8EB !important;
@@ -30,6 +34,7 @@
   --bs-gray-400: #87909D !important;
   --bs-gray-500: #697484 !important;
   --bs-gray-600: #556070 !important;
+  --bs-gray-600-2: #556070 !important;
   --bs-gray-700: #424E60 !important;
   --bs-gray-800: #2B384C !important;
   --bs-gray-900: #132238 !important;

@@ -1,6 +1,8 @@
 
 .ui-project-area{
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+    z-index: 1;
+    position: relative;
+    background: var(--bs-bg-ui-linear-gradient-3);
     backdrop-filter: blur(72px);
     padding: 60px 0;
     @media (min-width:768px) {
@@ -62,7 +64,7 @@
            transition: .3s;
            max-height: 56px;
            border-radius: 500%;
-           background: white;
+           background: var(--bs-white);
            svg{
                path{
                  stroke: var(--bs-tertiary-500);
@@ -81,9 +83,16 @@
         }
     }
   }
+  &__ellipse{
+    position: absolute;
+    top: 2%;
+    right: 13%;
+    width: 30%;
+    z-index: -1;
+  }
 }
 .ui-project-card{
-    background: white;
+    background: var(--bs-white);
     transition: .3s; 
     border-radius: 16px;
     padding: 32px 20px;
@@ -123,7 +132,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: var(--bs-gray-600)
+        color: var(--bs-gray-600-2)
       }
       .link-btn{
         display: flex;
