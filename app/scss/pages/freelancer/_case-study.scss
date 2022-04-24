@@ -4,8 +4,9 @@
   margin-bottom: 50px;
 }
 .flc-case-study-section {
+  background: var(--bs-white);
   padding: 124px 0 100px;
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
   @media (max-width: 991px) {
     padding: 100px 0 80px;
   }

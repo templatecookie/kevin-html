@@ -219,8 +219,8 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-        nextArrow: '<button class="slide-arrow next-arrow"></button>'
+        prevArrow: $(".flc-testimonial-slider__control-buttons .button--prev"),
+        nextArrow: $(".flc-testimonial-slider__control-buttons .button--next"),
       });
   }
   if (jQuery(".flc-client-slider").length > 0) {

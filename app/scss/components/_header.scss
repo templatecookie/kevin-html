@@ -653,7 +653,8 @@
   }
 }
 .freelancer-header{
-  margin: 25px 0;
+  background: var(--bs-gray-50);
+  padding: 25px 0;
   .site-header{
     &__brand{
       .logo{
@@ -696,7 +697,7 @@
         max-width: 48px;
         min-height: 48px;
         max-height: 48px;
-        background: white;
+        background: var(--bs-white);
         display: flex;
         align-items: center;
         transition: .3s;
@@ -704,7 +705,7 @@
         justify-content: center;
         &:hover{
           background: var(--bs-gray-900);
-          color: white;
+          color: var(--bs-white);
         }
       }
     }

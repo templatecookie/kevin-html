@@ -1,4 +1,5 @@
 .flc-about-section {
+  background: var(--bs-white);
   margin-top: -280px;
 }
 
@@ -62,7 +63,9 @@ html {
 }
 
 .flc-about-thumb {
+  z-index: 11;
   padding: 0 15px;
+  position: relative;
   img{
     max-width: 100%;
   }
@@ -115,6 +118,7 @@ html {
       line-height: 56px;
       margin-bottom: 10px;
       font-family: 'Cardo', serif;
+      color: var(--bs-gray-900);
       @media (max-width: 767px) {
         font-size: 40px;
         line-height: 48px;

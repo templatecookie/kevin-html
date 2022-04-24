@@ -1,10 +1,11 @@
 
 .flc-service-section {
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
 }
 .flc-service {
   &-item{
-    border: 1px solid #E6E8EB;
+    border: 1px solid var(--bs-border-one);
     padding: 40px;
     @media (max-width: 1199px) {
       padding: 30px;
@@ -38,10 +39,13 @@ a.icon-btn {
   text-transform: uppercase;
   color: var(--bs-gray-900);
   padding: 60px 0;
-  img{
+  svg{
+    path{
+      stroke: var(--bs-gray-900);
+    }
     transition: all 0.4s;
   }
-  &:hover img{
+  &:hover svg{
     margin-left: 3px;
   }
 }

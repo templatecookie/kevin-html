@@ -63,6 +63,11 @@
                 gap: 24px;
             }
             p{
+                svg{
+                    path{
+                        stroke: var(--bs-tertiary-500);
+                    }
+                }
                 span{
                     color: var(--bs-gray-900);
                     font-weight: 300;

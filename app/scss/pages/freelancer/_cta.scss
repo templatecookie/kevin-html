@@ -1,17 +1,17 @@
 .flc-cta-section{
   z-index: 0;
   position: relative;
-  &:before{
-    content: "";
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 612px;
-    height: 100%;
-    position: absolute;
-    background-color: var(--bs-gray-900);
-    @media (max-width: 1199px) {
-      background-color: white;
+  background-color: var(--bs-white);
+  @media (min-width:1200px) {
+    &:before{
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 612px;
+      height: 100%;
+      position: absolute;
+      background-color: #05182E;
     }
   }
 }
@@ -27,7 +27,7 @@
   text-align: center;
   border-radius: 100%;
   border: 1px solid var(--bs-gray-100);
-  background-color: white;
+  background-color: var(--bs-white);
   @media (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -137,14 +137,14 @@
 }
 
 a.default-btn.black{
-  color: white!important;
+  color: var(--bs-white) !important;
   background-color: var(--bs-gray-900);
   border: 2px solid var(--bs-gray-900);
   svg{
     margin-left: 8px;
   }
   path{
-    stroke: #fff;
+    stroke: var(--bs-white);
   }
   &:hover path{
     stroke: var(--bs-gray-900);
