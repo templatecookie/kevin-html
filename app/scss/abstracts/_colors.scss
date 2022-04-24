@@ -84,6 +84,9 @@ $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #F
 $bg-ui-linear-gradient-3:linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
 $bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
 $bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+$bg-ui-linear-gradient-6:linear-gradient(90deg, #132238 0%, rgba(19, 34, 56, 0.8) 43.44%, rgba(19, 34, 56, 0) 100%);
+$bg-ui-linear-gradient-7:linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
+$bg-ui-linear-gradient-8:linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
@@ -104,6 +107,9 @@ $custom-colors: (
 "bg-ui-linear-gradient-3":$bg-ui-linear-gradient-3,
 "bg-ui-linear-gradient-4":$bg-ui-linear-gradient-4,
 "bg-ui-linear-gradient-5":$bg-ui-linear-gradient-5,
+"bg-ui-linear-gradient-6":$bg-ui-linear-gradient-6,
+"bg-ui-linear-gradient-7":$bg-ui-linear-gradient-7,
+"bg-ui-linear-gradient-8":$bg-ui-linear-gradient-8,
 
 
 "border-one":$border-one,
