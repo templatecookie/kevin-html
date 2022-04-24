@@ -1,5 +1,7 @@
 
 .ui-project-area{
+    z-index: 1;
+    position: relative;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
     backdrop-filter: blur(72px);
     padding: 60px 0;

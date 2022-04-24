@@ -79,19 +79,24 @@ $gray-900-2: #132238 !important;
 
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+$bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
 $border-one:#e6e8eb;
+
+$border-two:#fff;
 
 $btn-link-color: $secondary-500;
 $custom-colors: (
 
 "bg-dev-linear-gradient":$bg-dev-linear-gradient,
 "bg-ui-linear-gradient":$bg-ui-linear-gradient,
+"bg-ui-linear-gradient-2":$bg-ui-linear-gradient-2,
 
 
 "border-one":$border-one,
+"border-two":$border-two,
 
 
 "bg-dev-services":$bg-dev-services,
