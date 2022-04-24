@@ -72,6 +72,7 @@ $gray-300: #A5ACB5 !important;
 $gray-400: #87909D !important;
 $gray-500: #697484 !important;
 $gray-600: #556070 !important;
+$gray-600-2: #556070 !important;
 $gray-700: #424E60 !important;
 $gray-800: #2B384C !important;
 $gray-900: #132238 !important;
@@ -80,6 +81,7 @@ $gray-900-2: #132238 !important;
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
 $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
+$bg-ui-linear-gradient-3:linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
@@ -93,6 +95,7 @@ $custom-colors: (
 "bg-dev-linear-gradient":$bg-dev-linear-gradient,
 "bg-ui-linear-gradient":$bg-ui-linear-gradient,
 "bg-ui-linear-gradient-2":$bg-ui-linear-gradient-2,
+"bg-ui-linear-gradient-3":$bg-ui-linear-gradient-3,
 
 
 "border-one":$border-one,
@@ -112,6 +115,7 @@ $custom-colors: (
 "gray-400":$gray-400,
 "gray-500":$gray-500,
 "gray-600":$gray-600,
+"gray-600-2":$gray-600-2,
 "gray-700":$gray-700,
 "gray-800":$gray-800,
 "gray-900":$gray-900,

@@ -619,6 +619,14 @@ small {
   background-color: linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
 }
 
+.text-bg-ui-linear-gradient-3 {
+  color: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+}
+
+.bg-bg-ui-linear-gradient-3 {
+  background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+}
+
 .text-border-one {
   color: #e6e8eb;
 }
@@ -704,6 +712,14 @@ small {
 }
 
 .bg-gray-600 {
+  background-color: #556070 !important;
+}
+
+.text-gray-600-2 {
+  color: #556070 !important;
+}
+
+.bg-gray-600-2 {
   background-color: #556070 !important;
 }
 
@@ -3902,7 +3918,7 @@ button:focus {
 .ui-project-area {
   z-index: 1;
   position: relative;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+  background: var(--bs-bg-ui-linear-gradient-3);
   -webkit-backdrop-filter: blur(72px);
           backdrop-filter: blur(72px);
   padding: 60px 0;
@@ -3976,7 +3992,7 @@ button:focus {
   transition: 0.3s;
   max-height: 56px;
   border-radius: 500%;
-  background: white;
+  background: var(--bs-white);
 }
 .ui-project-area__slider .ui-project-slider--half-fluid__control-buttons .button svg path {
   stroke: var(--bs-tertiary-500);
@@ -3989,9 +4005,16 @@ button:focus {
 .ui-project-area__slider .ui-project-slider--half-fluid__control-buttons .button:hover svg path {
   stroke: white;
 }
+.ui-project-area__ellipse {
+  position: absolute;
+  top: 2%;
+  right: 13%;
+  width: 30%;
+  z-index: -1;
+}
 
 .ui-project-card {
-  background: white;
+  background: var(--bs-white);
   transition: 0.3s;
   border-radius: 16px;
   padding: 32px 20px;
@@ -4037,7 +4060,7 @@ button:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-600-2);
 }
 .ui-project-card .card-body .link-btn {
   display: flex;
@@ -10607,8 +10630,10 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
   --bs-bg-ui-linear-gradient:linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-bg-ui-linear-gradient-2:linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
+  --bs-bg-ui-linear-gradient-3:linear-gradient(180deg, #132238 0%, #2B384C 100%);
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
+  --bs-gray-600-2:#87909D;
   --bs-gray-700:#A5ACB5;
   --bs-bg-dev-services:#05182E;
   --bs-primary-50:#2B384C;
