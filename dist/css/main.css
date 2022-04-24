@@ -4803,7 +4803,7 @@ button:focus {
   background: var(--bs-tertiary-500);
 }
 .ui-work-card-1:hover .icon svg path {
-  stroke: white;
+  fill: white;
 }
 .ui-work-card-2:hover {
   box-shadow: 0px 24px 88px rgba(23, 119, 229, 0.16);
@@ -4812,7 +4812,7 @@ button:focus {
   background: var(--bs-primary-500);
 }
 .ui-work-card-2:hover .icon svg path {
-  stroke: white;
+  fill: white;
 }
 .ui-work-card-3:hover {
   box-shadow: 0px 24px 88px rgba(255, 148, 77, 0.16);
@@ -4821,7 +4821,7 @@ button:focus {
   background: var(--bs-warning-500);
 }
 .ui-work-card-3:hover .icon svg path {
-  stroke: white;
+  fill: white;
 }
 .ui-work-card-4:hover {
   box-shadow: 0px 24px 88px rgba(45, 178, 74, 0.16);
@@ -4830,7 +4830,7 @@ button:focus {
   background: var(--bs-success-500);
 }
 .ui-work-card-4:hover .icon svg path {
-  stroke: white;
+  fill: white;
 }
 .ui-work-card--modifi .icon {
   border-radius: 12px;
