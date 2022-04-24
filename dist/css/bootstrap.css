@@ -23,6 +23,7 @@
   --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
   --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
   --bs-bg-ui-linear-gradient-3: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+  --bs-bg-ui-linear-gradient-4: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
   --bs-border-one: #e6e8eb;
   --bs-border-two: #fff;
   --bs-ellips-1: #E8F1FC;
