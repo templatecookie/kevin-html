@@ -584,7 +584,7 @@
 }
 
 .bg-ui-linear-gradient {
-  background: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
+  background: var(--bs-bg-ui-linear-gradient-8);
 }
 
 .box-shadow-hover-none:hover {
@@ -657,6 +657,14 @@ small {
 
 .bg-bg-ui-linear-gradient-7 {
   background-color: linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
+}
+
+.text-bg-ui-linear-gradient-8 {
+  color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
+}
+
+.bg-bg-ui-linear-gradient-8 {
+  background-color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
 }
 
 .text-border-one {
@@ -4744,7 +4752,7 @@ button:focus {
 
 .ui-work-card {
   transition: 0.3s;
-  background: white;
+  background: var(--bs-white);
   border-radius: 16px;
   padding: 32px 20px;
 }
@@ -4755,7 +4763,7 @@ button:focus {
 }
 .ui-work-card .icon {
   transition: 0.3s;
-  background: white;
+  background: var(--bs-white);
   margin-bottom: 32px;
   min-height: 80px;
   min-width: 80px;
@@ -10747,6 +10755,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(19, 34, 56, 0.8) 0%, rgba(43, 56, 76, 0.8) 100%), #132238;
   --bs-bg-ui-linear-gradient-6:linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 43.44%, rgba(255, 255, 255, 0) 100%);
   --bs-bg-ui-linear-gradient-7:linear-gradient(180deg, #2B384C 0%, rgba(43, 56, 76, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-8:linear-gradient(180deg, rgba(232, 241, 252, 0.04) 0%, rgba(232, 241, 252, 0) 100%), #132238;
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-100:#2B384C;
