@@ -1,7 +1,9 @@
 .ui-award-area{
-    background: #FFFFFF;
-    box-shadow: inset 0px 2px 0px #EAF7ED;
+    background: var(--bs-white);
+    box-shadow: inset 0px 2px 0px var(--bs-border-one);
     padding: 60px 0;
+    position: relative;
+    z-index: 11;
     @media (min-width:768px) {
         padding: 80px 0;
     }
@@ -20,10 +22,24 @@
             
         }   
     }
+    &__ellips{
+        width: 18%;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        height: auto;
+        z-index: -1;    
+        svg{
+            width: 100%;
+            circle{
+                fill: var(--bs-ellips-2);
+            }
+        }
+    }
 }
 .ui-award-card{
     border-radius: 12px;
-    background: white;
+    background: var(--bs-white);
     padding-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
