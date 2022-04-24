@@ -16,24 +16,33 @@ const mode_panel_init= () => {
     $('body').append(`
     <div class="position-fixed-right mode-switcher-panel-wrapper">
     <div class="position-relative mode-switcher-panel">
-      <div class="panel-group">
+      <div class="panel-group mb-3">
         <div class="panel-title">
           <h6 class="title">Primary Color</h6>
         </div>
         <ul class="color-skin list-inline">
-          <li data-color="#f51e46" class="color-item primary-color"></li>
-          <li data-color="#0068e1" class="color-item primary-color"></li>
-          <li data-color="#0095b6" class="color-item primary-color"></li>
-          <li data-color="#6453f7" class="color-item primary-color"></li>
-          <li data-color="#723881" class="color-item primary-color"></li>
-          <li data-color="#fa9928" class="color-item primary-color"></li>
-          <li data-color="#fd6602" class="color-item primary-color"></li>
-          <li data-color="#59b210" class="color-item primary-color"></li>
-          <li data-color="#ff749f" class="color-item primary-color"></li>
-          <li data-color="#2a3447" class="color-item primary-color"></li>
-          <li data-color="#4b0082" class="color-item primary-color"></li>
-          <li data-color="#f8008c" class="color-item primary-color"></li>
+          <li data-color="#FF5C5C" class="color-item primary-color"></li>
+          <li data-color="#FF944D" class="color-item primary-color"></li>
+          <li data-color="#FFD91A" class="color-item primary-color"></li>
+          <li data-color="#8FCC14" class="color-item primary-color"></li>
+          <li data-color="#2DB24A" class="color-item primary-color"></li>
+          <li data-color="#0BBAE6" class="color-item primary-color"></li>
+          <li data-color="#1777E5" class="color-item primary-color"></li>
+          <li data-color="#3312FF" class="color-item primary-color"></li>
+          <li data-color="#8A43FF" class="color-item primary-color"></li>
+          <li data-color="#E543FF" class="color-item primary-color"></li>
+          <li data-color="#132238" class="color-item primary-color"></li>
+          <li data-color="#697484" class="color-item primary-color"></li>
         </ul>
+      </div>
+      <div class="panel-group">
+        <div class="panel-title">
+          <h6 class="title">Change Version</h6>
+        </div>
+        <div class="buttons">
+          <button class="${defaultActive && 'active'} switcher-btn lite" data-theme-mode="light"></button>
+          <button class="${bodyactive == 'dark' && 'active'} switcher-btn dark" data-theme-mode="dark"></button>
+        </div>
       </div>
       <button class="switcher-minimize-button">
       <i class="fa-solid fa-gear loading"></i>
@@ -79,6 +88,18 @@ $(document).ready(function(){
     {
       selector: '.primary-color',
       variable: '--bs-tertiary-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-gray-900'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-success-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-secondary-500'
     }
   ]
   const root = document.documentElement;

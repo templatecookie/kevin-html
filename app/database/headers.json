@@ -32,7 +32,7 @@
     "header_double_button":false,
     "absolute_header":true,
     "header_button":true,
-    "root":"<img src='./image/l-4/logo.png' alt='logo'> <span class='text'>Robert Warren</span>",
+    "root":"<div class='icon'><span>#</span></div> <div class='text-wrapper'><p>Robert Warren</p></div>",
     "additional_button_classes":"photographer-header-btn",
     "header_button_class":"pg-btn pg-btn-primary",
     "header_button_text" :"<img class='make-it-inline me-2' src='./image/l-4/phonecall.svg'> +1-202-555-0120"

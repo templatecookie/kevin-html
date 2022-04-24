@@ -1,5 +1,6 @@
 .dev-testimonial-area{
-    box-shadow: inset 0px 1px 0px #E6E8EB;
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-border-one);
     padding: 60px 0;
     @media (min-width:992px) {
         padding: 80px 0;

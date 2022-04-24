@@ -100,6 +100,14 @@
                 }
             }
         }
+        .pg-btn{
+            svg{
+                path{
+                    stroke: var(--bs-success-500);
+                }
+            }
+        }
+       
         .pg-btn.pg-btn-outline-primary{
             width: 100%;
         }

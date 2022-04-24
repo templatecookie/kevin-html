@@ -1,4 +1,5 @@
 .dev-footer-area{
+    background: var(--bs-white);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 80px 0;
@@ -31,6 +32,7 @@
             }
         }
         p{
+            color: var(--bs-gray-700);
             font-weight: 400;
             font-size: 16px;
             line-height: 1.444444444444444;
@@ -55,7 +57,6 @@
                 color: var(--bs-gray-700);  
                 &:hover{
                     color: var(--bs-gray-900); 
-                    font-weight: 600; 
                 }
             }
         }
@@ -65,8 +66,9 @@
     }
 }
 .dev-copyright-area{
+    background: var(--bs-white);
     &__wrapper{
-        box-shadow: inset 0px 1px 0px #E6E8EB;
+        box-shadow: inset 0px 1px 0px var(--bs-border-one);
         display: flex;
         align-items: center;
         justify-content: space-between;

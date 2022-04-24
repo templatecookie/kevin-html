@@ -1,6 +1,6 @@
 .dev-service-area{
     padding: 60px 0;
-    background: rgba(222, 228, 218, 0.7);
+    background: var(--bs-bg-dev-services);
     @media (min-width:575px) {
         padding: 80px 0;
     }
@@ -15,7 +15,7 @@
     }
 }
 .dev-card-service{
-  background: white;
+  background: var(--bs-white);
   transition: .3s; 
   padding: 40px;
   border-radius: 8px;

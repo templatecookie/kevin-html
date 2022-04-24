@@ -1,0 +1,130 @@
+
+
+
+@import 'theme-mode-mixins';
+
+
+
+// Mode activation
+$theme-mode-active: 'light';
+
+
+
+body[data-theme='dark'],.dark-bg,.dark-mode-texts{
+  @include dark-theme-mode;
+  
+}
+.light-version-logo,.light-shape{
+  display: none;
+}
+.dark-version-logo,.dark-shape{
+  display: none;
+}
+
+
+
+body[data-theme='light'],.light-bg,.light-mode-texts {
+ @include light-theme-mode;
+}
+
+
+
+// Setting The Default Theme Mode
+body{
+  @if $theme-mode-active == 'dark' {
+    @include dark-theme-mode;
+  } @else {
+    @include light-theme-mode;
+  }
+ 
+}
+
+.default-logo,.default-shape{
+  display: block;
+}
+
+body[data-theme='dark'],.dark-bg,.dark-mode-texts{
+  [data-force-dark-mode]{
+    background: #171a23!important;
+  }
+  .dark-version-logo{
+    display: block;
+  }
+  .light-shape{
+    display: none!important;
+  }
+  .dark-shape{
+    display: block!important;
+  }
+  .light-mode-texts{
+    .dark-version-logo{
+      display: none;
+    }
+    .light-version-logo{
+      display: block;
+    }
+  }
+
+  .default-logo,.default-shape{
+    display: none;
+  }
+}
+
+body[data-theme='light'],.light-bg,.light-mode-texts {
+  
+  .light-version-logo{
+    display: block;
+  }
+  .light-shape{
+    display: block!important;
+  }
+  .dark-shape{
+    display: none!important;
+  }
+  .dark-mode-texts{
+    .light-shape{
+      display: none!important;
+    }
+    .dark-shape{
+      display: block!important;
+    }
+    .dark-version-logo{
+      display: block;
+    }
+    .light-version-logo{
+      display: none;
+    }
+  }
+  
+  .default-logo,.default-shape{
+    display: none;
+  }
+}
+
+
+// .heading-color{
+//   color: var(--color-headings);
+// }
+// .heading-color-opacity{
+//   color: var(--color-headings-opacity);
+// }
+// .text-color{
+//   color: var(--color-texts);
+// }
+
+// .text-color-opacity{
+//   color: var(--color-texts-opacity);
+// }
+// .bg-default-2{
+//   background: var(--bg-9);
+// }
+// .border-bottom {
+//   border-bottom: 1px solid var(--border-color) !important;
+// }
+// .border-top {
+//   border-top: 1px solid var(--border-color) !important;
+// }
+// body{
+//   color: var(--color-texts-opacity);
+//   background-color: var(--bg);
+// }

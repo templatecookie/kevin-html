@@ -1,5 +1,6 @@
 .dev-counter-section{
     padding: 60px 0;
+    background: var(--bs-white);
     @media (min-width:575px) {
         padding: 80px 0;
     }
@@ -30,7 +31,7 @@
                 transform: translateY(-50%);
                 height: 149px;
                 width: 1px;
-                background:#E6E8EB;
+                background:var(--bs-border-one);
             }
         }
         .text{

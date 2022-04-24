@@ -1,5 +1,6 @@
 
 .ui-hero-area{
+    background-color: var(--bs-white);
     position: relative;
     z-index: 1;
     padding-top: 60px;
@@ -8,6 +9,9 @@
     }
     @media (min-width:992px) {
         padding: 0;
+    }
+    @media (min-width:1200px) {
+        padding-bottom: 50px;
     }
     .ui-display-title{
         @media (min-width:1400px) {
@@ -41,7 +45,7 @@
         }
     }
     &__ellipse-1{
-        top: 0;
+        top: -20%;
         left: 0;
         width: 28%;
         z-index: -1;
@@ -66,7 +70,7 @@
         position: absolute;
         width: 100%;
     }
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+    background:var(--bs-bg-ui-linear-gradient);
     z-index: 99;
     border: 2px solid #FFFFFF;
       backdrop-filter: blur(72px);

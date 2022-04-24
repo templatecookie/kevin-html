@@ -2,7 +2,9 @@
 @use "./menu";
 
 /*Header Css StaRT*/
-
+.site-header{
+  background-color: var(--bs-white);
+}
 .site-navbar {
   display: flex;
   position: relative;
@@ -222,7 +224,7 @@
   }
 }
 .developer-header{
-    margin: 32px 0;
+    padding: 32px 0;
   .site-header__brand{
     .logo{
       display: flex;
@@ -279,7 +281,7 @@
     .logo{
       display: flex;
       align-items: center;
-      img{
+      .icon{
        min-width: 48px;
        max-width: 48px;
        min-height: 48px;
@@ -287,15 +289,27 @@
        object-fit: cover;
        border-radius: 500px; 
        margin-right: 12px;
+       border: 2px solid var(--bs-success-500);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       span{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px; 
+            color: var(--bs-success-500);
+       }
       }
-      .text{
-        color: white;
-        white-space:nowrap;
-        font-weight: 600;
-        font-family:'Barlow', sans-serif;
-        font-size: 18px;
-        @media (min-width:575px) {
-          font-size: 24px;
+      .text-wrapper{
+        p{
+          color: white;
+          white-space:nowrap;
+          font-weight: 600;
+          font-family:'Barlow', sans-serif;
+          font-size: 18px;
+          @media (min-width:575px) {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -410,9 +424,13 @@
   }
 }
 .ui-header{
-    margin: 22px 0;
+    padding: 22px 0;
     @media (min-width:992px) {
-      margin: 32px 0;
+      padding: 32px 0;
+    }
+    .site-navbar{
+      z-index: 99;
+      position: relative;
     }
   .site-header__brand{
     .logo{

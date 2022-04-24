@@ -24,12 +24,17 @@
   img{
     width: 100%;
   }
-  a.law-video-play-btn {
-    display: inline-block;
+  .law-video-play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    svg{
+        path{
+            fill: var(--bs-primary-500);
+            stroke: var(--bs-primary-500);
+        }
+    }
 }
 }
 .law-experiences-data{
