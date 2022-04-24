@@ -424,9 +424,13 @@
   }
 }
 .ui-header{
-    margin: 22px 0;
+    padding: 22px 0;
     @media (min-width:992px) {
-      margin: 32px 0;
+      padding: 32px 0;
+    }
+    .site-navbar{
+      z-index: 99;
+      position: relative;
     }
   .site-header__brand{
     .logo{

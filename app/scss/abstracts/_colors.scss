@@ -78,6 +78,7 @@ $gray-900: #132238 !important;
 $gray-900-2: #132238 !important;
 
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+$bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
 $bg-dev-services:rgba(222, 228, 218, 0.7);
 
 
@@ -85,9 +86,19 @@ $border-one:#e6e8eb;
 
 $btn-link-color: $secondary-500;
 $custom-colors: (
-"border-one":$border-one,
+
 "bg-dev-linear-gradient":$bg-dev-linear-gradient,
+"bg-ui-linear-gradient":$bg-ui-linear-gradient,
+
+
+"border-one":$border-one,
+
+
 "bg-dev-services":$bg-dev-services,
+
+
+
+
 "white":white,
 "gray-50":$gray-50,
 "gray-100":$gray-100,

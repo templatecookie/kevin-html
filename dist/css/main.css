@@ -595,20 +595,28 @@ small {
   font-size: inherit;
 }
 
-.text-border-one {
-  color: #e6e8eb;
-}
-
-.bg-border-one {
-  background-color: #e6e8eb;
-}
-
 .text-bg-dev-linear-gradient {
   color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 }
 
 .bg-bg-dev-linear-gradient {
   background-color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+}
+
+.text-bg-ui-linear-gradient {
+  color: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.bg-bg-ui-linear-gradient {
+  background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.text-border-one {
+  color: #e6e8eb;
+}
+
+.bg-border-one {
+  background-color: #e6e8eb;
 }
 
 .text-bg-dev-services {
@@ -2296,12 +2304,16 @@ small {
 }
 
 .ui-header {
-  margin: 22px 0;
+  padding: 22px 0;
 }
 @media (min-width: 992px) {
   .ui-header {
-    margin: 32px 0;
+    padding: 32px 0;
   }
+}
+.ui-header .site-navbar {
+  z-index: 99;
+  position: relative;
 }
 .ui-header .site-header__brand .logo {
   display: flex;
@@ -3746,6 +3758,7 @@ button:focus {
 }
 
 .ui-hero-area {
+  background-color: var(--bs-white);
   position: relative;
   z-index: 1;
   padding-top: 60px;
@@ -3758,6 +3771,11 @@ button:focus {
 @media (min-width: 992px) {
   .ui-hero-area {
     padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .ui-hero-area {
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1400px) {
@@ -3796,7 +3814,7 @@ button:focus {
   }
 }
 .ui-hero-area__ellipse-1 {
-  top: 0;
+  top: -20%;
   left: 0;
   width: 28%;
   z-index: -1;
@@ -3815,7 +3833,7 @@ button:focus {
 }
 
 .ui-logo-area {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: var(--bs-bg-ui-linear-gradient);
   z-index: 99;
   border: 2px solid #FFFFFF;
   -webkit-backdrop-filter: blur(72px);
@@ -10564,6 +10582,7 @@ blockquote .content .name {
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-white:#132238;
   --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
+  --bs-bg-ui-linear-gradient:linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-700:#A5ACB5;

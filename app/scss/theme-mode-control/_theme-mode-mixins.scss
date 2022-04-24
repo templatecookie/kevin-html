@@ -2,6 +2,7 @@
 @mixin dark-theme-mode {
   --bs-white:#132238;
   --bs-bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
+  --bs-bg-ui-linear-gradient:linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-700:#A5ACB5;
