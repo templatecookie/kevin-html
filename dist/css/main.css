@@ -627,6 +627,22 @@ small {
   background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
 }
 
+.text-bg-ui-linear-gradient-4 {
+  color: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+}
+
+.bg-bg-ui-linear-gradient-4 {
+  background-color: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+}
+
+.text-bg-ui-linear-gradient-5 {
+  color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+}
+
+.bg-bg-ui-linear-gradient-5 {
+  background-color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+}
+
 .text-border-one {
   color: #e6e8eb;
 }
@@ -649,6 +665,22 @@ small {
 
 .bg-ellips-1 {
   background-color: #E8F1FC;
+}
+
+.text-ellips-2 {
+  color: #F3ECFF;
+}
+
+.bg-ellips-2 {
+  background-color: #F3ECFF;
+}
+
+.text-opacity-2 {
+  color: 1;
+}
+
+.bg-opacity-2 {
+  background-color: 1;
 }
 
 .text-bg-dev-services {
@@ -4244,7 +4276,7 @@ button:focus {
   width: 100%;
 }
 .ui-about-area__ellips svg circle {
-  fill: var(--bs-ellips-1);
+  fill: var(--bs-ellips-2);
 }
 
 .social-media-group {
@@ -4327,9 +4359,11 @@ button:focus {
 }
 
 .ui-award-area {
-  background: #FFFFFF;
-  box-shadow: inset 0px 2px 0px #EAF7ED;
+  background: var(--bs-white);
+  box-shadow: inset 0px 2px 0px var(--bs-border-one);
   padding: 60px 0;
+  position: relative;
+  z-index: 11;
 }
 @media (min-width: 768px) {
   .ui-award-area {
@@ -4354,10 +4388,24 @@ button:focus {
     margin-bottom: 85px;
   }
 }
+.ui-award-area__ellips {
+  width: 18%;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: auto;
+  z-index: -1;
+}
+.ui-award-area__ellips svg {
+  width: 100%;
+}
+.ui-award-area__ellips svg circle {
+  fill: var(--bs-ellips-2);
+}
 
 .ui-award-card {
   border-radius: 12px;
-  background: white;
+  background: var(--bs-white);
   padding-bottom: 30px;
   padding-right: 20px;
   padding-left: 20px;
@@ -4395,7 +4443,7 @@ button:focus {
 
 .ui-service-area {
   padding: 60px 0;
-  background: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+  background: var(--bs-bg-ui-linear-gradient-4);
 }
 @media (min-width: 768px) {
   .ui-service-area {
@@ -4423,7 +4471,7 @@ button:focus {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: var(--bs-gray-900);
+  color: #132238;
   padding: 10px 16px;
   margin-bottom: 15px;
 }
@@ -4458,7 +4506,7 @@ button:focus {
   align-items: center;
   gap: 18px;
   padding: 30px 25px;
-  background: white;
+  background: var(--bs-white);
   border-width: 4px;
   border-radius: 16px;
   border-style: solid;
@@ -4503,8 +4551,8 @@ button:focus {
 
 .ui-skill-area {
   position: relative;
-  background: #FFFFFF;
-  box-shadow: inset 0px 2px 0px #FFF4ED;
+  background: var(--bs-white);
+  box-shadow: inset 0px 2px 0px var(--bs-border-one);
   z-index: 1;
   padding: 60px 0;
 }
@@ -4565,6 +4613,7 @@ button:focus {
   justify-content: space-between;
 }
 .ui-skill-area #skill-bar-wrapper .text-wrapper .text {
+  color: var(--bs-gray-900);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -4599,6 +4648,7 @@ button:focus {
   left: 0;
   width: 20%;
   z-index: -1;
+  opacity: var(--bs-opacity-2);
 }
 .ui-skill-area__ellipse-2 {
   position: absolute;
@@ -4606,6 +4656,7 @@ button:focus {
   right: 0;
   width: 22%;
   z-index: -1;
+  opacity: var(--bs-opacity-2);
 }
 
 .tools-group {
@@ -5141,7 +5192,7 @@ button:focus {
 }
 
 .ui-testimonial-section {
-  background: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+  background: var(--bs-bg-ui-linear-gradient-5);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -5212,7 +5263,7 @@ button:focus {
 }
 .ui-testimonial-section__slider .ui-testimonial-slider .slick-current .ui-testimonial-card .card-image img {
   border-radius: 500px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid var(--bs-white);
   filter: drop-shadow(0px 16px 48px rgba(18, 95, 183, 0.32));
 }
 .ui-testimonial-section__slider .ui-testimonial-slider__control-buttons {
@@ -5250,7 +5301,7 @@ button:focus {
 }
 
 .ui-testimonial-card {
-  background: white;
+  background: var(--bs-white);
   text-align: center;
   border-radius: 16px;
   padding: 30px;
@@ -10663,6 +10714,8 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-bg-ui-linear-gradient:linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-bg-ui-linear-gradient-2:linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
   --bs-bg-ui-linear-gradient-3:linear-gradient(180deg, #132238 0%, #2B384C 100%);
+  --bs-bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.04) 0%, rgba(243, 236, 255, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(19, 34, 56, 0.8) 0%, rgba(43, 56, 76, 0.8) 100%), #132238;
   --bs-gray-900:#fff;
   --bs-gray-600:#fff;
   --bs-gray-600-2:#87909D;
@@ -10675,6 +10728,11 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-primary-500-2:#132238;
   --bs-border-two:#000;
   --bs-ellips-1:#2B384C;
+  --bs-ellips-2:rgba(255, 217, 26, 0.2);
+  --bs-secondary-300:#FFD91A;
+  --bs-secondary-100:#2B384C;
+  --bs-danger-50:#2B384C;
+  --bs-opacity-2:0.2;
 }
 
 .light-version-logo, .light-shape {
