@@ -21,6 +21,13 @@
         @media(min-width:768px){
             justify-content: flex-end;
         }
+        .pg-btn{
+            svg{
+                path{
+                    stroke: var(--bs-success-500);
+                }
+            }
+        }
     }
     .gallery-img a{
         margin-bottom: 24px;

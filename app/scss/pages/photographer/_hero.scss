@@ -28,13 +28,25 @@
                 margin-top: 32px;
             }
             a{
-                &:hover{
-                    border-color: white !important;
-                    color: white;
+                &.pg-btn-primary:hover{
+                    border-color: var(--bs-success-500);
+                    color: var(--bs-success-500);
                     svg{
                         path{
-                            stroke: white;
+                            stroke: var(--bs-success-500);
                         }
+                    }
+                }
+                &.pg-btn-outline-primary{
+                    border-color: var(--bs-white);
+                    color: var(--bs-white);
+                    svg{
+                        path{
+                            stroke: var(--bs-white);
+                        }
+                    }
+                    &:hover{
+                        border-color: var(--bs-success-500);
                     }
                 }
             }

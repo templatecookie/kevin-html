@@ -18,6 +18,7 @@
         &:not(&:last-child){
         margin-bottom: 24px;
         }   
+
         }
     }
     &__slider{
@@ -53,6 +54,12 @@
         @media (max-width:480px) {
             margin-right: 0;
             margin-bottom: 10px;
+        }
+        svg{
+            path{
+                stroke: var(--bs-success-500);
+                fill:var(--bs-success-50);
+            }
         }
     }
     .content{

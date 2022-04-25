@@ -2834,7 +2834,7 @@ small {
   font-weight: 600;
   display: inline-flex;
   font-family: "Sora", sans-serif;
-  padding: 1.2em 1.5em;
+  padding: 1em 1.5em;
   line-height: 1;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -3054,6 +3054,10 @@ button:focus {
 .dev-hero-area .dev-display-title .btn-group a.btn {
   font-size: 16px;
   font-weight: 600;
+}
+.dev-hero-area .dev-display-title .btn-group a.d-btn.d-btn-primary:hover {
+  background: white;
+  color: var(--bs-primary-500);
 }
 
 .dev-company-info {
@@ -3892,6 +3896,31 @@ button:focus {
     flex-direction: column;
   }
 }
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-primary {
+  border: 3px solid var(--bs-tertiary-500);
+}
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-primary:hover {
+  background: white;
+  border: 3px solid var(--bs-tertiary-500);
+}
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-tertiary {
+  box-shadow: none;
+  color: var(--bs-tertiary-500);
+  background: var(--bs-tertiary-50);
+  border: 3px solid transparent;
+}
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-tertiary svg path {
+  stroke: var(--bs-tertiary-500);
+}
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-tertiary:hover {
+  background: transparent;
+  box-shadow: none;
+  border: 3px solid var(--bs-tertiary-50);
+}
+.ui-hero-area .buttton-group a.ui-btn.ui-btn-tertiary:hover svg path {
+  transition: 0.3s;
+  stroke: var(--bs-tertiary-500);
+}
 .ui-hero-area__image-group {
   position: relative;
 }
@@ -3974,16 +4003,20 @@ button:focus {
   -webkit-backdrop-filter: blur(32px);
           backdrop-filter: blur(32px);
   transition: 0.3s;
+  height: 100%;
 }
-.ui-single-logo img {
+.ui-single-logo img:last-child {
   transition: 0.3s;
-  filter: grayscale(100%);
+  display: none;
 }
 .ui-single-logo:hover {
   box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
 }
-.ui-single-logo:hover img {
-  filter: grayscale(0%);
+.ui-single-logo:hover img:last-child {
+  display: block !important;
+}
+.ui-single-logo:hover img:first-child {
+  display: none;
 }
 
 .ui-project-area {
@@ -5836,12 +5869,12 @@ html {
 .flc-client-slider-item {
   text-align: center;
 }
-.flc-client-slider-item:hover path {
-  fill: #DD3E7B;
+.flc-client-slider-item a img:last-child {
+  margin-top: -60px;
+  display: none;
 }
-.flc-client-slider-item a path {
-  fill: var(--bs-gray-300);
-  transition: all 0.4s;
+.flc-client-slider-item a:hover img:last-child {
+  display: block;
 }
 
 .flc-work-process-section {
@@ -5868,6 +5901,9 @@ html {
   .flc-work-process-item {
     margin-bottom: 24px;
   }
+}
+.flc-work-process-item:hover {
+  box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
 }
 .flc-work-process-thumb {
   margin-bottom: 36px;
@@ -6719,12 +6755,22 @@ a.icon-btn:hover svg {
     margin-top: 32px;
   }
 }
-.photographer-hero-area .photographer-display-title .button-group a:hover {
-  border-color: white !important;
-  color: white;
+.photographer-hero-area .photographer-display-title .button-group a.pg-btn-primary:hover {
+  border-color: var(--bs-success-500);
+  color: var(--bs-success-500);
 }
-.photographer-hero-area .photographer-display-title .button-group a:hover svg path {
-  stroke: white;
+.photographer-hero-area .photographer-display-title .button-group a.pg-btn-primary:hover svg path {
+  stroke: var(--bs-success-500);
+}
+.photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary {
+  border-color: var(--bs-white);
+  color: var(--bs-white);
+}
+.photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary svg path {
+  stroke: var(--bs-white);
+}
+.photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary:hover {
+  border-color: var(--bs-success-500);
 }
 
 .all-photo {
@@ -6824,6 +6870,9 @@ a.icon-btn:hover svg {
   .photographer-gallery-area .gellery-btn {
     justify-content: flex-end;
   }
+}
+.photographer-gallery-area .gellery-btn .pg-btn svg path {
+  stroke: var(--bs-success-500);
 }
 .photographer-gallery-area .gallery-img a {
   margin-bottom: 24px;
@@ -7789,6 +7838,10 @@ a.icon-btn:hover svg {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+.pg-sercice-card .icon svg path {
+  stroke: var(--bs-success-500);
+  fill: var(--bs-success-50);
 }
 .pg-sercice-card .content h6 {
   font-family: "Barlow", sans-serif;
@@ -9122,12 +9175,12 @@ img {
 .law-client-slider-item {
   text-align: center;
 }
-.law-client-slider-item:hover path {
-  fill: #DD3E7B;
+.law-client-slider-item a img:last-child {
+  margin-top: -60px;
+  display: none;
 }
-.law-client-slider-item a path {
-  fill: var(--bs-gray-300);
-  transition: all 0.4s;
+.law-client-slider-item a:hover img:last-child {
+  display: block;
 }
 
 .law-experiences-section {
