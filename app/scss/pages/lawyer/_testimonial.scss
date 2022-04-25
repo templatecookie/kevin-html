@@ -1,6 +1,7 @@
 
 .law-testimonial-section{
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-gray-100);
   .container{
     @media (min-width: 1400px) {
       max-width: 1170px;

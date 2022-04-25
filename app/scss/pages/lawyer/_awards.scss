@@ -1,4 +1,5 @@
 .law-awards-section{
+  background: var(--bs-white);
   .container{
     @media (min-width: 1400px) {
       max-width: 1170px;
@@ -73,6 +74,7 @@
       padding: 0;
       list-style: none;
       li{
+        color: var(--bs-gray-900);
         font-weight: 400;
         font-size: 14px;
         display: inline-block;

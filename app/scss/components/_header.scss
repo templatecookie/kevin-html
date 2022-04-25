@@ -215,10 +215,10 @@
 .mobile-menu-trigger-dark {
   .mobile-menu-trigger {
     span {
-      background-color: black;
+      background-color: var(--bs-gray-900);
       &::before,
       &::after {
-        background-color: black;
+        background-color: var(--bs-gray-900);
       }
     }
   }
@@ -521,7 +521,7 @@
     }
   }
   @media (max-width:992px) {
-      margin: 22px 0;
+      padding: 22px 0;
     }
   .site-header{
     &__brand{
