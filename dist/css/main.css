@@ -6950,6 +6950,12 @@ a.icon-btn:hover svg {
 .photographer-pricing-area .photographer-pricing-card .list li svg {
   margin-right: 11px;
 }
+.photographer-pricing-area .photographer-pricing-card .list li svg.fil-check path {
+  stroke: var(--bs-gray-900);
+}
+.photographer-pricing-area .photographer-pricing-card .list li svg.fil-check path.s-white {
+  stroke: #fff;
+}
 .photographer-pricing-area .photographer-pricing-card .list li del {
   color: var(--bs-gray-300);
 }

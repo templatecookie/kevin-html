@@ -85,6 +85,14 @@
                 align-items: center;
                svg{
                    margin-right: 11px;
+                   &.fil-check{
+                    path{
+                        stroke: var(--bs-gray-900);
+                        &.s-white{
+                            stroke: #fff;
+                        }
+                    }
+                   }
                }
                font-family: 'Barlow', sans-serif;
                 font-weight: 500;
