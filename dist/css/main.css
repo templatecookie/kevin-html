@@ -2278,6 +2278,7 @@ small {
 
 .photographer-header {
   margin: 24px 0;
+  background-color: transparent !important;
 }
 .photographer-header .site-header__brand .logo {
   display: flex;
@@ -2682,7 +2683,7 @@ small {
   color: var(--bs-gray-900);
 }
 .freelancer-header .site-menu-main .sub-menu--item:hover > a {
-  color: var(--bs-gray-900);
+  color: #132238 !important;
 }
 
 .d-btn {
@@ -10014,6 +10015,15 @@ p.law-copywright {
 @media (min-width: 992px) {
   .tools-area .dev-section-title {
     margin-bottom: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .tools-area .card-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .tools-area .card-row .col-6 {
+    width: 100%;
   }
 }
 

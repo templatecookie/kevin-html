@@ -277,6 +277,7 @@
 }
 .photographer-header{
     margin: 24px 0;
+    background-color: transparent !important;
   .site-header__brand{
     .logo{
       display: flex;
@@ -745,7 +746,7 @@
         }
         &:hover {
           >a {
-            color: var(--bs-gray-900);
+            color: #132238 !important;
           }
         }
       }
