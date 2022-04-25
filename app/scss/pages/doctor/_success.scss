@@ -1,5 +1,12 @@
 .doctor-success-area{
-    margin: 100px auto;
+    background: var(--bs-white);
+    padding: 60px 0;
+    @media (min-widht:768px) {
+        padding: 80px 0;
+    }
+    @media (min-widht:992px) {
+        padding: 100px 0;
+    }
     &__content{
         .doctor-section-title {
             text-align: left;
@@ -38,6 +45,7 @@
                svg{
                    path{
                        transition: .3s;
+                       stroke: var(--bs-gray-900);
                    }
                }
                &:hover{
@@ -79,6 +87,7 @@
                    svg{
                        path{
                            transition: .3s;
+                           stroke: var(--bs-gray-900);
                        }
                    }
                    &:hover{
@@ -106,6 +115,10 @@
             }
             .quotes{
                 padding-bottom: 32px;
+                svg{
+                    stroke: var(--bs-gray-900);
+                    fill: var(--bs-gray-900);
+                }
             }
             .text{
                 font-family: 'JetBrains Mono';

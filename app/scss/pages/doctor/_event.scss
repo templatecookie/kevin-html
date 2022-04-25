@@ -62,6 +62,7 @@
                svg{
                    path{
                        transition: .3s;
+                       stroke: var(--bs-gray-900);
                    }
                }
                &:hover{
@@ -120,7 +121,7 @@
         }
     }
     .doctor-event-card{
-        background: white;
+        background:var(--bs-white);
         padding: 32px;
         .event-meta{
             display: flex;

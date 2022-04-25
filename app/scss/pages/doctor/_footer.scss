@@ -1,8 +1,8 @@
 .doctor-footer-area{
-    background: var(--bs-gray-900);
+    background: #132238;
     .footer-area-wrapper{
-        border-top: 1px solid var(--bs-gray-800);
-        border-bottom: 1px solid var(--bs-gray-800);
+        border-top: 1px solid #2B384C  !important;
+        border-bottom: 1px solid #2B384C  !important;
         padding: 60px 0;
         align-items: flex-start;
         @media (min-width:992px){
@@ -20,7 +20,7 @@
                     padding-top: 45px;
                     font-weight: 700;
                     font-size: 24px;
-                    color: var(--bs-gray-900);
+                    color: #132238;
                     @media (min-width:992px) {
                         padding-top: 56px;
                     }
