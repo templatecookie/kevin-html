@@ -51,10 +51,6 @@
   &-slider{
     &-item{
       text-align: center;
-      padding: 0px 130px;
-      @media (max-width: 1199px) {
-        padding: 0;
-      }
       img{
         margin: 0 auto 35px;
       }

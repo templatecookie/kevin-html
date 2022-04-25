@@ -96,7 +96,7 @@
 	.sub-menu {
 		position: absolute;
 		z-index: 500;
-		background-color: #fff;
+		background-color: var(--bs-white);
 		box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -128,7 +128,7 @@
 			letter-spacing: normal;
 			line-height: 1.75;
 			transition: 0.4s;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			border-bottom: 1px solid var(--bs-gray-100);
 
 			@media (min-width:992px) {
 				padding-top: 0;
@@ -138,7 +138,7 @@
 
 			>a {
 				font-size: 14px;
-				color: #222D39;
+				color: var(--bs-gray-500);
 				transition: 0.4s;
 				padding-left: 10px;
 				padding-right: 10px;
@@ -297,7 +297,7 @@
 				font-size: 16px;
 				line-height: 24px;
 				transition: 0.3s;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				border-bottom: 1px solid var(--bs-gray-100);
 
 				@media (min-width:992px) {
 					padding-top: 0;
@@ -454,7 +454,7 @@ li.nav-item-has-children {
 	.site-header .menu-block {
 		position: fixed;
 		width: 320px;
-		background-color: #ffffff;
+		background-color: var(--bs-white);
 		left: 0;
 		top: 0;
 		height: 100%;
@@ -482,7 +482,7 @@ li.nav-item-has-children {
 		padding-bottom: 15px;
 		display: flex;
 		align-items: center;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid var(--bs-gray-100);
 
 		@media (min-width:992px) {
 			display: block;
@@ -505,24 +505,24 @@ li.nav-item-has-children {
 
 	.site-header .menu-block .mobile-menu-head {
 		display: flex;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid var(--bs-gray-100);
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
 		z-index: 501;
 		position: sticky;
-		background-color: #ffffff;
+		background-color: var(--bs-white);
 		top: 0;
 	}
 
 	.site-header .menu-block .mobile-menu-head .go-back {
 		height: 50px;
 		width: 50px;
-		border-right: 1px solid rgba(0, 0, 0, 0.1);
+		border-right: 1px solid var(--bs-gray-100);
 		cursor: pointer;
 		line-height: 50px;
 		text-align: center;
-		color: #000000;
+		color: var(--bs-gray-900);
 		font-size: 16px;
 		display: none;
 	}
@@ -534,7 +534,7 @@ li.nav-item-has-children {
 	.site-header .menu-block .mobile-menu-head .current-menu-title {
 		font-size: 15px;
 		font-weight: 500;
-		color: #000000;
+		color: var(--bs-gray-900);
 		visibility: hidden;
 	}
 
@@ -545,11 +545,11 @@ li.nav-item-has-children {
 	.site-header .menu-block .mobile-menu-head .mobile-menu-close {
 		height: 50px;
 		width: 50px;
-		border-left: 1px solid rgba(0, 0, 0, 0.1);
+		border-left: 1px solid var(--bs-gray-100);
 		cursor: pointer;
 		line-height: 50px;
 		text-align: center;
-		color: #000000;
+		color: var(--bs-gray-900);
 		font-size: 25px;
 	}
 

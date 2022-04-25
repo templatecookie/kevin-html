@@ -1,6 +1,13 @@
 .doctor-testimonial-area{
-    padding: 100px 0;
     background-color: #132238;
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
     &__review{
         
         .title{

@@ -1,4 +1,5 @@
 .law-client-section{
+  background: var(--bs-white);
   .container{
     @media (min-width: 1400px) {
       max-width: 1170px;
@@ -32,10 +33,14 @@
       margin-top: -60px;
       display: none;
     }
+<<<<<<< HEAD
     &:hover{
      img:last-child{
        display: block;
      }
     }
    }
+=======
+  }
+>>>>>>> ca0dabb774fcb6a86adafb1486b83bc1550838a5
 }

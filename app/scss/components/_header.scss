@@ -215,10 +215,10 @@
 .mobile-menu-trigger-dark {
   .mobile-menu-trigger {
     span {
-      background-color: black;
+      background-color: var(--bs-gray-900);
       &::before,
       &::after {
-        background-color: black;
+        background-color: var(--bs-gray-900);
       }
     }
   }
@@ -353,9 +353,9 @@
   }
 }
 .doctor-header{
-    margin: 22px 0;
+    padding: 22px 0;
     @media (min-width:992px) {
-      margin: 32px 0;
+      padding: 32px 0;
     }
     .site-navbar{
       align-items: end;
@@ -373,7 +373,7 @@
         font-family: 'JetBrains Mono', sans-serif;
         font-weight: 700;
         line-height: 108%;
-        color: white;
+        color: var(--bs-white);
         font-size: 18px;
         @media (min-width:575px) {
           font-size: 24px;
@@ -394,7 +394,8 @@
       font-family:'Barlow', sans-serif;
       color: var(--bs-gray-700);
       &:hover{
-        background: var(--bs-secondary-200);
+        background: var(--bs-secondary-500);
+        color: #132238;
       }
     }
   }
@@ -521,7 +522,7 @@
     }
   }
   @media (max-width:992px) {
-      margin: 22px 0;
+      padding: 22px 0;
     }
   .site-header{
     &__brand{

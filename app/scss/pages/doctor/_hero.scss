@@ -1,6 +1,8 @@
 .doctor-hero-area{
     background: #FFF7D1;
     padding-top: 30px;
+    z-index: 1;
+    position: relative;
     padding-bottom: 60px;
     @media (min-width:575px) {
         padding-top: 30px;
@@ -11,6 +13,7 @@
     }
     @media (min-width:1200px) {
         padding: 0;
+        padding-bottom: 200px;
     }
     &__iamge-group{
         @media (min-width:1400px) {

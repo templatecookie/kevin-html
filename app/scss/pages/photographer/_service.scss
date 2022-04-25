@@ -1,5 +1,6 @@
 .photographer-service-area{
-    box-shadow: inset 0px 1px 0px #E6E8EB;
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-border-one);
     padding: 60px 0;
     @media (min-width:575px) {
         padding: 80px 0;
@@ -69,8 +70,10 @@
             font-size: 20px;
             line-height: 28px; 
             padding-bottom: 12px;
+            color: var(--bs-gray-900);
         }
         p{
+            color: var(--bs-gray-700);
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;  
