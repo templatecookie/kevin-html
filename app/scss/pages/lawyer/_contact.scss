@@ -42,6 +42,11 @@
   &-icon{
     flex-shrink: 0;
     margin-right: 35px;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
+    }
   }
   &-data{
     h4{

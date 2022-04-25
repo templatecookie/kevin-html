@@ -12,12 +12,11 @@
   &-slider{
     &-item{
       text-align: center;
-      padding: 0px 110px;
-      @media (max-width: 1199px) {
-        padding: 0;
-      }
-      img{
+      svg{
         margin: 0 auto 35px;
+        path{
+          fill: var(--bs-primary-500);
+        }
       }
       p{
         font-weight: 400;
@@ -52,42 +51,31 @@
   }
 }
 
-.flc-testimonial-slider{
+.law-testimonial-slider__control-buttons{
   padding: 0 80px;
   @media (max-width: 767px) {
     padding: 0;
+    display: none;
   }
-  .prev-arrow, 
-  .next-arrow {
+  .button {
+    background: var(--bs-primary-50);
     width: 56px;
     height: 56px;
-    background-image: url(../image/svg/Arrowleft.svg);
-    border: 2px solid #E6E8EB;
-    background-color: transparent;
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    border: transparent;
     border-radius: 100%;
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 99;
     transform: translateY(-50%);
-    @media (max-width: 767px) {
-      display: none!important;
+    z-index: 99;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
     }
-  }
-  .next-arrow{
-    left: auto;
-    right: 0;
-    background-image: url(../image/svg/ArrowRight.svg);
-  }
-}
-
-.law-testimonial-slider{
-  .prev-arrow, 
-  .next-arrow {
-    border: 2px solid var(--bs-primary-50);
-    background-color: var(--bs-primary-50);
+    &--next{
+      left: auto;
+      right: 0;
+    }
   }
 }

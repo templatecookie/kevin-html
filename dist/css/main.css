@@ -6356,12 +6356,6 @@ a.icon-btn:hover svg {
 
 .flc-testimonial-slider-item {
   text-align: center;
-  padding: 0px 130px;
-}
-@media (max-width: 1199px) {
-  .flc-testimonial-slider-item {
-    padding: 0;
-  }
 }
 .flc-testimonial-slider-item img {
   margin: 0 auto 35px;
@@ -7684,7 +7678,7 @@ a.icon-btn:hover svg {
   display: flex;
   align-items: center;
 }
-.photographer-footer-area__wrapper .logo-area .logo img {
+.photographer-footer-area__wrapper .logo-area .logo .icon {
   min-width: 48px;
   max-width: 48px;
   min-height: 48px;
@@ -7693,16 +7687,26 @@ a.icon-btn:hover svg {
      object-fit: cover;
   border-radius: 500px;
   margin-right: 12px;
+  border: 2px solid var(--bs-success-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.photographer-footer-area__wrapper .logo-area .logo .text {
+.photographer-footer-area__wrapper .logo-area .logo .icon span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--bs-success-500);
+}
+.photographer-footer-area__wrapper .logo-area .logo .text-wrapper p {
   color: var(--bs-gray-900);
   white-space: nowrap;
   font-weight: 600;
   font-family: "Barlow", sans-serif;
   font-size: 18px;
 }
-@media (min-width: 992px) {
-  .photographer-footer-area__wrapper .logo-area .logo .text {
+@media (min-width: 575px) {
+  .photographer-footer-area__wrapper .logo-area .logo .text-wrapper p {
     font-size: 24px;
   }
 }
@@ -9516,15 +9520,12 @@ img {
 
 .law-testimonial-slider-item {
   text-align: center;
-  padding: 0px 110px;
 }
-@media (max-width: 1199px) {
-  .law-testimonial-slider-item {
-    padding: 0;
-  }
-}
-.law-testimonial-slider-item img {
+.law-testimonial-slider-item svg {
   margin: 0 auto 35px;
+}
+.law-testimonial-slider-item svg path {
+  fill: var(--bs-primary-500);
 }
 .law-testimonial-slider-item p {
   font-weight: 400;
@@ -9558,47 +9559,33 @@ img {
   font-family: "Barlow", sans-serif;
 }
 
-.flc-testimonial-slider {
+.law-testimonial-slider__control-buttons {
   padding: 0 80px;
 }
 @media (max-width: 767px) {
-  .flc-testimonial-slider {
+  .law-testimonial-slider__control-buttons {
     padding: 0;
+    display: none;
   }
 }
-.flc-testimonial-slider .prev-arrow,
-.flc-testimonial-slider .next-arrow {
+.law-testimonial-slider__control-buttons .button {
+  background: var(--bs-primary-50);
   width: 56px;
   height: 56px;
-  background-image: url(../image/svg/Arrowleft.svg);
-  border: 2px solid #E6E8EB;
-  background-color: transparent;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  border: transparent;
   border-radius: 100%;
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: 99;
   transform: translateY(-50%);
+  z-index: 99;
 }
-@media (max-width: 767px) {
-  .flc-testimonial-slider .prev-arrow,
-.flc-testimonial-slider .next-arrow {
-    display: none !important;
-  }
+.law-testimonial-slider__control-buttons .button svg path {
+  stroke: var(--bs-gray-900);
 }
-.flc-testimonial-slider .next-arrow {
+.law-testimonial-slider__control-buttons .button--next {
   left: auto;
   right: 0;
-  background-image: url(../image/svg/ArrowRight.svg);
-}
-
-.law-testimonial-slider .prev-arrow,
-.law-testimonial-slider .next-arrow {
-  border: 2px solid var(--bs-primary-50);
-  background-color: var(--bs-primary-50);
 }
 
 .law-contact-section {
@@ -9651,6 +9638,9 @@ img {
 .law-contact-info-icon {
   flex-shrink: 0;
   margin-right: 35px;
+}
+.law-contact-info-icon svg path {
+  stroke: var(--bs-gray-900);
 }
 .law-contact-info-data h4 {
   font-weight: 500;
@@ -9881,7 +9871,8 @@ a.law-icon-blue-btn svg path {
 }
 
 .law-footer-section {
-  background-color: var(--bs-gray-900);
+  border-top: 1px solid var(--bs-gray-100);
+  background-color: #132238;
 }
 @media (min-width: 1400px) {
   .law-footer-section .container {
@@ -10009,7 +10000,7 @@ a.law-icon-blue-btn svg path {
   justify-content: center;
   border-radius: 4px;
   transition: all 0.4s;
-  background-color: var(--bs-gray-800);
+  background-color: #2B384C;
 }
 .law-social-icon ul li a:hover {
   background-color: var(--bs-primary-500);
