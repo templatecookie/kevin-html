@@ -1,20 +1,84 @@
-
 .flc-service-section {
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
 }
+
 .flc-service {
-  &-item{
-    border: 1px solid #E6E8EB;
+  &-item {
+    border: 1px solid var(--bs-border-one);
     padding: 40px;
+
     @media (max-width: 1199px) {
       padding: 30px;
     }
   }
-  &-thumb{
-    margin-bottom: 40px;
+
+  &-thumb {
+    margin-bottom: 30px;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    .icon-1 {
+      .st0 {
+        fill: var(--bs-gray-500);
+      }
+
+      .st1 {
+        fill: var(--bs-gray-900);
+      }
+
+      .st2 {
+        fill-opacity: 0;
+      }
+
+      .st3 {
+        fill: none;
+      }
+    }
+    .icon-2 {
+      .st0 {
+        fill: var(--bs-gray-900);
+      }
+
+      .st1 {
+        fill: var(--bs-gray-500);
+      }
+
+      .st2 {
+        fill: var(--bs-gray-900);
+      }
+
+      .st3 {
+        fill: none;
+        stroke: var(--bs-gray-900);
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    }
+    .icon-3 {
+      .st0 {
+        fill: var(--bs-gray-500);
+      }
+      
+      .st1 {
+        fill: var(--bs-gray-900);
+      }
+      
+      .st2 {
+        fill: var(--bs-gray-500);
+      }
+
+      .st3 {
+        fill: var(--bs-gray-500);
+      }
+    }
   }
-  &-data{
-    h4{
+
+  &-data {
+    h4 {
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;
@@ -22,7 +86,8 @@
       margin-bottom: 15px;
       font-family: 'Cardo', serif;
     }
-    p{
+
+    p {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
@@ -31,6 +96,7 @@
     }
   }
 }
+
 a.icon-btn {
   font-weight: 600;
   font-size: 14px;
@@ -38,22 +104,28 @@ a.icon-btn {
   text-transform: uppercase;
   color: var(--bs-gray-900);
   padding: 60px 0;
-  img{
+
+  svg {
+    path {
+      stroke: var(--bs-gray-900);
+    }
+
     transition: all 0.4s;
   }
-  &:hover img{
+
+  &:hover svg {
     margin-left: 3px;
   }
 }
 
 @media (max-width: 991px) {
-  .col-lg-4.col-md-6{
-    .flc-service-item{
+  .col-lg-4.col-md-6 {
+    .flc-service-item {
       margin-bottom: 24px;
     }
-    &:last-child .service-item{
+
+    &:last-child .service-item {
       margin-bottom: 0;
     }
   }
 }
-

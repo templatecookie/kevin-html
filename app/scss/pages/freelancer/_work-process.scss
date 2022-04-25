@@ -13,16 +13,22 @@
   &-item{
     padding: 32px;
     position: relative;
-    background-color: white;
+    background-color: var(--bs-white);
     @media (max-width: 991px) {
       margin-bottom: 24px;
     }
   }
   &-thumb{
     margin-bottom: 36px;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
+    }
   }
   &-data{
     h4{
+      color: var(--bs-gray-50);
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;

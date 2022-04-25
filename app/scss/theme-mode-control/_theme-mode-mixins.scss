@@ -29,6 +29,7 @@
   --bs-danger-50:#2B384C;
   --bs-opacity-2:0.2;
   --bs-tertiary-50:#05182E;
+  --bs-gray-50:#05182E;
 }
 
 @mixin dark-mode {
@@ -57,6 +58,12 @@ body[data-theme="dark"]{
     border-color: #2B384C;
     &:hover{
       border-color: var(--bs-tertiary-500);
+    }
+  }
+  .flc-work-process-section {
+    background: rgba(43, 56, 76,0.6);
+    .flc-work-process-count {
+      color: #2B384C !important;
     }
   }
 }

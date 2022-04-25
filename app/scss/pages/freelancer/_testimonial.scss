@@ -5,7 +5,7 @@
   @media (max-width:991px) {
     margin: 0 auto 40px;
   }
-
+  
   h2{
     font-weight: 400;
     font-size: 56px;
@@ -40,7 +40,12 @@
   }
 }
 .flc-testimonial-section{
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
+  border-bottom: 1px solid var(--bs-border-one);
+  background: var(--bs-white);
+  &__slider{
+    position: relative;
+  }
 }
 .flc-testimonial{
   &-slider{
@@ -83,35 +88,32 @@
   }
 }
 
-.flc-testimonial-slider{
+.flc-testimonial-slider__control-buttons{
   padding: 0 80px;
   @media (max-width: 767px) {
     padding: 0;
+    display: none;
   }
-  .prev-arrow, 
-  .next-arrow {
+  .button {
+    background: transparent;
     width: 56px;
     height: 56px;
-    background-image: url(../image/svg/Arrowleft.svg);
-    border: 2px solid #E6E8EB;
-    background-color: transparent;
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    border: 2px solid var(--bs-border-one);
     border-radius: 100%;
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 99;
     transform: translateY(-50%);
-    @media (max-width: 767px) {
-      display: none!important;
+    z-index: 99;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
     }
-  }
-  .next-arrow{
-    left: auto;
-    right: 0;
-    background-image: url(../image/svg/ArrowRight.svg);
+    &--next{
+      left: auto;
+      right: 0;
+    }
   }
 }
 

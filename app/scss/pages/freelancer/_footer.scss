@@ -61,7 +61,7 @@
   letter-spacing: 0.02em;
   transition: all 0.4s;
   border: 2px solid white;
-  color: var(--bs-gray-900)!important;
+  color: #132238;
   background-color: white ;
   svg{
     margin-left: 8px;
@@ -104,12 +104,12 @@
     }
     &:hover .marketplace-info-data{
       h4{
-        color: var(--bs-gray-900);
+        color: #132238;
       }
     }
     &:hover .marketplace-info-data{
       a{
-        color: var(--bs-gray-600);
+        color:#556070;
       }
     }
   }
@@ -141,7 +141,7 @@
 
 .flc-footer-info {
   padding: 100px 0;
-  border-bottom: 1px solid var(--bs-gray-800);
+  border-bottom: 1px solid #2B384C;
   @media (max-width:1199px) {
     padding: 80px 0;
   }
@@ -187,7 +187,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;
-      color: white;
+      color: #fff;
       margin-bottom: 8px;
       font-family: 'Cardo', serif;
     }

@@ -219,8 +219,8 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-        nextArrow: '<button class="slide-arrow next-arrow"></button>'
+        prevArrow: $(".flc-testimonial-slider__control-buttons .button--prev"),
+        nextArrow: $(".flc-testimonial-slider__control-buttons .button--next"),
       });
   }
   if (jQuery(".flc-client-slider").length > 0) {
@@ -388,6 +388,21 @@
         ]
       });
   }
-
+  
+  $(window).scroll(function() {
+    var hT = $('#skill-bar-wrapper').offset().top,
+        hH = $('#skill-bar-wrapper').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT+hH-1.4*wH)){
+        jQuery(document).ready(function(){
+            jQuery('.skillbar-container').each(function(){
+                jQuery(this).find('.skills').animate({
+                    width:jQuery(this).attr('data-percent')
+                }, 5000); // 5 seconds
+            });
+        });
+    }
+  });
 
 })(jQuery);

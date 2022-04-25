@@ -13,6 +13,15 @@
             margin-bottom: 50px;
         }
     }
+    @media (min-width:992px) and (max-width:1200px) {
+        .card-row{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            .col-6{
+                width: 100%;
+            }
+        }
+    }
 }
 .tools-card{
     transition: .3s;
