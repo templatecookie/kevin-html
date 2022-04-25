@@ -5,54 +5,58 @@
       max-width: 1170px;
     }
   }
+  .logo{
+    display:flex;
+    align-items: center;
+    @media (max-width:575px) {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .icon{
+      margin-right: 16px;
+      max-width:56px;
+      min-width:56px;
+      min-height:56px;
+      max-height:56px;
+      justify-content: center;
+      display: flex;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 24px;
+      align-items: center;
+      color: white !important;
+      background: var(--bs-primary-500);
+      border-radius: 4px;
+    }
+    .text-wrapper{
+      p{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 500;
+        white-space: nowrap;
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+        @media (min-width:575px) {
+          font-size: 20px;
+        }
+      }
+      span{
+        text-transform: capitalize;
+        font-family: 'Barlow', sans-serif;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-300);
+      }
+    }
+  }
 }
 .law-footer-top{
   padding: 100px 0 40px;
   border-bottom: 1px solid #2B384C;
   @media (max-width: 991px) {
     padding: 70px 0 40px;
-  }
-}
-.logo{
-  display:flex;
-  align-items: center;
-  .icon{
-    margin-right: 16px;
-    max-width:56px;
-    min-width:56px;
-    min-height:56px;
-    max-height:56px;
-    justify-content: center;
-    display: flex;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 24px;
-    align-items: center;
-    color: white !important;
-    background: var(--bs-primary-500);
-    border-radius: 4px;
-  }
-  .text-wrapper{
-    p{
-      font-family: 'Barlow', sans-serif;
-      font-weight: 500;
-      white-space: nowrap;
-      color: white;
-      text-transform: uppercase;
-      font-size: 18px;
-      @media (min-width:575px) {
-        font-size: 20px;
-      }
-    }
-    span{
-      text-transform: capitalize;
-      font-family: 'Barlow', sans-serif;
-      white-space: nowrap;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: var(--bs-gray-300);
-    }
   }
 }
 

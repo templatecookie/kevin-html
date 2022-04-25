@@ -30,6 +30,7 @@
   --bs-opacity-2:0.2;
   --bs-tertiary-50:#05182E;
   --bs-gray-50:#05182E;
+  --bs-success-50:#05182E;
 }
 
 @mixin dark-mode {
@@ -65,5 +66,14 @@ body[data-theme="dark"]{
     .flc-work-process-count {
       color: #2B384C !important;
     }
+  }
+  .photographer-pricing-area{
+    background: rgba(43, 56, 76, 0.6) !important;
+  }
+  .photographer-contact-area {
+    background: rgba(43, 56, 76, 0.8);
+  }
+  .photographer-footer-area{
+    background: #2B384C;
   }
 }

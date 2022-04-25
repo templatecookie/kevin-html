@@ -6697,7 +6697,6 @@ a.icon-btn:hover svg {
 @media (min-width: 992px) {
   .photographer-hero-area {
     padding: 224px 0 424px;
-    margin-bottom: 158px;
   }
 }
 .photographer-hero-area .photographer-display-title .title {
@@ -6796,7 +6795,8 @@ a.icon-btn:hover svg {
 }
 .photographer-gallery-area {
   padding: 60px 0;
-  box-shadow: inset 0px 1px 0px #e6e8eb;
+  background-color: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
 }
 @media (min-width: 575px) {
   .photographer-gallery-area {
@@ -6846,7 +6846,7 @@ a.icon-btn:hover svg {
 }
 
 .photographer-pricing-area {
-  background-color: var(--bs-gray-50);
+  background: var(--bs-gray-50);
   padding: 60px 0;
 }
 @media (min-width: 575px) {
@@ -6869,7 +6869,7 @@ a.icon-btn:hover svg {
 }
 .photographer-pricing-area .photographer-pricing-card {
   height: 100%;
-  background-color: white;
+  background-color: var(--bs-white);
   padding: 48px 25px;
 }
 @media (min-width: 1024px) {
@@ -6930,7 +6930,7 @@ a.icon-btn:hover svg {
   line-height: 1.5;
   color: var(--bs-gray-600);
   padding-bottom: 32px;
-  border-bottom: 1px solid #E6E8EB;
+  border-bottom: 1px solid var(--bs-gray-100);
 }
 .photographer-pricing-area .photographer-pricing-card .list {
   list-style: none;
@@ -6964,7 +6964,8 @@ a.icon-btn:hover svg {
 }
 
 .photographer-post-area {
-  box-shadow: inset 0px 1px 0px #E6E8EB;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -7000,6 +7001,7 @@ a.icon-btn:hover svg {
 }
 
 .photographer-about-area {
+  background-color: var(--bs-white);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -7010,6 +7012,7 @@ a.icon-btn:hover svg {
 @media (min-width: 992px) {
   .photographer-about-area {
     padding: 100px 0;
+    padding-top: 258px;
   }
 }
 .photographer-about-area .photographer-achivement-block {
@@ -7033,7 +7036,7 @@ a.icon-btn:hover svg {
   }
 }
 .photographer-about-area .photographer-achivement-block .photographer-achivement-card {
-  background: white;
+  background: var(--bs-white);
 }
 @media (min-width: 992px) {
   .photographer-about-area .photographer-achivement-block .photographer-achivement-card {
@@ -7329,7 +7332,8 @@ a.icon-btn:hover svg {
 }
 
 .photographer-blog-area {
-  box-shadow: inset 0px 1px 0px #E6E8EB;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
   padding: 60px 0;
 }
 @media (min-width: 768px) {
@@ -7361,6 +7365,7 @@ a.icon-btn:hover svg {
   overflow: hidden;
   position: relative;
   text-align: center;
+  border: 0;
 }
 .photographer-blog-area .card-blog img {
   width: 100%;
@@ -7430,7 +7435,7 @@ a.icon-btn:hover svg {
 }
 @media (min-width: 575px) {
   .photographer-contact-area__wrapper {
-    background: white;
+    background: var(--bs-white);
     padding: 35px;
   }
 }
@@ -7575,7 +7580,7 @@ a.icon-btn:hover svg {
   align-items: center;
   justify-content: center;
   border-radius: 500px;
-  background: white;
+  background: var(--bs-white);
   transition: 0.3s;
 }
 .photographer-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item i {
@@ -7587,7 +7592,7 @@ a.icon-btn:hover svg {
   background: var(--bs-success-500);
 }
 .photographer-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item:hover i {
-  color: white;
+  color: #fff;
 }
 .photographer-contact-area__wrapper .contact-form .title {
   font-family: "Barlow" sans-serif;
@@ -7602,7 +7607,7 @@ a.icon-btn:hover svg {
   padding: 18px;
   border: 1px solid var(--bs-gray-100);
   height: 48px;
-  background: white !important;
+  background: var(--bs-white) !important;
   color: var(--bs-gray-900);
 }
 .photographer-contact-area__wrapper .contact-form .input-group .form-control::-moz-placeholder {
@@ -7626,9 +7631,12 @@ a.icon-btn:hover svg {
   transform: translateY(-50%);
   right: 18px;
 }
+.photographer-contact-area__wrapper .contact-form .input-group .gj-icon {
+  color: var(--bs-gray-900);
+}
 .photographer-contact-area__wrapper .contact-form .nice-select {
   width: 100%;
-  background: white !important;
+  background: var(--bs-white) !important;
   color: var(--bs-gray-400);
   height: 48px;
   border-radius: 0;
@@ -7720,11 +7728,13 @@ a.icon-btn:hover svg {
   font-family: "Barlow";
   font-weight: 400;
   font-size: 14px;
+  color: var(--bs-gray-900);
   line-height: 20px;
 }
 
 .photographer-service-area {
-  box-shadow: inset 0px 1px 0px #E6E8EB;
+  background: var(--bs-white);
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
   padding: 60px 0;
 }
 @media (min-width: 575px) {
@@ -7796,8 +7806,10 @@ a.icon-btn:hover svg {
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 12px;
+  color: var(--bs-gray-900);
 }
 .pg-sercice-card .content p {
+  color: var(--bs-gray-700);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -9811,22 +9823,17 @@ a.law-icon-blue-btn svg path {
     max-width: 1170px;
   }
 }
-
-.law-footer-top {
-  padding: 100px 0 40px;
-  border-bottom: 1px solid #2B384C;
-}
-@media (max-width: 991px) {
-  .law-footer-top {
-    padding: 70px 0 40px;
-  }
-}
-
-.logo {
+.law-footer-section .logo {
   display: flex;
   align-items: center;
 }
-.logo .icon {
+@media (max-width: 575px) {
+  .law-footer-section .logo {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.law-footer-section .logo .icon {
   margin-right: 16px;
   max-width: 56px;
   min-width: 56px;
@@ -9842,7 +9849,7 @@ a.law-icon-blue-btn svg path {
   background: var(--bs-primary-500);
   border-radius: 4px;
 }
-.logo .text-wrapper p {
+.law-footer-section .logo .text-wrapper p {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   white-space: nowrap;
@@ -9851,11 +9858,11 @@ a.law-icon-blue-btn svg path {
   font-size: 18px;
 }
 @media (min-width: 575px) {
-  .logo .text-wrapper p {
+  .law-footer-section .logo .text-wrapper p {
     font-size: 20px;
   }
 }
-.logo .text-wrapper span {
+.law-footer-section .logo .text-wrapper span {
   text-transform: capitalize;
   font-family: "Barlow", sans-serif;
   white-space: nowrap;
@@ -9863,6 +9870,16 @@ a.law-icon-blue-btn svg path {
   font-size: 14px;
   line-height: 20px;
   color: var(--bs-gray-300);
+}
+
+.law-footer-top {
+  padding: 100px 0 40px;
+  border-bottom: 1px solid #2B384C;
+}
+@media (max-width: 991px) {
+  .law-footer-top {
+    padding: 70px 0 40px;
+  }
 }
 
 .law-footer-menu {
@@ -10833,6 +10850,15 @@ body[data-theme=dark] .flc-work-process-section {
 body[data-theme=dark] .flc-work-process-section .flc-work-process-count {
   color: #2B384C !important;
 }
+body[data-theme=dark] .photographer-pricing-area {
+  background: rgba(43, 56, 76, 0.6) !important;
+}
+body[data-theme=dark] .photographer-contact-area {
+  background: rgba(43, 56, 76, 0.8);
+}
+body[data-theme=dark] .photographer-footer-area {
+  background: #2B384C;
+}
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-white:#132238;
@@ -10865,6 +10891,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-opacity-2:0.2;
   --bs-tertiary-50:#05182E;
   --bs-gray-50:#05182E;
+  --bs-success-50:#05182E;
 }
 
 .light-version-logo, .light-shape {

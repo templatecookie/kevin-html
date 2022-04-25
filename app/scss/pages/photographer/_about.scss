@@ -1,10 +1,12 @@
 .photographer-about-area{
+    background-color: var(--bs-white);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 80px 0;
     }
     @media (min-width:992px) {
         padding: 100px 0;
+        padding-top: 258px;
     }
     .photographer-achivement-block{
         margin-bottom: 30px;
@@ -21,7 +23,7 @@
         }
         position: relative;
         .photographer-achivement-card{
-            background: white;
+            background: var(--bs-white);
             @media (min-width: 992px){                
                 position: absolute;
                 top: 24px;
