@@ -55,6 +55,11 @@
     &:hover{
         border: 2px solid var(--bs-primary-500);
     }
+    svg{
+      path{
+        stroke: var(--bs-primary-500) !important;
+      }
+    }
 }
 }
 .pg-btn {
