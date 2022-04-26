@@ -59,9 +59,13 @@ const mode_panel_activities = () => {
     let buttonPanel = document.querySelector('.switcher-minimize-button');
     button.forEach((btnItem) => {
       if(e.target == btnItem){
+        //   asdasfd
+
         e.target.classList.add('active');
         $(e.target).siblings().removeClass('active');
         let selectedMode = $('.switcher-btn.active').attr('data-theme-mode');
+        localStorage.setItem('color_mode', selectedMode);
+        console.log(localStorage.getItem('color_mode'));
         $('body').attr('data-theme' , selectedMode);
       }
     })
@@ -73,7 +77,15 @@ const mode_panel_activities = () => {
         $(e.target).removeClass("open");
       }
     }
-  
+  })
+
+  window.addEventListener('load', (event) => {
+      const mode = localStorage.getItem('color_mode');
+      if(mode){
+        $('body').attr('data-theme' , mode);
+        $('.switcher-btn.active').removeClass('active');
+        $(`.switcher-btn[data-theme-mode=${mode}]`).addClass('active');
+      }
   })
 }
 $(document).ready(function(){
