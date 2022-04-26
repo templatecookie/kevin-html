@@ -4017,18 +4017,15 @@ button:focus {
   transition: 0.3s;
   height: 100%;
 }
-.ui-single-logo img:last-child {
+.ui-single-logo img {
   transition: 0.3s;
-  display: none;
+  filter: grayscale(100%);
 }
 .ui-single-logo:hover {
   box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
 }
-.ui-single-logo:hover img:last-child {
-  display: block !important;
-}
-.ui-single-logo:hover img:first-child {
-  display: none;
+.ui-single-logo:hover img {
+  filter: grayscale(0);
 }
 
 .ui-project-area {
