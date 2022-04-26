@@ -4678,53 +4678,6 @@ button:focus {
     left: 0;
   }
 }
-.ui-skill-area #skill-bar-wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-@media (min-width: 992px) {
-  .ui-skill-area #skill-bar-wrapper {
-    gap: 36px;
-  }
-}
-.ui-skill-area #skill-bar-wrapper .text-wrapper {
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ui-skill-area #skill-bar-wrapper .text-wrapper .text {
-  color: var(--bs-gray-900);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: "Sora";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-}
-.ui-skill-area #skill-bar-wrapper .text-wrapper .count-tag {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Sora", sans-serif;
-}
-.ui-skill-area #skill-bar-wrapper .skillbar-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 5px;
-  border-radius: 100px;
-}
-.ui-skill-area #skill-bar-wrapper .skills {
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  height: 5px;
-  width: 0px;
-}
 .ui-skill-area__ellipse-1 {
   position: absolute;
   top: 0;
@@ -4782,6 +4735,80 @@ button:focus {
   min-height: 48px;
 }
 
+.skill-bar__item {
+  margin-bottom: 16px;
+}
+@media (min-width: 992px) {
+  .skill-bar__item {
+    margin-bottom: 36px;
+  }
+}
+.skill-bar__item:last-child {
+  margin-bottom: 0;
+}
+.skill-bar__item .skill-bar-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-bar__item .skill-bar-wrapper .skill-content {
+  display: flex;
+  align-items: center;
+}
+.skill-bar__item .skill-bar-wrapper .skill-content .icon {
+  margin-right: 12px;
+}
+.skill-bar__item .skill-bar-wrapper .skill-content h5 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+  color: var(--bs-gray-900);
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .skill-bar__item .skill-bar-wrapper .skill-content h5 {
+    font-size: 18px;
+  }
+}
+.skill-bar__item .skill-bar-wrapper .skill-bar-count h6 {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.skill-bar__item .skill-bar {
+  border-radius: 30px;
+  width: 100%;
+  height: 4px;
+  background: #DEE7EE;
+}
+.skill-bar__item .skill-bar .skill-per {
+  height: 4px;
+  -webkit-animation: fillbars 8s 1;
+          animation: fillbars 8s 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@-webkit-keyframes fillbars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fillbars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .ui-work-area {
   padding: 60px 0;
 }
