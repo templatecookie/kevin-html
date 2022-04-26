@@ -595,6 +595,10 @@ small {
   font-size: inherit;
 }
 
+.section-bg-white {
+  background: var(--bs-white-2) !important;
+}
+
 .text-bg-dev-linear-gradient {
   color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 }
@@ -716,11 +720,19 @@ small {
 }
 
 .text-white {
-  color: white;
+  color: #fff;
 }
 
 .bg-white {
-  background-color: white;
+  background-color: #fff;
+}
+
+.text-white-2 {
+  color: #fff;
+}
+
+.bg-white-2 {
+  background-color: #fff;
 }
 
 .text-gray-50 {
@@ -3840,7 +3852,7 @@ button:focus {
   color: var(--bs-gray-900);
 }
 .dev-footer-area--modifi {
-  box-shadow: inset 0px 1px 0px #E6E8EB;
+  box-shadow: inset 0px 1px 0px var(--bs-gray-100);
 }
 
 .dev-copyright-area {
@@ -10176,7 +10188,9 @@ p.law-copywright {
 }
 
 .tools-area {
+  background: var(--bs-white-2);
   box-shadow: inset 0px 1px 0px var(--bs-gray-100);
+  border-bottom: 1px solid var(--bs-gray-100);
   padding: 60px 0;
 }
 @media (min-width: 575px) {
@@ -10210,7 +10224,7 @@ p.law-copywright {
 .tools-card {
   transition: 0.3s;
   text-align: center;
-  background: white;
+  background: var(--bs-white-2);
   border: 1px solid var(--bs-gray-100);
   border-radius: 6.64378px;
   padding: 30px 0;
@@ -10220,7 +10234,7 @@ p.law-copywright {
     padding: 36px 0;
   }
 }
-.tools-card img {
+.tools-card img, .tools-card svg {
   min-width: 48px;
   min-height: 48px;
   max-width: 48px;
@@ -10228,6 +10242,9 @@ p.law-copywright {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 24px;
+}
+.tools-card img path, .tools-card svg path {
+  stroke: var(--bs-gray-900);
 }
 .tools-card .title {
   font-weight: 600;
@@ -10245,6 +10262,7 @@ p.law-copywright {
 }
 
 .inner-service-area {
+  background: var(--bs-white-2);
   padding: 60px 0;
 }
 @media (min-width: 575px) {
@@ -10304,6 +10322,7 @@ p.law-copywright {
   }
 }
 .dev-contact-area__wrapper .contact-content__cotacat-block {
+  border-radius: 16px;
   background: var(--bs-primary-50);
 }
 .dev-contact-area__wrapper .contact-content__cotacat-block .social-link li.line {
@@ -10319,6 +10338,9 @@ p.law-copywright {
 }
 .dev-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item:hover i {
   color: white;
+}
+.dev-contact-area__wrapper .contact-content__info-block a .icon svg path {
+  stroke: var(--bs-primary-500);
 }
 @media (min-width: 992px) {
   .dev-contact-area__wrapper .contact-form {
@@ -10397,6 +10419,7 @@ p.law-copywright {
 }
 
 .project-case-study-area {
+  background: var(--bs-white);
   box-shadow: inset 0px 1px 0px var(--bs-gray-100);
   padding: 60px 0;
 }
@@ -10428,6 +10451,7 @@ p.law-copywright {
 }
 
 .inner-gallery-area {
+  background: var(--bs-white);
   padding: 30px 0 60px;
   border-bottom: 1px solid var(--bs-gray-100);
 }
@@ -10443,6 +10467,7 @@ p.law-copywright {
 }
 
 .inner-project-details-area {
+  background: var(--bs-white);
   padding: 60px 0 30px;
 }
 @media (min-width: 768px) {
@@ -10517,7 +10542,7 @@ p.law-copywright {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: var(--bs-gray-500);
+  color: #697484;
   padding-bottom: 12px;
 }
 .client-testimonial p {
@@ -10525,7 +10550,7 @@ p.law-copywright {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--bs-gray-900);
+  color: #132238;
 }
 
 .project-banner-area {
@@ -11034,9 +11059,30 @@ body[data-theme=dark] .law-counter-section {
 body[data-theme=dark] .law-blog-section {
   background: rgba(43, 56, 76, 0.9);
 }
+body[data-theme=dark] .bg-gray-50 {
+  background: #05182E;
+}
+body[data-theme=dark] .dev-company-info--modifi {
+  background: #05182E;
+  border-top: 1px solid var(--bs-gray-100);
+}
+body[data-theme=dark] .client-testimonial {
+  background: white !important;
+}
+body[data-theme=dark] .dev-contact-area__wrapper {
+  border: transparent;
+  box-shadow: none;
+}
+body[data-theme=dark] .dev-contact-area__wrapper .contact-content__cotacat-block {
+  background: #05182E;
+}
+body[data-theme=dark] .dev-contact-area__wrapper .contact-content__info-block .icon {
+  background: #05182E !important;
+}
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-white: #132238;
+  --bs-white-2:#05182E;
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
   --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);

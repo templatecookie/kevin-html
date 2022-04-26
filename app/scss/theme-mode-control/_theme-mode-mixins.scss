@@ -2,6 +2,7 @@
 
 @mixin dark-theme-mode {
   --bs-white: #132238;
+  --bs-white-2:#05182E;
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
   --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
@@ -101,5 +102,29 @@ body[data-theme="dark"] {
   }
   .law-blog-section{
     background: rgba(43, 56, 76, 0.9);
+  }
+  .bg-gray-50{
+    background: #05182E;
+  }
+  .dev-company-info--modifi{
+    background: #05182E;
+    border-top: 1px solid var(--bs-gray-100);
+  }
+  .client-testimonial {
+    background: white !important;
+  }
+  .dev-contact-area{
+    &__wrapper{
+      border: transparent;
+      box-shadow: none;
+      .contact-content__cotacat-block{
+        background: #05182E;
+      }
+      .contact-content__info-block{
+        .icon{
+          background: #05182E !important;
+        }
+      }
+    }
   }
 }

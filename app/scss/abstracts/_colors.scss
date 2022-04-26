@@ -1,4 +1,5 @@
 $white:#fff;
+$white-2:#fff;
 $primary-50:#E8F1FC;
 $primary-100:#D1E4FA;
 $primary-200:#A2C9F5;
@@ -125,7 +126,11 @@ $custom-colors: (
 
 
 
-"white":white,
+"white":$white,
+"white-2":$white-2,
+
+
+
 "gray-50":$gray-50,
 "gray-100":$gray-100,
 "gray-200":$gray-200,
