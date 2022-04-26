@@ -748,7 +748,7 @@
         }
         &:hover {
           >a {
-            color: #132238 !important;
+            color: var(--bs-gray-900) !important;
           }
         }
       }
