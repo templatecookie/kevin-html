@@ -80,15 +80,15 @@ const mode_panel_activities = () => {
   })
 
   window.addEventListener('load', (event) => {
-      const mode = localStorage.getItem('color_mode');
-      if(mode){
-        $('body').attr('data-theme' , mode);
-        $('.switcher-btn.active').removeClass('active');
-        $(`.switcher-btn[data-theme-mode=${mode}]`).addClass('active');
-      }
+    const mode = localStorage.getItem('color_mode');
+    if (mode) {
+      $('body').attr('data-theme', mode);
+      $('.switcher-btn.active').removeClass('active');
+      $(`.switcher-btn[data-theme-mode=${mode}]`).addClass('active');
+    }
   })
 }
-$(document).ready(function(){
+$(function() {
   mode_panel_init();
   mode_panel_activities();
 
