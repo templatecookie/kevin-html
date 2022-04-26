@@ -152,6 +152,14 @@
       background: white;
     }
   }
+  &.dc-btn-secondary{
+    border: 2px solid var(--bs-secondary-500);
+    background: white;
+    color:#132238 !important ;
+    &:hover{
+      background: var(--bs-secondary-500);
+    }
+  }
 }
 .ui-btn {
   border-radius: 12px !important;

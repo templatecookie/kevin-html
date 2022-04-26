@@ -25,7 +25,7 @@
     @media (max-width: 991px) {
       margin-bottom: 30px;
     }
-    .law-default-btn{
+    .law-default-btn,.law-default-btn-two{
       @media (max-width: 530px) {
         display: block;
         margin-bottom: 10px;
@@ -118,6 +118,45 @@ img{
     svg{
       margin-left: 10px;
     }
+  }
+  &.icon-left{
+    svg{
+      margin-right: 10px;
+    }
+  }
+}
+.law-default-btn-two{
+  background: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--bs-primary-500);
+  padding: 15px 30.5px;
+  display: inline-block;
+  transition: all 0.4s;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+  box-shadow: 0px 8px 32px rgba(19, 34, 56, 0.08);
+  @media (max-width: 767px) {
+    padding: 14px 26px;
+  }
+  @media (max-width: 530px) {
+    padding: 12px 25px;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    background: var(--bs-primary-500);
+    color: white;
+  }
+  &:hover path{
+    stroke: white;
+  }
+  path{
+    stroke: var(--bs-primary-500);
+    transition: all 0.4s;
   }
   &.icon-left{
     svg{
