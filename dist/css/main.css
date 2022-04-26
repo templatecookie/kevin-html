@@ -5873,12 +5873,12 @@ html {
 .flc-client-slider-item {
   text-align: center;
 }
-.flc-client-slider-item a img:last-child {
-  margin-top: -60px;
-  display: none;
+.flc-client-slider-item a img {
+  filter: grayscale(100%);
+  transition: 0.3s;
 }
-.flc-client-slider-item a:hover img:last-child {
-  display: block;
+.flc-client-slider-item a:hover img {
+  filter: grayscale(0);
 }
 
 .flc-work-process-section {
@@ -9236,12 +9236,12 @@ img {
 .law-client-slider-item {
   text-align: center;
 }
-.law-client-slider-item a img:last-child {
-  margin-top: -60px;
-  display: none;
+.law-client-slider-item a img {
+  filter: grayscale(100%);
+  transition: 0.3s;
 }
-.law-client-slider-item a:hover img:last-child {
-  display: block;
+.law-client-slider-item a:hover img {
+  filter: grayscale(0);
 }
 
 .law-experiences-section {
