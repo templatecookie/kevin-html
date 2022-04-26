@@ -315,7 +315,7 @@ function sassCopy() {
 function watchFiles() {
   gulp.watch(path.html, html);
   gulp.watch(path._partial, html);
-  gulp.watch([path.plugin.js, path.js, path.fonts, path.img], copyAssets);
+  gulp.watch([path.plugin.js, path.pluginJs, path.js, path.fonts, path.img], copyAssets);
   gulp.watch([path.js], javascript);
   gulp.watch(path.scss, css);
   gulp.watch(path.root, gulp.series(clean, build));

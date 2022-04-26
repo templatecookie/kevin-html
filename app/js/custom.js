@@ -209,6 +209,20 @@
         ],
       });
   }
+  if (jQuery(".law-testimonial-slider").length > 0) {
+    $(".law-testimonial-slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $(".law-testimonial-slider__control-buttons .button--prev"),
+        nextArrow: $(".law-testimonial-slider__control-buttons .button--next"),
+      });
+  }
   if (jQuery(".flc-testimonial-slider").length > 0) {
     $(".flc-testimonial-slider")
       .not(".slick-initialized")
@@ -388,21 +402,4 @@
         ]
       });
   }
-  
-  $(window).scroll(function() {
-    var hT = $('#skill-bar-wrapper').offset().top,
-        hH = $('#skill-bar-wrapper').outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-    if (wS > (hT+hH-1.4*wH)){
-        jQuery(document).ready(function(){
-            jQuery('.skillbar-container').each(function(){
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 5000); // 5 seconds
-            });
-        });
-    }
-  });
-
 })(jQuery);

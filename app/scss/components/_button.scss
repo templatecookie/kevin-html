@@ -55,6 +55,11 @@
     &:hover{
         border: 2px solid var(--bs-primary-500);
     }
+    svg{
+      path{
+        stroke: var(--bs-primary-500) !important;
+      }
+    }
 }
 }
 .pg-btn {
@@ -147,9 +152,17 @@
   &.dc-btn-primary{
     border: 2px solid var(--bs-secondary-500);
     background: var(--bs-secondary-500);
-    color: var(--bs-gray-900);
+    color:#132238 !important ;
     &:hover{
       background: white;
+    }
+  }
+  &.dc-btn-secondary{
+    border: 2px solid var(--bs-secondary-500);
+    background: white;
+    color:#132238 !important ;
+    &:hover{
+      background: var(--bs-secondary-500);
     }
   }
 }
@@ -159,7 +172,7 @@
   font-weight: 600;
   display: inline-flex;
   font-family: 'Sora', sans-serif;
-  padding: 1.2em 1.5em;
+  padding: 1em 1.5em;
   line-height: 1;
   width: max-content;
   align-items: center;

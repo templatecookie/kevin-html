@@ -16,13 +16,16 @@
 
 .flc-client-slider-item{
   text-align: center;
-  &:hover path{
-    fill: #DD3E7B;
-  }
+  
   a{
-    path{
-      fill: var(--bs-gray-300);
-      transition: all 0.4s;
+   img{
+    filter: grayscale(100%);
+    transition: 0.3s;
+   }
+   &:hover{
+    img{
+      filter: grayscale(0);
     }
+   }
   }
 }

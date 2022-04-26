@@ -1,3 +1,6 @@
+.law-contact-section{
+  background: var(--bs-white);
+}
 .law-contact-content{
   margin-right: 80px;
   @media (max-width: 1199px) {
@@ -39,6 +42,11 @@
   &-icon{
     flex-shrink: 0;
     margin-right: 35px;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
+    }
   }
   &-data{
     h4{
@@ -85,16 +93,22 @@
       width: 100%;
       font-size: 16px;
       border-radius: 4px;
+      background: var(--bs-white);
       padding: 18px;
       color: var(--bs-gray-400);
       border: 1px solid var(--bs-gray-100);
       font-family: 'Barlow', sans-serif;
+      color: var(--bs-gray-900);
+      &::placeholder{
+        color: var(--bs-gray-500);
+      }
     }
     textarea.form-control{
       height: 124px;
     }
   }
   .nice-select{
+    background: var(--bs-white);
     height: 48px;
     width: 100%;
     font-size: 16px;
@@ -120,6 +134,7 @@
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--bs-gray-900);
   }
   .gj-datepicker-md{
     width: 100%;

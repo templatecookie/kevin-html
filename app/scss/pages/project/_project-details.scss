@@ -1,4 +1,5 @@
 .inner-project-details-area{
+    background: var(--bs-white);
     padding: 60px 0 30px;
     @media (min-width:768px) {
         padding: 80px 0 40px;
@@ -69,7 +70,7 @@
         font-size: 14px;
         line-height: 14px;
         text-transform: uppercase; 
-        color: var(--bs-gray-500);
+        color: #697484;
         padding-bottom: 12px;
     }
     p{
@@ -77,6 +78,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: var(--bs-gray-900);  
+        color: #132238;  
     }
 }

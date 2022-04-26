@@ -1,4 +1,6 @@
 .doctor-award-area{
+    border-top: 1px solid var(--bs-gray-100);
+    background: var(--bs-white);
     padding: 60px 0;
     @media (min-width:768px) {
         padding: 80px 0;
@@ -80,7 +82,7 @@
     }
 }
 .doctor-award-card{
-    border: 1px solid #E6E8EB;
+    border: 1px solid var(--bs-gray-100);
     padding: 24px;
     padding-top: 12px;
     transition: .3s;

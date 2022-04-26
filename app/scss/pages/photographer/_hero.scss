@@ -10,7 +10,6 @@
     }
     @media (min-width:992px) {
         padding: 224px 0 424px;
-        margin-bottom: 158px;
     }
     .photographer-display-title{
         .title{
@@ -28,13 +27,26 @@
                 margin-top: 32px;
             }
             a{
-                &:hover{
-                    border-color: white !important;
-                    color: white;
+                &.pg-btn-primary:hover{
+                    border-color: var(--bs-success-500);
+                    color: var(--bs-success-500);
                     svg{
                         path{
-                            stroke: white;
+                            stroke: var(--bs-success-500);
                         }
+                    }
+                }
+                &.pg-btn-outline-primary{
+                    border-color: #fff !important;
+                    border-color: var(--bs-white);
+                    color: #fff;
+                    svg{
+                        path{
+                            stroke: #fff;
+                        }
+                    }
+                    &:hover{
+                        border-color: var(--bs-success-500) !important;
                     }
                 }
             }
