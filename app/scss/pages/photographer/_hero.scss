@@ -37,15 +37,16 @@
                     }
                 }
                 &.pg-btn-outline-primary{
+                    border-color: #fff !important;
                     border-color: var(--bs-white);
-                    color: var(--bs-white);
+                    color: #fff;
                     svg{
                         path{
-                            stroke: var(--bs-white);
+                            stroke: #fff;
                         }
                     }
                     &:hover{
-                        border-color: var(--bs-success-500);
+                        border-color: var(--bs-success-500) !important;
                     }
                 }
             }

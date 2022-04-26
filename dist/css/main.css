@@ -3057,8 +3057,11 @@ button:focus {
   font-weight: 600;
 }
 .dev-hero-area .dev-display-title .btn-group a.d-btn.d-btn-primary:hover {
-  background: white;
-  color: var(--bs-primary-500);
+  color: #FFF !important;
+  border-color: #FFF !important;
+}
+.dev-hero-area .dev-display-title .btn-group a.d-btn.d-btn-primary:hover svg path {
+  stroke: #FFF !important;
 }
 
 .dev-company-info {
@@ -6757,14 +6760,15 @@ a.icon-btn:hover svg {
   stroke: var(--bs-success-500);
 }
 .photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary {
+  border-color: #fff !important;
   border-color: var(--bs-white);
-  color: var(--bs-white);
+  color: #fff;
 }
 .photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary svg path {
-  stroke: var(--bs-white);
+  stroke: #fff;
 }
 .photographer-hero-area .photographer-display-title .button-group a.pg-btn-outline-primary:hover {
-  border-color: var(--bs-success-500);
+  border-color: var(--bs-success-500) !important;
 }
 
 .all-photo {
