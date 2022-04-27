@@ -2953,29 +2953,6 @@ button:focus {
   align-items: center;
 }
 
-.coolerswitch-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.coolerswitch-btn a {
-  max-width: 48px;
-  max-height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  border-radius: 4px;
-  background: white;
-}
-.coolerswitch-btn a.active {
-  background: var(--bs-primary-500);
-}
-.coolerswitch-btn a.active svg path {
-  stroke: white;
-}
-
 .load-more-btn {
   border: 2px solid var(--bs-primary-50);
   display: inline-flex;
@@ -3862,28 +3839,15 @@ button:focus {
   background: var(--bs-white);
 }
 .dev-copyright-area__wrapper {
+  text-align: center;
   box-shadow: inset 0px 1px 0px var(--bs-border-one);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 30px 0;
-}
-@media (max-width: 768px) {
-  .dev-copyright-area__wrapper {
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 .dev-copyright-area__wrapper p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--bs-gray-500);
-}
-@media (max-width: 768px) {
-  .dev-copyright-area__wrapper p {
-    text-align: center;
-  }
 }
 
 .ui-hero-area {
@@ -10168,51 +10132,6 @@ p.law-copywright {
   width: 100%;
   color: var(--bs-gray-300);
   font-family: "Barlow", sans-serif;
-}
-@media (max-width: 575px) {
-  p.law-copywright {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
-
-.law-footer-bottom-icon ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-@media (max-width: 575px) {
-  .law-footer-bottom-icon ul {
-    justify-content: center;
-  }
-}
-.law-footer-bottom-icon ul li {
-  margin-right: 8px;
-}
-.law-footer-bottom-icon ul li:last-child {
-  margin-right: 0;
-}
-.law-footer-bottom-icon ul li a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s;
-}
-.law-footer-bottom-icon ul li a:hover {
-  background-color: var(--bs-primary-500);
-}
-.law-footer-bottom-icon ul li a:hover path {
-  stroke: white;
-}
-.law-footer-bottom-icon ul li a path {
-  transition: all 0.4s;
-  stroke: var(--bs-gray-500);
 }
 
 .tools-area {

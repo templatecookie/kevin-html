@@ -266,30 +266,6 @@ margin-right: 12px;
   @include square(88px,500px);
   @include flexAllCenter;
 }
-.coolerswitch-btn{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  a{
-   max-width: 48px;
-   max-height: 48px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   min-height: 48px;
-   min-width: 48px;
-   border-radius: 4px;
-   background: white;
-    &.active{
-      background: var(--bs-primary-500);
-      svg{
-        path{
-          stroke: white;
-        }
-      }
-    }
-  }
-}
 
 .load-more-btn{
   border: 2px solid var(--bs-primary-50);

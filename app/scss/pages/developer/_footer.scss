@@ -68,19 +68,10 @@
 .dev-copyright-area{
     background: var(--bs-white);
     &__wrapper{
+        text-align: center;
         box-shadow: inset 0px 1px 0px var(--bs-border-one);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 30px 0;
-        @media (max-width:768px) {
-            flex-direction: column;
-            justify-content: center;
-        }
       p{
-        @media (max-width:768px) {
-            text-align: center;
-        }
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;  
