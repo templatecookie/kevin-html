@@ -59,13 +59,9 @@ const mode_panel_activities = () => {
     let buttonPanel = document.querySelector('.switcher-minimize-button');
     button.forEach((btnItem) => {
       if(e.target == btnItem){
-        //   asdasfd
-
         e.target.classList.add('active');
         $(e.target).siblings().removeClass('active');
         let selectedMode = $('.switcher-btn.active').attr('data-theme-mode');
-        localStorage.setItem('color_mode', selectedMode);
-        console.log(localStorage.getItem('color_mode'));
         $('body').attr('data-theme' , selectedMode);
       }
     })
@@ -82,7 +78,6 @@ const mode_panel_activities = () => {
   window.addEventListener('load', (event) => {
     const mode = localStorage.getItem('color_mode');
     if (mode) {
-      $('body').attr('data-theme', mode);
       $('.switcher-btn.active').removeClass('active');
       $(`.switcher-btn[data-theme-mode=${mode}]`).addClass('active');
     }
@@ -134,3 +129,26 @@ $(function() {
     })
   }
 })
+
+// client dark lite changer
+const toggleSwitch = document.querySelector(".toggle-button");
+const documentBody = document.body;
+
+toggleSwitch.addEventListener("change", function(e){
+  const mode = e.target.checked === true ? 'dark' : 'light';
+  documentBody.setAttribute("data-theme", mode);
+});
+
+window.addEventListener('load', () => {
+  const mode = localStorage.getItem('color_mode') ?? 'light';
+  document.body.setAttribute("data-theme", mode);
+})
+
+const observer = new MutationObserver(function() {
+  const mode = documentBody.getAttribute('data-theme');
+
+  localStorage.setItem('color_mode', mode);
+  toggleSwitch.checked = mode === 'dark' ? true : false;
+});
+
+observer.observe(documentBody, {attributeFilter: ['data-theme']});
