@@ -24,6 +24,7 @@
             }
             .contact-content {
                 &__cotacat-block{
+                    border-radius: 16px;
                     background: var(--bs-primary-50);
                     .social-link li.line {
                         width: 24px;
@@ -38,6 +39,17 @@
                     }
                     .social-link li .media-item:hover i {
                         color: white;
+                    }
+                }
+                &__info-block{
+                    a{
+                        .icon{
+                            svg{
+                                path{
+                                    stroke: var(--bs-primary-500);
+                                }
+                            }
+                        }
                     }
                 }
             }

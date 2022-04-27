@@ -1,25 +1,26 @@
 .error-page-area{
+    background: var(--bs-white);
     height: 100vh;
-    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+        padding: 60px 0;
+        @media (min-width:768px) {
+            padding: 80px 0;
+        }
+        @media (min-width:992px) {
+            padding: 100px 0;
+        }
     &__content{
-        
+        .error_img{
+            @media (min-width:992px) {
+                margin-bottom: 50px;
+            }
+            svg{
+                width: 100%;
+            }
+        }
         .error_content{
-            width: 100%;
-            margin: 20px auto;
-            padding: 0 20px;
-            @media (min-width:992px){
-                width: 60%;
-                padding: 0;
-                margin: 40px auto;
-            }
-            @media (min-width:1200px){
-                width: 45%;
-                padding: 0;
-            }
-           
             .title{
                 padding-bottom: 15px;
                 font-family: 'Inter';
@@ -47,6 +48,10 @@
             
         }
         .goHome-buttton{
+            margin-top: 20px;
+            @media (min-width:992px) {
+                margin-top: 40px;
+            }
             .d-btn{
                 svg{
                     margin-right: 12px;

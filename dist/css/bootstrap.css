@@ -16,7 +16,7 @@
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
-  --bs-white: white;
+  --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
@@ -34,6 +34,7 @@
   --bs-ellips-2: #F3ECFF;
   --bs-opacity-2: 1;
   --bs-bg-dev-services: rgba(222, 228, 218, 0.7);
+  --bs-white-2: #fff;
   --bs-gray-50: #F0F1F3;
   --bs-gray-100: #E6E8EB !important;
   --bs-gray-200: #C3C7CE !important;

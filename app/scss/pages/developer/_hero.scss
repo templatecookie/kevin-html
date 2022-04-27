@@ -77,8 +77,13 @@
                 }
 
                 &.d-btn.d-btn-primary:hover {
-                    background: white;
-                    color: var(--bs-primary-500);
+                    color: #FFF !important;
+                    svg{
+                        path{
+                            stroke: #FFF !important;
+                        }
+                    }
+                    border-color: #FFF !important;
                 }
             }
         }

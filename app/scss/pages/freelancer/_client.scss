@@ -18,13 +18,13 @@
   text-align: center;
   
   a{
-   img:last-child{
-     margin-top: -60px;
-     display: none;
+   img{
+    filter: grayscale(100%);
+    transition: 0.3s;
    }
    &:hover{
-    img:last-child{
-      display: block;
+    img{
+      filter: grayscale(0);
     }
    }
   }
