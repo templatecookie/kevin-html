@@ -70,7 +70,10 @@
         }
    
     
-    .contact-map{
-        margin: 100px 0;
     }
-}
+    
+    .contact-map{
+        iframe{
+            width: 100% !important;
+        }
+    }

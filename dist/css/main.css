@@ -10299,8 +10299,9 @@ p.law-copywright {
   color: var(--bs-primary-500);
   background: var(--bs-primary-50);
 }
-.dev-contact-area .contact-map {
-  margin: 100px 0;
+
+.contact-map iframe {
+  width: 100% !important;
 }
 
 .error-page-area {
