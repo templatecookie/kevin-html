@@ -134,3 +134,17 @@ $(function() {
     })
   }
 })
+
+
+// client 
+
+var toggleSwitch = document.querySelector(".toggle-button");
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.body.setAttribute("data-theme", "dark");
+  } else {
+    document.body.setAttribute("data-theme", "light");
+  }
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);
