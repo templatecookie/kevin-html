@@ -5406,6 +5406,7 @@ button:focus {
   min-height: 80px !important;
   -o-object-fit: cover !important;
      object-fit: cover !important;
+  border-radius: 500px;
 }
 .ui-testimonial-card .content .text {
   font-family: "Sora", sans-serif;
@@ -8833,6 +8834,7 @@ a.icon-btn:hover svg {
   height: max-content;
 }
 .doctor-book-area__feature-top .writer img {
+  border-radius: 500px;
   margin-right: 16px;
   display: inline-block;
   margin-top: -28px;
@@ -10120,11 +10122,6 @@ a.law-icon-blue-btn svg path {
 .law-footer-bottom {
   padding: 40px 0;
 }
-@media (max-width: 767px) {
-  .law-footer-bottom {
-    padding: 25px 0;
-  }
-}
 
 p.law-copywright {
   font-weight: 400;
@@ -10132,6 +10129,7 @@ p.law-copywright {
   width: 100%;
   color: var(--bs-gray-300);
   font-family: "Barlow", sans-serif;
+  text-align: center;
 }
 
 .tools-area {

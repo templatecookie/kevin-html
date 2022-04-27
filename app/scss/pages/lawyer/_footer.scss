@@ -130,9 +130,6 @@
 }
 .law-footer-bottom{
   padding: 40px 0;
-  @media (max-width: 767px) {
-    padding: 25px 0;
-  }
 }
 p.law-copywright{
   font-weight: 400;
@@ -140,4 +137,5 @@ p.law-copywright{
   width: 100%;
   color: var(--bs-gray-300);
   font-family: 'Barlow', sans-serif;
+  text-align: center;
 }
