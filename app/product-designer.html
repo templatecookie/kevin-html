@@ -1,6 +1,6 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/developer/_hero.njk" as HeroSection %}
+{% import "pages/product-designer/_hero.njk" as HeroSection %}
 {% import "pages/developer/_project.njk" as ProjectSection %}
 {% import "pages/developer/_testimonial.njk" as TestimonialSection %}
 {% import "pages/developer/_counter.njk" as CounterSection %}
@@ -11,6 +11,9 @@
   <!-- Header Section Start -->
   {{Header.render(productDesigner)}}
   <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

@@ -756,9 +756,8 @@
   }
 }
 .productdesigner-header{
+  background: transparent;
   padding: 20px 0;
-  background-color: #1B1C1E;
-  height: 100vh;
   .container{
     @media (min-width:1400px) {
       max-width: 1170px;
@@ -807,6 +806,15 @@
         color: white;
         @media (max-width:992px) {
           color: var(--bs-gray-400);
+        }
+      }
+    }
+  }
+  li.nav-item-has-children {
+    &:hover {
+      @media (min-width:992px) {
+        >.sub-menu {  
+          border-color: var(--bs-product-500);
         }
       }
     }

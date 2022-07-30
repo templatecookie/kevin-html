@@ -275,18 +275,22 @@
       }
     }
   }
-  // &.pd-btn-outline-primary{
-  //     color: var(--bs-tertiary-500);
-  //     border: 2px solid var(--bs-tertiary-50);
-  //     box-sizing: border-box;
-  //     border-radius: 8px;
-  //     svg{
-  //       margin-left: 12px;
-  //     }
-  //     &:hover{
-  //         border: 2px solid var(--bs-tertiary-500);
-  //     }
-  // }
+  &.pd-btn-outline-primary{
+      color: var(--bs-product-500);
+      background: transparent;
+      svg{
+        margin-left: 8px;
+      }
+      &:hover{
+         background: var(--bs-product-500);
+         color: white;
+         svg{
+          path{
+            fill: white;
+          }
+         }
+      }
+  }
 }
 button {
   &:focus {
