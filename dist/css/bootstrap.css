@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -107,6 +108,7 @@
   --bs-tertiary-700: #532899;
   --bs-tertiary-800: #371B66;
   --bs-tertiary-900: #1C0D33;
+  --bs-product-500: #00BBFF;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;

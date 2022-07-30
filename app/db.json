@@ -54,5 +54,15 @@
 		"header_button": false,
 		"header_social_button": true,
 		"root": "<div class='icon'>W</div> <div class='text-wrapper'><p>Winston Potter</p><span>Professional Lawyer</span></div>"
+	},
+	"productDesigner": {
+		"additional_header_class": "site-header--menu-center productdesigner-header",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"header_social_button": false,
+		"root": "<div class='icon'>E</div>",
+		"header_button_class": "pd-btn pd-btn-primary",
+		"header_button_text": "<img class='make-it-inline me-2' src='./image/envelope.svg' alt='logo'> Eleaner@info.com"
 	}
 }

@@ -79,6 +79,8 @@ $gray-800: #2B384C !important;
 $gray-900: #132238 !important;
 $gray-900-2: #132238 !important;
 
+$product-500: #00BBFF;
+
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
 $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
@@ -209,4 +211,6 @@ $custom-colors: (
 "tertiary-700":$tertiary-700,
 "tertiary-800":$tertiary-800,
 "tertiary-900":$tertiary-900,
+
+"product-500": $product-500,
 );

@@ -227,6 +227,67 @@
       }
   }
 }
+.pd-btn {
+  border: 2px solid var(--bs-product-500);
+  border-radius: 30px !important;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  font-family: 'Work Sans', sans-serif;
+  padding: 1em 2em;
+  line-height: 1;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  &:active{
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  svg{
+    path{
+     transition: .3s;
+    }
+  }
+  &.pd-btn-primary{
+    color: white;
+    background: var(--bs-product-500) ;
+    svg{
+      path{
+        transition: .3s;
+        stroke: white;
+      }
+    }
+    &:hover{
+      color: var(--bs-product-500);
+      background: transparent;
+      svg{
+        path{
+          stroke: var(--bs-product-500);
+          fill: var(--bs-product-500);
+        }
+      }
+    }
+  }
+  // &.pd-btn-outline-primary{
+  //     color: var(--bs-tertiary-500);
+  //     border: 2px solid var(--bs-tertiary-50);
+  //     box-sizing: border-box;
+  //     border-radius: 8px;
+  //     svg{
+  //       margin-left: 12px;
+  //     }
+  //     &:hover{
+  //         border: 2px solid var(--bs-tertiary-500);
+  //     }
+  // }
+}
 button {
   &:focus {
     outline: none;
