@@ -10345,6 +10345,9 @@ p.law-copywright {
   margin-bottom: 500px;
   position: relative;
   padding-top: 138px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .product-designer-hero {
@@ -10416,13 +10419,38 @@ p.law-copywright {
 }
 .product-designer-hero__content .company-logo__wrapper .logo {
   margin-top: 16px;
+  display: flex;
+  row-gap: 20px;
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+@media (max-width: 575px) {
+  .product-designer-hero__content .company-logo__wrapper .logo {
+    flex-direction: column;
+  }
 }
 .product-designer-hero .pd-hero-wave {
   z-index: -9;
   width: 100%;
   height: auto;
-  top: 0;
   position: absolute;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .product-designer-hero .pd-hero-wave {
+    top: -50px;
+  }
+}
+@media (min-width: 1600px) {
+  .product-designer-hero .pd-hero-wave {
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .product-designer-hero .pd-hero-wave svg {
+    width: 100%;
+  }
 }
 .product-designer-hero .pd-hero-wave.wave-one {
   z-index: 50;
