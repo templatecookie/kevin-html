@@ -106,4 +106,15 @@
             z-index: 46;
         }
     }
+    .pd-hero-text{
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        .title{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 700;
+            font-size: 128px;
+            color: var(--bs-gray-v2-800); 
+        }
+    }
 }

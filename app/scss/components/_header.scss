@@ -758,14 +758,6 @@
 .productdesigner-header{
   background: transparent;
   padding: 20px 0;
-  .container{
-    @media (min-width:1400px) {
-      max-width: 1170px;
-    }
-  }
-  @media (max-width:992px) {
-      padding: 22px 0;
-    }
   .site-header{
     &__brand{
       .logo{
@@ -783,7 +775,7 @@
           font-size: 20px;
           line-height: 28px;
           align-items: center;
-          color: var(--bs-gray-900) !important;
+          color: var(--bs-gray-v2-900) !important;
           background: white;
           border-radius: 500px;
         }
@@ -792,7 +784,7 @@
   }
   .site-menu-main{
     .nav-link-item{
-      color: var(--bs-gray-400);
+      color: var(--bs-gray-v2-400);
       font-weight: 400;
       font-size: 16px;
       padding: 16px 12px;
@@ -805,7 +797,7 @@
       &:hover{
         color: white;
         @media (max-width:992px) {
-          color: var(--bs-gray-400);
+          color: var(--bs-gray-v2-400);
         }
       }
     }
@@ -820,6 +812,7 @@
     }
   }
   .site-menu-main {
+    margin: 0;
     .sub-menu {
       &--item {
         >a {
@@ -827,10 +820,10 @@
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
-          color: var(--bs-gray-400) !important;
+          color: var(--bs-gray-v2-400) !important;
           line-height: 24px;
           &:hover{
-            color: var(--bs-gray-400) !important;
+            color: var(--bs-gray-v2-400) !important;
           }
         }
       }

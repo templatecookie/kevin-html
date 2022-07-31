@@ -79,6 +79,18 @@ $gray-800: #2B384C !important;
 $gray-900: #132238 !important;
 $gray-900-2: #132238 !important;
 
+
+$gray-v2-50: #F5F6F7;
+$gray-v2-100: #DFE3E6;
+$gray-v2-200: #BABFC3;
+$gray-v2-300: #9AA1A6;
+$gray-v2-400: #7B848B;
+$gray-v2-500: #5E6971;
+$gray-v2-600: #485057;
+$gray-v2-700: #353A3E;
+$gray-v2-800: #222628;
+$gray-v2-900: #121314;
+
 $product-500: #00BBFF;
 
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
@@ -211,6 +223,17 @@ $custom-colors: (
 "tertiary-700":$tertiary-700,
 "tertiary-800":$tertiary-800,
 "tertiary-900":$tertiary-900,
+
+"gray-v2-50":$gray-v2-50,
+"gray-v2-100":$gray-v2-100,
+"gray-v2-200":$gray-v2-200,
+"gray-v2-300":$gray-v2-300,
+"gray-v2-400":$gray-v2-400,
+"gray-v2-500":$gray-v2-500,
+"gray-v2-600":$gray-v2-600,
+"gray-v2-700":$gray-v2-700,
+"gray-v2-800":$gray-v2-800,
+"gray-v2-900":$gray-v2-900,
 
 "product-500": $product-500,
 );
