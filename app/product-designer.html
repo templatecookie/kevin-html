@@ -4,6 +4,7 @@
 {% import "pages/product-designer/_about.njk" as AboutSection %}
 {% import "pages/product-designer/_case-study.njk" as CasestudySection %}
 {% import "pages/product-designer/_quotation.njk" as QuotationSection %}
+{% import "pages/product-designer/_price.njk" as PriceSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,6 +22,9 @@
   <!-- QuotationSection Start -->
   {{QuotationSection.render()}}
   <!-- QuotationSection End -->
+  <!-- PriceSection Start -->
+  {{PriceSection.render()}}
+  <!-- PriceSection End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

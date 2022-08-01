@@ -310,11 +310,16 @@
       
     }
   }
-  // .text{
-  //   font-weight: 300;
-  //   font-size: 16px;
-  //   line-height: 150%;
-  //   color: var(--bs-gray-600);
-  //   font-family: 'Sora', sans-serif;
-  // }
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.333333333333333;
+    color: var(--bs-gray-v2-600);
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 18px;
+    @media (min-width:575px) {
+      padding-top: 24px;
+      font-size: 18px;
+    }
+  }
 }
