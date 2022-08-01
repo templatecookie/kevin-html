@@ -219,6 +219,20 @@
                 nextArrow: $(".law-testimonial-slider__control-buttons .button--next"),
             });
     }
+    if (jQuery(".pd-quotation-slider").length > 0) {
+        $(".pd-quotation-slider")
+            .not(".slick-initialized")
+            .slick({
+                dots: false,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: $(".pd-quotation-slider__control-buttons .button--prev"),
+                nextArrow: $(".pd-quotation-slider__control-buttons .button--next"),
+            });
+    }
     if (jQuery(".flc-testimonial-slider").length > 0) {
         $(".flc-testimonial-slider")
             .not(".slick-initialized")

@@ -91,6 +91,7 @@ $gray-v2-700: #353A3E;
 $gray-v2-800: #222628;
 $gray-v2-900: #121314;
 
+$product-50: #E6F8FF;
 $product-500: #00BBFF;
 
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
@@ -235,5 +236,6 @@ $custom-colors: (
 "gray-v2-800":$gray-v2-800,
 "gray-v2-900":$gray-v2-900,
 
+"product-50": $product-50,
 "product-500": $product-500,
 );

@@ -3,6 +3,7 @@
 {% import "pages/product-designer/_hero.njk" as HeroSection %}
 {% import "pages/product-designer/_about.njk" as AboutSection %}
 {% import "pages/product-designer/_case-study.njk" as CasestudySection %}
+{% import "pages/product-designer/_quotation.njk" as QuotationSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -17,6 +18,9 @@
   <!-- Casestudy Section Start -->
   {{CasestudySection.render()}}
   <!-- Casestudy Section End -->
+  <!-- QuotationSection Start -->
+  {{QuotationSection.render()}}
+  <!-- QuotationSection End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
