@@ -5,6 +5,8 @@
 {% import "pages/product-designer/_case-study.njk" as CasestudySection %}
 {% import "pages/product-designer/_quotation.njk" as QuotationSection %}
 {% import "pages/product-designer/_price.njk" as PriceSection %}
+{% import "pages/product-designer/_cta.njk" as CtaSection %}
+{% import "pages/product-designer/_footer.njk" as FooterSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -25,6 +27,12 @@
   <!-- PriceSection Start -->
   {{PriceSection.render()}}
   <!-- PriceSection End -->
+  <!-- CtaSection Start -->
+  {{CtaSection.render()}}
+  <!-- CtaSection End -->
+  <!-- FooterSection Start -->
+  {{FooterSection.render()}}
+  <!-- FooterSection End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
