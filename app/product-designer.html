@@ -1,12 +1,8 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/product-designer/_hero.njk" as HeroSection %}
-{% import "pages/developer/_project.njk" as ProjectSection %}
-{% import "pages/developer/_testimonial.njk" as TestimonialSection %}
-{% import "pages/developer/_counter.njk" as CounterSection %}
-{% import "pages/developer/_footer.njk" as FooterSection %}
-{% import "pages/developer/_service.njk" as ServiceSection %}
-{% import "pages/developer/_cta.njk" as ContactSection %}
+{% import "pages/product-designer/_about.njk" as AboutSection %}
+
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(productDesigner)}}
@@ -14,6 +10,9 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

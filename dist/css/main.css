@@ -340,33 +340,22 @@
   }
 }
 
-.pd-section-title {
-  text-align: center;
-}
 .pd-section-title .title {
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 32px;
-  color: var(--bs-gray-900);
-  line-height: 117%;
-  font-family: "Sora", sans-serif;
+  font-size: 36px;
+  color: var(--bs-gray-v2-900);
+  line-height: 1.1428571429;
+  font-family: "Work Sans", sans-serif;
 }
 @media (min-width: 768px) {
   .pd-section-title .title {
-    font-size: 38px;
+    font-size: 46px;
   }
 }
 @media (min-width: 992px) {
   .pd-section-title .title {
-    font-size: 48px;
+    font-size: 56px;
   }
-}
-.pd-section-title .text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  color: var(--bs-gray-600);
-  font-family: "Sora", sans-serif;
 }
 
 @-webkit-keyframes sonarWave {
@@ -10415,7 +10404,6 @@ p.law-copywright {
 }
 
 .product-designer-hero {
-  margin-bottom: 500px;
   position: relative;
   padding-top: 138px;
   background-position: center;
@@ -10550,6 +10538,50 @@ p.law-copywright {
   font-weight: 700;
   font-size: 128px;
   color: var(--bs-gray-v2-800);
+}
+
+.product-designer-about {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 148px;
+}
+@media (min-width: 1400px) {
+  .product-designer-about__content {
+    margin-left: 62px;
+  }
+}
+.product-designer-about .pd-about-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.pd-about-content-texts h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--bs-gray-v2-900);
+  padding-bottom: 12px;
+}
+.pd-about-content-texts h3 span {
+  color: var(--bs-product-500);
+}
+.pd-about-content-texts p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--bs-gray-v2-600);
+}
+.pd-about-content-texts img {
+  margin-top: 25px;
+}
+@media (min-width: 992px) {
+  .pd-about-content-texts img {
+    margin-top: 40px;
+  }
 }
 
 .tools-area {

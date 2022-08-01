@@ -296,28 +296,25 @@
   }
 }
 .pd-section-title{
-  text-align: center;
   .title{
     font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 32px;
-    color: var(--bs-gray-900);
-    line-height: 117%;
-    font-family: 'Sora', sans-serif;
+    font-size: 36px;
+    color: var(--bs-gray-v2-900);
+    line-height: 1.142857142857143;
+    font-family: 'Work Sans', sans-serif;
     @media (min-width:768px) {
-      font-size: 38px;
-      
+      font-size: 46px;
     }
     @media (min-width:992px) {
-      font-size: 48px;
+      font-size: 56px;
       
     }
   }
-  .text{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--bs-gray-600);
-    font-family: 'Sora', sans-serif;
-  }
+  // .text{
+  //   font-weight: 300;
+  //   font-size: 16px;
+  //   line-height: 150%;
+  //   color: var(--bs-gray-600);
+  //   font-family: 'Sora', sans-serif;
+  // }
 }
