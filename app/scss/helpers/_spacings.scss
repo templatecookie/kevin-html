@@ -104,6 +104,21 @@
     }
   }
 }
+.pd-card-row {
+  margin-bottom: -30px;
+  @media (min-width:992px) {
+    margin-bottom: -48px;
+    
+  }
+
+  [class^="col"] {
+    margin-bottom: 30px;
+    @media (min-width:992px) {
+      margin-bottom: 48px;
+      
+    }
+  }
+}
 .mb-10{
   margin-bottom: 10px;
 }

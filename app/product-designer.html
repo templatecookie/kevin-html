@@ -2,6 +2,7 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/product-designer/_hero.njk" as HeroSection %}
 {% import "pages/product-designer/_about.njk" as AboutSection %}
+{% import "pages/product-designer/_case-study.njk" as CasestudySection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -13,6 +14,9 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
+  <!-- Casestudy Section Start -->
+  {{CasestudySection.render()}}
+  <!-- Casestudy Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
