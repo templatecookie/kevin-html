@@ -1,7 +1,10 @@
 .pd-quotation-section{
-    padding-top: 172px;
     position: relative;
-    padding-bottom: 188px;
+    padding: 88px 0;
+    @media (min-width:768px) {
+        padding-top: 172px;
+        padding-bottom: 188px;
+    }
     &__wave-top{
         position: absolute;
         top: 0;

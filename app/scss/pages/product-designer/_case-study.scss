@@ -1,6 +1,9 @@
 .product-designer-case-study{
     background: var(--bs-gray-v2-50);
-    padding: 88px 0;
+    padding: 40px 0;
+    @media (min-width:768px) {
+        padding: 88px 0;
+    }
     .pd-section-title{
         margin-bottom: 25px;
         @media (min-width:992px) {

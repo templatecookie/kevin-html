@@ -10581,8 +10581,13 @@ p.law-copywright {
 
 .product-designer-about {
   position: relative;
-  padding-top: 88px;
-  padding-bottom: 148px;
+  padding: 53px 0 120px;
+}
+@media (min-width: 768px) {
+  .product-designer-about {
+    padding-top: 88px;
+    padding-bottom: 148px;
+  }
 }
 @media (min-width: 1400px) {
   .product-designer-about__content {
@@ -10625,7 +10630,12 @@ p.law-copywright {
 
 .product-designer-case-study {
   background: var(--bs-gray-v2-50);
-  padding: 88px 0;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  .product-designer-case-study {
+    padding: 88px 0;
+  }
 }
 .product-designer-case-study .pd-section-title {
   margin-bottom: 25px;
@@ -10779,9 +10789,14 @@ p.law-copywright {
 }
 
 .pd-quotation-section {
-  padding-top: 172px;
   position: relative;
-  padding-bottom: 188px;
+  padding: 88px 0;
+}
+@media (min-width: 768px) {
+  .pd-quotation-section {
+    padding-top: 172px;
+    padding-bottom: 188px;
+  }
 }
 .pd-quotation-section__wave-top {
   position: absolute;
@@ -10891,7 +10906,12 @@ p.law-copywright {
 
 .product-designer-price {
   background-color: var(--bs-gray-v2-50);
-  padding: 88px 0;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  .product-designer-price {
+    padding: 88px 0;
+  }
 }
 .product-designer-price .pd-section-title {
   margin-bottom: 30px;
@@ -10985,8 +11005,14 @@ p.law-copywright {
 
 .product-designer-cta {
   position: relative;
-  padding-top: 187px;
-  padding-bottom: 88px;
+  padding-top: 86px;
+  padding-bottom: 58px;
+}
+@media (min-width: 768px) {
+  .product-designer-cta {
+    padding-top: 187px;
+    padding-bottom: 88px;
+  }
 }
 .product-designer-cta .pd-section-title .text {
   padding: 24px 0;

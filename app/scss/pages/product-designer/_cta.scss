@@ -1,7 +1,11 @@
 .product-designer-cta{
     position: relative;
-    padding-top: 187px;
-    padding-bottom: 88px;
+    padding-top: 86px;
+    padding-bottom: 58px;
+    @media (min-width:768px) {
+        padding-top: 187px;
+        padding-bottom: 88px;
+    }
     .pd-section-title{
         .text{
             padding: 24px 0;

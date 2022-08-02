@@ -1,7 +1,10 @@
 .product-designer-about{
     position: relative;
-    padding-top: 88px;
-    padding-bottom: 148px;
+    padding: 53px 0 120px;
+    @media (min-width:768px) {
+        padding-top: 88px;
+        padding-bottom: 148px;
+    }
     &__content{
        @media (min-width:1400px) {
            margin-left: 62px;
