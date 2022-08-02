@@ -22,14 +22,6 @@
             color: var(--bs-gray-v2-900);
             padding-bottom: 18px;
         }
-        .social-media-button-group{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: grid;
-            gap: 18px;
-            grid-template-columns: repeat(3, minmax(140px, 200px));
-        }
     }
     &__contact-info{
         h6{
@@ -49,20 +41,27 @@
     }
 }
 .pd-social-btn{
-    display: inline-block;
     background: var(--bs-gray-v2-50);
-    width: 204px;
+    transition: .3s;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
     padding: 24px;
         font-family: 'Work Sans', sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        color: var(--bs-gray-v2-900);
+        color: var(--bs-gray-v2-900) !important;
     svg{
         margin-right: 12px;
     }
+    &:hover{
+        background: white;
+        box-shadow: 0px 16px 64px rgba(18, 19, 20, 0.12);
+    }
 }
 .pd-contact-info-card{
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,6 +72,21 @@
     justify-content: space-between;
     @media (max-width:575px) {
         flex-direction: column;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.24);
+        height: calc(100% - 32px);
+        width: 1px;
+        @media (max-width:575px) {
+            width: calc(100% - 32px);
+            height: 1px;
+        }
+
     }
     .content{
         display: flex;

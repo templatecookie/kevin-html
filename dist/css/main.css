@@ -10652,6 +10652,7 @@ p.law-copywright {
   color: var(--bs-gray-v2-700);
 }
 .product-designer-case-study .more-btn h6 a {
+  position: relative;
   font-weight: 600 !important;
   color: var(--bs-gray-v2-900) !important;
   display: inline-flex;
@@ -10660,6 +10661,19 @@ p.law-copywright {
 }
 .product-designer-case-study .more-btn h6 a svg {
   margin-left: 5px;
+}
+.product-designer-case-study .more-btn h6 a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  width: 0;
+  height: 2px;
+  background-color: var(--bs-gray-v2-900);
+}
+.product-designer-case-study .more-btn h6 a:hover::before {
+  width: 100%;
 }
 
 .pd-project-card {
@@ -10995,14 +11009,6 @@ p.law-copywright {
   color: var(--bs-gray-v2-900);
   padding-bottom: 18px;
 }
-.product-designer-cta__social-info .social-media-button-group {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(3, minmax(140px, 200px));
-}
 .product-designer-cta__contact-info h6 {
   font-family: "Work Sans";
   font-weight: 700;
@@ -11019,21 +11025,28 @@ p.law-copywright {
 }
 
 .pd-social-btn {
-  display: inline-block;
   background: var(--bs-gray-v2-50);
-  width: 204px;
+  transition: 0.3s;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
   padding: 24px;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: var(--bs-gray-v2-900);
+  color: var(--bs-gray-v2-900) !important;
 }
 .pd-social-btn svg {
   margin-right: 12px;
 }
+.pd-social-btn:hover {
+  background: white;
+  box-shadow: 0px 16px 64px rgba(18, 19, 20, 0.12);
+}
 
 .pd-contact-info-card {
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11046,6 +11059,22 @@ p.law-copywright {
 @media (max-width: 575px) {
   .pd-contact-info-card {
     flex-direction: column;
+  }
+}
+.pd-contact-info-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.24);
+  height: calc(100% - 32px);
+  width: 1px;
+}
+@media (max-width: 575px) {
+  .pd-contact-info-card::before {
+    width: calc(100% - 32px);
+    height: 1px;
   }
 }
 .pd-contact-info-card .content {
