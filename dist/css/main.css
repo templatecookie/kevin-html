@@ -1497,6 +1497,14 @@ small {
   background-color: #00BBFF;
 }
 
+.text-resume-500 {
+  color: #CF5955;
+}
+
+.bg-resume-500 {
+  background-color: #CF5955;
+}
+
 /* Common Animations  css Start */
 /* Typography css Start */
 /* Typography css Start */
@@ -2951,6 +2959,62 @@ small {
   color: var(--bs-gray-v2-400) !important;
 }
 
+.resume-header {
+  padding: 38px 0;
+}
+.resume-header .site-header__brand .logo {
+  display: flex;
+  align-items: center;
+}
+.resume-header .site-header__brand .logo img {
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 500px;
+  margin-right: 12px;
+}
+.resume-header .site-header__brand .logo .text {
+  color: var(--bs-gray-v2-900);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+.resume-header .site-menu-main {
+  margin: 0;
+}
+.resume-header li.nav-item-has-children .nav-link-item {
+  color: var(--bs-gray-v2-400);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.resume-header li.nav-item-has-children .nav-link-item:hover {
+  color: var(--bs-gray-v2-900);
+}
+@media (min-width: 992px) {
+  .resume-header li.nav-item-has-children:hover > .sub-menu {
+    border-color: var(--bs-resume-500);
+  }
+}
+.resume-header .site-menu-main .sub-menu--item > a {
+  color: var(--bs-gray-v2-400);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.resume-header .site-menu-main .sub-menu--item > a:hover {
+  color: var(--bs-gray-v2-900);
+}
+.resume-header .site-menu-main .sub-menu--item:hover > a {
+  color: var(--bs-gray-v2-900);
+}
+
 .d-btn {
   border-radius: 6px !important;
   font-size: 14px;
@@ -3216,6 +3280,63 @@ small {
 }
 .pd-btn.pd-btn-outline-primary:hover svg path {
   fill: white;
+}
+
+.resume-btn {
+  border-radius: 10px !important;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  padding: 1.1em 1.6em;
+  line-height: 1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.resume-btn svg {
+  margin-left: 12px;
+}
+.resume-btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.resume-btn:active:focus {
+  box-shadow: none;
+  outline: none;
+}
+.resume-btn.resume-btn-primary {
+  border: 2px solid var(--bs-resume-500);
+  background: var(--bs-resume-500);
+  color: white;
+}
+.resume-btn.resume-btn-primary svg path {
+  transition: 0.3s;
+}
+.resume-btn.resume-btn-primary:hover {
+  background: transparent;
+  color: var(--bs-resume-500);
+}
+.resume-btn.resume-btn-primary:hover svg path {
+  stroke: var(--bs-resume-500);
+}
+.resume-btn.resume-btn-outline-primary {
+  color: var(--bs-resume-500);
+  background: transparent;
+  border: 2px solid var(--bs-resume-500);
+}
+.resume-btn.resume-btn-outline-primary svg {
+  margin-left: 12px;
+}
+.resume-btn.resume-btn-outline-primary:hover {
+  background: var(--bs-resume-500);
+  color: white;
+}
+.resume-btn.resume-btn-outline-primary svg path {
+  stroke: var(--bs-resume-500) !important;
 }
 
 button:focus {

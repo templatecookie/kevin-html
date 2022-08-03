@@ -64,5 +64,15 @@
 		"root": "<div class='icon'>E</div>",
 		"header_button_class": "pd-btn pd-btn-primary",
 		"header_button_text": "<img class='make-it-inline me-2' src='./image/envelope.svg' alt='logo'> Eleaner@info.com"
+	},
+	"resume": {
+		"additional_header_class": "site-header--menu-right resume-header mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": true,
+		"root": "<img src='./image/resume/me.png' alt='logo'> <span class='text'>Malthe <br> Andersen</span>",
+		"additional_button_classes": "ms-lg-2",
+		"header_button_class": "resume-btn resume-btn-outline-primary",
+		"header_button_text": "Write Quotation"
 	}
 }

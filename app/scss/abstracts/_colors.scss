@@ -94,6 +94,8 @@ $gray-v2-900: #121314;
 $product-50: #E6F8FF;
 $product-500: #00BBFF;
 
+$resume-500: #CF5955;
+
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
 $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
@@ -238,4 +240,6 @@ $custom-colors: (
 
 "product-50": $product-50,
 "product-500": $product-500,
+
+"resume-500": $resume-500,
 );

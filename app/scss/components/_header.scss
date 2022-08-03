@@ -830,3 +830,71 @@
     }
   }
 }
+.resume-header{
+  padding: 38px 0;
+.site-header__brand{
+  .logo{
+    display: flex;
+    align-items: center;
+    img{
+     min-width: 48px;
+     max-width: 48px;
+     min-height: 48px;
+     max-height: 48px;
+     object-fit: cover;
+     border-radius: 500px; 
+     margin-right: 12px;
+    }
+    .text{
+      color: var(--bs-gray-v2-900);
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+}
+.site-menu-main{
+  margin: 0;
+}
+li.nav-item-has-children {
+  .nav-link-item{
+    color: var(--bs-gray-v2-400);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    &:hover{
+      color: var(--bs-gray-v2-900);
+    }
+  }
+  &:hover {
+    @media (min-width:992px) {
+      >.sub-menu {  
+        border-color: var(--bs-resume-500);
+      }
+    }
+  }
+}
+.site-menu-main {
+  .sub-menu {
+    &--item {
+      >a {
+        color: var(--bs-gray-v2-400);
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px; 
+        &:hover{
+          color: var(--bs-gray-v2-900);
+        }
+      }
+      &:hover {
+        >a {
+          color: var(--bs-gray-v2-900);
+        }
+      }
+    }
+  }
+}
+}
