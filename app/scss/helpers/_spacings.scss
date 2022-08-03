@@ -152,3 +152,8 @@ small{
 .section-bg-white{
   background: var(--bs-white-2) !important;
 }
+.resume-container{
+  @media (min-width:992px) {
+    max-width: 924px !important;
+  }
+}

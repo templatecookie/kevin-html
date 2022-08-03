@@ -323,3 +323,47 @@
     }
   }
 }
+.resume-display-title{
+  .subtitle{
+    display: flex;
+    align-items: center;
+    .line{
+      display: block;
+      width: 32px;
+      height: 2px;
+      margin-right: 12px;
+      background: var(--bs-resume-500);
+    }
+      font-family: 'Fira Sans', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+      color: var(--bs-resume-500);
+      padding-bottom: 8px;
+  }
+  .title{
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--bs-gray-v2-900);
+    line-height: 1.2;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 18px;
+    @media (min-width:992px) {
+      padding-bottom: 24px;
+      font-size: 40px;
+      
+    }
+  }
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--bs-gray-v2-500);
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 18px;
+    @media (min-width:992px) {
+      padding-bottom: 24px;
+    }
+  }
+}

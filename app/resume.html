@@ -1,12 +1,6 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/product-designer/_hero.njk" as HeroSection %}
-{% import "pages/product-designer/_about.njk" as AboutSection %}
-{% import "pages/product-designer/_case-study.njk" as CasestudySection %}
-{% import "pages/product-designer/_quotation.njk" as QuotationSection %}
-{% import "pages/product-designer/_price.njk" as PriceSection %}
-{% import "pages/product-designer/_cta.njk" as CtaSection %}
-{% import "pages/product-designer/_footer.njk" as FooterSection %}
+{% import "pages/resume/_hero.njk" as HeroSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -15,24 +9,6 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- About Section Start -->
-  {{AboutSection.render()}}
-  <!-- About Section End -->
-  <!-- Casestudy Section Start -->
-  {{CasestudySection.render()}}
-  <!-- Casestudy Section End -->
-  <!-- QuotationSection Start -->
-  {{QuotationSection.render()}}
-  <!-- QuotationSection End -->
-  <!-- PriceSection Start -->
-  {{PriceSection.render()}}
-  <!-- PriceSection End -->
-  <!-- CtaSection Start -->
-  {{CtaSection.render()}}
-  <!-- CtaSection End -->
-  <!-- FooterSection Start -->
-  {{FooterSection.render()}}
-  <!-- FooterSection End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

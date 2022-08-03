@@ -372,6 +372,52 @@
   }
 }
 
+.resume-display-title .subtitle {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--bs-resume-500);
+  padding-bottom: 8px;
+}
+.resume-display-title .subtitle .line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin-right: 12px;
+  background: var(--bs-resume-500);
+}
+.resume-display-title .title {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--bs-gray-v2-900);
+  line-height: 1.2;
+  font-family: "Fira Sans", sans-serif;
+  padding-bottom: 18px;
+}
+@media (min-width: 992px) {
+  .resume-display-title .title {
+    padding-bottom: 24px;
+    font-size: 40px;
+  }
+}
+.resume-display-title .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--bs-gray-v2-500);
+  font-family: "Fira Sans", sans-serif;
+  padding-bottom: 18px;
+}
+@media (min-width: 992px) {
+  .resume-display-title .text {
+    padding-bottom: 24px;
+  }
+}
+
 @-webkit-keyframes sonarWave {
   from {
     opacity: 0.4;
@@ -687,6 +733,12 @@ small {
 
 .section-bg-white {
   background: var(--bs-white-2) !important;
+}
+
+@media (min-width: 992px) {
+  .resume-container {
+    max-width: 924px !important;
+  }
 }
 
 .text-bg-dev-linear-gradient {
@@ -11322,6 +11374,41 @@ p.law-copywright {
   font-size: 16px;
   line-height: 24px;
   color: var(--bs-gray-v2-900);
+}
+
+@media (min-width: 992px) {
+  .resume-hero__iamge {
+    margin-left: 50px;
+  }
+}
+
+.resume-socialmedia-link {
+  background: var(--bs-gray-v2-50);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.resume-socialmedia-link .text {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bs-gray-v2-700);
+  margin-right: 16px;
+}
+.resume-socialmedia-link .list-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+.resume-socialmedia-link .list-group li a {
+  color: var(--bs-gray-v2-400);
 }
 
 .tools-area {

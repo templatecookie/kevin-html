@@ -73,6 +73,7 @@
     "root":"<img src='./image/resume/me.png' alt='logo'> <span class='text'>Malthe <br> Andersen</span>",
     "additional_button_classes":"ms-lg-2",
     "header_button_class":"resume-btn resume-btn-outline-primary",
-    "header_button_text" :"Write Quotation"
+    "header_button_text" :"Write Quotation",
+    "container_fluid_class":"resume-container"
   }
 }
