@@ -3,6 +3,7 @@
 {% import "pages/resume/_hero.njk" as HeroSection %}
 {% import "pages/resume/_about.njk" as AboutSection %}
 {% import "pages/resume/_testimonial.njk" as TestimonialSection %}
+{% import "pages/resume/_resume.njk" as ResumeSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -17,6 +18,9 @@
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
+  <!-- Resume Section Start -->
+  {{ResumeSection.render()}}
+  <!-- Resume Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

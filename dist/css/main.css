@@ -1565,6 +1565,14 @@ small {
   background-color: #00BBFF;
 }
 
+.text-resume-100 {
+  color: #F5DEDD;
+}
+
+.bg-resume-100 {
+  background-color: #F5DEDD;
+}
+
 .text-resume-500 {
   color: #CF5955;
 }
@@ -5211,31 +5219,31 @@ button:focus {
   min-height: 48px;
 }
 
-.skill-bar__item {
+.designer-skill-bar__item {
   margin-bottom: 16px;
 }
 @media (min-width: 992px) {
-  .skill-bar__item {
+  .designer-skill-bar__item {
     margin-bottom: 36px;
   }
 }
-.skill-bar__item:last-child {
+.designer-skill-bar__item:last-child {
   margin-bottom: 0;
 }
-.skill-bar__item .skill-bar-wrapper {
+.designer-skill-bar__item .skill-bar-wrapper {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.skill-bar__item .skill-bar-wrapper .skill-content {
+.designer-skill-bar__item .skill-bar-wrapper .skill-content {
   display: flex;
   align-items: center;
 }
-.skill-bar__item .skill-bar-wrapper .skill-content .icon {
+.designer-skill-bar__item .skill-bar-wrapper .skill-content .icon {
   margin-right: 12px;
 }
-.skill-bar__item .skill-bar-wrapper .skill-content h5 {
+.designer-skill-bar__item .skill-bar-wrapper .skill-content h5 {
   font-family: "Sora";
   font-style: normal;
   font-weight: 400;
@@ -5244,23 +5252,23 @@ button:focus {
   font-size: 16px;
 }
 @media (min-width: 768px) {
-  .skill-bar__item .skill-bar-wrapper .skill-content h5 {
+  .designer-skill-bar__item .skill-bar-wrapper .skill-content h5 {
     font-size: 18px;
   }
 }
-.skill-bar__item .skill-bar-wrapper .skill-bar-count h6 {
+.designer-skill-bar__item .skill-bar-wrapper .skill-bar-count h6 {
   font-family: "Sora";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.skill-bar__item .skill-bar {
+.designer-skill-bar__item .skill-bar {
   border-radius: 30px;
   width: 100%;
   height: 4px;
   background: #DEE7EE;
 }
-.skill-bar__item .skill-bar .skill-per {
+.designer-skill-bar__item .skill-bar .skill-per {
   height: 4px;
   -webkit-animation: fillbars 8s 1;
           animation: fillbars 8s 1;
@@ -11491,6 +11499,239 @@ p.law-copywright {
   padding: 64px;
   border-top: 1px solid var(--bs-gray-v2-100);
   border-bottom: 1px solid var(--bs-gray-v2-100);
+}
+
+.resume-section {
+  padding: 64px 0;
+}
+.resume-section__experience .resume-content .qualification-list, .resume-section__education .resume-content .qualification-list {
+  margin-bottom: 24px;
+}
+.resume-section__experience .resume-content .qualification-list:last-child, .resume-section__education .resume-content .qualification-list:last-child {
+  margin-bottom: 0;
+}
+.resume-section__skills-interest {
+  margin: 48px 0;
+}
+
+.resume-content .heading {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  color: var(--bs-resume-500);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.resume-content .heading svg {
+  margin-right: 8px;
+}
+.resume-content .qualification-list span {
+  color: var(--bs-resume-500);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 4px;
+}
+.resume-content .qualification-list .title {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--bs-gray-v2-900);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.resume-content .qualification-list .text {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--bs-gray-v2-600);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.resume-skill .heading {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  color: var(--bs-resume-500);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.resume-skill .heading svg {
+  margin-right: 8px;
+}
+.resume-skill-bar__item {
+  margin-bottom: 24px;
+}
+.resume-skill-bar__item:last-child {
+  margin-bottom: 0;
+}
+.resume-skill-bar__item .skill-bar-wrapper {
+  margin-bottom: 9px;
+}
+.resume-skill-bar__item .skill-bar-wrapper .skill-content h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bs-gray-v2-900);
+}
+.resume-skill-bar__item .skill-bar {
+  width: 100%;
+  border-radius: 40px;
+  height: 5px;
+  background: var(--bs-resume-100);
+}
+.resume-skill-bar__item .skill-bar .skill-per {
+  height: 5px;
+  -webkit-animation: fillbars 8s 1;
+          animation: fillbars 8s 1;
+  border-radius: 40px;
+  background: var(--bs-resume-500);
+}
+
+.resume-interest .heading {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  color: var(--bs-resume-500);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.resume-interest .heading svg {
+  margin-right: 8px;
+}
+.resume-interest .resume-interest-itme-list .row {
+  border-bottom: 1px solid var(--bs-gray-v2-100);
+}
+.resume-interest .resume-interest-itme-list .row:last-child {
+  border: 0;
+}
+.resume-interest .resume-interest-itme-list .row .col-lg-4 {
+  border-right: 1px solid var(--bs-gray-v2-100);
+}
+.resume-interest .resume-interest-itme-list .row .col-lg-4:last-child {
+  border: 0;
+}
+.resume-interest .interest-item {
+  padding: 35px 0;
+  text-align: center;
+}
+.resume-interest .interest-item h6 {
+  padding-top: 12px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: var(--bs-gray-v2-900);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.resume-projectstatistic .heading {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  color: var(--bs-resume-500);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.resume-projectstatistic .heading svg {
+  margin-right: 8px;
+}
+.resume-projectstatistic .project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.resume-projectstatistic .project-list .list-itme {
+  padding: 16px 0;
+  border-bottom: 1.5px solid var(--bs-gray-v2-100);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume-projectstatistic .project-list .list-itme span {
+  font-weight: 600;
+  color: var(--bs-gray-v2-900);
+}
+.resume-projectstatistic .project-list .list-itme .text-wrap {
+  display: flex;
+  align-items: center;
+}
+.resume-projectstatistic .project-list .list-itme .text-wrap span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--bs-resume-500);
+  border-radius: 500px;
+}
+.resume-projectstatistic .project-list .list-itme .text-wrap h6 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 8px;
+  color: var(--bs-gray-v2-700);
+}
+.resume-projectstatistic .project-list .list-itme:first-child {
+  padding-top: 0;
+}
+.resume-projectstatistic .project-list .list-itme:last-child {
+  padding-bottom: 0;
+}
+
+.resume-workphase .heading {
+  display: flex;
+  align-items: center;
+  font-family: "Fira Sans";
+  color: var(--bs-resume-500);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.resume-workphase .heading svg {
+  margin-right: 8px;
+}
+
+.work-phase {
+  background: rgba(250, 237, 236, 0.5);
+  border-radius: 8px;
+  padding: 16px 0;
+}
+.work-phase .icon {
+  margin: auto;
+  border: 1.5px solid var(--bs-resume-500);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 500px;
+  font-weight: 600;
+  color: var(--bs-resume-500);
+}
+.work-phase h3 {
+  padding-top: 8px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: var(--bs-gray-v2-900);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bs-gray-v2-900);
 }
 
 .tools-area {
