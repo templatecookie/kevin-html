@@ -418,6 +418,22 @@
   }
 }
 
+.resume-section-title .title {
+  font-weight: 600;
+  color: var(--bs-gray-v2-900);
+  font-size: 32px;
+  line-height: 40px;
+  font-family: "Fira Sans", sans-serif;
+  padding-bottom: 16px;
+}
+.resume-section-title .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--bs-gray-v2-500);
+  font-family: "Fira Sans", sans-serif;
+}
+
 @-webkit-keyframes sonarWave {
   from {
     opacity: 0.4;
@@ -11469,6 +11485,12 @@ p.law-copywright {
   line-height: 22px;
   color: var(--bs-gray-v2-500);
   padding-bottom: 24px;
+}
+
+.resume-testimonial {
+  padding: 64px;
+  border-top: 1px solid var(--bs-gray-v2-100);
+  border-bottom: 1px solid var(--bs-gray-v2-100);
 }
 
 .tools-area {

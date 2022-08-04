@@ -367,3 +367,20 @@
     }
   }
 }
+.resume-section-title{
+  .title{
+    font-weight: 600;
+    color: var(--bs-gray-v2-900);
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 16px;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bs-gray-v2-500);
+    font-family: 'Fira Sans', sans-serif;
+  }
+}
