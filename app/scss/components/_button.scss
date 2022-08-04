@@ -304,9 +304,6 @@
   align-items: center;
   justify-content: center;
   transition: .3s;
-  svg{
-    margin-left: 12px;
-  }
   &:focus{
     box-shadow: none;
     outline: none;
@@ -341,16 +338,21 @@
     background: transparent;
     border: 2px solid var(--bs-resume-500);
     svg{
-      margin-left: 12px;
+      path{
+        stroke: var(--bs-resume-500);
+        fill: var(--bs-resume-500);
+        transition: .3s;
+      }
     }
     &:hover{
         background: var(--bs-resume-500);
         color: white;
-    }
-    svg{
-      path{
-        stroke: var(--bs-resume-500) !important;
-      }
+        svg{
+          path{
+            stroke: white;
+            fill: white;
+          }
+        }
     }
 }
 }
@@ -391,6 +393,12 @@ margin-right: 12px;
   background: white;
   box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.24);
   @include square(88px,500px);
+  @include flexAllCenter;
+}
+.resume-video-btn{
+  background: white;
+  box-shadow: 0px 8px 36px rgba(18, 19, 20, 0.12);
+  @include square(40px,10px);
   @include flexAllCenter;
 }
 

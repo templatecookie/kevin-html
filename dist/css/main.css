@@ -3349,9 +3349,6 @@ small {
   justify-content: center;
   transition: 0.3s;
 }
-.resume-btn svg {
-  margin-left: 12px;
-}
 .resume-btn:focus {
   box-shadow: none;
   outline: none;
@@ -3380,15 +3377,18 @@ small {
   background: transparent;
   border: 2px solid var(--bs-resume-500);
 }
-.resume-btn.resume-btn-outline-primary svg {
-  margin-left: 12px;
+.resume-btn.resume-btn-outline-primary svg path {
+  stroke: var(--bs-resume-500);
+  fill: var(--bs-resume-500);
+  transition: 0.3s;
 }
 .resume-btn.resume-btn-outline-primary:hover {
   background: var(--bs-resume-500);
   color: white;
 }
-.resume-btn.resume-btn-outline-primary svg path {
-  stroke: var(--bs-resume-500) !important;
+.resume-btn.resume-btn-outline-primary:hover svg path {
+  stroke: white;
+  fill: white;
 }
 
 button:focus {
@@ -3431,6 +3431,19 @@ button:focus {
   min-height: 88px;
   max-height: 88px;
   border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-video-btn {
+  background: white;
+  box-shadow: 0px 8px 36px rgba(18, 19, 20, 0.12);
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11409,6 +11422,53 @@ p.law-copywright {
 }
 .resume-socialmedia-link .list-group li a {
   color: var(--bs-gray-v2-400);
+  transition: 0.3s;
+}
+.resume-socialmedia-link .list-group li a:hover {
+  color: var(--bs-resume-500);
+}
+.resume-socialmedia-link .list-group li svg path {
+  stroke: var(--bs-gray-v2-400);
+  fill: var(--bs-gray-v2-400);
+  transition: 0.3s;
+}
+.resume-socialmedia-link .list-group li svg path:hover {
+  fill: var(--bs-resume-500);
+  stroke: var(--bs-resume-500);
+}
+
+.resume-about {
+  padding: 64px 0;
+}
+.resume-about__image-group {
+  margin-right: 20px;
+  position: relative;
+}
+.resume-about__image-group img {
+  border-radius: 16px;
+}
+.resume-about__image-group .video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume-about-content .title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--bs-gray-v2-900);
+  padding-bottom: 12px;
+}
+.resume-about-content .text {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--bs-gray-v2-500);
+  padding-bottom: 24px;
 }
 
 .tools-area {

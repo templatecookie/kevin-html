@@ -31,6 +31,21 @@
         li{
             a{
                 color: var(--bs-gray-v2-400);
+                transition: .3s;
+                &:hover{
+                    color: var(--bs-resume-500);
+                }
+            }
+            svg{
+                path{
+                    stroke: var(--bs-gray-v2-400);
+                    fill: var(--bs-gray-v2-400);
+                    transition: .3s;
+                    &:hover{
+                        fill: var(--bs-resume-500);
+                        stroke: var(--bs-resume-500);
+                    }
+                }
             }
         }
     }
