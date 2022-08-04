@@ -4,6 +4,7 @@
 {% import "pages/resume/_about.njk" as AboutSection %}
 {% import "pages/resume/_testimonial.njk" as TestimonialSection %}
 {% import "pages/resume/_resume.njk" as ResumeSection %}
+{% import "pages/resume/_project.njk" as ProjectSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,6 +22,9 @@
   <!-- Resume Section Start -->
   {{ResumeSection.render()}}
   <!-- Resume Section End -->
+  <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
