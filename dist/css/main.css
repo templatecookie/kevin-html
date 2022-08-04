@@ -11806,6 +11806,64 @@ p.law-copywright {
   transform: translateY(0%);
 }
 
+.resume-cta__wrapper {
+  background-color: var(--bs-gray-v2-50);
+  border-radius: 24px;
+  padding: 64px 0;
+}
+
+.resume-footer {
+  padding: 24px 0;
+}
+.resume-footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .resume-footer__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .resume-footer .footer-logo {
+    margin-bottom: 15px;
+  }
+}
+.resume-footer .footer-logo .logo {
+  display: flex;
+  align-items: center;
+}
+.resume-footer .footer-logo .logo img {
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 500px;
+  margin-right: 12px;
+}
+.resume-footer .footer-logo .logo .text {
+  color: var(--bs-gray-v2-900);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+.resume-footer p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--bs-gray-v2-500);
+}
+@media (max-width: 768px) {
+  .resume-footer p {
+    text-align: center;
+  }
+}
+
 .tools-area {
   background: var(--bs-white-2);
   box-shadow: inset 0px 1px 0px var(--bs-gray-100);

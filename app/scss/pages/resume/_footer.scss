@@ -1,0 +1,46 @@
+.resume-footer{
+    padding: 24px 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+    .footer-logo{
+        @media (max-width:768px) {
+            margin-bottom: 15px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                min-width: 48px;
+                max-width: 48px;
+                min-height: 48px;
+                max-height: 48px;
+                object-fit: cover;
+                border-radius: 500px;
+                margin-right: 12px;
+            }
+            .text{
+                color: var(--bs-gray-v2-900);
+                font-family: "Fira Sans", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+    }
+    p{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-v2-500);
+        @media (max-width:768px) {
+            text-align: center;
+        }
+    }
+}
