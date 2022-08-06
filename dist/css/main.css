@@ -11413,6 +11413,10 @@ p.law-copywright {
   color: var(--bs-gray-v2-900);
 }
 
+.ceo {
+  font-family: "Satoshi";
+}
+
 @media (min-width: 992px) {
   .resume-hero__iamge {
     margin-left: 50px;

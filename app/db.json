@@ -75,5 +75,12 @@
 		"header_button_class": "resume-btn resume-btn-outline-primary",
 		"header_button_text": "Write Quotation",
 		"container_fluid_class": "resume-container"
+	},
+	"ceo": {
+		"additional_header_class": "site-header--menu-right resume-header mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": false,
+		"root": "<div class='icon'>KP</div>"
 	}
 }
