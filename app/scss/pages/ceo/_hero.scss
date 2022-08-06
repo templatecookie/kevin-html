@@ -1,3 +1,15 @@
-.ceo{
-    font-family: 'Satoshi';
+.ceo-hero{
+    padding-top: 208px;
+    padding-bottom: 385px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .ceo-display-title{
+        .ceo-social-media-block{
+            margin-top: 22px;
+            @media (min-width:768px) {
+                margin-top: 32px;
+            }
+        }
+    }
 }

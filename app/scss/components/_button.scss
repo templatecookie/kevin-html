@@ -356,6 +356,70 @@
     }
 }
 }
+.ceo-btn {
+  border-radius: 0 !important;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  display: inline-flex;
+  text-transform: capitalize;
+  padding: 1.1em 1.6em;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  &:active{
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  &.ceo-btn-primary{
+    border: 2px solid var(--bs-ceo-500);
+    background: var(--bs-ceo-500);
+    color: white;
+    svg{
+      path{
+        transition: .3s;
+      }
+    }
+    &:hover{
+      background: transparent;
+      color: var(--bs-ceo-500);
+      svg{
+        path{
+          stroke: var(--bs-ceo-500)
+        }
+      }
+    }
+  }
+  &.ceo-btn-outline-primary{
+    color: var(--bs-resume-500);
+    background: transparent;
+    border: 2px solid var(--bs-resume-500);
+    svg{
+      path{
+        stroke: var(--bs-resume-500);
+        fill: var(--bs-resume-500);
+        transition: .3s;
+      }
+    }
+    &:hover{
+        background: var(--bs-resume-500);
+        color: white;
+        svg{
+          path{
+            stroke: white;
+            fill: white;
+          }
+        }
+    }
+}
+}
 button {
   &:focus {
     outline: none;
@@ -424,5 +488,30 @@ margin-right: 12px;
   }
   &:hover{
     background: transparent;
+  }
+}
+.ceo-social-media-block{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    li{
+      a{
+        display: block;
+        @include square(48px,0);
+        @include flexAllCenter;
+        border: 2px solid var(--bs-ceo-100);
+        color: var(--bs-ceo-500);
+        transition: .3s;
+        &:hover{
+          border-color: var(--bs-ceo-500);
+          background: var(--bs-ceo-500);
+          color: white;
+        }
+      }
+    }
   }
 }

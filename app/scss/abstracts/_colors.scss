@@ -97,6 +97,12 @@ $product-500: #00BBFF;
 $resume-100: #F5DEDD;
 $resume-500: #CF5955;
 
+$ceo-100: #FFDFDB;
+$ceo-300: #889BB6;
+$ceo-500: #FF5F49;
+$ceo-700: #274577;
+$ceo-900: #0D2159;
+
 $bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 $bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
 $bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
@@ -244,4 +250,10 @@ $custom-colors: (
 
 "resume-100": $resume-100,
 "resume-500": $resume-500,
+
+"ceo-100": $ceo-100,
+"ceo-300": $ceo-300,
+"ceo-500": $ceo-500,
+"ceo-700": $ceo-700,
+"ceo-900": $ceo-900,
 );
