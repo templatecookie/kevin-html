@@ -223,6 +223,19 @@
         nextArrow: $(".law-testimonial-slider__control-buttons .button--next"),
       });
   }
+  if (jQuery(".ceo-testimonial-slider").length > 0) {
+    $(".ceo-testimonial-slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: true,
+        fade: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      });
+  }
   if (jQuery(".pd-quotation-slider").length > 0) {
     $(".pd-quotation-slider")
       .not(".slick-initialized")

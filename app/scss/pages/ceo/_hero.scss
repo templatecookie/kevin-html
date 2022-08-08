@@ -27,6 +27,8 @@
 
     }
     .ceo-display-title{
+        z-index: 99;
+        position: relative;
         @media (min-width:1400px) {
             margin-top: 46px;
         }
@@ -53,7 +55,6 @@
         transform: translate(-50%, -50%);
         width: 72%;
         height: 100%;  
-        z-index: -1;
     }
     .sparkle{
         position: absolute;

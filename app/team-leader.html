@@ -2,8 +2,10 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/ceo/_hero.njk" as HeroSection %}
 {% import "pages/ceo/_fun-fact.njk" as FunFactSection %}
+{% import "pages/ceo/_testimonial.njk" as TestimonialSection %}
 
 {% block main %}
+<div class="ceo-wrapper" style="background-image: url('./image/ceo/bg-shape.png')">
   <!-- Header Section Start -->
   {{Header.render(ceo)}}
   <!-- Header Section End -->
@@ -13,10 +15,14 @@
   <!-- Fun Fact Section Start -->
   {{FunFactSection.render()}}
   <!-- Fun Fact Section End -->
+  <!-- Testmonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testmonial Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
     <input type="checkbox" class="toggle-button">
     </div>
   </div>
+</div>
 {% endblock %}

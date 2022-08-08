@@ -937,6 +937,7 @@ li.nav-item-has-children {
     @media (min-width:992px) {
       >.sub-menu {  
         border-color: var(--bs-ceo-500);
+        background: white;
       }
     }
   }
