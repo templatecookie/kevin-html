@@ -899,8 +899,11 @@ li.nav-item-has-children {
 }
 }
 .ceo-header{
-  padding: 48px 0;
+  padding: 38px 0;
   background-color: transparent;
+  @media (min-width:1200px) {
+    padding: 48px 0;
+  }
 .site-header__brand{
   .icon{
     display: flex;

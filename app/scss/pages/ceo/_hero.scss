@@ -1,12 +1,35 @@
 .ceo-hero{
     position: relative;
-    padding-top: 208px;
-    padding-bottom: 320px;
+    padding: 137px 0 60px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+    @media (min-width:768px) {
+        padding: 170px 0 80px;
+
+    }
+    @media (min-width:992px) {
+        padding: 216px 0 120px;
+
+    }
+    @media (min-width:1400px) {
+        padding-top: 208px;
+        padding-bottom: 0px;
+
+    }
+    @media (min-width:1600px) {
+        padding-top: 208px;
+        padding-bottom: 190px;
+
+    }
+    @media (min-width:1800px) {
+        padding-bottom: 300px;
+
+    }
     .ceo-display-title{
-        margin-top: 46px;
+        @media (min-width:1400px) {
+            margin-top: 46px;
+        }
         .ceo-social-media-block{
             margin-top: 22px;
             @media (min-width:768px) {

@@ -1,6 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/ceo/_hero.njk" as HeroSection %}
+{% import "pages/ceo/_fun-fact.njk" as FunFactSection %}
 
 {% block main %}
   <!-- Header Section Start -->
@@ -9,6 +10,9 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
+  <!-- Fun Fact Section Start -->
+  {{FunFactSection.render()}}
+  <!-- Fun Fact Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
