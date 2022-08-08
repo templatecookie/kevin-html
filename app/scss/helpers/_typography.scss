@@ -480,11 +480,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.333333333333333;
+    color: var(--bs-ceo-400);
     padding-top: 20px;
-    color: var(--bs-ceo-500);
     @media (min-width:992px) {
-      font-size: 18px;
       padding-top: 32px;
+      font-size: 18px;
     }
   }
 }

@@ -538,13 +538,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.3333333333;
+  color: var(--bs-ceo-400);
   padding-top: 20px;
-  color: var(--bs-ceo-500);
 }
 @media (min-width: 992px) {
   .ceo-section-title .text {
-    font-size: 18px;
     padding-top: 32px;
+    font-size: 18px;
   }
 }
 
@@ -1715,6 +1715,14 @@ small {
 
 .bg-ceo-300 {
   background-color: #889BB6;
+}
+
+.text-ceo-400 {
+  color: #6D84A6;
+}
+
+.bg-ceo-400 {
+  background-color: #6D84A6;
 }
 
 .text-ceo-500 {
@@ -3669,17 +3677,17 @@ small {
   stroke: var(--bs-ceo-500);
 }
 .ceo-btn.ceo-btn-outline-primary {
-  color: var(--bs-resume-500);
+  color: var(--bs-ceo-500);
   background: transparent;
-  border: 2px solid var(--bs-resume-500);
+  border: 2px solid var(--bs-ceo-500);
 }
 .ceo-btn.ceo-btn-outline-primary svg path {
-  stroke: var(--bs-resume-500);
-  fill: var(--bs-resume-500);
+  stroke: var(--bs-ceo-500);
+  fill: var(--bs-ceo-500);
   transition: 0.3s;
 }
 .ceo-btn.ceo-btn-outline-primary:hover {
-  background: var(--bs-resume-500);
+  background: var(--bs-ceo-500);
   color: white;
 }
 .ceo-btn.ceo-btn-outline-primary:hover svg path {
@@ -11764,6 +11772,10 @@ p.law-copywright {
     margin-top: 32px;
   }
 }
+.ceo-hero .ceo-display-title-two {
+  z-index: 99;
+  position: relative;
+}
 .ceo-hero .ceo-social-media-block {
   position: relative;
 }
@@ -11944,6 +11956,7 @@ p.law-copywright {
   opacity: 0.23;
   filter: blur(148px);
   height: 100%;
+  z-index: -1;
 }
 .ceo-testimonial__card .arrow {
   position: absolute;
@@ -12062,6 +12075,56 @@ p.law-copywright {
   width: 12px;
   height: 12px;
   border-radius: 500px;
+}
+
+.ceo-about {
+  position: relative;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .ceo-about {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .ceo-about {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .ceo-about {
+    padding-bottom: 200px;
+  }
+}
+.ceo-about .ceo-section-title {
+  position: relative;
+}
+.ceo-about .ceo-section-title .sparkle {
+  position: absolute;
+  top: -57%;
+  left: -15%;
+  width: 38%;
+}
+.ceo-about .ceo-section-title .sparkle svg {
+  width: 100%;
+}
+.ceo-about .ceo-section-title .ceo-btn {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .ceo-about .ceo-section-title .ceo-btn {
+    margin-top: 32px;
+  }
+}
+.ceo-about .face {
+  position: absolute;
+  bottom: -12%;
+  left: 43%;
+  transform: translateY(-50%);
+  width: 15%;
+}
+.ceo-about .face svg {
+  width: 100%;
 }
 
 .ceo-wrapper {

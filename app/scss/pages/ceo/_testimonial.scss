@@ -40,6 +40,7 @@
             opacity: 0.23;
             filter: blur(148px);
             height: 100%;
+            z-index: -1;
         }
         .arrow{
             position: absolute;
