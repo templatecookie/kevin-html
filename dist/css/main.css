@@ -11692,11 +11692,15 @@ p.law-copywright {
 }
 
 .ceo-hero {
+  position: relative;
   padding-top: 208px;
-  padding-bottom: 385px;
+  padding-bottom: 320px;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.ceo-hero .ceo-display-title {
+  margin-top: 46px;
 }
 .ceo-hero .ceo-display-title .ceo-social-media-block {
   margin-top: 22px;
@@ -11705,6 +11709,35 @@ p.law-copywright {
   .ceo-hero .ceo-display-title .ceo-social-media-block {
     margin-top: 32px;
   }
+}
+.ceo-hero .ceo-social-media-block {
+  position: relative;
+}
+.ceo-hero .ceo-social-media-block .follow-icon {
+  position: absolute;
+  left: -24%;
+  top: 18%;
+}
+.ceo-hero__image {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 72%;
+  height: 100%;
+  z-index: -1;
+}
+.ceo-hero .sparkle {
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  width: 19%;
+}
+.ceo-hero .emoji {
+  position: absolute;
+  top: 56%;
+  right: 3%;
+  width: 17%;
 }
 
 @media (min-width: 992px) {
