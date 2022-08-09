@@ -5,6 +5,7 @@
 {% import "pages/ceo/_testimonial.njk" as TestimonialSection %}
 {% import "pages/ceo/_about.njk" as AboutSection %}
 {% import "pages/ceo/_team.njk" as TeamSection %}
+{% import "pages/ceo/_blog.njk" as BlogSection %}
 
 {% block main %}
 <div class="ceo-wrapper" style="background-image: url('./image/ceo/bg-shape.png')">
@@ -26,6 +27,9 @@
   <!-- Team Section Start -->
   {{TeamSection.render()}}
   <!-- Team Section End -->
+  <!-- Blog Section Start -->
+  {{BlogSection.render()}}
+  <!-- Blog Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">

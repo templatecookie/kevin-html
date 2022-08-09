@@ -1,7 +1,7 @@
 .ceo-team-section {
     position: relative;
     padding-bottom: 60px;
-
+    z-index: 1;
     @media (min-width:768px) {
         padding-bottom: 80px;
 
@@ -25,6 +25,21 @@
         @media (min-width:992px) {
             margin-bottom: 80px;
         }
+    }
+    .number-set{
+        position: absolute;
+        top: -3%;
+        left: 3%;
+        width: 14%;
+        z-index: -1;
+
+    }
+    .circle{
+        position: absolute;
+        top: -18%;
+        right: -4%;
+        width: 21%;
+        z-index: -1;
     }
 }
 
