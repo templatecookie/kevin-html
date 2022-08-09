@@ -305,6 +305,46 @@
         ],
       });
   }
+  if (jQuery(".ceo-team--slider").length > 0) {
+    $(".ceo-team--slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: $(".ceo-team--slider__control-buttons .button--prev"),
+        nextArrow: $(".ceo-team--slider__control-buttons .button--next"),
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 420,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+  }
   if (jQuery(".photographer-service--half-fluid").length > 0) {
     $(".photographer-service--half-fluid").slick({
       dots: false,

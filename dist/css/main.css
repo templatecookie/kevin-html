@@ -12127,6 +12127,146 @@ p.law-copywright {
   width: 100%;
 }
 
+.ceo-team-section {
+  position: relative;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .ceo-team-section {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .ceo-team-section {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .ceo-team-section {
+    padding-bottom: 200px;
+  }
+}
+.ceo-team-section__wrapper {
+  position: relative;
+}
+.ceo-team-section .ceo-section-title {
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .ceo-team-section .ceo-section-title {
+    margin-bottom: 80px;
+  }
+}
+
+.ceo-team--slider .slick-slide {
+  margin: 0 16px;
+}
+.ceo-team--slider .slick-list {
+  margin: 0 -16px;
+}
+.ceo-team--slider .slick-dots {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .ceo-team--slider .slick-dots {
+    margin-top: 80px;
+  }
+}
+.ceo-team--slider .slick-dots li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  width: 100%;
+}
+.ceo-team--slider .slick-dots li button {
+  border: 0;
+  width: 100%;
+  height: 4px;
+  padding: 0;
+  background: #CFD8E6;
+  color: transparent;
+  font-size: 0;
+  transition: 0.3s;
+}
+.ceo-team--slider .slick-dots li button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.ceo-team--slider .slick-dots li.slick-active button {
+  background: var(--bs-ceo-500);
+}
+.ceo-team--slider__control-buttons .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  background: white;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  transition: 0.3s;
+  display: none;
+}
+@media (min-width: 992px) {
+  .ceo-team--slider__control-buttons .button {
+    display: block;
+  }
+}
+.ceo-team--slider__control-buttons .button svg path {
+  transition: 0.3s;
+  stroke: var(--bs-ceo-900);
+}
+.ceo-team--slider__control-buttons .button:hover {
+  background: var(--bs-ceo-500);
+}
+.ceo-team--slider__control-buttons .button:hover svg path {
+  stroke: white;
+}
+.ceo-team--slider__control-buttons .button--next {
+  left: auto;
+  right: 0;
+}
+
+.ceo-team-card {
+  text-align: center;
+  background: white;
+  padding: 36px;
+}
+.ceo-team-card .content {
+  margin-top: 32px;
+}
+.ceo-team-card .content h3 {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--bs-ceo-900);
+  padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .ceo-team-card .content h3 {
+    font-size: 20px;
+  }
+}
+.ceo-team-card .content p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--bs-ceo-400);
+}
+
 .ceo-wrapper {
   background-size: cover;
   background-repeat: no-repeat;

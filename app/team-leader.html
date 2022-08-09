@@ -4,6 +4,7 @@
 {% import "pages/ceo/_fun-fact.njk" as FunFactSection %}
 {% import "pages/ceo/_testimonial.njk" as TestimonialSection %}
 {% import "pages/ceo/_about.njk" as AboutSection %}
+{% import "pages/ceo/_team.njk" as TeamSection %}
 
 {% block main %}
 <div class="ceo-wrapper" style="background-image: url('./image/ceo/bg-shape.png')">
@@ -22,6 +23,9 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
+  <!-- Team Section Start -->
+  {{TeamSection.render()}}
+  <!-- Team Section End -->
   <!-- Theme Switcher button -->
   <div class="theme-change-button">
     <div class="toggle-button-switcher bg-primary-500">
