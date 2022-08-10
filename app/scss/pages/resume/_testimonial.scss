@@ -1,5 +1,27 @@
-.resume-testimonial{
-    padding: 64px;
-    border-top: 1px solid var(--bs-gray-v2-100);
-    border-bottom: 1px solid var(--bs-gray-v2-100);
+.resume-testimonial {
+    &__wrapper {
+        padding: 64px;
+        border-top: 1px solid var(--bs-gray-v2-100);
+        border-bottom: 1px solid var(--bs-gray-v2-100);
+    }
+}
+
+.resume-testimonial-card {
+    background-color: var(--bs-ceo-50);
+    padding: 24px;
+    border-radius: 16px;
+    &__wrapper{
+        display: flex;
+    }
+    .icon {
+        margin-right: 12px;
+    }
+
+    .text {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-v2-900);
+    }
 }

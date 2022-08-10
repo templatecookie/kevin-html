@@ -1708,6 +1708,14 @@ small {
   background-color: #CF5955;
 }
 
+.text-ceo-50 {
+  color: #FAEEEE;
+}
+
+.bg-ceo-50 {
+  background-color: #FAEEEE;
+}
+
 .text-ceo-100 {
   color: #FFDFDB;
 }
@@ -12790,10 +12798,29 @@ p.law-copywright {
   padding-bottom: 24px;
 }
 
-.resume-testimonial {
+.resume-testimonial__wrapper {
   padding: 64px;
   border-top: 1px solid var(--bs-gray-v2-100);
   border-bottom: 1px solid var(--bs-gray-v2-100);
+}
+
+.resume-testimonial-card {
+  background-color: var(--bs-ceo-50);
+  padding: 24px;
+  border-radius: 16px;
+}
+.resume-testimonial-card__wrapper {
+  display: flex;
+}
+.resume-testimonial-card .icon {
+  margin-right: 12px;
+}
+.resume-testimonial-card .text {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--bs-gray-v2-900);
 }
 
 .resume-section {
