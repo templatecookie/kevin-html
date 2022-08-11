@@ -461,18 +461,34 @@
                 ]
             });
     }
-    $('.slider-for').slick({
+    $('.resume-slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.resume-slider-nav'
     });
-    $('.slider-nav').slick({
+    $('.resume-slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider-for',
+        asNavFor: '.resume-slider-for',
+        arrows: true,
         dots: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        prevArrow: $(".resume-slider-nav-wrapper__control-buttons .button--prev"),
+        nextArrow: $(".resume-slider-nav-wrapper__control-buttons .button--next"),
+        responsive: [{
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
 })(jQuery);
