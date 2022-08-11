@@ -227,6 +227,7 @@ body[data-theme="dark"] {
       background-color: #0D2159 !important;
     }
   }
+
   .ceo-wrapper {
     background: #0D2159;
     background-image: none !important;
@@ -323,6 +324,130 @@ body[data-theme="dark"] {
   .ceo-social-media-block {
     .title {
       color: white;
+    }
+  }
+
+  .ceo-hero {
+    .emoji,
+    .sparkle {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+    .ceo-social-media-block .follow-icon {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-fun-fact {
+    .spark {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-testimonial{
+    .consumer-thought{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+    &__card{
+      .arrow{
+        svg {
+          path {
+            fill: #3E5985;
+            stroke: #3E5985;
+            fill-opacity: 1;
+          }
+        }
+    }
+    .done{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+    }
+  }
+  .ceo-about{
+    .ceo-section-title{
+      .sparkle{
+        svg {
+          path {
+            fill: #3E5985;
+            stroke: #3E5985;
+            fill-opacity: 1;
+          }
+        }
+      }
+    }
+    .face,.arrrow{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-team-section{
+  .number-set,.circle{
+    svg {
+      path {
+        fill: #3E5985;
+        stroke: #3E5985;
+        fill-opacity: 1;
+      }
+    }
+  } 
+  }
+  .ceo-blog{
+    &__star,
+    &__scribble,
+    &__scribble-two,
+    &__scribble-three{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+  }
+  .ceo-cta {
+    .sparkle,.arrow,.hearts{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
     }
   }
 }

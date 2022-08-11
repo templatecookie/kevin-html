@@ -1,5 +1,6 @@
 .ceo-fun-fact{
     position: relative;
+    z-index: 1;
     &__wrapper{
         overflow: hidden;
         background: rgba(255, 255, 255, 0.84);

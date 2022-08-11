@@ -11833,6 +11833,7 @@ p.law-copywright {
 
 .ceo-fun-fact {
   position: relative;
+  z-index: 1;
 }
 .ceo-fun-fact__wrapper {
   overflow: hidden;
@@ -12152,6 +12153,16 @@ p.law-copywright {
   width: 15%;
 }
 .ceo-about .face svg {
+  width: 100%;
+}
+.ceo-about .arrrow {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transform: translateY(-50%);
+  width: 20%;
+}
+.ceo-about .arrrow svg {
   width: 100%;
 }
 
@@ -14347,6 +14358,62 @@ body[data-theme=dark] .ceo-content-newsletter .form-group .form-control::placeho
 }
 body[data-theme=dark] .ceo-social-media-block .title {
   color: white;
+}
+body[data-theme=dark] .ceo-hero .emoji svg path,
+body[data-theme=dark] .ceo-hero .sparkle svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-hero .ceo-social-media-block .follow-icon svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-fun-fact .spark svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-testimonial .consumer-thought svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-testimonial__card .arrow svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-testimonial__card .done svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-about .ceo-section-title .sparkle svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-about .face svg path, body[data-theme=dark] .ceo-about .arrrow svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-team-section .number-set svg path, body[data-theme=dark] .ceo-team-section .circle svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-blog__star svg path, body[data-theme=dark] .ceo-blog__scribble svg path, body[data-theme=dark] .ceo-blog__scribble-two svg path, body[data-theme=dark] .ceo-blog__scribble-three svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
+}
+body[data-theme=dark] .ceo-cta .sparkle svg path, body[data-theme=dark] .ceo-cta .arrow svg path, body[data-theme=dark] .ceo-cta .hearts svg path {
+  fill: #3E5985;
+  stroke: #3E5985;
+  fill-opacity: 1;
 }
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
