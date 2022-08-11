@@ -1692,6 +1692,14 @@ small {
   background-color: #00BBFF;
 }
 
+.text-resume-50 {
+  color: #FAEEEE;
+}
+
+.bg-resume-50 {
+  background-color: #FAEEEE;
+}
+
 .text-resume-100 {
   color: #F5DEDD;
 }
@@ -12721,6 +12729,9 @@ p.law-copywright {
     margin-left: 50px;
   }
 }
+.resume-hero .resume-display-title .text span {
+  color: var(--bs-gray-v2-900);
+}
 
 .resume-socialmedia-link {
   background: var(--bs-gray-v2-50);
@@ -12814,6 +12825,10 @@ p.law-copywright {
 .resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper .resume-slider-nav .resume-testimonial-user.slick-current .resume-testimonial-user__wrapper {
   box-shadow: inset 0px -2px 0px #CF5955;
 }
+.resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper .resume-slider-nav .resume-testimonial-user.slick-current .resume-testimonial-user__wrapper .name {
+  color: var(--bs-gray-v2-900);
+  font-weight: 500;
+}
 .resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper__control-buttons {
   position: absolute;
   right: 0;
@@ -12836,7 +12851,7 @@ p.law-copywright {
 }
 
 .resume-testimonial-card {
-  background-color: var(--bs-ceo-50);
+  background-color: var(--bs-resume-50);
   padding: 24px;
   border-radius: 16px;
 }
@@ -13091,7 +13106,7 @@ p.law-copywright {
 }
 .work-phase .icon {
   margin: auto;
-  border: 1.5px solid var(--bs-resume-500);
+  border: 2px solid var(--bs-resume-500);
   width: 24px;
   height: 24px;
   display: flex;
@@ -14192,6 +14207,31 @@ body[data-theme=dark] .error-page-area__content .error_img svg .c7,
 body[data-theme=dark] .error-page-area__content .error_img svg .c8 {
   fill: #FFD91A;
 }
+body[data-theme=dark] .resume-header,
+body[data-theme=dark] .resume-hero,
+body[data-theme=dark] .resume-about,
+body[data-theme=dark] .resume-testimonial,
+body[data-theme=dark] .resume-section,
+body[data-theme=dark] .resume-project,
+body[data-theme=dark] .resume-cta,
+body[data-theme=dark] .resume-footer {
+  background: #121314 !important;
+}
+body[data-theme=dark] .resume-header .sub-menu {
+  background-color: #121314 !important;
+}
+body[data-theme=dark] .resume-hero__iamge .lite {
+  display: none !important;
+}
+body[data-theme=dark] .resume-hero__iamge .dark {
+  display: block !important;
+}
+body[data-theme=dark] .work-phase {
+  background: #222628;
+}
+body[data-theme=dark] .resume-slider-nav-wrapper__control-buttons .button--next {
+  background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important;
+}
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-white: #132238;
@@ -14228,6 +14268,14 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-success-50: #05182E;
   --bs-secondary-100: #05182E;
   --bs-secondary-50: #05182E;
+  --bs-gray-v2-50:#222628;
+  --bs-gray-v2-100: #222628;
+  --bs-gray-v2-400:#485057;
+  --bs-gray-v2-700:#9AA1A6;
+  --bs-gray-v2-900: white;
+  --bs-resume-50: #291211;
+  --bs-resume-100: #291211;
+  --bs-gray-v2-600: #7B848B;
 }
 
 /*********** CSS TABLE OF CONTENTS *******************

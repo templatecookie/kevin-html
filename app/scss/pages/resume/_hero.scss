@@ -4,6 +4,13 @@
             margin-left: 50px;
         }
     }
+    .resume-display-title{
+        .text{
+            span{
+                color: var(--bs-gray-v2-900);
+            }
+        }
+    }
 }
 .resume-socialmedia-link{
     background: var(--bs-gray-v2-50);

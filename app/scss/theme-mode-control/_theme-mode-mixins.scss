@@ -35,6 +35,14 @@
   --bs-success-50: #05182E;
   --bs-secondary-100: #05182E;
   --bs-secondary-50: #05182E;
+  --bs-gray-v2-50:#222628;
+  --bs-gray-v2-100: #222628;
+  --bs-gray-v2-400:#485057;
+  --bs-gray-v2-700:#9AA1A6;
+  --bs-gray-v2-900: white;
+  --bs-resume-50: #291211;
+  --bs-resume-100: #291211;
+  --bs-gray-v2-600: #7B848B;
 }
 
 @mixin dark-mode {
@@ -166,4 +174,40 @@ body[data-theme="dark"] {
       }
     }
   }
+  // Resume Pgae Dark Css
+  .resume-header,
+  .resume-hero,
+  .resume-about,
+  .resume-testimonial,
+  .resume-section,
+  .resume-project,
+  .resume-cta,
+  .resume-footer{
+    background: #121314 !important;
+  }
+  .resume-header{
+    .sub-menu{
+      background-color: #121314 !important;
+    }
+  }
+  .resume-hero{
+    &__iamge{
+      .lite{
+        display: none !important;
+      }
+      .dark{
+        display: block !important;
+      }
+    }
+  }
+  .work-phase{
+    background: #222628;
+  }
+  .resume-slider-nav-wrapper{
+    &__control-buttons{
+        .button--next{
+          background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important
+        }
+    }
+}
 }

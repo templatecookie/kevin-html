@@ -15,6 +15,10 @@
                       &.slick-current{
                         .resume-testimonial-user__wrapper{
                             box-shadow: inset 0px -2px 0px #CF5955;
+                            .name{
+                                color: var(--bs-gray-v2-900);
+                                font-weight: 500;
+                            }
                         }
                   }  
                 }
@@ -44,7 +48,7 @@
 }
 
 .resume-testimonial-card {
-    background-color: var(--bs-ceo-50);
+    background-color: var(--bs-resume-50);
     padding: 24px;
     border-radius: 16px;
     &__wrapper{
