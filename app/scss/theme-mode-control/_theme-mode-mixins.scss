@@ -35,14 +35,18 @@
   --bs-success-50: #05182E;
   --bs-secondary-100: #05182E;
   --bs-secondary-50: #05182E;
-  --bs-gray-v2-50:#222628;
+  --bs-gray-v2-50: #222628;
   --bs-gray-v2-100: #222628;
-  --bs-gray-v2-400:#485057;
-  --bs-gray-v2-700:#9AA1A6;
+  --bs-gray-v2-400: #485057;
+  --bs-gray-v2-700: #9AA1A6;
   --bs-gray-v2-900: white;
   --bs-resume-50: #291211;
   --bs-resume-100: #291211;
   --bs-gray-v2-600: #7B848B;
+  --bs-ceo-900: white;
+  --bs-ceo-700: #889BB6;
+  --bs-ceo-100: #153367;
+  ;
 }
 
 @mixin dark-mode {
@@ -174,6 +178,7 @@ body[data-theme="dark"] {
       }
     }
   }
+
   // Resume Pgae Dark Css
   .resume-header,
   .resume-hero,
@@ -182,32 +187,142 @@ body[data-theme="dark"] {
   .resume-section,
   .resume-project,
   .resume-cta,
-  .resume-footer{
+  .resume-footer {
     background: #121314 !important;
   }
-  .resume-header{
-    .sub-menu{
+
+  .resume-header {
+    .sub-menu {
       background-color: #121314 !important;
     }
   }
-  .resume-hero{
-    &__iamge{
-      .lite{
+
+  .resume-hero {
+    &__iamge {
+      .lite {
         display: none !important;
       }
-      .dark{
+
+      .dark {
         display: block !important;
       }
     }
   }
-  .work-phase{
+
+  .work-phase {
     background: #222628;
   }
-  .resume-slider-nav-wrapper{
-    &__control-buttons{
-        .button--next{
-          background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important
-        }
+
+  .resume-slider-nav-wrapper {
+    &__control-buttons {
+      .button--next {
+        background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important
+      }
     }
-}
+  }
+
+  // Team-leader/Ceo Pgae Dark Css
+  .ceo-header {
+    .sub-menu {
+      background-color: #0D2159 !important;
+    }
+  }
+  .ceo-wrapper {
+    background: #0D2159;
+    background-image: none !important;
+  }
+
+  .ceo-fun-fact__wrapper {
+    background-color: #0D2159;
+    border-color: #0D2159;
+    box-shadow: 0px 32px 148px rgba(0, 0, 0, 0.4);
+
+    .arrow {
+      svg {
+        path {
+          fill: #536D97;
+        }
+      }
+    }
+  }
+
+  .ceo-testimonial__card {
+    background: #0D2159;
+    border: 1px solid #153367;
+    box-shadow: 0px 32px 148px rgba(0, 0, 0, 0.2);
+  }
+
+  .ceo-about {
+    &__image-group {
+      .lite {
+        display: none !important;
+      }
+
+      .dark {
+        display: block !important;
+      }
+    }
+  }
+
+  .ceo-team-section {
+    .ceo-team--slider__control-buttons .button {
+      background: #0D2159;
+      border: 1px solid #153367;
+    }
+
+    .ceo-team-card {
+      background: #0D2159;
+      border: 1px solid #153367;
+    }
+
+    .ceo-team--slider {
+      .slick-dots {
+        li {
+          button {
+            background: #153367;
+          }
+
+          &.slick-active {
+            button {
+              background: var(--bs-ceo-500);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ceo-big-blog-card,
+  .ceo-sm-blog-card {
+    background: #0D2159;
+    border: 1px solid #153367;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.2);
+  }
+
+  .ceo-cta__wrapper .cta-content-wrapper {
+    background: rgba(13, 33, 89);
+    backdrop-filter: blur(200px);
+    border-color: #153367;
+  }
+
+  .ceo-content-newsletter {
+    border-color: #153367;
+
+    .form-group {
+      .form-control {
+        color: white;
+        background: rgba(255, 255, 255, 0.04);
+
+        &::placeholder {
+          color: #6D84A6;
+        }
+      }
+    }
+  }
+
+  .ceo-social-media-block {
+    .title {
+      color: white;
+    }
+  }
 }

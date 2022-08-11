@@ -111,6 +111,10 @@ $(function() {
     {
       selector: '.primary-color',
       variable: '--bs-resume-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-ceo-500'
     }
   ]
   const root = document.documentElement;

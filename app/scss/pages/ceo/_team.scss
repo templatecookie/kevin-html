@@ -110,14 +110,14 @@
             svg{
                 path{
                     transition: .3s;
-                    stroke: var(--bs-ceo-900);
+                    stroke: var(--bs-ceo-900) !important;
                 }
             }
             &:hover{
-                background: var(--bs-ceo-500);
+                background: var(--bs-ceo-500) !important;
                 svg{
                     path{
-                        stroke: white;
+                        stroke: white !important;
                     }
                 }
             }

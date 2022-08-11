@@ -107,6 +107,11 @@
             top: 50%;
             transform: translateY(-50%);
             left: 24px;
+            svg{
+                path{
+                stroke: var(--bs-ceo-500);
+                }
+            }
         }
     }
     .form-btn{

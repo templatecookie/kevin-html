@@ -136,6 +136,13 @@
             color: var(--bs-ceo-500);
             svg{
                 margin-left: 12px;
+                path{
+                    fill: var(--bs-ceo-500);
+                    stroke: var(--bs-ceo-500);
+                    &.white-stroke{
+                        stroke: white !important;
+                    }
+                }
             }
             &::before{
                 content: "";
