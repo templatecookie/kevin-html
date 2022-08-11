@@ -3775,6 +3775,9 @@ button:focus {
   justify-content: center;
   align-items: center;
 }
+.resume-video-btn svg path {
+  fill: var(--bs-resume-500);
+}
 
 .load-more-btn {
   border: 2px solid var(--bs-primary-50);
@@ -12823,7 +12826,7 @@ p.law-copywright {
   position: relative;
 }
 .resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper .resume-slider-nav .resume-testimonial-user.slick-current .resume-testimonial-user__wrapper {
-  box-shadow: inset 0px -2px 0px #CF5955;
+  box-shadow: inset 0px -2px 0px var(--bs-resume-500);
 }
 .resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper .resume-slider-nav .resume-testimonial-user.slick-current .resume-testimonial-user__wrapper .name {
   color: var(--bs-gray-v2-900);
@@ -12849,6 +12852,9 @@ p.law-copywright {
   background: linear-gradient(270deg, #FFFFFF 6.41%, rgba(255, 255, 255, 0) 106.41%);
   padding: 12px 0 12px 122px;
 }
+.resume-testimonial .resume-testimonial-slider .resume-slider-nav-wrapper__control-buttons .button--next svg path {
+  stroke: var(--bs-resume-500);
+}
 
 .resume-testimonial-card {
   background-color: var(--bs-resume-50);
@@ -12860,6 +12866,12 @@ p.law-copywright {
 }
 .resume-testimonial-card .icon {
   margin-right: 12px;
+}
+.resume-testimonial-card .icon svg path {
+  stroke: var(--bs-resume-500);
+}
+.resume-testimonial-card .icon svg path.fill-color {
+  fill: var(--bs-resume-500);
 }
 .resume-testimonial-card .text {
   font-family: "Fira Sans", sans-serif;
@@ -12920,6 +12932,9 @@ p.law-copywright {
 .resume-content .heading svg {
   margin-right: 8px;
 }
+.resume-content .heading svg path {
+  fill: var(--bs-resume-500);
+}
 .resume-content .qualification-list span {
   color: var(--bs-resume-500);
   font-family: "Fira Sans", sans-serif;
@@ -12957,6 +12972,9 @@ p.law-copywright {
 }
 .resume-skill .heading svg {
   margin-right: 8px;
+}
+.resume-skill .heading svg path {
+  fill: var(--bs-resume-500);
 }
 .resume-skill-bar__item {
   margin-bottom: 24px;
@@ -13001,6 +13019,9 @@ p.law-copywright {
 .resume-interest .heading svg {
   margin-right: 8px;
 }
+.resume-interest .heading svg path {
+  fill: var(--bs-resume-500);
+}
 .resume-interest .resume-interest-itme-list .row {
   border-bottom: 1px solid var(--bs-gray-v2-100);
 }
@@ -13016,6 +13037,9 @@ p.law-copywright {
 .resume-interest .interest-item {
   padding: 35px 0;
   text-align: center;
+}
+.resume-interest .interest-item svg path {
+  fill: var(--bs-resume-500);
 }
 .resume-interest .interest-item h6 {
   padding-top: 12px;
@@ -13039,6 +13063,9 @@ p.law-copywright {
 }
 .resume-projectstatistic .heading svg {
   margin-right: 8px;
+}
+.resume-projectstatistic .heading svg path {
+  fill: var(--bs-resume-500);
 }
 .resume-projectstatistic .project-list {
   list-style: none;
@@ -13098,6 +13125,9 @@ p.law-copywright {
 .resume-workphase .heading svg {
   margin-right: 8px;
 }
+.resume-workphase .heading svg path {
+  fill: var(--bs-resume-500);
+}
 
 .work-phase {
   background: rgba(250, 237, 236, 0.5);
@@ -13115,6 +13145,9 @@ p.law-copywright {
   border-radius: 500px;
   font-weight: 600;
   color: var(--bs-resume-500);
+}
+.work-phase .icon svg path {
+  fill: var(--bs-resume-500);
 }
 .work-phase h3 {
   padding-top: 8px;

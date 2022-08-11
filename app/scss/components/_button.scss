@@ -464,6 +464,11 @@ margin-right: 12px;
   box-shadow: 0px 8px 36px rgba(18, 19, 20, 0.12);
   @include square(40px,10px);
   @include flexAllCenter;
+  svg{
+    path{
+        fill: var(--bs-resume-500);
+    }
+}
 }
 
 .load-more-btn{

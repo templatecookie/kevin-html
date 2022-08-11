@@ -14,7 +14,7 @@
                 .resume-testimonial-user{
                       &.slick-current{
                         .resume-testimonial-user__wrapper{
-                            box-shadow: inset 0px -2px 0px #CF5955;
+                            box-shadow: inset 0px -2px 0px var(--bs-resume-500);
                             .name{
                                 color: var(--bs-gray-v2-900);
                                 font-weight: 500;
@@ -41,6 +41,11 @@
                     padding: 0;
                     background: linear-gradient(270deg, #FFFFFF 6.41%, rgba(255, 255, 255, 0) 106.41%);
                     padding: 12px 0 12px 122px;
+                    svg{
+                        path{
+                            stroke: var(--bs-resume-500);
+                        }
+                    }
                 }
             }
         }
@@ -56,6 +61,14 @@
     }
     .icon {
         margin-right: 12px;
+        svg{
+            path{
+                stroke: var(--bs-resume-500);
+                &.fill-color{
+                    fill: var(--bs-resume-500);
+                }
+            }
+        }
     }
 
     .text {

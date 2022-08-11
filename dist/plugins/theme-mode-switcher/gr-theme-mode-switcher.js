@@ -107,6 +107,10 @@ $(function() {
     {
       selector: '.primary-color',
       variable: '--bs-secondary-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-resume-500'
     }
   ]
   const root = document.documentElement;

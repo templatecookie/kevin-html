@@ -29,6 +29,11 @@
         line-height: 24px;  
         text-transform: uppercase;
         margin-bottom: 24px;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }
     .qualification-list{
         span{
@@ -70,6 +75,11 @@
         line-height: 24px;  
         text-transform: uppercase;
         margin-bottom: 24px;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }
 &-bar{
     &__item{
@@ -117,6 +127,11 @@
         line-height: 24px;  
         text-transform: uppercase;
         margin-bottom: 24px;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }  
     .resume-interest-itme-list{
         .row{
@@ -135,6 +150,11 @@
     .interest-item{
         padding: 35px 0;
         text-align: center;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
         h6{
             padding-top: 12px;
             font-family: 'Fira Sans', sans-serif;
@@ -159,6 +179,11 @@
         line-height: 24px;  
         text-transform: uppercase;
         margin-bottom: 24px;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }
     .project-list{
         list-style: none;
@@ -218,6 +243,11 @@
         line-height: 24px;  
         text-transform: uppercase;
         margin-bottom: 24px;
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }
 }
 .work-phase{
@@ -235,7 +265,11 @@
         border-radius: 500px;
         font-weight: 600;
         color: var(--bs-resume-500);
-        
+        svg{
+            path{
+                fill: var(--bs-resume-500);
+            }
+        }
     }
     h3{
         padding-top: 8px;
