@@ -11139,7 +11139,7 @@ p.law-copywright {
 .product-designer-about {
   position: relative;
   padding: 53px 0 120px;
-  z-index: 9999999;
+  z-index: 999;
 }
 @media (min-width: 768px) {
   .product-designer-about {
@@ -14184,7 +14184,7 @@ blockquote .content .name {
   right: 0;
   transform: translateY(-50%) translateX(100%);
   top: 50%;
-  z-index: 99;
+  z-index: 99999;
 }
 
 .theme-change-button {
