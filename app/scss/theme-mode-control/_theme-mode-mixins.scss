@@ -38,6 +38,7 @@
   --bs-gray-v2-50: #222628;
   --bs-gray-v2-100: #222628;
   --bs-gray-v2-400: #485057;
+  --bs-gray-v2-600: #7B848B;
   --bs-gray-v2-700: #9AA1A6;
   --bs-gray-v2-900: white;
   --bs-resume-50: #291211;
@@ -195,6 +196,14 @@ body[data-theme="dark"] {
     .sub-menu {
       background-color: #121314 !important;
     }
+    &.site-header{
+      .menu-block{
+        background-color: #121314 !important;
+        .mobile-menu-head{
+          background-color: #121314 !important;
+        }
+      }
+    }
   }
 
   .resume-hero {
@@ -225,6 +234,14 @@ body[data-theme="dark"] {
   .ceo-header {
     .sub-menu {
       background-color: #0D2159 !important;
+    }
+    &.site-header{
+      .menu-block{
+        background-color: #0D2159 !important;
+        .mobile-menu-head{
+          background-color: #0D2159 !important;
+        }
+      }
     }
   }
 
@@ -450,4 +467,119 @@ body[data-theme="dark"] {
       }
     }
   }
+  //Product Desiner dark Css
+  .productdesigner-header {
+    .sub-menu {
+      background-color: #121314 !important;
+    }
+    .sub-menu--item{
+      a{
+        &:hover{
+          color: white !important;
+        }
+      }
+    }
+    @media (max-width:992px) {
+      
+      &.site-header{
+        .menu-block{
+          background-color: #121314 !important;
+          .mobile-menu-head{
+            background-color: #121314 !important;
+          }
+        }
+      }
+    }
+  }
+  .product-designer-hero{
+    .wave-six{
+      svg{
+        path{
+          fill: #222628;
+        }
+      }
+    }
+    .pd-hero-text{
+      .title{
+        color: #000;
+      }
+    }
+  }
+  .product-designer-about{
+    background: #222628;
+    .pd-about-wave{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .pd-about-content-texts{
+    img{
+      filter: brightness(100);
+    }
+  }
+  .product-designer-case-study{
+    background: #121314;
+  }
+  .pd-quotation-slider__control-buttons{
+    .button {
+      border-color: #353A3E;
+    }
+  }
+  .pd-project-card{
+    background: #222628;
+    .tag{
+      color: #5E6971 !important;
+    }
+  }
+  .pd-quotation-section{
+    background: #222628;
+    &__wave-top{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+    &__wave-bottom{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .product-designer-price{
+    background: #121314;
+  }
+  .pd-price-card{
+    background: #121314;
+    border-color: #222628;
+  }
+  .product-designer-cta{
+    background: #222628;
+    &__wave{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .pd-social-btn{
+    background: rgba(255, 255, 255, 0.05);
+    &:hover{
+      border-color:#121314;
+      box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.24);
+    }
+  }
+  .prdduct-designer-footer{
+    background: #222628;
+    .icon{
+      color: #121314 !important;
+    }
+  }
+
 }

@@ -2,6 +2,7 @@
     position: relative;
     padding-top: 86px;
     padding-bottom: 58px;
+    z-index: 1;
     @media (min-width:768px) {
         padding-top: 187px;
         padding-bottom: 88px;
@@ -42,20 +43,22 @@
         top: 0;
         left: 0;
         width: 100%;
+        z-index: -1;
     }
 }
 .pd-social-btn{
+    border: 2px solid var(--bs-gray-v2-50);
     background: var(--bs-gray-v2-50);
     transition: .3s;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding: 24px;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-        color: var(--bs-gray-v2-900) !important;
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--bs-gray-v2-900) !important;
     svg{
         margin-right: 12px;
     }

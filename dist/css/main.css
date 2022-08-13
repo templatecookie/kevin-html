@@ -3180,12 +3180,12 @@ small {
   font-size: 20px;
   line-height: 28px;
   align-items: center;
-  color: var(--bs-gray-v2-900) !important;
+  color: #121314;
   background: white;
   border-radius: 500px;
 }
 .productdesigner-header .site-menu-main .nav-link-item {
-  color: var(--bs-gray-v2-400);
+  color: #7B848B;
   font-weight: 400;
   font-size: 16px;
   padding: 16px 12px;
@@ -3572,6 +3572,7 @@ small {
 }
 .pd-btn svg path {
   transition: 0.3s;
+  fill: var(--bs-product-500);
 }
 .pd-btn.pd-btn-primary {
   color: white;
@@ -10987,6 +10988,7 @@ p.law-copywright {
 }
 
 .product-designer-hero {
+  background: #121314;
   position: relative;
   padding-top: 138px;
   background-position: center;
@@ -11111,10 +11113,21 @@ p.law-copywright {
 .product-designer-hero .pd-hero-wave.wave-five {
   z-index: 46;
 }
+.product-designer-hero .pd-hero-wave.wave-six {
+  top: inherit;
+  bottom: 0px;
+  z-index: 49;
+}
+@media (min-width: 1400px) {
+  .product-designer-hero .pd-hero-wave.wave-six {
+    bottom: -30px;
+  }
+}
 .product-designer-hero .pd-hero-text {
   position: absolute;
   bottom: 0;
   left: 2%;
+  z-index: 9;
 }
 .product-designer-hero .pd-hero-text .title {
   font-family: "Work Sans", sans-serif;
@@ -11126,6 +11139,7 @@ p.law-copywright {
 .product-designer-about {
   position: relative;
   padding: 53px 0 120px;
+  z-index: 9999999;
 }
 @media (min-width: 768px) {
   .product-designer-about {
@@ -11143,6 +11157,7 @@ p.law-copywright {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .pd-about-content-texts h3 {
@@ -11175,6 +11190,7 @@ p.law-copywright {
 .product-designer-case-study {
   background: var(--bs-gray-v2-50);
   padding: 40px 0;
+  z-index: 9999;
 }
 @media (min-width: 768px) {
   .product-designer-case-study {
@@ -11182,6 +11198,8 @@ p.law-copywright {
   }
 }
 .product-designer-case-study .pd-section-title {
+  z-index: 999999;
+  position: relative;
   margin-bottom: 25px;
 }
 @media (min-width: 992px) {
@@ -11216,6 +11234,9 @@ p.law-copywright {
 .product-designer-case-study .more-btn h6 a svg {
   margin-left: 5px;
 }
+.product-designer-case-study .more-btn h6 a svg path {
+  fill: var(--bs-gray-v2-900);
+}
 .product-designer-case-study .more-btn h6 a::before {
   content: "";
   position: absolute;
@@ -11231,6 +11252,7 @@ p.law-copywright {
 }
 
 .pd-project-card {
+  z-index: 999;
   overflow: hidden;
   position: relative;
   padding: 30px 20px;
@@ -11335,6 +11357,7 @@ p.law-copywright {
 .pd-quotation-section {
   position: relative;
   padding: 88px 0;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .pd-quotation-section {
@@ -11347,12 +11370,14 @@ p.law-copywright {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 .pd-quotation-section__wave-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .pd-quotation-card .logo {
@@ -11551,6 +11576,7 @@ p.law-copywright {
   position: relative;
   padding-top: 86px;
   padding-bottom: 58px;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .product-designer-cta {
@@ -11592,15 +11618,17 @@ p.law-copywright {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .pd-social-btn {
+  border: 2px solid var(--bs-gray-v2-50);
   background: var(--bs-gray-v2-50);
   transition: 0.3s;
   border-radius: 4px;
   display: flex;
   align-items: center;
-  padding: 24px;
+  padding: 20px;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -14276,6 +14304,12 @@ body[data-theme=dark] .resume-footer {
 body[data-theme=dark] .resume-header .sub-menu {
   background-color: #121314 !important;
 }
+body[data-theme=dark] .resume-header.site-header .menu-block {
+  background-color: #121314 !important;
+}
+body[data-theme=dark] .resume-header.site-header .menu-block .mobile-menu-head {
+  background-color: #121314 !important;
+}
 body[data-theme=dark] .resume-hero__iamge .lite {
   display: none !important;
 }
@@ -14289,6 +14323,12 @@ body[data-theme=dark] .resume-slider-nav-wrapper__control-buttons .button--next 
   background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important;
 }
 body[data-theme=dark] .ceo-header .sub-menu {
+  background-color: #0D2159 !important;
+}
+body[data-theme=dark] .ceo-header.site-header .menu-block {
+  background-color: #0D2159 !important;
+}
+body[data-theme=dark] .ceo-header.site-header .menu-block .mobile-menu-head {
   background-color: #0D2159 !important;
 }
 body[data-theme=dark] .ceo-wrapper {
@@ -14415,6 +14455,82 @@ body[data-theme=dark] .ceo-cta .sparkle svg path, body[data-theme=dark] .ceo-cta
   stroke: #3E5985;
   fill-opacity: 1;
 }
+body[data-theme=dark] .productdesigner-header .sub-menu {
+  background-color: #121314 !important;
+}
+body[data-theme=dark] .productdesigner-header .sub-menu--item a:hover {
+  color: white !important;
+}
+@media (max-width: 992px) {
+  body[data-theme=dark] .productdesigner-header.site-header .menu-block {
+    background-color: #121314 !important;
+  }
+  body[data-theme=dark] .productdesigner-header.site-header .menu-block .mobile-menu-head {
+    background-color: #121314 !important;
+  }
+}
+body[data-theme=dark] .product-designer-hero .wave-six svg path {
+  fill: #222628;
+}
+body[data-theme=dark] .product-designer-hero .pd-hero-text .title {
+  color: #000;
+}
+body[data-theme=dark] .product-designer-about {
+  background: #222628;
+}
+body[data-theme=dark] .product-designer-about .pd-about-wave svg path {
+  fill: #121314;
+}
+body[data-theme=dark] .pd-about-content-texts img {
+  filter: brightness(100);
+}
+body[data-theme=dark] .product-designer-case-study {
+  background: #121314;
+}
+body[data-theme=dark] .pd-quotation-slider__control-buttons .button {
+  border-color: #353A3E;
+}
+body[data-theme=dark] .pd-project-card {
+  background: #222628;
+}
+body[data-theme=dark] .pd-project-card .tag {
+  color: #5E6971 !important;
+}
+body[data-theme=dark] .pd-quotation-section {
+  background: #222628;
+}
+body[data-theme=dark] .pd-quotation-section__wave-top svg path {
+  fill: #121314;
+}
+body[data-theme=dark] .pd-quotation-section__wave-bottom svg path {
+  fill: #121314;
+}
+body[data-theme=dark] .product-designer-price {
+  background: #121314;
+}
+body[data-theme=dark] .pd-price-card {
+  background: #121314;
+  border-color: #222628;
+}
+body[data-theme=dark] .product-designer-cta {
+  background: #222628;
+}
+body[data-theme=dark] .product-designer-cta__wave svg path {
+  fill: #121314;
+}
+body[data-theme=dark] .pd-social-btn {
+  background: rgba(255, 255, 255, 0.05);
+}
+body[data-theme=dark] .pd-social-btn:hover {
+  border-color: #121314;
+  box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.24);
+}
+body[data-theme=dark] .prdduct-designer-footer {
+  background: #222628;
+}
+body[data-theme=dark] .prdduct-designer-footer .icon {
+  color: #121314 !important;
+}
 
 body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-white: #132238;
@@ -14454,6 +14570,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   --bs-gray-v2-50: #222628;
   --bs-gray-v2-100: #222628;
   --bs-gray-v2-400: #485057;
+  --bs-gray-v2-600: #7B848B;
   --bs-gray-v2-700: #9AA1A6;
   --bs-gray-v2-900: white;
   --bs-resume-50: #291211;

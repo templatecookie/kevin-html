@@ -1,4 +1,5 @@
 .product-designer-hero{
+    background: #121314;
     position: relative;
     padding-top: 138px;
     background-position: center;
@@ -104,11 +105,20 @@
         &.wave-five{
             z-index: 46;
         }
+        &.wave-six{
+            top: inherit;
+            bottom: 0px;
+            z-index: 49;
+            @media (min-width:1400px) {
+                bottom: -30px;
+            }
+        }
     }
     .pd-hero-text{
         position: absolute;
         bottom: 0;
         left: 2%;
+        z-index: 9;
         .title{
             font-family: 'Work Sans', sans-serif;
             font-weight: 700;

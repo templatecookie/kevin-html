@@ -1,6 +1,7 @@
 .pd-quotation-section{
     position: relative;
     padding: 88px 0;
+    z-index: 1;
     @media (min-width:768px) {
         padding-top: 172px;
         padding-bottom: 188px;
@@ -10,12 +11,14 @@
         top: 0;
         left: 0;
         width: 100%;
+        z-index: -1;
     }
     &__wave-bottom{
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
+        z-index: -1;
     }
 }
 .pd-quotation-card{

@@ -115,6 +115,10 @@ $(function() {
     {
       selector: '.primary-color',
       variable: '--bs-ceo-500'
+    },
+    {
+      selector: '.primary-color',
+      variable: '--bs-product-500'
     }
   ]
   const root = document.documentElement;
