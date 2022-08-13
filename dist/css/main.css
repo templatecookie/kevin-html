@@ -11018,6 +11018,7 @@ p.law-copywright {
   }
 }
 .product-designer-hero__content .avatar img {
+  border-radius: 500px;
   min-width: 150px;
   max-width: 150px;
   min-height: 150px;
