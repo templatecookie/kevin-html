@@ -267,7 +267,7 @@ body[data-theme="dark"] {
   .ceo-testimonial__card {
     background: #0D2159;
     border: 1px solid #153367;
-    box-shadow: 0px 32px 148px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 32px 148px 0px #0000003B;
   }
 
   .ceo-about {
@@ -314,7 +314,9 @@ body[data-theme="dark"] {
   .ceo-sm-blog-card {
     background: #0D2159;
     border: 1px solid #153367;
-    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.2);
+    &:hover{
+      box-shadow: 0px 16px 40px 0px #0000001F;
+    }
   }
 
   .ceo-cta__wrapper .cta-content-wrapper {
@@ -596,6 +598,7 @@ body[data-theme="dark"] {
     }
   }
   .prdduct-designer-footer{
+    border-color: #353A3E;
     background: #222628;
     .icon{
       color: #121314 !important;
