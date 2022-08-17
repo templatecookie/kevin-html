@@ -65,10 +65,11 @@
                 margin-right: 6px;
             }
             &.hide{
+                font-weight: 400;
                 color: var(--bs-gray-v2-300);
                 svg{
                     path{
-                        stroke: var(--bs-gray-v2-300);
+                        fill: var(--bs-gray-v2-300);
                     }
                 }
             }

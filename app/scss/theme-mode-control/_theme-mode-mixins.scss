@@ -557,6 +557,26 @@ body[data-theme="dark"] {
   .pd-price-card{
     background: #121314;
     border-color: #222628;
+    .list-group{
+      li{
+          svg{
+             path{
+              fill: white;
+             }
+          }
+          &.hide{
+              color: #353A3E;
+              svg{
+                  path{
+                      fill: #353A3E;
+                  }
+              }
+          }
+      }
+  }
+    &:hover{
+      border-color: #00BBFF;
+    }
   }
   .product-designer-cta{
     background: #222628;

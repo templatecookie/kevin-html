@@ -50,13 +50,13 @@
     border: 2px solid var(--bs-gray-v2-50);
     background: var(--bs-gray-v2-50);
     transition: .3s;
-    border-radius: 4px;
     display: flex;
     align-items: center;
     padding: 20px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    border-radius: 8px;
     line-height: 24px;
     color: var(--bs-gray-v2-900) !important;
     svg{
@@ -64,7 +64,6 @@
     }
     &:hover{
         background: white;
-        box-shadow: 0px 16px 64px rgba(18, 19, 20, 0.12);
     }
 }
 .pd-contact-info-card{
@@ -103,8 +102,8 @@
             width: 276px;
         }
         svg{
-            margin-bottom: 16px;
             margin: auto;
+            margin-bottom: 16px;
         }
         span{
             font-family: 'Work Sans', sans-serif;

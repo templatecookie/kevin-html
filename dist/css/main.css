@@ -476,7 +476,7 @@
 }
 
 .ceo-display-title-two .subtitle {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
@@ -517,8 +517,8 @@
 }
 
 .ceo-section-title .subtitle {
-  font-family: "Fira Sans";
-  font-weight: 500;
+  font-family: "Satoshi";
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -3602,14 +3602,13 @@ small {
 }
 .pd-btn.pd-btn-primary svg path {
   transition: 0.3s;
-  stroke: white;
+  fill: white;
 }
 .pd-btn.pd-btn-primary:hover {
   color: var(--bs-product-500);
   background: transparent;
 }
 .pd-btn.pd-btn-primary:hover svg path {
-  stroke: var(--bs-product-500);
   fill: var(--bs-product-500);
 }
 .pd-btn.pd-btn-outline-primary {
@@ -3686,7 +3685,7 @@ small {
 
 .ceo-btn {
   border-radius: 0 !important;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Satoshi";
   font-weight: 900;
   font-size: 16px;
   display: inline-flex;
@@ -11489,7 +11488,7 @@ p.law-copywright {
   stroke: var(--bs-product-500);
 }
 .pd-quotation-slider__control-buttons .button:hover {
-  background-color: var(--bs-product-600);
+  border-color: var(--bs-product-500);
   background: var(--bs-product-500);
 }
 .pd-quotation-slider__control-buttons .button:hover path {
@@ -11573,10 +11572,11 @@ p.law-copywright {
   margin-right: 6px;
 }
 .pd-price-card .list-group li.hide {
+  font-weight: 400;
   color: var(--bs-gray-v2-300);
 }
 .pd-price-card .list-group li.hide svg path {
-  stroke: var(--bs-gray-v2-300);
+  fill: var(--bs-gray-v2-300);
 }
 .pd-price-card:hover {
   border-color: var(--bs-product-500);
@@ -11648,13 +11648,13 @@ p.law-copywright {
   border: 2px solid var(--bs-gray-v2-50);
   background: var(--bs-gray-v2-50);
   transition: 0.3s;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   padding: 20px;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
+  border-radius: 8px;
   line-height: 24px;
   color: var(--bs-gray-v2-900) !important;
 }
@@ -11663,7 +11663,6 @@ p.law-copywright {
 }
 .pd-social-btn:hover {
   background: white;
-  box-shadow: 0px 16px 64px rgba(18, 19, 20, 0.12);
 }
 
 .pd-contact-info-card {
@@ -11709,8 +11708,8 @@ p.law-copywright {
   }
 }
 .pd-contact-info-card .content svg {
-  margin-bottom: 16px;
   margin: auto;
+  margin-bottom: 16px;
 }
 .pd-contact-info-card .content span {
   font-family: "Work Sans", sans-serif;
@@ -11964,6 +11963,12 @@ p.law-copywright {
   z-index: -1;
 }
 
+@media (max-width: 992px) {
+  .founder-block {
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+}
 .founder-block .heading {
   margin-bottom: 24px;
   display: flex;
@@ -11983,6 +11988,11 @@ p.law-copywright {
   display: flex;
   align-items: center;
   gap: 42px;
+}
+@media (max-width: 992px) {
+  .founder-block .logo-itme {
+    gap: 16px;
+  }
 }
 
 .ceo-testimonial {
@@ -14542,6 +14552,18 @@ body[data-theme=dark] .product-designer-price {
 body[data-theme=dark] .pd-price-card {
   background: #121314;
   border-color: #222628;
+}
+body[data-theme=dark] .pd-price-card .list-group li svg path {
+  fill: white;
+}
+body[data-theme=dark] .pd-price-card .list-group li.hide {
+  color: #353A3E;
+}
+body[data-theme=dark] .pd-price-card .list-group li.hide svg path {
+  fill: #353A3E;
+}
+body[data-theme=dark] .pd-price-card:hover {
+  border-color: #00BBFF;
 }
 body[data-theme=dark] .product-designer-cta {
   background: #222628;

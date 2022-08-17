@@ -262,7 +262,7 @@
     svg{
       path{
         transition: .3s;
-        stroke: white;
+        fill: white;
       }
     }
     &:hover{
@@ -270,7 +270,6 @@
       background: transparent;
       svg{
         path{
-          stroke: var(--bs-product-500);
           fill: var(--bs-product-500);
         }
       }
@@ -359,7 +358,7 @@
 }
 .ceo-btn {
   border-radius: 0 !important;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Satoshi';
   font-weight: 900;
   font-size: 16px;
   display: inline-flex;
