@@ -90,6 +90,20 @@
       }
   }
 }
+.work-phase-row {
+  margin-bottom: -16px;
+  @media (min-width:992px) {
+    margin-bottom: -24px;
+    
+  }
+  [class^="col"] {
+        margin-bottom: 16px;
+        @media (min-width:992px) {
+          margin-bottom: 24px;
+            
+          }
+  }
+}
 .faq-row {
   margin-bottom: -24px;
   @media (min-width:992px) {

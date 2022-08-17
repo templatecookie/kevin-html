@@ -341,6 +341,9 @@
       line-height: 12px;
       color: var(--bs-resume-500);
       padding-bottom: 8px;
+      @media(max-width:992px) {
+        justify-content: center;
+      }
   }
   .title{
     font-weight: 600;

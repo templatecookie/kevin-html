@@ -390,6 +390,11 @@
   margin-right: 12px;
   background: var(--bs-resume-500);
 }
+@media (max-width: 992px) {
+  .resume-display-title .subtitle {
+    justify-content: center;
+  }
+}
 .resume-display-title .title {
   font-weight: 600;
   font-size: 36px;
@@ -789,6 +794,23 @@
 }
 .gallery-row [class^=col] .card-gallery {
   margin-bottom: 24px;
+}
+
+.work-phase-row {
+  margin-bottom: -16px;
+}
+@media (min-width: 992px) {
+  .work-phase-row {
+    margin-bottom: -24px;
+  }
+}
+.work-phase-row [class^=col] {
+  margin-bottom: 16px;
+}
+@media (min-width: 992px) {
+  .work-phase-row [class^=col] {
+    margin-bottom: 24px;
+  }
 }
 
 .faq-row {
@@ -3641,7 +3663,7 @@ small {
   color: var(--bs-resume-500);
 }
 .resume-btn.resume-btn-primary:hover svg path {
-  stroke: var(--bs-resume-500);
+  fill: var(--bs-resume-500);
 }
 .resume-btn.resume-btn-outline-primary {
   color: var(--bs-resume-500);
@@ -13283,10 +13305,18 @@ p.law-copywright {
   transform: translateY(0%);
 }
 
-.resume-cta__wrapper {
-  background-color: var(--bs-gray-v2-50);
-  border-radius: 24px;
-  padding: 64px 0;
+@media (max-width: 575px) {
+  .resume-cta {
+    background-color: var(--bs-gray-v2-50);
+    padding: 64px 0;
+  }
+}
+@media (min-width: 575px) {
+  .resume-cta__wrapper {
+    background-color: var(--bs-gray-v2-50);
+    padding: 64px 0;
+    border-radius: 24px;
+  }
 }
 
 .resume-footer {
