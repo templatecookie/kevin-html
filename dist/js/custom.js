@@ -492,3 +492,9 @@
         ]
     });
 })(jQuery);
+
+var typed = new Typed('.typed', {
+    strings: ["Full-Stack Developer.", "Javascript Expert."],
+    typeSpeed: 100,
+    loop: true,
+});
