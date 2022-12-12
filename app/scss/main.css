@@ -600,7 +600,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-220px * 7));
+    transform: translateX(-1540px);
   }
 }
 
@@ -609,7 +609,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-220px * 7));
+    transform: translateX(-1540px);
   }
 }
 .wave {
@@ -1339,11 +1339,11 @@ small {
 }
 
 .text-success-500 {
-  color: #236C44;
+  color: #2DB24A;
 }
 
 .bg-success-500 {
-  background-color: #236C44;
+  background-color: #2DB24A;
 }
 
 .text-success-600 {
@@ -2286,7 +2286,6 @@ small {
     align-items: center;
     justify-content: center;
   }
-
   .site-header .mobile-menu-trigger span {
     display: block;
     height: 2px;
@@ -2294,7 +2293,6 @@ small {
     width: 24px;
     position: relative;
   }
-
   .site-header .mobile-menu-trigger span:before,
 .site-header .mobile-menu-trigger span:after {
     content: "";
@@ -2304,28 +2302,22 @@ small {
     height: 100%;
     background-color: white;
   }
-
   .dark-mode-texts .mobile-menu-trigger span {
     background-color: white;
   }
-
   .dark-mode-texts .mobile-menu-trigger span:before,
 .dark-mode-texts .mobile-menu-trigger span:after {
     background-color: white;
   }
-
   .site-header .mobile-menu-trigger span:before {
     top: -8px;
   }
-
   .site-header .mobile-menu-trigger span:after {
     top: 8px;
   }
-
   .site-header .item-right {
     align-items: center;
   }
-
   .site-header .menu-block {
     position: fixed;
     width: 320px;
@@ -2338,17 +2330,14 @@ small {
     transition: all 0.5s ease;
     z-index: 1099;
   }
-
   .site-header .menu-block.active {
     transform: translate(0%);
   }
-
   .site-menu-main > li {
     line-height: 1;
     margin: 0;
     display: block;
   }
-
   .site-menu-main > li > a {
     line-height: 50px;
     padding-left: 10px;
@@ -2507,7 +2496,6 @@ small {
   .has-megamenu ul {
     margin-left: auto;
   }
-
   .site-menu-main a {
     display: flex;
     align-items: center;
@@ -3876,8 +3864,9 @@ button:focus {
 }
 .dev-hero-area__bg {
   padding: 60px 0;
-  background-color: var(--bs-success-500);
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .dev-hero-area__bg {
@@ -3893,29 +3882,6 @@ button:focus {
   .dev-hero-area__bg {
     padding: 112px 0;
     border-radius: 16px;
-  }
-}
-@media (max-width: 1440px) {
-  .dev-hero-area__bg {
-    display: flex;
-  }
-}
-@media (max-width: 1200px) {
-  .dev-hero-area__bg {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.dev-hero-area__bg .hero-img {
-  position: absolute;
-  bottom: 0;
-  right: 5%;
-}
-@media (max-width: 1440px) {
-  .dev-hero-area__bg .hero-img {
-    position: relative;
-    display: block;
   }
 }
 .dev-hero-area .dev-display-title .title {
@@ -4006,7 +3972,6 @@ button:focus {
   background: var(--bs-white);
   padding: 15px 0;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 992px) {
   .dev-company-info--logo .logo {
@@ -4016,12 +3981,10 @@ button:focus {
 .dev-company-info--logo .logo img {
   width: 100%;
   filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
 }
 .dev-company-info--logo .logo:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
 }
 .dev-company-info--logo .logo:hover img {
   filter: grayscale(0);
@@ -6197,11 +6160,11 @@ button:focus {
   }
 }
 .ui-testimonial-section .ui-section-title {
-  margin-bottom: calc(30px + 40px);
+  margin-bottom: 70px;
 }
 @media (min-width: 992px) {
   .ui-testimonial-section .ui-section-title {
-    margin-bottom: calc(64px + 40px);
+    margin-bottom: 104px;
   }
 }
 .ui-testimonial-section__slider {
@@ -12055,7 +12018,7 @@ p.law-copywright {
 .ceo-testimonial__card {
   padding: 30px 20px;
   background: white;
-  box-shadow: 0px 32px 148px 0px #002F6C3B;
+  box-shadow: 0px 32px 148px 0px rgba(0, 47, 108, 0.231372549);
 }
 @media (min-width: 768px) {
   .ceo-testimonial__card {
@@ -12565,7 +12528,7 @@ p.law-copywright {
   background: var(--bs-ceo-500);
 }
 .ceo-big-blog-card:hover {
-  box-shadow: 0px 16px 40px 0px #0D21591F;
+  box-shadow: 0px 16px 40px 0px rgba(13, 33, 89, 0.1215686275);
 }
 .ceo-big-blog-card:hover .card-image img {
   transform: scale(1.1);
@@ -12657,7 +12620,7 @@ p.law-copywright {
   color: var(--bs-ceo-400);
 }
 .ceo-sm-blog-card:hover {
-  box-shadow: 0px 16px 40px 0px #0D21591F;
+  box-shadow: 0px 16px 40px 0px rgba(13, 33, 89, 0.1215686275);
 }
 .ceo-sm-blog-card:hover .card-image img {
   transform: scale(1.1);
@@ -14426,7 +14389,7 @@ body[data-theme=dark] .ceo-fun-fact__wrapper .arrow svg path {
 body[data-theme=dark] .ceo-testimonial__card {
   background: #0D2159;
   border: 1px solid #153367;
-  box-shadow: 0px 32px 148px 0px #0000003B;
+  box-shadow: 0px 32px 148px 0px rgba(0, 0, 0, 0.231372549);
 }
 body[data-theme=dark] .ceo-about__image-group .lite {
   display: none !important;
@@ -14455,10 +14418,10 @@ body[data-theme=dark] .ceo-sm-blog-card {
 }
 body[data-theme=dark] .ceo-big-blog-card:hover,
 body[data-theme=dark] .ceo-sm-blog-card:hover {
-  box-shadow: 0px 16px 40px 0px #0000001F;
+  box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.1215686275);
 }
 body[data-theme=dark] .ceo-cta__wrapper .cta-content-wrapper {
-  background: #0d2159;
+  background: rgb(13, 33, 89);
   -webkit-backdrop-filter: blur(200px);
           backdrop-filter: blur(200px);
   border-color: #153367;
@@ -14704,7 +14667,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
 }
 .templatecookie-btn .purchase-btn {
   box-shadow: 0px 0px 3px 0px white !important;
-  background-color: #171717 !important;
+  background-color: rgb(23, 23, 23) !important;
   color: white !important;
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
@@ -14764,5 +14727,4 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
   100% {
     transform: rotate(0deg);
   }
-}
-/*# sourceMappingURL=maps/main.css.map */
+}/*# sourceMappingURL=main.css.map */
