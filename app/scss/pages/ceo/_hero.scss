@@ -37,6 +37,13 @@
             @media (min-width:768px) {
                 margin-top: 32px;
             }
+            ul{
+                li{
+                    a{
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
         }
     }
     .ceo-display-title-two{

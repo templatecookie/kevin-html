@@ -105,7 +105,6 @@
         svg{
             margin: auto;
             margin-bottom: 16px;
-            animation: shakeIn 1s ease infinite;
         }
         span{
             font-family: 'Work Sans', sans-serif;
@@ -121,6 +120,11 @@
             font-size: 20px;
             line-height: 28px;
             color: white;
+        }
+        &:hover{
+            svg{
+                animation: shakeIn 1s ease infinite;
+            }
         }
     }
 }

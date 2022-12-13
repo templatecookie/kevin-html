@@ -133,6 +133,11 @@
         margin-top: 48px;
         ul{
             flex-wrap: wrap !important;
+            li{
+                a{
+                    transition: all 0.5s ease-in-out;
+                }
+            }
         }
         .title{
             font-family: 'Satoshi';

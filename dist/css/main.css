@@ -3373,7 +3373,7 @@ small {
   width: max-content;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .d-btn svg {
   margin-left: 12px;
@@ -3394,7 +3394,7 @@ small {
 .d-btn.d-btn-primary svg {
   opacity: 0;
   transform: translateX(-40px);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .d-btn.d-btn-primary svg path {
   transition: 0.3s;
@@ -12056,8 +12056,6 @@ p.law-copywright {
 .pd-contact-info-card .content svg {
   margin: auto;
   margin-bottom: 16px;
-  -webkit-animation: shakeIn 1s ease infinite;
-          animation: shakeIn 1s ease infinite;
 }
 .pd-contact-info-card .content span {
   font-family: "Work Sans", sans-serif;
@@ -12073,6 +12071,10 @@ p.law-copywright {
   font-size: 20px;
   line-height: 28px;
   color: white;
+}
+.pd-contact-info-card .content:hover svg {
+  -webkit-animation: shakeIn 1s ease infinite;
+          animation: shakeIn 1s ease infinite;
 }
 
 .prdduct-designer-footer {
@@ -12195,6 +12197,9 @@ p.law-copywright {
   .ceo-hero .ceo-display-title .ceo-social-media-block {
     margin-top: 32px;
   }
+}
+.ceo-hero .ceo-display-title .ceo-social-media-block ul li a {
+  transition: all 0.5s ease-in-out;
 }
 .ceo-hero .ceo-display-title-two {
   z-index: 99;
@@ -13131,6 +13136,9 @@ p.law-copywright {
 }
 .ceo-content .ceo-social-media-block ul {
   flex-wrap: wrap !important;
+}
+.ceo-content .ceo-social-media-block ul li a {
+  transition: all 0.5s ease-in-out;
 }
 .ceo-content .ceo-social-media-block .title {
   font-family: "Satoshi";
