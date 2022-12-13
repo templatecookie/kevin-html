@@ -2328,7 +2328,8 @@ small {
 
   .site-header .menu-block {
     position: fixed;
-    width: 320px;
+    width: 100%;
+    max-width: 375px;
     background-color: var(--bs-white);
     left: 0;
     top: 0;
@@ -3390,12 +3391,21 @@ small {
   background: var(--bs-primary-500);
   color: white;
 }
+.d-btn.d-btn-primary svg {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.3s ease-in-out;
+}
 .d-btn.d-btn-primary svg path {
   transition: 0.3s;
 }
 .d-btn.d-btn-primary:hover {
   background: transparent;
   color: var(--bs-primary-500);
+}
+.d-btn.d-btn-primary:hover svg {
+  opacity: 1;
+  transform: translate(0);
 }
 .d-btn.d-btn-primary:hover svg path {
   stroke: var(--bs-primary-500);
@@ -4152,10 +4162,73 @@ button:focus {
 .dev-cta-area .button-group .content-button:hover .text {
   color: rgba(255, 255, 255, 0.7);
 }
+.dev-cta-area .button-group .content-button:hover svg {
+  -webkit-animation: bellshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: bellshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
 .dev-cta-area .button-group .content-button:hover svg path {
   stroke: white;
 }
 
+@-webkit-keyframes bellshake {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  85% {
+    transform: rotate(-4deg);
+  }
+  92% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bellshake {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  85% {
+    transform: rotate(-4deg);
+  }
+  92% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .dev-service-area {
   padding: 60px 0;
   background: var(--bs-bg-dev-services);
@@ -4184,6 +4257,7 @@ button:focus {
   transition: 0.3s;
   padding: 40px;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 525px) {
   .dev-card-service {
@@ -4192,10 +4266,11 @@ button:focus {
 }
 .dev-card-service .card-image {
   margin-bottom: 15px;
-  transition: 0.3s;
+  overflow: hidden;
 }
 .dev-card-service .card-image img {
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 .dev-card-service .card-body {
   padding: 0px;
@@ -4257,6 +4332,9 @@ button:focus {
 }
 .dev-card-service--modifi:hover {
   box-shadow: 0px 16px 80px rgba(19, 34, 56, 0.12);
+}
+.dev-card-service:hover .card-image img {
+  transform: scale(1.2);
 }
 
 .dev-project-area {
@@ -4362,6 +4440,10 @@ button:focus {
   overflow: hidden;
   position: relative;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.dev-project-card img {
+  transition: all 0.5s ease-in-out;
 }
 .dev-project-card .content {
   position: absolute;
@@ -4376,7 +4458,7 @@ button:focus {
   flex-direction: column;
   background: linear-gradient(0deg, rgba(19, 34, 56, 0.8), rgba(19, 34, 56, 0.8));
   transform: translateY(100%);
-  transition: 0.4s;
+  transition: all 0.5s ease-in-out;
 }
 .dev-project-card .content .list {
   display: flex;
@@ -4426,6 +4508,10 @@ button:focus {
   line-height: 24px;
   color: white;
   padding: 6px;
+}
+.dev-project-card:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 .dev-project-card:hover .content {
   transform: translateY(0%);
@@ -4900,12 +4986,14 @@ button:focus {
           backdrop-filter: blur(32px);
   transition: 0.3s;
   height: 100%;
+  cursor: pointer;
 }
 .ui-single-logo img {
   transition: 0.3s;
   filter: grayscale(100%);
 }
 .ui-single-logo:hover {
+  transform: scale(1.1) translateY(5px);
   box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
 }
 .ui-single-logo:hover img {
@@ -5015,6 +5103,8 @@ button:focus {
   transition: 0.3s;
   border-radius: 16px;
   padding: 32px 20px;
+  display: block;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 576px) {
   .ui-project-card {
@@ -5023,11 +5113,13 @@ button:focus {
 }
 .ui-project-card .card-image {
   margin-bottom: 32px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 .ui-project-card .card-image img {
   width: 100%;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 .ui-project-card .card-body {
   padding: 0px;
@@ -5047,6 +5139,13 @@ button:focus {
   font-size: 18px;
   line-height: 150%;
   color: var(--bs-gray-900);
+  background-image: linear-gradient(to right, var(--bs-tertiary-500), var(--bs-tertiary-500) 50%, var(--bs-gray-900) 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .ui-project-card .card-body .title {
@@ -5101,6 +5200,16 @@ button:focus {
 .ui-project-card .card-body .link-btn:hover::before {
   opacity: 1;
   visibility: visible;
+}
+.ui-project-card:hover {
+  transition: all 0.3s ease-in-out;
+}
+.ui-project-card:hover .card-image img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.ui-project-card:hover .title {
+  background-position: 0;
 }
 
 .ui-about-area {
@@ -5268,10 +5377,13 @@ button:focus {
   max-height: 48px;
   min-width: 48px;
   min-height: 48px;
-  transition: 0.3s !important;
+  transition: 0.5s !important;
 }
 .social-media-group .social-link li a svg path {
   transition: 0.3s !important;
+}
+.social-media-group .social-link li a:hover {
+  transform: scale(1.1) translateY(10px);
 }
 .social-media-group .social-link li.fb a:hover {
   background: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
@@ -5373,6 +5485,8 @@ button:focus {
 .ui-award-card img {
   margin-bottom: 32px;
   margin-top: -32px;
+  -webkit-animation: bounce-in 2s ease infinite;
+          animation: bounce-in 2s ease infinite;
 }
 .ui-award-card .content h6 {
   font-family: "Sora", sans-serif;
@@ -5393,6 +5507,61 @@ button:focus {
   box-shadow: 0px 32px 88px rgba(138, 67, 255, 0.12);
 }
 
+@-webkit-keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .ui-service-area {
   padding: 60px 0;
   background: var(--bs-bg-ui-linear-gradient-4);
@@ -5602,6 +5771,12 @@ button:focus {
   max-height: 48px;
   min-width: 48px;
   min-height: 48px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.tools-group .tools-item li:hover {
+  transform: scale(1.1) translateY(5px);
+  box-shadow: 0px 1px 6px #ddd;
 }
 
 .designer-skill-bar__item {

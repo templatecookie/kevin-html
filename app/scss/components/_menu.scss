@@ -453,7 +453,8 @@ li.nav-item-has-children {
 
 	.site-header .menu-block {
 		position: fixed;
-		width: 320px;
+		width: 100%;
+		max-width: 375px;
 		background-color: var(--bs-white);
 		left: 0;
 		top: 0;

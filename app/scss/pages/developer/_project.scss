@@ -101,6 +101,10 @@
     overflow: hidden;
     position: relative;
     text-align: center;
+    transition: all 0.5s ease-in-out;
+    img{
+        transition: all 0.5s ease-in-out;
+    }
     .content {
         position: absolute;
         top: 0;
@@ -114,7 +118,7 @@
         flex-direction: column;
         background: linear-gradient(0deg, rgba(19, 34, 56, 0.8), rgba(19, 34, 56, 0.8));
         transform: translateY(100%);
-        transition: .4s;
+        transition: all .5s ease-in-out;
         .list {
             display: flex;
             align-items: center;
@@ -167,6 +171,10 @@
         }
     }
     &:hover {
+        img{
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+        };
         .content {
             transform: translateY(0%); 
         }

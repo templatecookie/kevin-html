@@ -141,11 +141,14 @@
                 max-height: 48px;
                 min-width: 48px;
                 min-height: 48px;
-                transition: .3s !important;
+                transition: .5s !important;
                 svg{
                     path{
                        transition: .3s !important;
                     }
+                }
+                &:hover{
+                    transform: scale(1.1) translateY(10px);
                 }
             }
             &.fb{
