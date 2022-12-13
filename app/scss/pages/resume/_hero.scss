@@ -39,8 +39,10 @@
             a{
                 color: var(--bs-gray-v2-400);
                 transition: .3s;
+                display: inline-block;
                 &:hover{
                     color: var(--bs-resume-500);
+                    transform: scale(1.1) translateY(3px);
                 }
             }
             svg{

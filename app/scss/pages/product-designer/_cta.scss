@@ -64,6 +64,7 @@
     }
     &:hover{
         background: white;
+        transform: scale(1.05) translateY(-10px);
     }
 }
 .pd-contact-info-card{
@@ -104,6 +105,7 @@
         svg{
             margin: auto;
             margin-bottom: 16px;
+            animation: shakeIn 1s ease infinite;
         }
         span{
             font-family: 'Work Sans', sans-serif;

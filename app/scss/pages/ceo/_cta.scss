@@ -42,7 +42,7 @@
     }
     .sparkle{
         position: absolute;
-        top: 5%;
+        top: -25%;
         left: 35%;
         width: 27%;
         transform: translateY(-50%);
@@ -97,10 +97,13 @@
             height: 64px;
             font-family: 'Satoshi';
             font-weight: 500;
-            border: 0;
+            border: 1px solid transparent;
             border-radius: 0;
             font-size: 18px;
             color: rgba(0, 47, 108, 0.6);
+            &:focus{
+                border: 1px solid var(--bs-ceo-500);
+            }
         }
         .icon{
             position: absolute;

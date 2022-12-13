@@ -133,7 +133,7 @@
     text-align: center;
     background: white;
     padding: 36px;
-
+     transition: all .4s ease-in-out;
     .content {
         margin-top: 32px;
 
@@ -158,5 +158,8 @@
             line-height: 24px;
             color: var(--bs-ceo-400);
         }
+    }
+    &:hover{
+        transform: scale(1.1) translateY(-10px) !important;
     }
 }
