@@ -97,17 +97,18 @@
     border-radius: 16px;
     padding: 32px 20px;
     display: block;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
     @media (min-width:576px){
         padding: 32px;
     }
     .card-image{
       margin-bottom: 32px;
-      transition: all .3s ease-in-out;
+      transition: all .4s ease-in-out;
       overflow: hidden;
+      border-radius: 8px;
       img{
         width: 100%;
-        border-radius: 8px;
         transition: all .3s ease-in-out;
       }
     }

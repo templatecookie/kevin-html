@@ -7,7 +7,7 @@
   &-item {
     border: 1px solid var(--bs-border-one);
     padding: 40px;
-
+    display: block;
     @media (max-width: 1199px) {
       padding: 30px;
     }
@@ -97,7 +97,7 @@
   }
 }
 
-a.icon-btn {
+span.icon-btn {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;

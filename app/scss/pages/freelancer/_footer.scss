@@ -86,6 +86,7 @@
     transition: all 0.4s;
     &:hover{
       background-color: white;
+      transform: scale(1.1);
     }
     &:hover .marketplace-info-thumb.fiverr{
       path{
@@ -108,7 +109,7 @@
       }
     }
     &:hover .marketplace-info-data{
-      a{
+      span{
         color:#556070;
       }
     }
@@ -130,7 +131,7 @@
       transition: all 0.4s;
       font-family: 'Cardo', serif;
     }
-    a{
+    span{
       font-size: 14px;
       line-height: 20px;
       transition: all 0.4s;
@@ -150,6 +151,13 @@
   }
   &-item{
     text-align: center;
+    &:hover{
+      .flc-footer-info-thumb {
+        img{
+          animation: shakeIn 1s ease infinite;
+        }
+      }
+    }
   }
   &-thumb{
     margin-bottom: 12px;
@@ -244,5 +252,29 @@
       line-height: 20px;
       color: var(--bs-gray-300);
     }
+  }
+}
+
+
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

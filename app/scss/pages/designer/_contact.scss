@@ -133,6 +133,11 @@
                             line-height: 24px;
                         }
                     }
+                    &:hover{
+                        .icon{
+                            animation: shakeIn 1s ease infinite;
+                        }
+                    }
                 }
             }
             &__cotacat-block{
@@ -179,6 +184,7 @@
                             }
                             &:hover{
                                 background: var(--bs-tertiary-500);
+                                transform: scale(1.1) translateY(-5px);
                                 i{
                                     color: white;
                                 }
@@ -208,6 +214,9 @@
                    &::placeholder{
                        color: var(--bs-gray-400);
                     }
+                    &:focus{
+                        border: 1px solid var(--bs-tertiary-500);
+                    }
                 }
                 textarea{
                     height: 124px !important;
@@ -231,6 +240,7 @@
                 border: 1px solid var(--bs-gray-100);
                 .list{
                     width: 100%;
+                    border: 1px solid var(--bs-tertiary-500);
                 }
                 &::after{
                     width: 8px;
@@ -238,6 +248,33 @@
                     height: 8px;
                 }
             }
+            .nice-select.open{
+                border: 1px solid var(--bs-tertiary-500)
+            }
         }
     }
+}
+
+
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

@@ -5104,7 +5104,8 @@ button:focus {
   border-radius: 16px;
   padding: 32px 20px;
   display: block;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 @media (min-width: 576px) {
   .ui-project-card {
@@ -5113,12 +5114,12 @@ button:focus {
 }
 .ui-project-card .card-image {
   margin-bottom: 32px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
+  border-radius: 8px;
 }
 .ui-project-card .card-image img {
   width: 100%;
-  border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
 .ui-project-card .card-body {
@@ -5565,6 +5566,7 @@ button:focus {
 .ui-service-area {
   padding: 60px 0;
   background: var(--bs-bg-ui-linear-gradient-4);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .ui-service-area {
@@ -5622,7 +5624,7 @@ button:focus {
 }
 
 .ui-widget-card {
-  transition: 0.3s;
+  transition: all 0.4s ease-in-out;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -5654,8 +5656,13 @@ button:focus {
   font-family: "Sora";
 }
 .ui-widget-card:hover {
+  transition: all 0.4s ease-in-out;
   border-color: transparent;
   box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+}
+.ui-widget-card:hover .image img {
+  -webkit-animation: shakeIn 1s ease infinite;
+          animation: shakeIn 1s ease infinite;
 }
 
 .border-secondary-100 {
@@ -5670,6 +5677,41 @@ button:focus {
   border-color: var(--bs-danger-50);
 }
 
+@-webkit-keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .ui-skill-area {
   position: relative;
   background: var(--bs-white);
@@ -5881,10 +5923,11 @@ button:focus {
 }
 
 .ui-work-card {
-  transition: 0.3s;
+  transition: 2s;
   background: var(--bs-white);
   border-radius: 16px;
   padding: 32px 20px;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .ui-work-card {
@@ -5903,6 +5946,8 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-animation: grow 2s ease infinite;
+          animation: grow 2s ease infinite;
 }
 .ui-work-card .icon svg path {
   transition: 0.3s;
@@ -5990,6 +6035,23 @@ button:focus {
   box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.12);
 }
 
+@-webkit-keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .ui-blog-area {
   background: var(--bs-bg-ui-linear-gradient-7);
   position: relative;
@@ -6052,10 +6114,12 @@ button:focus {
 }
 .ui-blog-card .feature-img {
   margin-bottom: 32px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .ui-blog-card .feature-img img {
   width: 100%;
-  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 .ui-blog-card .blog-content-meta {
   display: flex;
@@ -6102,6 +6166,11 @@ button:focus {
 }
 .ui-blog-card:hover {
   box-shadow: 0px 24px 64px rgba(19, 34, 56, 0.12);
+  transform: translateY(10px);
+}
+.ui-blog-card:hover .feature-img img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .ui-contact-area {
@@ -6248,6 +6317,10 @@ button:focus {
   font-size: 16px;
   line-height: 24px;
 }
+.ui-contact-area__wrapper .contact-content__info-block a:hover .icon {
+  -webkit-animation: shakeIn 1s ease infinite;
+          animation: shakeIn 1s ease infinite;
+}
 .ui-contact-area__wrapper .contact-content__cotacat-block {
   background: var(--bs-tertiary-50);
   padding: 32px;
@@ -6294,6 +6367,7 @@ button:focus {
 }
 .ui-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item:hover {
   background: var(--bs-tertiary-500);
+  transform: scale(1.1) translateY(-5px);
 }
 .ui-contact-area__wrapper .contact-content__cotacat-block .social-link li .media-item:hover i {
   color: white;
@@ -6323,6 +6397,9 @@ button:focus {
 .ui-contact-area__wrapper .contact-form .input-group .form-control::placeholder {
   color: var(--bs-gray-400);
 }
+.ui-contact-area__wrapper .contact-form .input-group .form-control:focus {
+  border: 1px solid var(--bs-tertiary-500);
+}
 .ui-contact-area__wrapper .contact-form .input-group textarea {
   height: 124px !important;
   margin-bottom: 16px;
@@ -6345,13 +6422,34 @@ button:focus {
 }
 .ui-contact-area__wrapper .contact-form .nice-select .list {
   width: 100%;
+  border: 1px solid var(--bs-tertiary-500);
 }
 .ui-contact-area__wrapper .contact-form .nice-select::after {
   width: 8px;
   right: 18px;
   height: 8px;
 }
+.ui-contact-area__wrapper .contact-form .nice-select.open {
+  border: 1px solid var(--bs-tertiary-500);
+}
 
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .ui-testimonial-section {
   background: var(--bs-bg-ui-linear-gradient-5);
   padding: 60px 0;
@@ -7330,6 +7428,7 @@ a.icon-btn-white path {
 .flc-service-item {
   border: 1px solid var(--bs-border-one);
   padding: 40px;
+  display: block;
 }
 @media (max-width: 1199px) {
   .flc-service-item {
@@ -7400,7 +7499,7 @@ a.icon-btn-white path {
   margin-bottom: 24px;
 }
 
-a.icon-btn {
+span.icon-btn {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -7408,13 +7507,13 @@ a.icon-btn {
   color: var(--bs-gray-900);
   padding: 60px 0;
 }
-a.icon-btn svg {
+span.icon-btn svg {
   transition: all 0.4s;
 }
-a.icon-btn svg path {
+span.icon-btn svg path {
   stroke: var(--bs-gray-900);
 }
-a.icon-btn:hover svg {
+span.icon-btn:hover svg {
   margin-left: 3px;
 }
 
@@ -7652,6 +7751,7 @@ a.icon-btn:hover svg {
 }
 .marketplace-info-item:hover {
   background-color: white;
+  transform: scale(1.1);
 }
 .marketplace-info-item:hover .marketplace-info-thumb.fiverr path {
   fill: #1dbf73;
@@ -7665,7 +7765,7 @@ a.icon-btn:hover svg {
 .marketplace-info-item:hover .marketplace-info-data h4 {
   color: #132238;
 }
-.marketplace-info-item:hover .marketplace-info-data a {
+.marketplace-info-item:hover .marketplace-info-data span {
   color: #556070;
 }
 .marketplace-info-thumb {
@@ -7684,7 +7784,7 @@ a.icon-btn:hover svg {
   transition: all 0.4s;
   font-family: "Cardo", serif;
 }
-.marketplace-info-data a {
+.marketplace-info-data span {
   font-size: 14px;
   line-height: 20px;
   transition: all 0.4s;
@@ -7707,6 +7807,10 @@ a.icon-btn:hover svg {
 }
 .flc-footer-info-item {
   text-align: center;
+}
+.flc-footer-info-item:hover .flc-footer-info-thumb img {
+  -webkit-animation: shakeIn 1s ease infinite;
+          animation: shakeIn 1s ease infinite;
 }
 .flc-footer-info-thumb {
   margin-bottom: 12px;
@@ -7809,6 +7913,23 @@ a.icon-btn:hover svg {
   color: var(--bs-gray-300);
 }
 
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .photographer-hero-area {
   position: relative;
   padding: 125px 0 60px;
