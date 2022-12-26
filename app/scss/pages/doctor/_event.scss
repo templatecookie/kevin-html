@@ -36,9 +36,14 @@
     .doctor-event-slider{
         .slick-slide {
             margin: 0 12px;
+            opacity: 0;
+        }
+        .slick-slide.slick-active{
+            opacity: 1;
         }
         .slick-list {
             margin: 0 -12px;
+            overflow: visible;
         }
         &__control-buttons{
             display: flex;
@@ -123,6 +128,7 @@
     .doctor-event-card{
         background:var(--bs-white);
         padding: 32px;
+        transition: all 0.4s ease;
         .event-meta{
             display: flex;
             flex-direction: column;
@@ -166,6 +172,10 @@
                 font-family: 'JetBrains Mono', sans-serif;
                 color: var(--bs-gray-600);
             }
+        }
+        &:hover{
+            overflow: visible;
+            box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12);
         }
     }
 }

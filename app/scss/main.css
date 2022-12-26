@@ -2381,6 +2381,7 @@ small {
     position: sticky;
     background-color: var(--bs-white);
     top: 0;
+    padding: 24px;
   }
 }
 @media (max-width: 991px) {
@@ -2441,8 +2442,8 @@ small {
     box-shadow: none;
     margin: 0;
     padding: 15px;
-    top: 0;
-    left: 0;
+    top: 16%;
+    left: 30%;
     width: 100%;
     height: 100%;
     padding-top: 50px;
@@ -2678,7 +2679,9 @@ small {
     left: 100%;
   }
 }
-
+.mobile-menu-head{
+  padding: 24px;
+}
 .site-header--dark .nav-link-item {
   color: #fff !important;
 }

@@ -75,6 +75,8 @@
             display: flex;
             align-items: center;
             gap: 26px;
+            overflow: hidden;
+            box-sizing: border-box;
         }
     }
 }
