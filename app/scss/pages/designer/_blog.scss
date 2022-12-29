@@ -50,6 +50,7 @@
         margin-bottom: 32px;
         border-radius: 6px;
         overflow: hidden;
+        width: 100%;
         img{
             width: 100%;
             transition: all .3s ease-in-out;
@@ -61,7 +62,7 @@
             flex-direction: column;
             gap: 12px;
             margin-bottom: 12px;
-            @media (min-width: 576px){
+            @media (min-width: 768px){
                 flex-direction: row;
                 gap: 24px;
             }

@@ -39,6 +39,9 @@
         .ceo-image-group{
             text-align: center;
         }
+        .text{
+            font-size: 20px;
+        }
     }
     .sparkle{
         position: absolute;
@@ -103,6 +106,7 @@
             color: rgba(0, 47, 108, 0.6);
             &:focus{
                 border: 1px solid var(--bs-ceo-500);
+                background-color: white;
             }
         }
         .icon{

@@ -148,9 +148,9 @@
             }
             p{
                 font-family: 'JetBrains Mono', sans-serif;
-                svg{
-                    padding-right: 6px;
-                }
+                // svg{
+                //     padding-right: 6px;
+                // }
                 span{
                     font-weight: 1;
                     font-size: 14px;
@@ -166,6 +166,10 @@
                 font-size: 20px;
                 line-height: 1.4;
                 margin-bottom: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
                 color: var(--bs-gray-900);
             }
             .text{

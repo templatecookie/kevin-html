@@ -31,10 +31,16 @@
         }
        }
        .title{
+           margin-bottom: 0px;
            padding-bottom: 25px;
-           @media (mi-width:992px) {
+           @media (min-width:992px) {
                padding-bottom: 32px;
            }
+       }
+       .text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
        }
        .ui-btn{
         margin-top: 25px;

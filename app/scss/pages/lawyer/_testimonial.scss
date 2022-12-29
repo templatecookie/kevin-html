@@ -68,14 +68,19 @@
     left: 0;
     transform: translateY(-50%);
     z-index: 99;
-    svg{
-      path{
-        stroke: var(--bs-gray-900);
-      }
-    }
+    color: var(--bs-gray-900);
+    // svg{
+    //   path{
+    //     stroke: var(--bs-gray-900);
+    //   }
+    // }
     &--next{
       left: auto;
       right: 0;
+    }
+    &:hover{
+      background: var(--bs-primary-500);
+      color: var(--bs-white);
     }
   }
 }

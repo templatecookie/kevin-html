@@ -6,7 +6,7 @@
   font-weight: 700;
   display: inline-flex;
   text-transform: uppercase;
-  padding: 1.1em 1.6em;
+  padding: 12px 20px;
   line-height: 1;
   width: max-content;
   align-items: center;
@@ -87,7 +87,7 @@
   font-weight: 600;
   display: inline-flex;
   font-family: 'Barlow', sans-serif;
-  padding: .8em 2em;
+  padding: 10px 30px;
   line-height: 1;
   width: max-content;
   align-items: center;
@@ -191,12 +191,13 @@
   font-weight: 600;
   display: inline-flex;
   font-family: 'Sora', sans-serif;
-  padding: 1em 1.5em;
+  padding: 18px 36px;
   line-height: 1;
   width: max-content;
   align-items: center;
   justify-content: center;
   transition: .3s;
+  border: none;
   &:focus{
     box-shadow: none;
     outline: none;
@@ -317,7 +318,7 @@
   font-weight: 600;
   font-size: 14px;
   display: inline-flex;
-  padding: 1.1em 1.6em;
+  padding: 12px 20px;
   line-height: 1;
   width: max-content;
   align-items: center;

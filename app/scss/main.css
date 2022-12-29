@@ -11359,7 +11359,7 @@ p.law-copywright {
 .pd-project-card .card-image img {
   min-height: -webkit-fill-available;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .pd-project-card .card-image::before {
     content: "";
     background-color: rgba(255, 255, 255, 0.8);

@@ -55,7 +55,6 @@
         .title {
             color: white;
             padding-bottom: 20px;
-
             @media (min-width:992px) {
                 padding-bottom: 32px;
             }
@@ -157,15 +156,11 @@
 
             img {
                 width: 100%;
-                filter: grayscale(100%);
                 transition: all 0.3s ease-in-out;
             }
 
             &:hover {
-                img {
-                    filter: grayscale(0);
-                }
-                transform: scale(1.1);
+                transform: scale(1.05);
                 transition: all 0.3s ease-in-out;
                 box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12)
             }

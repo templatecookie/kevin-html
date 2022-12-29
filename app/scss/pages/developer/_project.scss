@@ -60,6 +60,7 @@
             justify-content: center;
             @media (min-width:992px) {
             margin-top: 50px;
+            height: 12px;
             }
             li {
                 list-style: none;
@@ -74,8 +75,7 @@
                     height: 6px;
                     padding: 0;
                     border-radius: 500px;
-                    background: var(--bs-gray-200)!important;
-                    opacity: 0.2;
+                    background: #A7C4B4 !important;
                     color: transparent;
                     font-size: 0;
                     transition: .3s;
@@ -86,11 +86,13 @@
                 }
         
                 &.slick-active {
-                    background: var(--bs-primary-500)!important;
-                    opacity: 1;
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 500px;
+                    button{
+                        background: var(--bs-success-500) !important;
+                        opacity: 1;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 500px;
+                    }
                 }
             }
         }

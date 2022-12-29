@@ -151,13 +151,6 @@
   }
   &-item{
     text-align: center;
-    &:hover{
-      .flc-footer-info-thumb {
-        img{
-          animation: shakeIn 1s ease infinite;
-        }
-      }
-    }
   }
   &-thumb{
     margin-bottom: 12px;

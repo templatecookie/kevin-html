@@ -395,9 +395,11 @@
     line-height: 1.1;
     font-family: 'Satoshi';
     padding-bottom: 24px;
+    @media (min-width: 640px) {
+      font-size: 44px;
+    }
     @media (min-width:992px) {
-      font-size: 60px;
-      
+      font-size: 60px;  
     }
     @media (min-width:1200px) {
       font-size: 70px;
