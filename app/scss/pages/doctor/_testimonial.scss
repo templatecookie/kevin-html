@@ -131,5 +131,8 @@
     &__client{
         display: flex;
         justify-content: flex-end;
+        @media (max-width: 767px) {
+            margin-top: 32px;
+        }
     }
 }

@@ -2,7 +2,6 @@
     background: var(--bs-bg-dev-linear-gradient);
     background-color: var(--bs-white);
     padding-bottom: 60px;
-
     @media (min-width:768px) {
         padding-bottom: 80px;
     }
@@ -19,10 +18,8 @@
 
     &__bg {
         padding: 60px 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
+        background-color: var(--bs-success-500);
+        position: relative;
         @media (min-width:768px) {
             padding: 80px 0;
         }
@@ -35,14 +32,29 @@
             padding: 112px 0;
             border-radius: 16px;
         }
-
+        @media (max-width: 1440px){
+            display: flex;
+        }
+        @media (max-width: 1200px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .hero-img{
+            position: absolute;
+            bottom: 0;
+            right: 5%;
+            @media (max-width: 1440px) {
+                position: relative;
+                display: block;
+            }
+        }
     }
 
     .dev-display-title {
         .title {
             color: white;
             padding-bottom: 20px;
-
             @media (min-width:992px) {
                 padding-bottom: 32px;
             }
@@ -136,21 +148,21 @@
             border-radius: 12px;
             background: var(--bs-white);
             padding: 15px 0;
-
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
             @media (min-width:992px) {
                 padding: 24px 0;
             }
 
             img {
                 width: 100%;
-                filter: grayscale(100%);
-                transition: .3s;
+                transition: all 0.3s ease-in-out;
             }
 
             &:hover {
-                img {
-                    filter: grayscale(0);
-                }
+                transform: scale(1.05);
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.12)
             }
         }
     }

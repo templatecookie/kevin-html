@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
   <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./plugins/swiper/swiper.css">
   <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="css/main.css">
@@ -40,10 +41,11 @@
             <div class="menu-overlay"></div>
             <nav class="menu-block menu-block-inner" id="append-menu-header">
               <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
+                <div class="site-header__brand">
+                  <a href="index.html" class="logo">
+                    <img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>
+                  </a>
                 </div>
-                <div class="current-menu-title"></div>
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="site-menu-main">
@@ -170,9 +172,14 @@
               <p class="text">
                 Curabitur fringilla cursus magna, vel suscipit ante ultricies at. Duis velit massa, vehicula nec risus eu, mollis rhoncus erat. Pellentesque sed ultricies massa, id sagittis dolor. Nam et ultrices felis. Phasellus sollicitudin nibh neque, id malesuada dolor convallis convallis. Vivamus ullamcorper augue mauris, in porttitor sem vehicula a. Pellentesque sit amet enim arcu. Donec ultricies tristique felis a sagittis.
               </p>
-              <a href="#" style="letter-spacing: 0.02em;" class="d-btn d-btn-primary text-capitalize">let’s work together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <a href="#" style="letter-spacing: 0.02em;" class="d-btn d-btn-primary text-capitalize">let’s work together
+                <svg class="svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="svg-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
@@ -501,7 +508,7 @@
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-1.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -510,19 +517,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-2.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -531,19 +538,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-3.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -552,19 +559,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-2.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -573,13 +580,13 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -683,8 +690,10 @@
   <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
   <script src="./plugins/counter-up/waypoints.min.js"></script>
   <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/swiper/swiper.js"></script>
   <script src="./plugins/gijgo/js/gijgo.min.js"></script>
   <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <script src="./plugins/typer/type.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
   <script src="js/menu.js"></script>

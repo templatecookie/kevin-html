@@ -18,8 +18,10 @@
               margin-top: 20px;
               @media (min-width:992px) {
                   margin-top: 40px;
+                }             
           }
-              
+          @media (max-width: 991px) {
+            text-align: center;
           }
     }
 }

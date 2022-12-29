@@ -10,6 +10,7 @@
   &-thumb{
     img{
       width: 100%;
+      border-radius: 12px;
     }
     @media (max-width: 991px) {
       margin-bottom: 24px;

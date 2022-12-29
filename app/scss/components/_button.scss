@@ -6,12 +6,12 @@
   font-weight: 700;
   display: inline-flex;
   text-transform: uppercase;
-  padding: 1.1em 1.6em;
+  padding: 12px 20px;
   line-height: 1;
   width: max-content;
   align-items: center;
   justify-content: center;
-  transition: .3s;
+  transition: .5s;
   svg{
     margin-left: 12px;
   }
@@ -29,16 +29,35 @@
     border: 2px solid var(--bs-primary-500);
     background: var(--bs-primary-500);
     color: white;
-    svg{
-      path{
-        transition: .3s;
-      }
+    position: relative;
+    padding-right: 3.6em;
+    .svg-1{
+      position: absolute;
+      right: 1.6em;
+    }
+    .svg-2{
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transform: translateX(-40px);
     }
     &:hover{
       background: transparent;
       color: var(--bs-primary-500);
-      svg{
+      .svg-1{
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.4s ease-in-out;
         path{
+          stroke: var(--bs-primary-500);
+        }
+      }
+      .svg-2{
+        opacity: 1;
+        transform: translateX(0px);
+        right: 1.6em;
+        transition: all 0.4s ease-in-out;
+        path {
           stroke: var(--bs-primary-500);
         }
       }
@@ -49,13 +68,13 @@
     border: 2px solid var(--bs-primary-50);
     box-sizing: border-box;
     border-radius: 8px;
-    svg{
+    .svg-2{
       margin-left: 12px;
     }
     &:hover{
         border: 2px solid var(--bs-primary-500);
     }
-    svg{
+    .svg-1,.svg-2{
       path{
         stroke: var(--bs-primary-500) !important;
       }
@@ -68,7 +87,7 @@
   font-weight: 600;
   display: inline-flex;
   font-family: 'Barlow', sans-serif;
-  padding: .8em 2em;
+  padding: 10px 30px;
   line-height: 1;
   width: max-content;
   align-items: center;
@@ -172,12 +191,13 @@
   font-weight: 600;
   display: inline-flex;
   font-family: 'Sora', sans-serif;
-  padding: 1em 1.5em;
+  padding: 18px 36px;
   line-height: 1;
   width: max-content;
   align-items: center;
   justify-content: center;
   transition: .3s;
+  border: none;
   &:focus{
     box-shadow: none;
     outline: none;
@@ -298,7 +318,7 @@
   font-weight: 600;
   font-size: 14px;
   display: inline-flex;
-  padding: 1.1em 1.6em;
+  padding: 12px 20px;
   line-height: 1;
   width: max-content;
   align-items: center;

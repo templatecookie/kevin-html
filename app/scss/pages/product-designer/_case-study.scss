@@ -140,10 +140,10 @@
         img{
             min-height: -webkit-fill-available;
         }
-        @media (max-width:1200px) {
+        @media (max-width:1500px) {
         &::before{
                 content: "";
-                background-color: rgb(255, 255, 255,0.8);
+                background-color: rgb(255, 255, 255,0.9);
                 position: absolute;
                 top: 0;
                 left: 0;

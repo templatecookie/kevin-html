@@ -1,6 +1,7 @@
 .ui-service-area{
     padding: 60px 0;
     background: var(--bs-bg-ui-linear-gradient-4);
+    cursor: pointer;
     @media (min-width:768px) {
         padding: 80px 0;
     }
@@ -30,10 +31,16 @@
         }
        }
        .title{
+           margin-bottom: 0px;
            padding-bottom: 25px;
-           @media (mi-width:992px) {
+           @media (min-width:992px) {
                padding-bottom: 32px;
            }
+       }
+       .text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
        }
        .ui-btn{
         margin-top: 25px;
@@ -51,7 +58,7 @@
     }
 }
 .ui-widget-card{
-    transition: .3s;
+    transition: all .4s ease-in-out;
     display: flex;
     align-items: center;
     gap: 18px;
@@ -82,8 +89,14 @@
         }
     }
     &:hover{
+        transition: all .4s ease-in-out;
         border-color: transparent;
         box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+        .image{
+            img{
+                animation: shakeIn 1s ease infinite;
+            }
+        }
     }
 }
 .border-secondary-100{
@@ -94,4 +107,27 @@
 }
 .border-danger-50{
     border-color: var(--bs-danger-50);
+}
+
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

@@ -274,6 +274,9 @@
       }
     }
   }
+  .d-btn.d-btn-primary{
+    padding-right: 1.6em;
+  }
 }
 .photographer-header{
     margin: 24px 0;
@@ -322,7 +325,7 @@
       font-family:'Barlow', sans-serif;
       color: var(--bs-gray-400);
       &:hover{
-        color: white;
+        color: var(--bs-primary-500);
       }
     }
   }
@@ -484,7 +487,7 @@
       font-family:'Sora', sans-serif;
       color: var(--bs-gray-600);
       &:hover{
-        color: var(--bs-gray-900);
+        color: var(--bs-primary-500);
       }
     }
   }
@@ -725,7 +728,7 @@
       line-height: 24px;
       color: var(--bs-gray-600);
       &:hover{
-        color: var(--bs-gray-900);
+        color: var(--bs-primary-500);
       }
     }
   }

@@ -28,7 +28,7 @@
             }
         }
         .footer-widget{
-            margin-top: 20px;
+            margin-top: 40px;
             @media(min-width: 992px){
                 margin-top: 0px;
             }
@@ -75,9 +75,8 @@
                     list-style: none;
                     margin: 0;
                     padding: 0;
-                        li{
-                            display: inline-block;
-                            
+                    display: flex;
+                        li{                          
                             a{
                                 color: white;
                                 padding: 14px;

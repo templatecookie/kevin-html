@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
   <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <link rel="stylesheet" href="./plugins/swiper/swiper.css">
   <link rel="stylesheet" href="./plugins/gijgo/css/gijgo.min.css">
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="css/main.css">
@@ -40,10 +41,11 @@
             <div class="menu-overlay"></div>
             <nav class="menu-block menu-block-inner" id="append-menu-header">
               <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
+                <div class="site-header__brand">
+                  <a href="index.html" class="logo">
+                    <img src='./image/l-1/me.png' alt='logo'> <span class='text'>Jamel Eusebio</span>
+                  </a>
                 </div>
-                <div class="current-menu-title"></div>
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="site-menu-main">
@@ -155,18 +157,23 @@
     <!-- Header Section End -->
     <!-- Hero Section Start -->
     <div class="dev-hero-area">
-      <div class="container-fluid container-lg">
+      <div class="container-xl-fluid container">
         <div class="dev-hero-area__bg" style="background-image: url('./image/l-1/hero.png')">
           <div class="col-xs-10 col-sm-9 col-md-8 col-xxl-7 offset-1">
             <div class="dev-display-title">
-              <h1 class="title text-white"><span class="wave">👋</span> Hey, I’m Jamel <br> Full-Stack Developer.</h1>
+              <h1 class="title text-white"><span class="wave">👋</span> Hey, I’m Jamel <br><span class="typed"></span> </h1>
               <p class="text">Full Stack Frontend Developer and Content Writing Based on LA. I specialize in Bug
                 Fixing, Responsive Web Design, and Visual Development.</p>
               <div class="btn-group">
                 <a href="#" style="letter-spacing: 0.02em;" class="d-btn d-btn-primary text-capitalize">View
-                  Projects <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  Projects
+                  <svg class="svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <svg class="svg-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </a>
                 <a class="d-video-link-btn" href="https://www.youtube.com/watch?v=G5RpJwCJDqc&ab_channel=8KWorld" data-fancybox>
@@ -268,7 +275,7 @@
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-1.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -277,19 +284,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-2.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -298,19 +305,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-3.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -319,19 +326,19 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
             <div class="single-slider">
               <div class="dev-project-card">
                 <img src="./image/l-1/project-2.png" alt="project" class="w-100">
-                <div class="content">
+                <a href="#" class="content">
                   <ul class="list">
                     <li>Java</li>
                     <li class="dot"></li>
@@ -340,13 +347,13 @@
                     <li>CSS</li>
                   </ul>
                   <h6>Relik - Admin Dashboard</h6>
-                  <a class="link-btn" href="#">View Case Study
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </div>
+                  <span class="link-btn" href="#">View Case Study 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -366,60 +373,58 @@
           </div>
         </div>
         <div class="row justify-content-center card-row">
-          <div class="col-xl-4 col-md-6 col-sm-11 col-xs-10">
-            <div class="card dev-card-service ">
+          <div class="col-xl-4 col-md-6 col-12">
+            <a href="#" class="card dev-card-service ">
               <div class="card-image">
-                <a href="#"><img src="./image/l-1/service-1.png" alt="Card image cap"></a>
+                <span><img src="./image/l-1/service-1.png" alt="Card image cap"></span>
               </div>
               <div class="card-body">
-                <a href="#">
-                  <h5 class="card-title">Back-end Development</h5>
-                </a>
+                <span><h5 class="card-title">Back-end Development</h5></span>
                 <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
-                <a class="link-btn" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></a>
+                <span class="link-btn">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-xl-4 col-md-6 col-sm-11 col-xs-10">
-            <div class="card dev-card-service ">
+          <div class="col-xl-4 col-md-6 col-12">
+            <a href="#" class="card dev-card-service ">
               <div class="card-image">
-                <a href="#">
-                  <img src="./image/l-1/service-2.png" alt="Card image cap">
-                </a>
+                <span>
+                            <img src="./image/l-1/service-2.png" alt="Card image cap" />
+                        </span>
               </div>
               <div class="card-body">
-                <a href="#">
-                  <h5 class="card-title">Front-end Development</h5>
-                </a>
+                <span>
+                            <h5 class="card-title">Front-end Development</h5>
+                        </span>
                 <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
-                <a class="link-btn" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></a>
+                <span class="link-btn">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-xl-4 col-md-6 col-sm-11 col-xs-10">
-            <div class="card dev-card-service ">
+          <div class="col-xl-4 col-md-6 col-12">
+            <a href="#" class="card dev-card-service ">
               <div class="card-image">
-                <a href="#">
-                  <img src="./image/l-1/service-3.png" alt="Card image cap">
-                </a>
+                <span>
+                            <img src="./image/l-1/service-3.png" alt="Card image cap" />
+                        </span>
               </div>
               <div class="card-body">
-                <a href="#">
-                  <h5 class="card-title">Content Writing</h5>
-                </a>
+                <span>
+                        <h5 class="card-title">Content Writing</h5>
+                        </span>
                 <p class="card-text">Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.</p>
-                <a class="link-btn" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg></a>
+                <span class="link-btn">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#1777E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -486,7 +491,7 @@
     <div class="dev-testimonial-area">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-10">
+          <div class="col-lg-6 col-md-12">
             <div class="dev-section-title">
               <h2 class="title">Client Testimonial</h2>
               <p class="text">Praesent interdum eu magna a imperdiet. Ut orci ipsum, rutrum id tortor sit amet,
@@ -569,7 +574,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 offset-lg-1 col-xs-8 col-sm-8 col-xl-5 offset-xl-1 mt-5 mt-lg-0">
+          <div class="col-lg-5 offset-lg-1 col-md-12 mt-5 mt-lg-0">
             <div class="dev-testimonial-area__image">
               <img src="./image/l-1/me-2.png" alt="me">
               <div class="video-button">
@@ -586,15 +591,20 @@
     </div>
     <!-- Testimonial Section End -->
     <!-- Contact Section Start -->
-    <div class="dev-cta-area">
+    <div class="dev-cta-section">
       <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-sm-9">
+        <div class="row dev-cta-area align-items-center justify-content-center">
+          <div class="col-lg-6">
             <div class="dev-section-title text-center text-lg-start">
               <h2 class="title">Have a project idea. Let’s work together!</h2>
               <p class="text mb-10">Do you fancy saying hi to me or do you want to get started with your project
                 and you need my help? Feel free to contact me.</p>
-              <a class="d-btn d-btn-primary" href="#">Let's Work Together <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="d-btn d-btn-primary" href="#">Let's Work Together
+                <svg class="svg-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="svg-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -732,8 +742,10 @@
   <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
   <script src="./plugins/counter-up/waypoints.min.js"></script>
   <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/swiper/swiper.js"></script>
   <script src="./plugins/gijgo/js/gijgo.min.js"></script>
   <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <script src="./plugins/typer/type.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
   <script src="js/menu.js"></script>

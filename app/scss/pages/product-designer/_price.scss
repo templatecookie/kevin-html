@@ -17,6 +17,7 @@
     background: white;
     border: 1px solid var(--bs-gray-v2-100);
     border-radius: 16px;
+    transition: all 0.24s ease-in-out;
     @media (min-width:480px) {
         padding: 36px;
     }
@@ -41,12 +42,12 @@
         &__tag{
             padding: 32px 0;
             span{
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 700;
-            font-size: 56px;
-            line-height: 64px;
-            color: var(--bs-gray-v2-100);
-            transition: .3s;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 64px;
+                color: var(--bs-gray-v2-100);
+                transition: .3s;
             }
         }
     }
@@ -76,7 +77,9 @@
         }
     }
     &:hover{
-        border-color: var(--bs-product-500);
+        transition: all 0.24s ease-in-out;
+        border:2px solid var(--bs-product-500);
+        box-shadow: 0px 12px 64px rgba(18, 19, 20, 0.1);
         .price-head{
             border-color: var(--bs-product-500);
             &__tag{

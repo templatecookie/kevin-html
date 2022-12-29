@@ -1,7 +1,7 @@
 .doctor-book-area{
     border-top: 1px solid var(--bs-gray-100);
     border-bottom: 1px solid var(--bs-gray-100);
-    background-color: #132238;
+    background-color: var(--bs-gray-900);
     background-size: cover;
     position: relative;
     padding: 60px 0;
@@ -58,6 +58,8 @@
                 align-items: center;
                 padding-bottom: 32px;
                 height: max-content;
+                border-bottom: 1px solid var(--bs-gray-800);
+                margin-bottom: 32px;
                 img{
                     border-radius: 500px;
                     margin-right: 16px;

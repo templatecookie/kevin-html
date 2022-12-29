@@ -1,13 +1,13 @@
 {% macro render(args) %}
-    <div class="product-designer-hero">
+    <div class="product-designer-hero landing-animation">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-10">
                     <div class="product-designer-hero__content text-center">
-                        <div class="avatar">
+                        <div class="avatar" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                             <img src="./image/product-designer/hero-avatar.png" alt="avatar" class="w-100">
                         </div>
-                        <div class="pd-display-title">
+                        <div class="pd-display-title" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                             <h6 class="subtitle d-flex align-items-center justify-content-center"><svg class="me-1" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.875 18.5566H16.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M10.5 11.0566C11.8807 11.0566 13 9.93735 13 8.55664C13 7.17593 11.8807 6.05664 10.5 6.05664C9.11929 6.05664 8 7.17593 8 8.55664C8 9.93735 9.11929 11.0566 10.5 11.0566Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,10 +40,10 @@
                 </div>
             </div>
         </div>
-        <div class="pd-hero-wave wave-one">
+        {# <div class="pd-hero-wave wave-one">
             <img class="make-it-inline" src="./image/product-designer/wave-1.svg" alt="wave">
-        </div>
-        <div class="pd-hero-wave wave-tow">
+        </div> #}
+        {# <div class="pd-hero-wave wave-tow">
             <img class="make-it-inline" src="./image/product-designer/wave-2.svg" alt="wave">
         </div>
         <div class="pd-hero-wave wave-three">
@@ -57,6 +57,20 @@
         </div>
         <div class="pd-hero-wave wave-six">
             <img class="make-it-inline" src="./image/product-designer/wave-6.svg" alt="wave">
+        </div> #}
+        <div class="pd-hero-wave wave-one">
+            <svg class="svg-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          </defs>
+          <g class="svg-waves__parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7"></use>
+          </g>
+        </svg>
+
         </div>
         <div class="pd-hero-text d-none d-md-block">
             <h1 class="title">Product

@@ -25,23 +25,23 @@ menuMain.addEventListener("click", (e) => {
         showSubMenu(hasChildren);
     }
 });
-goBack.addEventListener("click", () => {
-    const lastItem = last(subMenuArray);
-    const lastItemText = last2(subMenuTextArray);
-    subMenuArray.pop();
-    subMenuTextArray.pop();
-    if (subMenuArray.length >= 0) {
-        document.getElementById(lastItem).style.animation =
-            "slideRight 0.5s ease forwards";
-        menu.querySelector(".current-menu-title").innerHTML = lastItemText;
-        setTimeout(() => {
-            document.getElementById(lastItem).classList.remove("active");
-        }, 300);
-    }
-    if (subMenuArray.length == 0) {
-        menu.querySelector(".mobile-menu-head").classList.remove("active");
-    }
-});
+// goBack.addEventListener("click", () => {
+//   const lastItem = last(subMenuArray);
+//   const lastItemText = last2(subMenuTextArray);
+//   subMenuArray.pop();
+//   subMenuTextArray.pop();
+//   if (subMenuArray.length >= 0) {
+//     document.getElementById(lastItem).style.animation =
+//       "slideRight 0.5s ease forwards";
+//     menu.querySelector(".current-menu-title").innerHTML = lastItemText;
+//     setTimeout(() => {
+//       document.getElementById(lastItem).classList.remove("active");
+//     }, 300);
+//   }
+//   if (subMenuArray.length == 0) {
+//     menu.querySelector(".mobile-menu-head").classList.remove("active");
+//   }
+// });
 menuTrigger.addEventListener("click", () => {
     toggleMenu();
 });

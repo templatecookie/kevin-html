@@ -19,14 +19,16 @@
   transition: .3s; 
   padding: 40px;
   border-radius: 8px;
+  transition: all .3s ease-in-out;
   @media (max-width:525px){
       padding: 30px 20px;
   }
   .card-image{
     margin-bottom: 15px;
-    transition: .3s;
+    overflow: hidden;
     img{
       width: 100%;
+      transition: all .3s ease-in-out;
     }
   }
   .card-body{
@@ -89,8 +91,15 @@
     }
   }
   &--modifi{
-    &:hover{
+    &:hover {
       box-shadow: 0px 16px 80px rgba(19, 34, 56, 0.12);
+    }
+  }
+  &:hover {
+    .card-image{
+      img{
+        transform: scale(1.2);
+      }
     }
   }
 }

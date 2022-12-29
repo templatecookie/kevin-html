@@ -1,8 +1,8 @@
 @mixin light-theme-mode {}
 
 @mixin dark-theme-mode {
-  --bs-white: #132238;
-  --bs-white-2: #05182E;
+  --bs-white: #121314;
+  --bs-white-2: #05182E; 
   --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
   --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
   --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
@@ -36,8 +36,8 @@
   --bs-secondary-100: #05182E;
   --bs-secondary-50: #05182E;
   --bs-gray-v2-50: #222628;
-  --bs-gray-v2-100: #222628;
-  --bs-gray-v2-400: #485057;
+  --bs-gray-v2-100: #353A3E;
+  --bs-gray-v2-400: #7B848B;
   --bs-gray-v2-600: #7B848B;
   --bs-gray-v2-700: #9AA1A6;
   --bs-gray-v2-900: white;
@@ -150,6 +150,7 @@ body[data-theme="dark"] {
     }
   }
 
+
   .article-case-study-area {
     .ui-blog-card {
       &:hover {
@@ -190,6 +191,14 @@ body[data-theme="dark"] {
   .resume-cta,
   .resume-footer {
     background: #121314 !important;
+  }
+
+  .dev-cta-area{
+    background-color: #236C44;
+  }
+  .dev-cta-section .dev-cta-area .button-group .content-button{
+    background: #154129;
+    border-color: #154129;
   }
 
   .resume-header {
@@ -591,10 +600,14 @@ body[data-theme="dark"] {
     }
   }
   .pd-social-btn{
-    background: rgba(255, 255, 255, 0.05);
+    background: white;
+    color: #121314 !important;
+    border: 2px solid white;
     &:hover{
-      border-color:#121314;
+      background:#222628;
+      border: 2px solid #121314;
       box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.24);
+      color: white !important;
     }
   }
   .prdduct-designer-footer{
@@ -605,4 +618,25 @@ body[data-theme="dark"] {
     }
   }
 
+}
+
+body[data-theme="dark"] {
+  .flc-service-thumb .light-icon {
+    display: none;
+  }
+
+  .flc-service-thumb .dark-icon {
+    display: inline-block;
+  }
+  .product-designer-hero__content .company-logo__wrapper{
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.24);
+    border: 1px solid #222628;
+  }
+  .law-contact-info-item{
+    background: rgba(43, 56, 76, 0.5);
+  }
+  .law-default-btn-two{
+    background: #2B384C;
+    box-shadow: 0px 8px 32px rgba(19, 34, 56, 0.08);
+  }
 }

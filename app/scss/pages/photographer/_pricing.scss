@@ -36,18 +36,19 @@
         }
         .recomend{
             border-radius: 50px !important;
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 20px;
             font-weight: 600;
             display: inline-flex;
             font-family: "Barlow", sans-serif;
-            padding: 0.8em 2em;
+            padding: 6px 16px;
             line-height: 1;
             width: max-content;
             align-items: center;
             justify-content: center;
             transition: 0.3s;
             color: var(--bs-success-500);
-            border:  1.5px solid var(--bs-success-100);
+            border:  1.5px solid var(--bs-success-500);
             &:focus{
                 box-shadow: none;
                 outline: none;

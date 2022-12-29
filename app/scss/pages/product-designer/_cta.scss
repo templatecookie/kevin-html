@@ -47,7 +47,6 @@
     }
 }
 .pd-social-btn{
-    border: 2px solid var(--bs-gray-v2-50);
     background: var(--bs-gray-v2-50);
     transition: .3s;
     display: flex;
@@ -64,6 +63,7 @@
     }
     &:hover{
         background: white;
+        box-shadow: 0px 16px 64px rgba(18, 19, 20, 0.12);
     }
 }
 .pd-contact-info-card{
@@ -119,6 +119,11 @@
             font-size: 20px;
             line-height: 28px;
             color: white;
+        }
+        &:hover{
+            svg{
+                animation: shakeIn 1s ease infinite;
+            }
         }
     }
 }

@@ -1,12 +1,12 @@
 .photographer-hero-area{
     position: relative;
     // margin-bottom: 500px;
-    padding: 125px 0 60px;
+    padding: 125px 0 280px;
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
     @media (min-width:768px) {
-        padding: 143px 0 80px;
+        padding: 143px 0 424px;
     }
     @media (min-width:992px) {
         padding: 224px 0 424px;
@@ -56,14 +56,17 @@
 .all-photo{
     gap: 24px;
     display: flex;
-    margin-top: 30px;
-    @media (min-width:992px) {
-        margin-top: 0;
-        position: absolute;
-        left: 0;
-        bottom: -158px;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    bottom: -158px;
+//     @media (min-width:768px) {
+//         margin-top: 0;
+//         position: absolute;
+//         left: 0;
+//         bottom: -158px;
       
-  }
+//   }
       &:hover div {
           animation-play-state: paused;
       }

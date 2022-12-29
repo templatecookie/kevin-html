@@ -48,9 +48,12 @@
     }
     .feature-img{
         margin-bottom: 32px;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 100%;
         img{
             width: 100%;
-            border-radius: 6px;
+            transition: all .3s ease-in-out;
         }
     }
     .blog-content{
@@ -59,7 +62,7 @@
             flex-direction: column;
             gap: 12px;
             margin-bottom: 12px;
-            @media (min-width: 576px){
+            @media (min-width: 768px){
                 flex-direction: row;
                 gap: 24px;
             }
@@ -107,6 +110,13 @@
         }
     }
     &:hover{
+        .feature-img{
+            img{
+                transition: all .3s ease-in-out;
+                transform: scale(1.1);
+            }
+        }
         box-shadow: 0px 24px 64px rgba(19, 34, 56, 0.12);
+        transform: translateY(10px);
     }
 }
