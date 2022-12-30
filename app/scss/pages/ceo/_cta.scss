@@ -125,9 +125,22 @@
         @media (max-width:768px) {
             width: 100%;
         }
-        .ceo-btn{
-            @media (max-width:768px) {
-                width: 100% !important;
+        .sweep-to-right {
+            &.ceo-btn {
+                color: var(--bs-white);
+                background: var(--bs-ceo-500);
+                border: 2px solid var(--bs-ceo-500);
+                padding: 18px 30px !important;
+
+                &:hover,
+                &:focus,
+                &:active {
+                  color: var(--bs-ceo-500);
+                  border: 2px solid var(--bs-ceo-500);
+                }
+                &:before {
+                  background: var(--bs-white);
+                }
             }
         }
     }
@@ -138,8 +151,33 @@
         ul{
             flex-wrap: wrap !important;
             li{
-                a{
-                    transition: all 0.5s ease-in-out;
+                .sweep-to-right {
+                  max-width: 48px !important;
+                  max-height: 48px !important;
+
+                  &.ceo-btn {
+                    color: var(--bs-white);
+                    background: var(--bs-ceo-500);
+                    border: 2px solid var(--bs-ceo-500);
+                    padding: 16px !important;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                      color: var(--bs-ceo-500);
+                      border: 2px solid var(--bs-ceo-500);
+
+                      svg {
+                        path {
+                          stroke: var(--bs-white);
+                        }
+                      }
+                    }
+
+                    &:before {
+                      background: var(--bs-white);
+                    }
+                  }
                 }
             }
         }

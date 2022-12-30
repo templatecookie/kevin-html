@@ -37,5 +37,12 @@
                 margin-bottom: 32px;
             }
         }
+        .cta-btn{
+            .sweep-to-right.secondary{
+                &:hover{
+                    border: 2px solid var(--bs-white);
+                }
+            }
+        }
     }
 }

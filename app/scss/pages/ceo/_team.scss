@@ -90,40 +90,48 @@
         }
     }
     &__control-buttons{
-        .button{
+        .slider-btn{
             position: absolute;
             top: 0;
             left: 0;
             border: 0;
-            background: white;
             border-radius: 500px;
             display: flex;
             align-items: center;
             justify-content: center; 
-            width: 88px;
-            height: 88px;
+            padding: 28px !important;
+            max-width: 88px !important;
+            max-height: 88px !important;
             transition: .3s;
             display: none;
             @media (min-width:992px) {
                 display: block;
             }
-            svg{
-                path{
-                    transition: .3s;
-                    stroke: var(--bs-ceo-900) !important;
-                }
-            }
-            &:hover{
-                background: var(--bs-ceo-500) !important;
-                svg{
-                    path{
-                        stroke: white !important;
-                    }
-                }
-            }
             &--next{
                 left: auto;
                 right: 0;
+            }
+            &.sweep-to-right-slider{
+                border-radius: 100%;
+                color: var(--bs-gray-900);
+                background: var(--bs-white);
+                border: 2px solid var(--bs-bs-white);
+
+                svg {
+                  display: inline-flex;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                  color: var(--bs-white);
+                  border: 2px solid var(--bs-ceo-500);
+                }
+
+                &:before {
+                  border-radius: 100%;
+                  background: var(--bs-ceo-500);
+                }
             }
         }
     }

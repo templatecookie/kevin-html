@@ -212,10 +212,10 @@
                 arrows: true,
                 fade: false,
                 prevArrow: $(
-                    ".doctor-event-slider__control-buttons .button--prev"
+                    ".doctor-event-slider__control-buttons .sweep-to-right"
                 ),
                 nextArrow: $(
-                    ".doctor-event-slider__control-buttons .button--next"
+                    ".doctor-event-slider__control-buttons .sweep-to-right"
                 ),
                 responsive: [{
                         breakpoint: 1400,
@@ -299,10 +299,10 @@
                 slidesToScroll: 1,
                 arrows: true,
                 prevArrow: $(
-                    ".flc-testimonial-slider__control-buttons .button--prev"
+                    ".flc-testimonial-slider__control-buttons .flc-slider-btn"
                 ),
                 nextArrow: $(
-                    ".flc-testimonial-slider__control-buttons .button--next"
+                    ".flc-testimonial-slider__control-buttons .flc-slider-btn"
                 ),
             });
     }
@@ -358,10 +358,10 @@
                 arrows: true,
                 fade: false,
                 prevArrow: $(
-                    ".ceo-team--slider__control-buttons .button--prev"
+                    ".ceo-team--slider__control-buttons .slider-btn--prev"
                 ),
                 nextArrow: $(
-                    ".ceo-team--slider__control-buttons .button--next"
+                    ".ceo-team--slider__control-buttons .slider-btn--next"
                 ),
                 responsive: [{
                         breakpoint: 1399,

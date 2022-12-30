@@ -44,7 +44,7 @@
     "header_button":true,
     "root":"<span class='text'>RALPH <br> EDWARDS.</span>",
     "additional_button_classes":"doctor-header-btn ms-lg-4",
-    "header_button_class":"dc-btn dc-btn-primary w-107",
+    "header_button_class": "sweep-to-right secondary",
     "header_button_text" :"Contact"
   },
   "lawyer":{
@@ -62,7 +62,7 @@
     "header_button":true,
     "header_social_button":false,
     "root":"<div class='icon'>E</div>",
-    "header_button_class":"pd-btn pd-btn-primary",
+    "header_button_class": "sweep-to-top ui-btn-primary",
     "header_button_text" :"<img class='make-it-inline me-2' src='./image/envelope.svg' alt='logo'> Eleaner@info.com"
   },
   "resume":{

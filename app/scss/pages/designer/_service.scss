@@ -41,13 +41,14 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 26px;
+        margin-bottom: 32px;
        }
-       .ui-btn{
-        margin-top: 25px;
-        @media (mi-width:992px) {
-            margin-top: 32px;
-        } 
-       }
+    //    .ui-btn{
+    //     margin-top: 25px;
+    //     @media (mi-width:992px) {
+    //         margin-top: 32px;
+    //     } 
+    //    }
     }
     &__widget{
         .ui-widget-card {

@@ -24,12 +24,34 @@
                 width: 100%;
             }
         }
-        .ceo-btn{
-            margin-top: 20px;
-            @media (min-width:992px) {
-              margin-top: 32px;
+        .text{
+            margin-bottom: 40px;
         }
-    }
+        .sweep-to-right {
+          &.ceo-btn {
+            color: var(--bs-ceo-500);
+            background: transparent;
+            border: 2px solid var(--bs-ceo-500);
+            padding: 18px 30px !important;
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: var(--bs-white);
+              border: 2px solid var(--bs-ceo-500);
+
+              svg {
+                path {
+                  stroke: var(--bs-white);
+                }
+              }
+            }
+
+            &:before {
+              background: var(--bs-ceo-500);
+            }
+          }
+        }
     }
     .face{
         position: absolute;

@@ -90,11 +90,10 @@
     padding: 0;
     display: none;
   }
-  .button {
+  .flc-slider-btn {
     background: transparent;
     width: 56px;
     height: 56px;
-    border: 2px solid var(--bs-border-one);
     border-radius: 100%;
     position: absolute;
     top: 50%;
@@ -111,12 +110,6 @@
     &--next{
       left: auto;
       right: 0;
-    }
-    &:hover{
-      transition: all 0.4 s ease-in-out;
-      background: var(--bs-primary-500);
-      border: 2px solid var(--bs-primary-500);
-      color: var(--bs-white);
     }
   }
 }

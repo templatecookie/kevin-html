@@ -31,39 +31,6 @@
         @media (max-width:480px) {
             flex-direction: column;
         }
-
-        a {
-            &.ui-btn.ui-btn-primary {
-                border: 3px solid var(--bs-tertiary-500);
-                &:hover{
-                    background: white;
-                    border: 3px solid var(--bs-tertiary-500);
-                }
-            }
-            &.ui-btn.ui-btn-tertiary {
-                box-shadow: none;
-                color: var(--bs-tertiary-500);
-                background: var(--bs-tertiary-50);
-                border: 3px solid transparent;
-                svg {
-                    path {
-                        stroke: var(--bs-tertiary-500);
-                    }
-                }
-                &:hover {
-                    background: transparent;
-                     box-shadow: none;
-                    border: 3px solid var(--bs-tertiary-50);
-                    svg {
-                        path {
-                            transition: .3s;
-                            stroke: var(--bs-tertiary-500);
-                        }
-                    }
-                }
-            }
-
-        }
     }
 
     &__image-group {

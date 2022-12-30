@@ -37,5 +37,8 @@
         .text{
             color: var(--bs-white) !important;
         }
+        .ui-btn-primary{
+            box-shadow: none !important;
+        }
     }
 }

@@ -44,7 +44,7 @@
 		"header_button": true,
 		"root": "<span class='text'>RALPH <br> EDWARDS.</span>",
 		"additional_button_classes": "doctor-header-btn ms-lg-4",
-		"header_button_class": "dc-btn dc-btn-primary w-107",
+		"header_button_class": "sweep-to-right secondary",
 		"header_button_text": "Contact"
 	},
 	"lawyer": {
