@@ -967,3 +967,156 @@ li.nav-item-has-children {
   }
 }
 }
+
+// dev header
+.navbar-inverse {
+  background-color: #222;
+}
+
+.navbar-nav>li {
+  width: auto;
+}
+
+.nav>li>div>a {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  color: #fff;
+}
+
+.navbar-nav>li .arrow {
+  display: none;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+}
+
+.navbar-nav>li.active>div>a,
+.navbar-nav>li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-nav>li:hover a {
+  color: green;
+}
+
+.navbar-nav>li .menu:hover .dropdown-menu {
+  display: block;
+  width: auto;
+}
+
+.navbar-nav>li .menu {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  left: -10px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.dropdown-menu ul li {
+  width: 100%;
+  float: left;
+  padding: 0 0 8px;
+}
+
+.navbar-nav>li:hover .dropdown-menu ul li a {
+  color: #333;
+}
+
+.dropdown-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0px 20px;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.dropdown-menu ul li.active a,
+.dropdown-menu ul li a:hover {
+  font-weight: 600;
+  color: #215694;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav>li .arrow {
+    display: inline-block;
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    width: 100%;
+  }
+
+  .navbar-nav>li .menu {
+    width: 100%;
+  }
+
+  .navbar-nav>li a {
+    padding: 5px 15px;
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+
+  .navbar-nav>li .menu:hover .dropdown-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    left: 0px;
+    background: #000;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+
+  .dropdown-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown-menu ul li {
+    width: 100%;
+    padding: 0;
+  }
+
+  .dropdown-menu ul li a {
+    color: #FFF;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .dropdown-menu ul li:hover a {
+    color: #ddd;
+  }
+
+  .dropdown-menu ul li:hover a {
+    color: #ddd;
+  }
+
+  .dropdown-menu ul li:last-child a {
+    border: none;
+  }
+
+  .navbar-nav>li:hover .dropdown-menu ul li a {
+    color: #fff;
+  }
+
+  .navbar-collapse.in {
+    overflow: hidden;
+  }
+}

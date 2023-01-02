@@ -1,5 +1,5 @@
 {% extends "template.njk" %}
-{% import "components/Header/_header.njk" as Header %}
+{% import "components/Header/_header.njk" as DevHeader %}
 {% import "pages/developer/_hero.njk" as HeroSection %}
 {% import "pages/developer/_project.njk" as ProjectSection %}
 {% import "pages/developer/_testimonial.njk" as TestimonialSection %}
@@ -9,7 +9,7 @@
 {% import "pages/developer/_cta.njk" as ContactSection %}
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(developer)}}
+  {{DevHeader.render(developer)}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
   {{HeroSection.render()}}

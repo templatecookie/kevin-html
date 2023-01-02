@@ -27,6 +27,7 @@
   Slick Slider Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
     // Show the first tab and hide the rest
     $("#tabs-nav .pg-sercice-card:first-child").addClass("active");
     $(".tab-content").hide();
@@ -39,7 +40,7 @@
         $(".tab-content").hide();
 
         var activeTab = $(this).attr("href");
-        console.log(activeTab)
+        console.log(activeTab);
         $(activeTab).fadeIn();
         return false;
     });

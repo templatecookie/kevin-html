@@ -27,7 +27,6 @@
     }
     &:hover .flc-case-study-data{
       opacity: 1;
-      top: 32px;
     }
     &:before{
       content: "";
@@ -48,8 +47,12 @@
   }
   &-data {
     position: absolute;
-    top: 55px;
-    left: 32px;
+    padding-top: 55px;
+    padding-left: 32px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 9;
     opacity: 0;
     transition: all 0.4s ease;
@@ -81,6 +84,9 @@
       color: white;
       opacity: 0.8;
       margin-bottom: 24px;
+    }
+    .icon-btn-white{
+      color: white;
     }
   }
   
