@@ -1804,7 +1804,7 @@ small {
     stroke-dashoffset: 187;
   }
   50% {
-    stroke-dashoffset: 46.75;
+    stroke-dashoffset: 187;
     transform: rotate(135deg);
   }
   100% {
@@ -5741,7 +5741,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: grow 2s ease infinite; */
 }
 .ui-work-card .icon svg path {
   transition: 0.3s;
@@ -14830,7 +14829,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
 
 ******************************************************/
 /* ---------------------------------
--------> THEME CUSTOM STYLES
+-------> THEME CUSTOM STYLES 
 ---------------------------------*/
 .templatecookie-btn {
   position: fixed !important;

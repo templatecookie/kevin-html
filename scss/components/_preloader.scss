@@ -30,7 +30,7 @@ $duration: 1.4s;
   stroke-dashoffset: 0;
   transform-origin: center;
   animation:
-    dash $duration ease-in-out infinite, 
+    dash $duration ease-in-out infinite,
     colors ($duration*4) ease-in-out infinite;
 }
 
@@ -43,7 +43,8 @@ $duration: 1.4s;
 @keyframes dash {
  0% { stroke-dashoffset: $offset; }
  50% {
-   stroke-dashoffset: $offset/4;
+  //  stroke-dashoffset: $offset/4;
+   stroke-dashoffset: $offset;
    transform:rotate(135deg);
  }
  100% {
