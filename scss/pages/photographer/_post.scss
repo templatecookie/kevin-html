@@ -1,0 +1,48 @@
+.photographer-post-area{
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-border-one);
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .photographer-section-title {
+      .title {
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media(min-width:768px) {
+          margin-bottom: 30px;
+        }
+
+        @media(min-width: 992px) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .image-group{
+        overflow: hidden;
+        position: relative;
+        display: block;
+        .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(0deg, rgba(19, 34, 56, 0.7), rgba(19, 34, 56, 0.7));
+            height: 100%;
+            display: flex;
+            transition: .4s;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+        }
+        &:hover{
+            .icon{
+                transform: translateY(0);
+            }
+        }
+    }
+}

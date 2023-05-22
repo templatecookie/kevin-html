@@ -1,0 +1,75 @@
+.ui-award-area{
+    background: var(--bs-white);
+    box-shadow: inset 0px 2px 0px var(--bs-border-one);
+    padding: 60px 0;
+    position: relative;
+    z-index: 11;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
+        @media (min-width:1200px) {
+        padding: 120px 0;
+        
+    }
+    .ui-section-title{
+        margin-bottom: 62px;
+        @media (min-width:992px) {
+           margin-bottom: 85px;          
+        }   
+    }
+    &__ellips{
+        width: 18%;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        height: auto;
+        z-index: -1;    
+        svg{
+            width: 100%;
+            circle{
+                fill: var(--bs-ellips-2);
+            }
+        }
+    }
+}
+.ui-award-card{
+    border-radius: 12px;
+    background: var(--bs-white);
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: .3s;
+    @media (min-widht:992px) {
+        padding-bottom: 32px;
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    img{
+        margin-bottom: 32px;
+        margin-top: -32px;
+    }
+    .content{
+        h6{
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            padding-bottom: 12px;
+            color: var(--bs-gray-900);
+        }
+        p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Sora', sans-serif;
+            color: var(--bs-gray-700);
+        }
+    }
+    &:hover{
+        box-shadow: 0px 32px 88px rgba(138, 67, 255, 0.12);
+    }
+}

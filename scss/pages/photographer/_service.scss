@@ -1,0 +1,92 @@
+.photographer-service-area{
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-border-one);
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .photographer-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+    }
+    &__card{
+        .pg-sercice-card{
+        &:not(&:last-child){
+            margin-bottom: 24px;
+        }   
+        }
+    }
+    &__slider{
+        width: 150%;
+        @media (max-width:991px) {
+            margin-top: 30px;
+            width: 100%;
+        }
+        .photographer-service-slider.swiper{
+            margin-left: 0px !important;
+            .swiper-wrapper {
+                .swiper-slide {
+                    max-width: 312px !important;
+                    width: 312px !important;
+                    max-height: 504px !important;
+                    height: 504px !important;
+                    margin-right: 24px !important;
+                    img {
+                      height: 504px;
+                      width: 312px;
+                      object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+.pg-sercice-card{
+    display: flex;
+    padding: 30px;
+    border: 2px solid var(--bs-gray-100);
+    transition: .3s;
+    @media (max-width:480px) {
+        flex-direction: column;
+    }
+    .icon{
+        margin-right: 24px;
+        @media (max-width:480px) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        svg{
+            path{
+                stroke: var(--bs-primary-500);
+                fill:var(--bs-primary-500);
+                fill-opacity: 0.1;
+            }
+        }
+    }
+    .content{
+        h6{
+            font-family:'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px; 
+            padding-bottom: 12px;
+            color: var(--bs-gray-900);
+        }
+        p{
+            color: var(--bs-gray-700);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;  
+            font-family:'Barlow', sans-serif;
+        }
+    }
+    &:hover{
+        border-color: var(--bs-success-500);
+        box-shadow: 0px 8px 24px rgba(45, 178, 74, 0.08);
+    }
+}

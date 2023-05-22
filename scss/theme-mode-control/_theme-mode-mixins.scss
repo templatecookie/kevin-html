@@ -1,0 +1,642 @@
+@mixin light-theme-mode {}
+
+@mixin dark-theme-mode {
+  --bs-white: #121314;
+  --bs-white-2: #05182E; 
+  --bs-bg-dev-linear-gradient: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, rgba(222, 228, 218, 0.12) 100%);
+  --bs-bg-ui-linear-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.9) 100%);
+  --bs-bg-ui-linear-gradient-2: linear-gradient(180deg, #05182E 0%, #0E4789 85.03%);
+  --bs-bg-ui-linear-gradient-3: linear-gradient(180deg, #132238 0%, #2B384C 100%);
+  --bs-bg-ui-linear-gradient-4: linear-gradient(180deg, rgba(243, 236, 255, 0.04) 0%, rgba(243, 236, 255, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-5: linear-gradient(180deg, rgba(19, 34, 56, 0.8) 0%, rgba(43, 56, 76, 0.8) 100%), #132238;
+  --bs-bg-ui-linear-gradient-6: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 43.44%, rgba(255, 255, 255, 0) 100%);
+  --bs-bg-ui-linear-gradient-7: linear-gradient(180deg, #2B384C 0%, rgba(43, 56, 76, 0) 100%), #132238;
+  --bs-bg-ui-linear-gradient-8: linear-gradient(180deg, rgba(232, 241, 252, 0.04) 0%, rgba(232, 241, 252, 0) 100%), #132238;
+  --bs-gray-900: #fff;
+  --bs-gray-600: #fff;
+  --bs-gray-100: #2B384C;
+  --bs-gray-600-2: #87909D;
+  --bs-gray-700: #A5ACB5;
+  --bs-bg-dev-services: #05182E;
+  --bs-primary-50: #2B384C;
+  --bs-gray-900-2: #2B384C;
+  --bs-gray-800: #132238;
+  --bs-border-one: #2B384C;
+  --bs-primary-500-2: #132238;
+  --bs-border-two: #000;
+  --bs-ellips-1: #2B384C;
+  --bs-ellips-2: rgba(255, 217, 26, 0.2);
+  --bs-secondary-300: #FFD91A;
+  --bs-secondary-100: #2B384C;
+  --bs-danger-50: #2B384C;
+  --bs-opacity-2: 0.2;
+  --bs-tertiary-50: #05182E;
+  --bs-gray-50: #05182E;
+  --bs-success-50: #05182E;
+  --bs-secondary-100: #05182E;
+  --bs-secondary-50: #05182E;
+  --bs-gray-v2-50: #222628;
+  --bs-gray-v2-100: #353A3E;
+  --bs-gray-v2-400: #7B848B;
+  --bs-gray-v2-600: #7B848B;
+  --bs-gray-v2-700: #9AA1A6;
+  --bs-gray-v2-900: white;
+  --bs-resume-50: #291211;
+  --bs-resume-100: #291211;
+  --bs-gray-v2-600: #7B848B;
+  --bs-ceo-900: white;
+  --bs-ceo-700: #889BB6;
+  --bs-ceo-100: #153367;
+  ;
+}
+
+@mixin dark-mode {
+
+  [data-theme="dark"] &,
+  .dark-mode-texts & {
+    @content;
+  }
+}
+
+@mixin light-mode {
+
+  [data-theme="dark"] &,
+  .dark-mode-texts & {
+    @content;
+  }
+}
+
+// #FCFDFE, #F4F7FA, #F8F8F8, #ECF2F7, #FDFDFF,
+
+body[data-theme="dark"] {
+  .ui-contact-area {
+    &__wrapper {
+      border-color: #2B384C;
+      box-shadow: 0px 48px 88px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .ui-btn.ui-btn-outline-primary {
+    border-color: #2B384C;
+
+    &:hover {
+      border-color: var(--bs-tertiary-500);
+    }
+  }
+
+  .flc-work-process-section {
+    background: rgba(43, 56, 76, 0.6);
+
+    .flc-work-process-count {
+      color: #2B384C !important;
+    }
+  }
+
+  .photographer-pricing-area {
+    background: rgba(43, 56, 76, 0.6) !important;
+  }
+
+  .photographer-contact-area {
+    background: rgba(43, 56, 76, 0.8);
+  }
+
+  .photographer-footer-area {
+    background: #2B384C;
+  }
+
+  .doctor-hero-area {
+    background: #05182E;
+  }
+
+  .doctor-event-area {
+    background: rgba(43, 56, 76, 0.9) !important;
+  }
+
+  .law-counter-section {
+    background-color: #05182E;
+  }
+
+  .law-blog-section {
+    background: rgba(43, 56, 76, 0.9);
+  }
+
+  .bg-gray-50 {
+    background: #05182E;
+  }
+
+  .dev-company-info--modifi {
+    background: #05182E;
+    border-top: 1px solid var(--bs-gray-100);
+  }
+
+  .client-testimonial {
+    background: white !important;
+  }
+
+  .dev-contact-area {
+    &__wrapper {
+      border: transparent;
+      box-shadow: none;
+
+      .contact-content__cotacat-block {
+        background: #05182E;
+      }
+
+      .contact-content__info-block {
+        .icon {
+          background: #05182E !important;
+        }
+      }
+    }
+  }
+
+
+  .article-case-study-area {
+    .ui-blog-card {
+      &:hover {
+        border-color: #2B384C;
+        box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+      }
+    }
+  }
+
+  .error-page-area {
+    &__content {
+      .error_img {
+        svg {
+
+          .c1,
+          .c2,
+          .c3,
+          .c3,
+          .c4,
+          .c5,
+          .c6,
+          .c7,
+          .c8 {
+            fill: #FFD91A;
+          }
+        }
+      }
+    }
+  }
+
+  // Resume Pgae Dark Css
+  .resume-header,
+  .resume-hero,
+  .resume-about,
+  .resume-testimonial,
+  .resume-section,
+  .resume-project,
+  .resume-cta,
+  .resume-footer {
+    background: #121314 !important;
+  }
+
+  .dev-cta-area{
+    background-color: #236C44;
+  }
+  .dev-cta-section .dev-cta-area .button-group .content-button{
+    background: #154129;
+    border-color: #154129;
+  }
+
+  .resume-header {
+    .sub-menu {
+      background-color: #121314 !important;
+    }
+    &.site-header{
+      .menu-block{
+        background-color: #121314 !important;
+        .mobile-menu-head{
+          background-color: #121314 !important;
+        }
+      }
+    }
+  }
+
+  .resume-hero {
+    &__iamge {
+      .lite {
+        display: none !important;
+      }
+
+      .dark {
+        display: block !important;
+      }
+    }
+  }
+
+  .work-phase {
+    background: #222628;
+  }
+
+  .resume-slider-nav-wrapper {
+    &__control-buttons {
+      .button--next {
+        background: linear-gradient(270deg, #121314 0%, rgba(18, 19, 20, 0) 100%) !important
+      }
+    }
+  }
+
+  // Team-leader/Ceo Pgae Dark Css
+  .ceo-header {
+    .sub-menu {
+      background-color: #0D2159 !important;
+    }
+    &.site-header{
+      .menu-block{
+        background-color: #0D2159 !important;
+        .mobile-menu-head{
+          background-color: #0D2159 !important;
+        }
+      }
+    }
+  }
+
+  .ceo-wrapper {
+    background: #0D2159;
+    background-image: none !important;
+  }
+
+  .ceo-fun-fact__wrapper {
+    background-color: #0D2159;
+    border-color: #0D2159;
+    box-shadow: 0px 32px 148px rgba(0, 0, 0, 0.4);
+
+    .arrow {
+      svg {
+        path {
+          fill: #536D97;
+        }
+      }
+    }
+  }
+
+  .ceo-testimonial__card {
+    background: #0D2159;
+    border: 1px solid #153367;
+    box-shadow: 0px 32px 148px 0px #0000003B;
+  }
+
+  .ceo-about {
+    &__image-group {
+      .lite {
+        display: none !important;
+      }
+
+      .dark {
+        display: block !important;
+      }
+    }
+  }
+
+  .ceo-team-section {
+    .ceo-team--slider__control-buttons .button {
+      background: #0D2159;
+      border: 1px solid #153367;
+    }
+
+    .ceo-team-card {
+      background: #0D2159;
+      border: 1px solid #153367;
+    }
+
+    .ceo-team--slider {
+      .slick-dots {
+        li {
+          button {
+            background: #153367;
+          }
+
+          &.slick-active {
+            button {
+              background: var(--bs-ceo-500);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ceo-big-blog-card,
+  .ceo-sm-blog-card {
+    background: #0D2159;
+    border: 1px solid #153367;
+    &:hover{
+      box-shadow: 0px 16px 40px 0px #0000001F;
+    }
+  }
+
+  .ceo-cta__wrapper .cta-content-wrapper {
+    background: rgba(13, 33, 89);
+    backdrop-filter: blur(200px);
+    border-color: #153367;
+  }
+
+  .ceo-content-newsletter {
+    border-color: #153367;
+
+    .form-group {
+      .form-control {
+        color: white;
+        background: rgba(255, 255, 255, 0.04);
+
+        &::placeholder {
+          color: #6D84A6;
+        }
+      }
+    }
+  }
+
+  .ceo-social-media-block {
+    .title {
+      color: white;
+    }
+  }
+
+  .ceo-hero {
+    .emoji,
+    .sparkle {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+    .ceo-social-media-block .follow-icon {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-fun-fact {
+    .spark {
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-testimonial{
+    .consumer-thought{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+    &__card{
+      .arrow{
+        svg {
+          path {
+            fill: #3E5985;
+            stroke: #3E5985;
+            fill-opacity: 1;
+          }
+        }
+    }
+    .done{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+    }
+  }
+  .ceo-about{
+    .ceo-section-title{
+      .sparkle{
+        svg {
+          path {
+            fill: #3E5985;
+            stroke: #3E5985;
+            fill-opacity: 1;
+          }
+        }
+      }
+    }
+    .face,.arrrow{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  .ceo-team-section{
+  .number-set,.circle{
+    svg {
+      path {
+        fill: #3E5985;
+        stroke: #3E5985;
+        fill-opacity: 1;
+      }
+    }
+  } 
+  }
+  .ceo-blog{
+    &__star,
+    &__scribble,
+    &__scribble-two,
+    &__scribble-three{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+  }
+  .ceo-cta {
+    .sparkle,.arrow,.hearts{
+      svg {
+        path {
+          fill: #3E5985;
+          stroke: #3E5985;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+  //Product Desiner dark Css
+  .productdesigner-header {
+    .sub-menu {
+      background-color: #121314 !important;
+    }
+    .sub-menu--item{
+      a{
+        &:hover{
+          color: white !important;
+        }
+      }
+    }
+    @media (max-width:992px) {
+      
+      &.site-header{
+        .menu-block{
+          background-color: #121314 !important;
+          .mobile-menu-head{
+            background-color: #121314 !important;
+          }
+        }
+      }
+    }
+  }
+  .product-designer-hero{
+    .wave-six{
+      svg{
+        path{
+          fill: #222628;
+        }
+      }
+    }
+    .pd-hero-text{
+      .title{
+        color: #000;
+      }
+    }
+  }
+  .product-designer-about{
+    background: #222628;
+    .pd-about-wave{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .pd-about-content-texts{
+    img{
+      filter: brightness(100);
+    }
+  }
+  .product-designer-case-study{
+    background: #121314;
+  }
+  .pd-quotation-slider__control-buttons{
+    .button {
+      border-color: #353A3E;
+    }
+  }
+  .pd-project-card{
+    background: #222628;
+    .tag{
+      color: #5E6971 !important;
+    }
+  }
+  .pd-quotation-section{
+    background: #222628;
+    &__wave-top{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+    &__wave-bottom{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .product-designer-price{
+    background: #121314;
+  }
+  .pd-price-card{
+    background: #121314;
+    border-color: #222628;
+    .list-group{
+      li{
+          svg{
+             path{
+              fill: white;
+             }
+          }
+          &.hide{
+              color: #353A3E;
+              svg{
+                  path{
+                      fill: #353A3E;
+                  }
+              }
+          }
+      }
+  }
+    &:hover{
+      border-color: #00BBFF;
+    }
+  }
+  .product-designer-cta{
+    background: #222628;
+    &__wave{
+      svg{
+        path{
+          fill: #121314;
+        }
+      }
+    }
+  }
+  .pd-social-btn{
+    background: white;
+    color: #121314 !important;
+    border: 2px solid white;
+    &:hover{
+      background:#222628;
+      border: 2px solid #121314;
+      box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.24);
+      color: white !important;
+    }
+  }
+  .prdduct-designer-footer{
+    border-color: #353A3E;
+    background: #222628;
+    .icon{
+      color: #121314 !important;
+    }
+  }
+
+}
+
+body[data-theme="dark"] {
+  .flc-service-thumb .light-icon {
+    display: none;
+  }
+
+  .flc-service-thumb .dark-icon {
+    display: inline-block;
+  }
+  .product-designer-hero__content .company-logo__wrapper{
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.24);
+    border: 1px solid #222628;
+  }
+  .law-contact-info-item{
+    background: rgba(43, 56, 76, 0.5);
+  }
+  .law-default-btn-two{
+    background: #2B384C;
+    box-shadow: 0px 8px 32px rgba(19, 34, 56, 0.08);
+  }
+}

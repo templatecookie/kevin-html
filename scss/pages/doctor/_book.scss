@@ -1,0 +1,125 @@
+.doctor-book-area{
+    border-top: 1px solid var(--bs-gray-100);
+    border-bottom: 1px solid var(--bs-gray-100);
+    background-color: var(--bs-gray-900);
+    background-size: cover;
+    position: relative;
+    padding: 60px 0;
+    @media (min-width:992px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    &::before{
+        // display: none;
+        @media(min-width:1200px){
+            position: absolute;
+            content: "";
+            background: var(--bs-gray-50);
+            width: 554px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    &__image{
+        position: relative;
+        z-index: 2;
+        @media (min-width:1400px) {
+            margin-left: -100px;
+        }
+    }
+    &__feature{
+        position: relative;
+
+        &-top{
+            .title{
+                font-family: 'JetBrains Mono';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1.25;
+                color: white;
+                padding-bottom: 16px;
+            }
+            .text{
+                font-family: 'JetBrains Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.5;
+                color: var(--bs-gray-400);
+                padding-bottom: 24px;
+            }
+            .writer{
+                display: flex;
+                align-items: center;
+                padding-bottom: 32px;
+                height: max-content;
+                border-bottom: 1px solid var(--bs-gray-800);
+                margin-bottom: 32px;
+                img{
+                    border-radius: 500px;
+                    margin-right: 16px;
+                    display: inline-block;
+                    margin-top: -28px;
+                }
+                &-info{
+                    .title{
+                        font-family: 'JetBrains Mono';
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 1;
+                        text-transform: uppercase;
+                        color: var(--bs-gray-500);
+                    }
+                    .text{
+                        font-family: 'JetBrains Mono';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: white;
+                    }
+                }
+            }
+        }
+        &-bottom{
+            &-list{
+                &:not(&:last-child){
+                    margin-bottom: 24px;
+                }
+                .title{
+                    font-family: 'JetBrains Mono';
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    color: white;
+                    padding-bottom: 12px;
+                }
+                .text{
+                    font-family: 'JetBrains Mono';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: var(--bs-gray-400);
+                }
+            }
+        }
+    }
+    &::after{
+        @media (min-width:1400px) {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 466px;
+            width: 1px;
+            transform: translate(-50%, -50%);
+            background-color: var(--bs-gray-700);
+        }
+
+    }
+}

@@ -1,0 +1,147 @@
+.law-contact-section{
+  background: var(--bs-white);
+}
+.law-contact-content{
+  margin-right: 80px;
+  @media (max-width: 1199px) {
+    margin-right: 15px;
+  }
+  @media (max-width: 991px) {
+    margin: 0 0 30px;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--bs-gray-900);
+    font-family: 'Barlow', sans-serif;
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: var(--bs-gray-700);
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+.law-contact-info{
+  &-item{
+    display: flex;
+    margin-bottom: 24px;
+    padding: 32px;
+    background-color: var(--bs-secondary-100);
+    border-radius: 4px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-icon{
+    flex-shrink: 0;
+    margin-right: 35px;
+    svg{
+      path{
+        stroke: var(--bs-gray-900);
+      }
+    }
+  }
+  &-data{
+    h4{
+      font-weight: 500;
+      font-size: 14px;
+      opacity: 0.5;
+      line-height: 1;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      color: var(--bs-gray-900);
+      font-family: 'Barlow', sans-serif;
+    }
+    p{
+      font-weight: 500;
+      font-size: 24px;
+      margin: 0;
+      color: var(--bs-gray-900);
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+}
+
+.law-contact-form{
+  h4{
+    margin-bottom: 12px;
+    line-height: 1.33;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--bs-gray-900);
+    font-family: 'Barlow', sans-serif;
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    color: var(--bs-gray-700);
+    font-family: 'Barlow', sans-serif;
+  }
+  .input-group{
+    margin-bottom: 16px;
+    .form-control{
+      height: 48px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 4px;
+      background: var(--bs-white);
+      padding: 18px;
+      color: var(--bs-gray-400);
+      border: 1px solid var(--bs-gray-100);
+      font-family: 'Barlow', sans-serif;
+      color: var(--bs-gray-900);
+      &::placeholder{
+        color: var(--bs-gray-500);
+      }
+    }
+    textarea.form-control{
+      height: 124px;
+    }
+  }
+  .nice-select{
+    background: var(--bs-white);
+    height: 48px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    color: var(--bs-gray-400);
+    border-color: var(--bs-gray-100);
+    font-family: 'Barlow', sans-serif;
+    &:after { 
+      content:"";
+      width: 10px;
+      height: 10px;
+      margin-top: -6px;
+      margin-right: 12px;
+      border-bottom: 2px solid #87909D;
+      border-right: 2px solid #87909D;
+      
+    }
+    .list{
+      width: 100%;
+    }
+  }
+  .gj-datepicker-md [role=right-icon] {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--bs-gray-900);
+  }
+  .gj-datepicker-md{
+    width: 100%;
+  }
+  .form-btn{
+    margin-top: 35px;
+    border: none !important;
+  }
+}

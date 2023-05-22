@@ -1,0 +1,47 @@
+.product-designer-about{
+    position: relative;
+    padding: 53px 0 120px;
+    z-index: 999;
+    @media (min-width:768px) {
+        padding-top: 88px;
+        padding-bottom: 188px;
+    }
+    &__content{
+       @media (min-width:1400px) {
+           margin-left: 62px;
+       }
+    }
+    .pd-about-wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+.pd-about-content-texts{
+    h3{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--bs-gray-v2-900);
+        padding-bottom: 12px;
+        span{
+            color: var(--bs-product-500);
+        }
+    }
+    p{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4; 
+        color: var(--bs-gray-v2-600);
+    }
+    img{
+        margin-top: 25px;
+        @media (min-width:992px) {
+            margin-top: 40px;
+        }
+    }
+}

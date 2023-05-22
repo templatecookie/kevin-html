@@ -1,0 +1,17 @@
+@forward 'hero';
+@forward 'fun-fact';
+@forward 'testimonial';
+@forward 'about';
+@forward 'team';
+@forward 'blog';
+@forward 'cta';
+@forward 'footer';
+
+.ceo-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+}

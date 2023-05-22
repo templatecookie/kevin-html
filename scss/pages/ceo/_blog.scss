@@ -1,0 +1,266 @@
+.ceo-blog {
+	position: relative;
+	padding-bottom: 60px;
+	@media (min-width: 768px) {
+		padding-bottom: 80px;
+	}
+
+	@media (min-width: 992px) {
+		padding-bottom: 120px;
+	}
+
+	@media (min-width: 1400px) {
+		padding-bottom: 200px;
+	}
+	.ceo-section-title {
+		margin-bottom: 40px;
+
+		@media (min-width: 992px) {
+			margin-bottom: 80px;
+		}
+	}
+	&__star {
+		position: absolute;
+		bottom: 5%;
+		left: 2%;
+		width: 13%;
+		z-index: -1;
+	}
+	&__scribble {
+		position: absolute;
+		top: -12%;
+		left: 3%;
+		width: 12%;
+		z-index: -1;
+	}
+	&__scribble-two {
+		position: absolute;
+		top: -21%;
+		right: 16%;
+		width: 20%;
+		z-index: -1;
+	}
+	&__scribble-three {
+		position: absolute;
+		top: 9%;
+		right: 13%;
+		width: 11%;
+		z-index: -1;
+	}
+}
+
+.ceo-big-blog-card {
+	overflow: hidden;
+	background: white;
+	padding: 30px 20px;
+	transition: 0.3s;
+	display: block;
+	z-index: 999;
+	position: relative;
+	@media (min-width: 575px) {
+		padding: 48px;
+	}
+	.card-image {
+		overflow: hidden;
+		img {
+			overflow: hidden;
+			transition: 0.3s;
+		}
+	}
+	.content {
+		margin-top: 32px;
+		.blog-meta-group {
+			margin-bottom: 8px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			.meta-block {
+				span{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    .date,
+                    .read,
+                    .dot {
+                      font-family: "Satoshi";
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 24px;
+                      color: var(--bs-ceo-400);
+                    }
+                }
+			}
+			.badge-block {
+				.badge {
+					background: rgba(255, 95, 73, 0.08);
+					color: var(--bs-ceo-500);
+					font-family: "Fira Sans";
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 12px;
+					padding: 8px 12px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.title {
+			font-family: "Satoshi";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 32px;
+			color: var(--bs-ceo-900);
+			padding-bottom: 16px;
+		}
+		.text {
+			font-family: "Satoshi";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--bs-ceo-400);
+			padding-bottom: 20px;
+		}
+		.link-btn {
+			display: inline-flex;
+			align-items: center;
+			position: relative;
+			padding: 12px 0;
+			font-family: "Satoshi";
+			font-style: normal;
+			font-weight: 900;
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--bs-ceo-500);
+			svg {
+				margin-left: 12px;
+				path {
+					fill: var(--bs-ceo-500);
+					stroke: var(--bs-ceo-500);
+					&.white-stroke {
+						stroke: white !important;
+					}
+				}
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: var(--bs-ceo-500);
+			}
+		}
+	}
+	&:hover {
+		box-shadow: 0px 16px 40px 0px #0d21591f;
+		.card-image {
+			img {
+				transform: scale(1.07);
+			}
+		}
+	}
+}
+.ceo-sm-blog-card {
+	background: white;
+	padding: 30px 20px;
+	display: flex;
+	align-items: start;
+	height: 100%;
+	transition: 0.3s;
+	flex-direction: column;
+	position: relative;
+	z-index: 999;
+	@media (min-width: 768px) {
+		flex-direction: row;
+		padding: 36px;
+	}
+	.card-image {
+		overflow: hidden;
+		margin-bottom: 30px;
+		min-width: 188px;
+		min-height: 132px;
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+			margin-right: 32px;
+		}
+		img {
+			transition: 0.3s;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.content {
+		.blog-meta-group {
+			margin-bottom: 8px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			.meta-block {
+			  span {
+			    display: flex;
+			    align-items: center;
+			    gap: 8px;
+
+			    .date,
+			    .read,
+			    .dot {
+			      font-family: "Satoshi";
+			      font-style: normal;
+			      font-weight: 500;
+			      font-size: 16px;
+			      line-height: 24px;
+			      color: var(--bs-ceo-400);
+			    }
+			  }
+			}
+			.badge-block {
+				.badge {
+					background: rgba(255, 95, 73, 0.08);
+					color: var(--bs-ceo-500);
+					font-family: "Fira Sans";
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 12px;
+					padding: 8px 12px;
+					text-transform: uppercase;
+				}
+			}
+		}
+		.title {
+			font-family: "Satoshi";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 28px;
+			color: var(--bs-ceo-900);
+			margin-bottom: 15px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+		.text {
+			font-family: "Satoshi";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--bs-ceo-400);
+		}
+	}
+	&:hover {
+		box-shadow: 0px 16px 40px 0px #0d21591f;
+		.card-image {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

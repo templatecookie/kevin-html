@@ -1,0 +1,89 @@
+.photographer-footer-area{
+    padding: 40px 0;
+    background: var(--bs-gray-50);
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        @media (min-width:768px) {
+            gap: 24px;
+        }
+        @media (min-width:992px) {
+            flex-direction: row;
+            gap: 0;
+        }
+        .logo-area{
+            .logo{
+                display: flex;
+                align-items: center;
+                .icon{
+                 min-width: 48px;
+                 max-width: 48px;
+                 min-height: 48px;
+                 max-height: 48px;
+                 object-fit: cover;
+                 border-radius: 500px; 
+                 margin-right: 12px;
+                 border: 2px solid var(--bs-success-500);
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 span{
+                      font-weight: 600;
+                      font-size: 24px;
+                      line-height: 24px; 
+                      color: var(--bs-success-500);
+                 }
+                }
+                .text-wrapper{
+                  p{
+                    color: var(--bs-gray-900);
+                    white-space:nowrap;
+                    font-weight: 600;
+                    font-family:'Barlow', sans-serif;
+                    font-size: 18px;
+                    @media (min-width:575px) {
+                      font-size: 24px;
+                    }
+                  }
+                }
+              }
+        }
+        .menu-list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            @media (min-width:768px) {
+                gap: 24px;
+            }
+            li{
+                a{
+                    transition: .3s;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: var(--bs-gray-600);
+                    &:hover{
+                        color: var(--bs-gray-900);
+                    }
+                }
+            }
+        }
+        .copy-right-text{
+            p{
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 14px;
+                color: var(--bs-gray-900);
+                line-height: 20px;  
+            }
+        }
+    }
+}

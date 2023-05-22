@@ -1,0 +1,54 @@
+.ceo-about{
+    position: relative;
+    padding-bottom: 60px;
+    @media (min-width:768px) {
+        padding-bottom: 80px;
+        
+    }
+    @media (min-width:992px) {
+        padding-bottom: 120px;
+        
+    }
+    @media (min-width:1400px) {
+        padding-bottom: 200px;
+        
+    }
+    .ceo-section-title{
+        position: relative;
+        .sparkle{
+            position: absolute;
+            top: -57%;
+            left: -15%;
+            width: 38%;
+            svg{
+                width: 100%;
+            }
+        }
+        .ceo-btn{
+            margin-top: 20px;
+            @media (min-width:992px) {
+              margin-top: 32px;
+        }
+    }
+    }
+    .face{
+        position: absolute;
+        bottom: -12%;
+        left: 43%;
+        transform: translateY(-50%);
+        width: 15%;
+        svg{
+            width: 100%;
+        }
+    }
+    .arrrow{
+        position: absolute;
+        top: 0;
+        left: -5%;
+        transform: translateY(-50%);
+        width: 20%;
+        svg{
+            width: 100%;
+        }
+    }
+}

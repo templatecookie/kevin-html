@@ -1,0 +1,105 @@
+.resume-testimonial {
+    &__wrapper {
+        padding: 64px 0;
+        border-top: 1px solid var(--bs-gray-v2-100);
+        border-bottom: 1px solid var(--bs-gray-v2-100);
+    }
+    .resume-testimonial-slider{
+        @media (min-width:992px) {
+            margin-left: 35px;
+        }
+        .resume-slider-nav-wrapper{
+            position: relative;
+            .resume-slider-nav{
+                .resume-testimonial-user{
+                      &.slick-current{
+                        .resume-testimonial-user__wrapper{
+                            box-shadow: inset 0px -2px 0px var(--bs-resume-500);
+                            .name{
+                                color: var(--bs-gray-v2-900);
+                                font-weight: 500;
+                            }
+                        }
+                  }  
+                }
+            }
+            &__control-buttons{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                .button--prev{
+                    border: 0;
+                    font-size: 0;
+                    width: 0;
+                    padding: 0;
+                    background: none;
+                    height: 0;
+                }
+                .button--next{
+                    border: 0;
+                    padding: 0;
+                    background: linear-gradient(270deg, #FFFFFF 6.41%, rgba(255, 255, 255, 0) 106.41%);
+                    padding: 12px 0 12px 122px;
+                    svg{
+                        path{
+                            stroke: var(--bs-resume-500);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.resume-testimonial-card {
+    background-color: var(--bs-resume-50);
+    padding: 24px;
+    border-radius: 16px;
+    &__wrapper{
+        display: flex;
+    }
+    .icon {
+        margin-right: 12px;
+        svg{
+            path{
+                stroke: var(--bs-resume-500);
+                &.fill-color{
+                    fill: var(--bs-resume-500);
+                }
+            }
+        }
+    }
+
+    .text {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-v2-900);
+    }
+}
+.resume-testimonial-user{
+    &__wrapper{
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 8px;
+            min-width: 32px;
+            max-width: 32px;
+            min-height: 32px;
+            max-height: 32px;
+            object-fit: cover;
+            border-radius: 500px;
+        }
+        .name{
+            white-space: nowrap;
+            font-family: 'Fira Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-v2-600);
+        }
+    }
+}

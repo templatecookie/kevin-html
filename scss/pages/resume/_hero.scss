@@ -1,0 +1,61 @@
+.resume-hero{
+    &__iamge{
+        @media (min-width:992px) {
+            margin-left: 50px;
+        }
+    }
+    .resume-display-title{
+        .text{
+            span{
+                color: var(--bs-gray-v2-900);
+            }
+        }
+    }
+}
+.resume-socialmedia-link{
+    background: var(--bs-gray-v2-50);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .text{
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-v2-700);
+        margin-right: 16px;
+    }
+    .list-group{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+        li{
+            a{
+                color: var(--bs-gray-v2-400);
+                transition: .3s;
+                display: inline-block;
+                &:hover{
+                    color: var(--bs-resume-500);
+                    transform: scale(1.1) translateY(3px);
+                }
+            }
+            svg{
+                path{
+                    stroke: var(--bs-gray-v2-400);
+                    fill: var(--bs-gray-v2-400);
+                    transition: .3s;
+                    &:hover{
+                        fill: var(--bs-resume-500);
+                        stroke: var(--bs-resume-500);
+                    }
+                }
+            }
+        }
+    }
+}

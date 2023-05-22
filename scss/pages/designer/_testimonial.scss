@@ -1,0 +1,174 @@
+.ui-testimonial-section{
+    background: var(--bs-bg-ui-linear-gradient-5);
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    @media (min-width:992px) {
+        padding: 120px 0;
+    }
+    .ui-section-title{
+        margin-bottom: calc(30px + 40px);
+        @media (min-width:992px) {
+            margin-bottom: calc(64px + 40px);
+        }
+    } 
+    &__slider{
+        /* the slides */
+        .slick-slide {
+            transition: .3s;
+            opacity: 0.6;
+            margin: 0 12px;
+            @media (min-width:992px) {
+                            margin: 0 40px;
+
+                        }
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -12px;
+            @media (min-width:992px) {
+                            margin: 0 -40px;
+
+                        }
+        }
+        
+        .ui-testimonial-slider .slick-slide {
+          transition: transform .3s ease;
+        }
+        .ui-testimonial-slider img {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .ui-testimonial-slider .slick-list, .ui-testimonial-slider .slick-track {
+            overflow: visible;
+        }
+        .ui-testimonial-slider .slick-current {
+            opacity: 1;
+            transform-origin: center center;
+            box-shadow: 0px 40px 64px rgba(19, 34, 56, 0.08);
+            border-radius: 16px;
+            @media (min-width:992px) {
+                transform: scale(1.2);
+            }
+            .ui-testimonial-card{
+                .card-image{
+                    img{
+                        border-radius: 500px;
+                        border: 4px solid var(--bs-white);
+                        filter: drop-shadow(0px 16px 48px rgba(18, 95, 183, 0.32));
+                    }
+                }
+            }
+        }
+        .ui-testimonial-slider__control-buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 16px;
+            @media (min-width:992px) {
+                margin-top: 80px;
+            }
+            .button{
+               max-width: 56px;
+               min-width: 56px;
+               max-height: 56px;
+               min-height: 56px;
+               transition: .3s;
+               max-height: 56px;
+               border-radius: 500%;
+               background: transparent;
+               border: 2px solid var(--bs-tertiary-500); 
+               svg{
+                   path{
+                       stroke: var(--bs-tertiary-500);
+                       transition: .3s;
+                   }
+               }
+               &:hover{
+                   background: var(--bs-tertiary-500);
+                   svg{
+                       path{
+                           stroke: white;
+                       }
+                   }
+               }
+            }
+        }
+    }
+}
+
+.ui-testimonial-card{
+    background: var(--bs-white);
+    text-align: center;
+    border-radius: 16px;
+    padding: 30px;
+    padding-top: 0;
+    position: relative;
+    @media (min-width:1200px) {
+        padding: 40px;
+        padding-top: 0;
+    }
+    .card-image{
+        position: relative;
+        top: -40px;
+        img{
+            max-width: 80px !important;
+            max-height: 80px !important;
+            min-width: 80px !important;
+            min-height: 80px !important;
+            object-fit: cover !important;
+            border-radius: 500px;
+        }
+    }
+    .content{
+        .text{
+            font-family: 'Sora', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 140%;  
+            color: var(--bs-gray-900);
+            padding-bottom: 15px;
+            @media (min-width:992px) {
+                padding-bottom: 25px;
+                font-size: 18px;
+            }
+            @media (min-width:1200px) {
+                padding-bottom: 32px;
+                font-size: 20px;
+            }
+        }
+        .client-info{
+            h6{
+                font-family: 'Sora', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;  
+                color: var(--bs-gray-900);
+                padding-bottom: 5px;
+                @media (min-width:992px) {
+                    padding-bottom: 8px;
+                    font-size: 18px;
+                }
+                @media (min-width:1200px) {
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-family: 'Sora', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                color: var(--bs-gray-500);
+                line-height: 20px;
+                span{
+                    color: var(--bs-gray-900);
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

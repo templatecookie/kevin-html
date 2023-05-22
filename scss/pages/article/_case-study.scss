@@ -1,0 +1,23 @@
+.article-case-study-area{
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-gray-100);
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .dev-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+    }
+    .single-button{
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 50px;
+        }
+    }
+}

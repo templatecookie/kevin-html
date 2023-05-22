@@ -1,0 +1,124 @@
+.photographer-pricing-area{
+    background: var(--bs-gray-50);
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .photographer-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+        
+    }
+    .photographer-pricing-card{
+        height: 100%;
+        background-color: var(--bs-white);
+        padding: 48px 25px;
+        @media (min-width:1024px) {
+            padding: 48px 30px;
+        }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .price{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.25;
+            color: var(--bs-success-500);
+        }
+        .recomend{
+            border-radius: 50px !important;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            display: inline-flex;
+            font-family: "Barlow", sans-serif;
+            padding: 6px 16px;
+            line-height: 1;
+            width: max-content;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            color: var(--bs-success-500);
+            border:  1.5px solid var(--bs-success-500);
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+            &:active{
+                &:focus{
+                box-shadow: none;
+                outline: none;
+                }
+            }
+        }
+        .title{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.4;
+            color:  var(--bs-gray-900);
+            padding-bottom: 12px;
+        }
+        .description{
+            font-family: 'Barlow', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color:  var(--bs-gray-600);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--bs-gray-100);
+        }
+        .list{
+            list-style: none;
+            padding-top: 32px;
+            padding-left: 0;
+            li{
+                display: flex;
+                align-items: center;
+               svg{
+                   margin-right: 11px;
+                   &.fil-check{
+                    path{
+                        stroke: var(--bs-gray-900);
+                        &.s-white{
+                            stroke: #fff;
+                        }
+                    }
+                   }
+               }
+               font-family: 'Barlow', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                color: var(--bs-gray-900);
+                padding-bottom: 16px;
+                del{
+                    color: var(--bs-gray-300);
+                }
+                &:last-child{
+                    padding-bottom: 32px;
+                }
+            }
+        }
+        .pg-btn{
+            svg{
+                path{
+                    stroke: var(--bs-success-500);
+                }
+            }
+        }
+       
+        .pg-btn.pg-btn-outline-primary{
+            width: 100%;
+        }
+    }
+}

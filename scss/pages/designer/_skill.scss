@@ -1,0 +1,163 @@
+.ui-skill-area{
+    position: relative;
+    background: var(--bs-white);
+    box-shadow: inset 0px 2px 0px var(--bs-border-one);
+    z-index: 1;
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    @media (min-width:992px) {
+        padding: 120px 0;
+    }
+    &__content{
+        .ui-section-title{
+            margin-bottom: 28px;
+            @media (min-width:992px) {
+                margin-bottom: 48px;
+            } 
+        }
+    }
+    &__image-group{
+        text-align: center;
+        @media (min-width:575px) {
+            text-align: end;
+        }
+        position: relative;
+        .tools-group{
+            @media (min-width:575px) {
+                position: absolute;
+             bottom: 30px;
+             left: 0;
+            }
+        }
+    }
+    &__ellipse-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        z-index: -1;
+        opacity: var(--bs-opacity-2);
+    }
+    &__ellipse-2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 22%;
+        z-index: -1;
+        opacity: var(--bs-opacity-2);
+    }
+}
+.tools-group{
+    text-align: start !important;
+    display: inline-block;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+    backdrop-filter: blur(32px);
+    padding: 32px;
+    margin-top: -80px;
+    .title{
+        color: var(--bs-gray-900);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 16px;
+    }
+    .tools-item{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 4px;
+            max-width: 48px;
+            max-height: 48px;
+            min-width: 48px;
+            min-height: 48px;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            &:hover{
+                transform: scale(1.1) translateY(5px);
+                box-shadow: 0px 1px 6px #ddd;
+            }
+        }
+    }
+}
+.designer-skill-bar{
+    &__item{
+        margin-bottom: 16px;
+        @media (min-width:992px) {
+            margin-bottom: 36px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .skill-bar-wrapper{
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .skill-content{
+                display: flex;
+                align-items: center;
+                .icon{
+                  margin-right: 12px;  
+                }
+                h5{
+                    font-family: 'Sora';
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 133%;
+                    color: var(--bs-gray-900);
+                    font-size: 16px;
+                    @media (min-width:768px) {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+            .skill-bar-count{
+                h6{
+                    font-family: 'Sora';
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .skill-bar{
+            border-radius: 30px;
+            width: 100%;
+            height: 4px;
+            background: #DEE7EE;
+            .skill-per{
+                height: 4px;
+                animation: fillbars 8s 1;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+        }
+    }
+}
+
+@keyframes fillbars {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+.inner-gallery-area{
+    background: var(--bs-white);
+    padding: 30px 0 60px;
+    border-bottom: 1px solid var(--bs-gray-100);
+    @media (min-width:768px) {
+        padding: 40px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 50px 0 100px;
+    }
+}

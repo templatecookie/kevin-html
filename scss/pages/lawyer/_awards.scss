@@ -1,0 +1,125 @@
+.law-awards-section{
+  background: var(--bs-white);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
+}
+
+.law-awards{
+  &-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    transition: all 0.4s ease-in-out;
+    @media (max-width: 500px) {
+      display: block;
+      text-align: center;
+    }
+    &:last-child{
+      margin-bottom: 0;
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+      }
+    }
+    &.left-awards{
+      .law-awards-thumb{
+        width: 112px;
+        height: 112px;
+        display: flex;
+        margin-right: 24px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: all 0.4s;
+        border: 4px solid var(--bs-primary-50);
+        @media (max-width: 500px) {
+          margin: 0 auto 24px;
+        }
+        
+        path{
+          transition: all 0.4s;
+          stroke: var(--bs-primary-500);
+          .fill{
+            fill: var(--bs-primary-500) !important;
+          }
+        }
+        &:hover path{
+          stroke: white;
+        }
+      }
+    }
+    &.right-awards{
+      padding: 30px 32px;
+      background-color: var(--bs-secondary-100);
+      .law-awards-thumb{
+        width: 144px;
+        margin-right: 24px;
+        height: 144px;
+        flex-shrink: 0;
+        display: block;
+        @media (max-width: 500px) {
+          margin: 0 auto 24px;
+        }
+      }
+    }
+    &:hover{
+      cursor: pointer;
+      &.left-awards{
+        .law-awards-thumb{
+          background-color: var(--bs-primary-500);
+          border: 4px solid var(--bs-primary-500);
+          path {
+            stroke: white;
+          }
+        }
+      }
+    }
+  }
+  
+  &-data{
+    ul{
+      margin: 0 0 4px;
+      padding: 0;
+      list-style: none;
+      li{
+        color: var(--bs-gray-900);
+        font-weight: 400;
+        font-size: 14px;
+        display: inline-block;
+        padding-right: 16px;
+        position: relative;
+        font-family: 'Barlow', sans-serif;
+        &:before{
+          content: "";
+          right: 3px;
+          top: 50%;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          position: absolute;
+          transform: translateY(-50%);
+          background-color: var(--bs-gray-900);
+        }
+        &:last-child::before{
+          content: none;
+        }
+      }
+    }
+    h4{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.45;
+      margin-bottom: 10px;
+      font-family: 'Barlow', sans-serif;
+      a{
+        color: var(--bs-gray-700);
+      }
+    }
+    p{
+      color: var(--bs-gray-500);
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.ui-service-area{
+    padding: 60px 0;
+    background: var(--bs-bg-ui-linear-gradient-4);
+    cursor: pointer;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
+        @media (min-width:1200px) {
+        padding: 120px 0;
+        
+    }
+    .ui-section-title{
+       text-align: start; 
+       .badge{
+        font-family: 'Sora';
+        background: var(--bs-secondary-300);
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;  
+        text-transform: uppercase;
+        color:#132238; 
+        padding: 10px 16px;
+        margin-bottom: 15px;
+        @media (mi-width:992px) {
+            margin-bottom: 24px;
+        }
+       }
+       .title{
+           margin-bottom: 0px;
+           padding-bottom: 25px;
+           @media (min-width:992px) {
+               padding-bottom: 32px;
+           }
+       }
+       .text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+       }
+       .ui-btn{
+        margin-top: 25px;
+        @media (mi-width:992px) {
+            margin-top: 32px;
+        } 
+       }
+    }
+    &__widget{
+        .ui-widget-card {
+         &:not(&:last-child){
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+.ui-widget-card{
+    transition: all .4s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 30px 25px;
+    background: var(--bs-white);
+    border-width: 4px;
+    border-radius: 16px;
+    border-style: solid;
+    flex-wrap: wrap;
+    @media (min-width:992px) {
+        padding: 32px;
+        gap: 24px;
+    }
+    .content{
+        .title{
+            font-family: 'Sora';
+            color: var(--bs-gray-900);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            padding-bottom: 12px;
+        }
+        span{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Sora';
+        }
+    }
+    &:hover{
+        transition: all .4s ease-in-out;
+        border-color: transparent;
+        box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+        .image{
+            img{
+                animation: shakeIn 1s ease infinite;
+            }
+        }
+    }
+}
+.border-secondary-100{
+    border-color: var(--bs-secondary-100);
+}
+.border-primary-50{
+    border-color: var(--bs-primary-50);
+}
+.border-danger-50{
+    border-color: var(--bs-danger-50);
+}
+
+@keyframes shakeIn {
+  30% {
+    transform: scale(1.2);
+  }
+
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

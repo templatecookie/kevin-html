@@ -1,0 +1,225 @@
+.ui-about-area{
+    position: relative;
+    z-index: 11;
+    background: var(--bs-white);
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 60px 0;
+    }
+    @media (min-width:992px) {
+        padding: 80px 0 100px;
+    }
+    @media (min-width:1200px) {
+        padding: 90px 120px;
+        padding-bottom: 110px;
+    }
+    &__iamge-group{
+        position: relative;
+        margin-bottom: 75px;
+        @media (min-width:992px) {
+            margin-bottom: 0;
+        }
+        @media (min-width:1200px) {
+            margin-left: -70px;
+        }
+        .social-media-group{
+            @media (min-width:768px) {
+                position: absolute;
+                bottom: -70px;
+                left: 140px;
+            }
+            @media (min-width:992px) {
+                position: absolute;
+                bottom: -70px;
+                left: 22px;
+            }
+            
+            @media (min-width:1200px) {
+                position: absolute;
+                bottom: 32px;
+                left: 32px;
+                left: 102px;
+            }
+        }
+    }
+    &__content{
+        .content{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 16px;
+            @media (min-width:992px) {
+                gap: 24px;
+            }
+            li{
+                font-family: 'Sora', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .title{
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            margin-bottom: 26px;
+            color: var(--bs-gray-900);
+            line-height: 122%;
+            margin-bottom: 25px;
+            @media (min-width:992px) {
+                font-size: 36px;
+            }
+        }
+        .text{
+            color: var(--bs-gray-900);
+            font-family: 'Sora', sans-serif;
+            font-weight: 300;
+            line-height: 144%; 
+            font-size: 16px;
+            @media (min-width:992px) {
+                font-size: 18px;
+            }
+        }
+        .ui-btn{
+            margin-top: 25px;
+            margin-bottom: 20px;
+            @media (min-width:992px) {
+                margin-top: 32px;
+            }
+        }
+    }
+    &__ellips{
+        width: 18%;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        height: auto;
+        z-index: -1;
+        svg{
+            width: 100%;
+            circle{
+                fill: var(--bs-ellips-2);
+            }
+        }
+    }
+}
+.social-media-group{
+    display: inline-block;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 24px 88px rgba(19, 34, 56, 0.08);
+    backdrop-filter: blur(32px);
+    padding: 32px;
+    margin-top: -50px;
+    .title{
+        color: var(--bs-gray-900);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 16px;
+    }
+    .social-link{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                border-radius: 4px;
+                max-width: 48px;
+                max-height: 48px;
+                min-width: 48px;
+                min-height: 48px;
+                transition: al .5s ease-in-out !important;
+                svg{
+                    path{
+                       transition: .3s !important;
+                    }
+                }
+            }
+            &.fb{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
+                    }
+                }
+            }
+            &.twitter{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: #1DA1F2;
+                    }
+                }
+            }
+            &.linkedin{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: #006699;
+                    }
+                }
+            }
+            &.insta{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background: radial-gradient(102.89% 102.88% at 60.65% 104.95%, rgba(140, 58, 170, 0) 64%, #8C3AAA 100%), radial-gradient(130.55% 130.54% at 13.29% 100.47%, #FA8F21 9%, #D82D7E 78%), #006699;;
+                    }
+                }
+            }
+            &.dribbble{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background:#DD3E7B;
+                    }
+                }
+            }
+            &.behance{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                               fill: white; 
+                            }
+                        }
+                        background:#1769FF;
+                    }
+                }
+            }
+        }
+    }
+}

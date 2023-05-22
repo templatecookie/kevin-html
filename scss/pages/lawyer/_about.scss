@@ -1,0 +1,46 @@
+.law-about-section{
+  background-color: var(--bs-gray-50);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
+}
+.law-about{
+  &-thumb{
+    img{
+      width: 100%;
+      border-radius: 12px;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+  &-content{
+    h2{
+      font-weight: 600;
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 32px;
+        color: var(--bs-gray-900);
+        font-family: 'Barlow', sans-serif;
+        @media (max-width: 557px) {
+          font-size: 30px;
+          margin-bottom: 24px;
+        }
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--bs-gray-700);
+      margin-bottom: 32px;
+      font-family: 'Barlow', sans-serif;
+      @media (max-width: 557px) {
+        margin-bottom: 24px;
+      }
+    }
+    
+  }
+  
+}

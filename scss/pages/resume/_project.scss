@@ -1,0 +1,70 @@
+.resume-project {
+    padding-bottom: 64px;
+    .resume-section-title{
+        text-align: center;
+        padding-bottom: 30px;
+        @media (min-width:768px) {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.resume-project-card {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        transform: translateY(100%);
+        transition: .4s;
+        padding: 0 10px;
+        span{
+            font-family: 'Fira Sans';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            padding-bottom: 8px;
+            color: var(--bs-resume-500);
+        }
+        h6 {
+            font-family: 'Fira Sans';
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 16px;
+        }
+        p{
+            font-family: 'Fira Sans';
+            color: white;
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 16px;
+        }
+        .link-btn {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: white;
+            font-family: 'Fira Sans';
+            text-transform: uppercase;
+        }
+    }
+    &:hover {
+        .content {
+            transform: translateY(0%); 
+        }
+    }
+}

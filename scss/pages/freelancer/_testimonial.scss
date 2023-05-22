@@ -1,0 +1,123 @@
+.section-title{
+  max-width: 480px;
+  margin: 0 auto 60px;
+  text-align: center;
+  @media (max-width:991px) {
+    margin: 0 auto 40px;
+  }
+  
+  h2{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--bs-gray-900);
+    margin-bottom: 32px;
+    font-family: 'Cardo', serif;
+    @media (max-width:991px) {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    @media (max-width:479px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bs-gray-600);
+  }
+}
+
+.section-padding{
+  padding: 124px 0;
+  @media (max-width: 991px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 80px 0;
+  }
+}
+.flc-testimonial-section{
+  box-shadow: inset 0px 1px 0px var(--bs-border-one);
+  border-bottom: 1px solid var(--bs-border-one);
+  background: var(--bs-white);
+  &__slider{
+    position: relative;
+  }
+}
+.flc-testimonial{
+  &-slider{
+    &-item{
+      text-align: center;
+      img{
+        margin: 0 auto 35px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--bs-gray-900) ;
+        @media (max-width: 991px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &-user{
+    margin-top: 32px;
+    span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-gray-900) ;
+      margin-bottom: 6px;
+      display: block;
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-500);
+    }
+  }
+}
+
+.flc-testimonial-slider__control-buttons{
+  padding: 0 80px;
+  @media (max-width: 767px) {
+    padding: 0;
+    display: none;
+  }
+  .button {
+    background: transparent;
+    width: 56px;
+    height: 56px;
+    border: 2px solid var(--bs-border-one);
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: var(--bs-gray-900);
+    transition: all 0.4 s ease-in-out;
+    // svg{
+    //   path{
+    //     stroke: var(--bs-gray-900);
+    //   }
+    // }
+    &--next{
+      left: auto;
+      right: 0;
+    }
+    &:hover{
+      transition: all 0.4 s ease-in-out;
+      background: var(--bs-primary-500);
+      border: 2px solid var(--bs-primary-500);
+      color: var(--bs-white);
+    }
+  }
+}
+

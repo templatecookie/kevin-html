@@ -1,0 +1,20 @@
+.ceo-footer{
+    padding: 48px 0;
+    @media (min-width:768px) {
+        padding: 68px 0;
+    }
+    &__text{
+        text-align: center;
+        h6{
+            font-family: 'Satoshi';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.333333333333333;
+            color: var(--bs-ceo-400);
+            @media (min-width:768px) {
+                font-size: 20px;
+            }  
+        }
+    }
+}

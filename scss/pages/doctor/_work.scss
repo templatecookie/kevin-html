@@ -1,0 +1,114 @@
+.doctor-work-area{
+    background: var(--bs-white);
+    border-bottom: 1px solid var(--bs-gray-100);
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
+    .doctor-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+           margin-bottom: 50px;
+            
+        }   
+    }
+}
+.doctor-work-card{
+    background: var(--bs-white);
+    border: 1px solid var(--bs-gray-100);
+    padding: 30px 20px;
+    @media (min-wdith:768px) {
+        padding: 32px;
+    }
+    .image{
+        overflow: hidden;
+        margin-bottom: 25px;
+        @media (min-width:992px) {
+          margin-bottom: 32px;
+        }
+        img{
+            overflow: hidden;
+            transition: .3s;
+        }
+    }
+    .content{
+      .subtitle{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: 'JetBrains Mono', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 6px;
+      }
+      .title{
+        padding-bottom: 16px;
+        font-weight: 600;
+        font-family: 'JetBrains Mono', sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--bs-gray-900);
+      }
+      .text{
+        font-weight: 400;
+        font-family: 'JetBrains Mono', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-700);
+      }
+    }
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.1);   
+            }
+        }
+    }
+    
+  }
+.doctor-work-slider{
+    .slick-slide {
+        margin: 0 12px;
+    }
+    .slick-list {
+        margin: 0 -12px;
+    }
+    &__control-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 16px;
+        @media (min-widht:992px) {
+            margin-top: 50px;
+        }
+        .button{
+           max-width: 56px;
+           min-width: 56px;
+           max-height: 56px;
+           min-height: 56px;
+           transition: .3s;
+           max-height: 56px;
+           border-radius: 500%;
+           background: transparent;
+           border: 2px solid var(--bs-secondary-500); 
+           svg{
+               path{
+                   transition: .3s;
+                   stroke: var(--bs-gray-900);
+               }
+           }
+           &:hover{
+               background: var(--bs-secondary-500);
+               svg{
+                   path{
+                       stroke: white;
+                   }
+               }
+           }
+        }
+    }
+}

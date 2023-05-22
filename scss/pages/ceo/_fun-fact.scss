@@ -1,0 +1,102 @@
+.ceo-fun-fact{
+    position: relative;
+    z-index: 1;
+    &__wrapper{
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.84);
+        border: 12px solid #FFFFFF;
+        box-shadow: 0px 32px 148px rgba(0, 47, 108, 0.08);
+        backdrop-filter: blur(100px);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .spark{
+        position: absolute;
+        top: -123%;
+        left: 0%;    
+        z-index: -1;
+    }
+}
+.experience-block{
+    overflow: hidden;
+    position: relative;
+    padding: 34px 0;
+    background: var(--bs-ceo-500);
+    z-index: 1;
+    @media (min-width:992px) {
+        padding: 54px 0;
+    }
+    &__item{
+        text-align: center;
+        .title{
+            font-family: 'Satoshi';
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 1.142857142857143;
+            color:white;  
+            padding-bottom: 12px;
+            @media (min-width:992px) {
+                font-size: 56px;
+            }
+        }
+        p{
+            font-family: 'Satoshi';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.4;   
+            color: white;
+            @media (min-width:992px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .arrow-one{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .arrow-two{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .middle-arrow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+.founder-block{
+    @media (max-width:992px) {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
+    .heading{
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .title{
+            padding-right: 38px;
+            font-family: 'Satoshi';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--bs-ceo-900);  
+        }
+    }
+    .logo-itme{
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        @media (max-width:992px) {
+            gap: 16px;
+        }
+    }
+}

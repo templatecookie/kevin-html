@@ -1,0 +1,103 @@
+.product-designer-price{
+    background-color: var(--bs-gray-v2-50);
+    padding: 40px 0;
+    @media (min-width:768px) {
+        padding: 88px 0;
+    }
+    .pd-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 48px;
+        }
+    }
+}
+.pd-price-card{
+    transition: .3s;
+    padding: 30px 20px;
+    background: white;
+    border: 1px solid var(--bs-gray-v2-100);
+    border-radius: 16px;
+    transition: all 0.24s ease-in-out;
+    @media (min-width:480px) {
+        padding: 36px;
+    }
+    .price-head{
+        border-bottom: 1px solid var(--bs-gray-v2-100);
+        transition: .3s;
+        h3{
+            padding-bottom: 12px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--bs-gray-v2-900);
+        }
+        p{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--bs-gray-v2-500);
+        }
+        &__tag{
+            padding: 32px 0;
+            span{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 64px;
+                color: var(--bs-gray-v2-100);
+                transition: .3s;
+            }
+        }
+    }
+    .list-group{
+        list-style: none;
+        padding: 32px 0;
+        margin: 0;
+        gap: 16px;
+        li{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--bs-gray-v2-900);
+            svg{
+                margin-right: 6px;
+            }
+            &.hide{
+                font-weight: 400;
+                color: var(--bs-gray-v2-300);
+                svg{
+                    path{
+                        fill: var(--bs-gray-v2-300);
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        transition: all 0.24s ease-in-out;
+        border:2px solid var(--bs-product-500);
+        box-shadow: 0px 12px 64px rgba(18, 19, 20, 0.1);
+        .price-head{
+            border-color: var(--bs-product-500);
+            &__tag{
+                span{
+                color: var(--bs-product-500);
+                }
+            }
+        }
+        .button-group{
+            .pd-btn-outline-primary{
+                   background: var(--bs-product-500);
+                   color: white;
+                   svg{
+                    path{
+                      fill: white;
+                    }
+                   }
+            }
+        }
+    }
+}

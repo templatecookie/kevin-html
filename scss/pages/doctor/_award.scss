@@ -1,0 +1,132 @@
+.doctor-award-area{
+    border-top: 1px solid var(--bs-gray-100);
+    background: var(--bs-white);
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+        @media (min-width:992px) {
+        padding: 100px 0;
+        
+    }
+    .doctor-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+           margin-bottom: 50px;
+            
+        }   
+    }
+    &__education{
+        @media (max-width:992px) {
+            margin-bottom: 70px;
+        }
+    .doctor-experience-card{
+        &:not(&:last-child){
+                padding-bottom: 20px;
+                border-bottom: 1px solid var(--bs-gray-100);
+                margin-bottom: 20px;
+                @media (min-width:992px) {
+                    padding-bottom: 40px;
+                    margin-bottom: 40px;
+                    
+                }
+            }
+        }
+    }
+}
+.doctor-experience-card{
+    display: grid;
+    gap: 10px;
+    @media (min-width:575px) {
+        grid-template-columns: 200px auto;
+    }
+    @media (min-width:992px) {
+        gap: 24px;
+    }
+    .content-title{
+        h6{
+            color: var(--bs-primary-500);
+            font-family: 'JetBrains Mono', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px; 
+            padding-bottom: 8px;
+            white-space: nowrap;
+        }
+        span{
+            white-space: nowrap;
+            font-weight: 400;
+            font-family: 'JetBrains Mono', sans-serif;
+            font-size: 12px;
+            line-height: 16px;  
+            color: var(--bs-gray-500);
+        }
+    }
+    .content{
+        h4{
+            font-family: 'JetBrains Mono', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: var(--bs-gray-900);   
+            padding-bottom: 12px;
+        }
+        p{
+            font-family: 'JetBrains Mono', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;  
+            color: var(--bs-gray-500);   
+        }
+    }
+}
+.doctor-award-card{
+    border: 1px solid var(--bs-gray-100);
+    padding: 24px;
+    padding-top: 12px;
+    transition: .3s;
+    position: relative;
+    img{
+        position: absolute;
+        top: -44px;
+        left: 24px;
+    }
+    .count{
+        text-align: end;
+        margin-bottom: 60px;
+        span{
+            transition: .3s;
+            color: var(--bs-gray-50);
+            font-family: 'JetBrains Mono', sans-serif;
+            font-weight: 600;
+            font-size: 54px;
+            line-height: 115%;  
+        }
+    }
+    .content{
+        h6{
+            font-family: 'JetBrains Mono', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--bs-gray-900);
+            line-height: 28px;
+            padding-bottom: 8px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'JetBrains Mono', sans-serif;
+            line-height: 20px;
+            color: var(--bs-gray-500);
+        }
+    }
+    &:hover{
+        box-shadow: 0px 16px 48px rgba(19, 34, 56, 0.08); 
+        .count{
+            span{
+                color: var(--bs-secondary-500);
+            }
+        }
+    }
+}

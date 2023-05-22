@@ -1,0 +1,157 @@
+.dev-testimonial-area{
+    background: var(--bs-white);
+    box-shadow: inset 0px 1px 0px var(--bs-border-one);
+    padding: 60px 0;
+    @media (min-width:992px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .dev-section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+    }
+    &__image{
+        position: relative;
+        border-radius: 16px;
+        img{
+            width: 100%;
+            border-radius: 16px;
+        }
+        .video-button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            svg{
+                path{
+                    fill: var(--bs-primary-500);
+                    stroke: var(--bs-primary-500);
+                }
+            }
+        }
+    }
+    &__slider{
+        position: relative;
+        .dev-testimonial-slider__control-buttons{
+            @media (min-width:480px) {
+                position: absolute;
+                bottom: 8px;
+                right: 0;
+                justify-content: flex-end;
+                margin-top: 0;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 16px;
+            .button{
+               max-width: 56px;
+               min-width: 56px;
+               max-height: 56px;
+               min-height: 56px;
+               transition: .3s;
+               max-height: 56px;
+               border-radius: 500%;
+               background: transparent;
+               border: 2px solid var(--bs-primary-500); 
+               svg{
+                   path{
+                       transition: .3s;
+                       stroke: var(--bs-gray-900);
+                   }
+               }
+               &:hover{
+                   background: var(--bs-primary-500);
+                   svg{
+                       path{
+                           stroke: white;
+                       }
+                   }
+               }
+            }
+        }
+    }
+}
+.dev-testimonial-card{
+    .content{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+            
+        }
+        position: relative;
+        border-radius:12px;
+        background: var(--bs-primary-50);
+        padding: 30px;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -24px;
+            left: 32px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 24px 16px 0 16px;
+            border-color: var(--bs-primary-50) transparent transparent transparent;
+        }
+        @media (min-width:575px) {
+            padding: 40px;
+        }
+        .icon{
+            margin-bottom: 23px;
+            svg{
+                path{
+                    fill: var(--bs-primary-500);
+                }
+            }
+        }
+        .text{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.333333333333333;
+            color: var(--bs-gray-900);
+            @media (min-width:768px) {
+                font-size: 20px;
+            }
+            @media (min-width:1200px) {
+                font-size: 24px;
+            }
+        }
+    }
+    .client-info{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 24px;
+            min-width: 78px;
+            min-height: 78px;
+            max-height: 78px;
+            max-width: 78px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        .name{
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--bs-gray-900);
+            line-height: 1.444444444444444;
+            @media (min-width:575px) {
+                font-size: 18px;
+            }   
+        }
+        .text{
+            color: var(--bs-gray-700);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            span{
+                color: var(--bs-primary-500);
+            }
+        }
+    }
+}

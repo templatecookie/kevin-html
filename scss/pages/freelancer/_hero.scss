@@ -1,0 +1,83 @@
+
+.flc-hero-section{
+  background-color: var(--bs-gray-50);
+  z-index: 1;
+  position: relative;
+}
+.flc-hero-content{
+  text-align: center;
+  max-width: 872px;
+  margin: 0 auto;
+  padding: 260px 0 360px;
+  h1{
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--bs-gray-900);
+    font-family: 'Cardo', serif;
+    @media (max-width: 1199px) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media (max-width: 991px) {
+      font-size: 48px;
+      line-height: 60px;
+    }
+    @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}
+.flc-scroll-down {
+  width: 200px;
+  height: 202px;
+  left: 860px;
+  top: 544px;
+  background: var(--bs-white);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--bs-gray-900);
+  cursor: pointer;
+  svg{
+    margin-top: 15px;
+    position: relative;
+    animation: UpDown 2s linear infinite;
+    path{
+      stroke: var(--bs-gray-900);
+    }
+  }
+  @media (max-width: 991px) {
+    width: 175px;
+    height: 175px;
+  }
+  @media (max-width: 767px) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: .5em;
+  }
+  100% {
+    bottom: 0;
+  }
+}

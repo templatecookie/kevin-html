@@ -1,0 +1,79 @@
+
+.dev-contact-area{
+    padding: 60px 0;
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    &::before{
+        display: none!important;
+    }
+    &__wrapper {
+            padding: 0 !important;
+            position: relative;
+            &--ellipse{
+               display: none!important;
+            }
+            @media (min-width:575px) {
+                border-radius: 0;
+                box-shadow: none;
+                background: transparent;
+                padding: 35px;
+            }
+            .contact-content {
+                &__cotacat-block{
+                    border-radius: 16px;
+                    background: var(--bs-tertiary-50);
+                    .social-link li.line {
+                        width: 24px;
+                        height: 2px;
+                        background: var(--bs-primary-500);
+                    }
+                    .social-link li .media-item i {
+                        color: var(--bs-primary-500);
+                    }
+                    .social-link li .media-item:hover {
+                        background: var(--bs-primary-500);
+                    }
+                    .social-link li .media-item:hover i {
+                        color: white;
+                    }
+                }
+                &__info-block{
+                    a{
+                        .icon{
+                            svg{
+                                path{
+                                    stroke: var(--bs-primary-500);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-form{
+                @media (min-width:992px) {
+                    padding-left: 100px;
+                }
+                .input-buttton{
+                    .d-btn.d-btn-primary:hover {
+                        box-shadow: none;
+                        color: var(--bs-primary-500);
+                        background: var(--bs-primary-50);
+                    }
+                    
+                }
+                
+            }
+        }
+   
+    
+    }
+    
+    .contact-map{
+        iframe{
+            width: 100% !important;
+        }
+    }

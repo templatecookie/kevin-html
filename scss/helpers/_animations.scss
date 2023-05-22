@@ -1,0 +1,70 @@
+@keyframes sonarWave {
+  from {
+      opacity: 0.4;
+  }
+
+  to {
+      transform: scale(3.5);
+      opacity: 0;
+  }
+}
+
+
+
+.sonar-emitter {
+  position: relative;
+}
+
+.sonar-emitter::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: white;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter::after {
+  animation: sonarWave 2s linear infinite;
+}
+@keyframes logoscroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-220px * 7))}
+}
+
+.wave {
+  animation-name: wave-animation; 
+  color: unset;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+.loading {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}

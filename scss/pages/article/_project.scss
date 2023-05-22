@@ -1,0 +1,17 @@
+.dev-project-area{
+    .dev-project-slider__control-buttons{
+        .button {
+            background: var(--bs-white);
+        }
+    }
+    .d-btn-outline-primary{
+        
+        svg{
+            path{
+                stroke: var(--bs-primary-500);
+            }
+          
+        }
+        
+    }
+} 

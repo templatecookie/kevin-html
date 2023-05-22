@@ -1,0 +1,27 @@
+.inner-service-area{
+    background: var(--bs-white-2);
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 100px 0;
+    }
+    .dev-section-title{
+          .text{
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--bs-gray-700);
+            line-height: 1.4;
+          }
+          .d-btn{
+              margin-top: 20px;
+              @media (min-width:992px) {
+                  margin-top: 40px;
+                }             
+          }
+          @media (max-width: 991px) {
+            text-align: center;
+          }
+    }
+}

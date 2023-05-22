@@ -1,0 +1,267 @@
+$white:#fff;
+$white-2:#fff;
+$primary-50:#E8F1FC;
+$primary-100:#D1E4FA;
+$primary-200:#A2C9F5;
+$primary-300:#74ADEF;
+$primary-400:#4592EA;
+$primary-500:#1777E5;
+$primary-600:#125FB7;
+$primary-700:#0E4789;
+$primary-800:#09305C;
+$primary-900:#05182E;
+
+$secondary-50:#FFFBE8;
+$secondary-100:#FFF7D1;
+$secondary-200:#FFF0A3;
+$secondary-300:#FFE876;
+$secondary-400:#FFE148;
+$secondary-500:#FFD91A;
+$secondary-600:#CCAE15;
+$secondary-700:#998210;
+$secondary-800:#66570A;
+$secondary-900:#332B05;
+
+$tertiary-50:#F3ECFF;
+$tertiary-100:#E8D9FF;
+$tertiary-200:#D0B4FF;
+$tertiary-300:#B98EFF;
+$tertiary-400:#A169FF;
+$tertiary-500:#8A43FF;
+$tertiary-600:#6E36CC;
+$tertiary-700:#532899;
+$tertiary-800:#371B66;
+$tertiary-900:#1C0D33;
+
+$success-50:#EAF7ED;
+$success-100:#D5F0DB;
+$success-200:#ABE0B7;
+$success-300:#81D192;
+$success-400:#57C16E;
+$success-500:#236C44;
+$success-600:#248E3B;
+$success-700:#1B6B2C;
+$success-800:#12471E;
+$success-900:#09240F;
+
+$warning-50:#FFF4ED;
+$warning-100:#FFEADB;
+$warning-200:#FFD4B8;
+$warning-300:#FFBF94;
+$warning-400:#FFA971;
+$warning-500:#FF944D;
+$warning-600:#CC763E;
+$warning-700:#99592E;
+$warning-800:#663B1F;
+$warning-900:#331E0F;
+
+$danger-50:#FFEFEF;
+$danger-100:#FFDEDE;
+$danger-200:#FFBEBE;
+$danger-300:#FF9D9D;
+$danger-400:#FF7D7D;
+$danger-500:#FF5C5C;
+$danger-600:#CC4A4A;
+$danger-700:#993737;
+$danger-800:#662525;
+$danger-900:#331212;
+
+$dev-50: #E9F0EC;
+
+$gray-50: #F0F1F3;
+$gray-100: #E6E8EB !important;
+$gray-200: #C3C7CE !important;
+$gray-300: #A5ACB5 !important;
+$gray-400: #87909D !important;
+$gray-500: #697484 !important;
+$gray-600: #556070 !important;
+$gray-600-2: #556070 !important;
+$gray-700: #424E60 !important;
+$gray-800: #2B384C !important;
+$gray-900: #132238 !important;
+$gray-900-2: #132238 !important;
+
+
+$gray-v2-50: #F5F6F7;
+$gray-v2-100: #DFE3E6;
+$gray-v2-200: #BABFC3;
+$gray-v2-300: #9AA1A6;
+$gray-v2-400: #7B848B;
+$gray-v2-500: #5E6971;
+$gray-v2-600: #485057;
+$gray-v2-700: #353A3E;
+$gray-v2-800: #222628;
+$gray-v2-900: #121314;
+
+$product-50: #E6F8FF;
+$product-500: #00BBFF;
+
+$resume-50: #FAEEEE;
+$resume-100: #F5DEDD;
+$resume-500: #CF5955;
+
+$ceo-50: #FAEEEE;
+$ceo-100: #FFDFDB;
+$ceo-300: #889BB6;
+$ceo-400: #6D84A6;
+$ceo-500: #FF5F49;
+$ceo-700: #274577;
+$ceo-900: #0D2159;
+
+$bg-dev-linear-gradient:linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
+$bg-ui-linear-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
+$bg-ui-linear-gradient-2:linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
+$bg-ui-linear-gradient-3:linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
+$bg-ui-linear-gradient-4:linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
+$bg-ui-linear-gradient-5:linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
+$bg-ui-linear-gradient-6:linear-gradient(90deg, #132238 0%, rgba(19, 34, 56, 0.8) 43.44%, rgba(19, 34, 56, 0) 100%);
+$bg-ui-linear-gradient-7:linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
+$bg-ui-linear-gradient-8:linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
+$bg-dev-services:rgba(222, 228, 218, 0.7);
+
+
+$border-one:#e6e8eb;
+$border-two:#fff;
+
+$ellips-1:#E8F1FC;
+$ellips-2:#F3ECFF;
+
+$opacity-2:1;
+
+$btn-link-color: $secondary-500;
+$custom-colors: (
+
+"bg-dev-linear-gradient":$bg-dev-linear-gradient,
+"bg-ui-linear-gradient":$bg-ui-linear-gradient,
+"bg-ui-linear-gradient-2":$bg-ui-linear-gradient-2,
+"bg-ui-linear-gradient-3":$bg-ui-linear-gradient-3,
+"bg-ui-linear-gradient-4":$bg-ui-linear-gradient-4,
+"bg-ui-linear-gradient-5":$bg-ui-linear-gradient-5,
+"bg-ui-linear-gradient-6":$bg-ui-linear-gradient-6,
+"bg-ui-linear-gradient-7":$bg-ui-linear-gradient-7,
+"bg-ui-linear-gradient-8":$bg-ui-linear-gradient-8,
+
+
+"border-one":$border-one,
+"border-two":$border-two,
+
+"ellips-1":$ellips-1,
+"ellips-2":$ellips-2,
+
+"opacity-2":$opacity-2,
+
+"bg-dev-services":$bg-dev-services,
+
+
+
+
+"white":$white,
+"white-2":$white-2,
+
+
+
+"gray-50":$gray-50,
+"gray-100":$gray-100,
+"gray-200":$gray-200,
+"gray-300":$gray-300,
+"gray-400":$gray-400,
+"gray-500":$gray-500,
+"gray-600":$gray-600,
+"gray-600-2":$gray-600-2,
+"gray-700":$gray-700,
+"gray-800":$gray-800,
+"gray-900":$gray-900,
+"gray-900-2":$gray-900-2,
+
+"primary-50":$primary-50,
+"primary-100":$primary-100,
+"primary-200":$primary-200,
+"primary-300":$primary-300,
+"primary-400":$primary-400,
+"primary-500":$primary-500,
+"primary-600":$primary-600,
+"primary-700":$primary-700,
+"primary-800":$primary-800,
+"primary-900":$primary-900,
+
+"secondary-50":$secondary-50,
+"secondary-100":$secondary-100,
+"secondary-200":$secondary-200,
+"secondary-300":$secondary-300,
+"secondary-400":$secondary-400,
+"secondary-500":$secondary-500,
+"secondary-600":$secondary-600,
+"secondary-700":$secondary-700,
+"secondary-800":$secondary-800,
+"secondary-900":$secondary-900,
+
+"success-50":$success-50,
+"success-100":$success-100,
+"success-200":$success-200,
+"success-300":$success-300,
+"success-400":$success-400,
+"success-500":$success-500,
+"success-600":$success-600,
+"success-700":$success-700,
+"success-800":$success-800,
+"success-900":$success-900,
+
+"warning-50":$warning-50,
+"warning-100":$warning-100,
+"warning-200":$warning-200,
+"warning-300":$warning-300,
+"warning-400":$warning-400,
+"warning-500":$warning-500,
+"warning-600":$warning-600,
+"warning-700":$warning-700,
+"warning-800":$warning-800,
+"warning-900":$warning-900,
+
+"danger-50":$danger-50,
+"danger-100":$danger-100,
+"danger-200":$danger-200,
+"danger-300":$danger-300,
+"danger-400":$danger-400,
+"danger-500":$danger-500,
+"danger-600":$danger-600,
+"danger-700":$danger-700,
+"danger-800":$danger-800,
+"danger-900":$danger-900,
+
+"tertiary-50":$tertiary-50,
+"tertiary-100":$tertiary-100,
+"tertiary-200":$tertiary-200,
+"tertiary-300":$tertiary-300,
+"tertiary-400":$tertiary-400,
+"tertiary-500":$tertiary-500,
+"tertiary-600":$tertiary-600,
+"tertiary-700":$tertiary-700,
+"tertiary-800":$tertiary-800,
+"tertiary-900":$tertiary-900,
+
+"gray-v2-50":$gray-v2-50,
+"gray-v2-100":$gray-v2-100,
+"gray-v2-200":$gray-v2-200,
+"gray-v2-300":$gray-v2-300,
+"gray-v2-400":$gray-v2-400,
+"gray-v2-500":$gray-v2-500,
+"gray-v2-600":$gray-v2-600,
+"gray-v2-700":$gray-v2-700,
+"gray-v2-800":$gray-v2-800,
+"gray-v2-900":$gray-v2-900,
+
+"product-50": $product-50,
+"product-500": $product-500,
+
+"resume-50": $resume-50,
+"resume-100": $resume-100,
+"resume-500": $resume-500,
+
+"ceo-50": $ceo-50,
+"ceo-100": $ceo-100,
+"ceo-300": $ceo-300,
+"ceo-400": $ceo-400,
+"ceo-500": $ceo-500,
+"ceo-700": $ceo-700,
+"ceo-900": $ceo-900,
+);

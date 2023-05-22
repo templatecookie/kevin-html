@@ -1,0 +1,81 @@
+.ceo-hero{
+    position: relative;
+    padding: 137px 0 60px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (min-width:768px) {
+        padding: 170px 0 80px;
+
+    }
+    @media (min-width:992px) {
+        padding: 216px 0 120px;
+
+    }
+    @media (min-width:1400px) {
+        padding-top: 208px;
+        padding-bottom: 0px;
+
+    }
+    @media (min-width:1600px) {
+        padding-top: 208px;
+        padding-bottom: 190px;
+
+    }
+    @media (min-width:1800px) {
+        padding-bottom: 300px;
+
+    }
+    .ceo-display-title{
+        z-index: 99;
+        position: relative;
+        @media (min-width:1400px) {
+            margin-top: 46px;
+        }
+        .ceo-social-media-block{
+            margin: 22px 0px;
+            @media (min-width:768px) {
+                margin: 32px 0px;
+            }
+            ul{
+                li{
+                    a{
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .ceo-display-title-two{
+        z-index: 99;
+        position: relative;
+    }
+    .ceo-social-media-block{
+        position: relative;
+        .follow-icon{
+            position: absolute;
+            left: -24%;
+            top: 18%;
+        }
+    }
+    &__image{
+        position: absolute;
+        top: 50%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        width: 72%;
+        height: 100%;  
+    }
+    .sparkle{
+        position: absolute;
+        top: 0;
+        left: 1.5%;
+        width: 19%;
+    }
+    .emoji{
+        position: absolute;
+        top: 56%;
+        right: 3%;
+        width: 17%;
+    }
+}

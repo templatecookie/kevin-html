@@ -1,0 +1,129 @@
+.law-blog-section{
+  background-color: var(--bs-gray-50);
+  .container{
+    @media (min-width: 1400px) {
+      max-width: 1170px;
+    }
+  }
+}
+.law-section-title{
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  @media (max-width: 991px) {
+    margin-bottom: 35px;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--bs-gray-900);
+    font-family: 'Barlow', sans-serif;
+    @media (max-width: 557px) {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--bs-gray-700);
+    font-family: 'Barlow', sans-serif;
+  }
+}
+
+.law-blog{
+  &-wrap{
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--bs-white);
+  }
+  &-thumb{
+    height: 264px;
+    transition: all 0.4s;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-data{
+    padding: 31px;
+    ul{
+      margin: 0 0 4px;
+      padding: 0;
+      list-style: none;
+      li{
+        font-weight: 400;
+        font-size: 14px;
+        display: inline-block;
+        color: var(--bs-gray-500);
+        font-family: 'Barlow', sans-serif;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      font-family: 'Barlow', sans-serif;
+      a{
+        color: var(--bs-gray-900);
+      }
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 24px;
+      color: var(--bs-gray-700);
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+}
+
+a.law-icon-blue-btn {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  width: 157px;
+  transition: all 0.4s;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--bs-primary-500);
+  border: 2px solid var(--bs-primary-50);
+  font-family: 'Barlow', sans-serif;
+  border-radius: 4px;
+  &:hover{
+    color: white;
+    border: 2px solid var(--bs-primary-500);
+    background-color: var(--bs-primary-500);
+  }
+  &:hover path{
+    stroke: white;
+  }
+  svg{
+    margin-left: 7px;
+    path{
+      transition: all 0.4s;
+      stroke: var(--bs-primary-500);
+    }
+  }
+}
+
+.col-lg-4.col-md-6{
+  .law-blog-wrap{
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+  &:last-child .law-blog-wrap{
+    margin-bottom: 0;
+  }
+}

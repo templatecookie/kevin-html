@@ -1,0 +1,108 @@
+.photographer-hero-area{
+    position: relative;
+    // margin-bottom: 500px;
+    padding: 125px 0 280px;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-width:768px) {
+        padding: 143px 0 424px;
+    }
+    @media (min-width:992px) {
+        padding: 224px 0 424px;
+    }
+    .photographer-display-title{
+        .title{
+            margin-bottom: 25px;
+        }
+        .button-group{
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @media (max-width:420px) {
+                flex-direction: column;
+            }
+            @media (min-width:768px) {
+                margin-top: 32px;
+            }
+            a{
+                &.pg-btn-primary:hover{
+                    border-color: var(--bs-success-500);
+                    color: var(--bs-success-500);
+                    svg{
+                        path{
+                            stroke: var(--bs-success-500);
+                        }
+                    }
+                }
+                &.pg-btn-outline-primary{
+                    border-color: #fff !important;
+                    border-color: var(--bs-white);
+                    color: #fff;
+                    svg{
+                        path{
+                            stroke: #fff;
+                        }
+                    }
+                    &:hover{
+                        border-color: var(--bs-success-500) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.all-photo{
+    gap: 24px;
+    display: flex;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    bottom: -158px;
+//     @media (min-width:768px) {
+//         margin-top: 0;
+//         position: absolute;
+//         left: 0;
+//         bottom: -158px;
+      
+//   }
+      &:hover div {
+          animation-play-state: paused;
+      }
+      
+      div { 
+          display: flex;
+          align-items: center;
+          animation: marquee 50s linear infinite;
+          gap: 24px;
+        a{
+            &:nth-child(odd){
+                margin-top: 35px;
+                @media (min-width:992px) {
+                    margin-top: 64px;
+                }
+            }
+            img {
+                display: block;
+                max-width: 230px;
+                max-height: 320px;
+                min-height: 320px;
+                min-width: 230px;
+                @media (min-width:768px) {
+                    max-width: 312px;
+                    max-height: 424px;
+                    min-height: 424px;
+                    min-width: 312px;
+                    object-fit: cover;
+                }
+            }
+        }
+      }   
+  
+  }
+  
+  @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+  }
