@@ -851,7 +851,7 @@ small {
   }
 }
 
-.text-bg-dev-linear-gradient {
+/* .text-bg-dev-linear-gradient {
   color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
 }
 
@@ -921,7 +921,7 @@ small {
 
 .bg-bg-ui-linear-gradient-8 {
   background-color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
-}
+} */
 
 .text-border-one {
   color: #e6e8eb;
@@ -956,11 +956,11 @@ small {
 }
 
 .text-opacity-2 {
-  color: 1;
+  /* color: 1; */
 }
 
 .bg-opacity-2 {
-  background-color: 1;
+  /* background-color: 1; */
 }
 
 .text-bg-dev-services {
@@ -1804,7 +1804,7 @@ small {
     stroke-dashoffset: 187;
   }
   50% {
-    stroke-dashoffset: 46.75;
+    stroke-dashoffset: 187;
     transform: rotate(135deg);
   }
   100% {
@@ -5741,7 +5741,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: grow 2s ease infinite; */
 }
 .ui-work-card .icon svg path {
   transition: 0.3s;
@@ -5972,7 +5971,7 @@ button:focus {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10;
+    left: 10px;
     width: 100%;
     background: #132238;
     height: 190px;
@@ -6158,7 +6157,6 @@ button:focus {
   color: white;
 }
 .ui-contact-area__wrapper .contact-form .title {
-  font-family: "Sora" sans-serif !important;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -7375,14 +7373,14 @@ span.icon-btn:hover svg {
   transform: translateY(-50%);
   z-index: 99;
   color: var(--bs-gray-900);
-  transition: all 0.4 s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .flc-testimonial-slider__control-buttons .button--next {
   left: auto;
   right: 0;
 }
 .flc-testimonial-slider__control-buttons .button:hover {
-  transition: all 0.4 s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background: var(--bs-primary-500);
   border: 2px solid var(--bs-primary-500);
   color: var(--bs-white);
@@ -7897,7 +7895,6 @@ span.icon-btn:hover svg {
   outline: none;
 }
 .photographer-pricing-area .photographer-pricing-card .title {
-  font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -8593,7 +8590,6 @@ span.icon-btn:hover svg {
   color: #fff;
 }
 .photographer-contact-area__wrapper .contact-form .title {
-  font-family: "Barlow" sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
@@ -10741,7 +10737,6 @@ img {
   font-weight: 600;
   font-size: 24px;
   color: var(--bs-gray-900);
-  font-family: "Barlow", sans-serif;
 }
 .law-contact-form p {
   font-weight: 400;
@@ -10749,7 +10744,6 @@ img {
   line-height: 1.5;
   margin-bottom: 35px;
   color: var(--bs-gray-700);
-  font-family: "Barlow", sans-serif;
 }
 .law-contact-form .input-group {
   margin-bottom: 16px;
@@ -14830,7 +14824,7 @@ body[data-theme=dark], .dark-bg, .dark-mode-texts {
 
 ******************************************************/
 /* ---------------------------------
--------> THEME CUSTOM STYLES
+-------> THEME CUSTOM STYLES 
 ---------------------------------*/
 .templatecookie-btn {
   position: fixed !important;

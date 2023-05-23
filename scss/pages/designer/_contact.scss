@@ -8,7 +8,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 10;
+            left: 10px;
             width: 100%;
             background:#132238;
             height: 190px;
@@ -196,7 +196,7 @@
         }
         .contact-form{
             .title{
-                font-family: "Sora" sans-serif !important;
+                // font-family: "Sora" sans-serif !important;
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;

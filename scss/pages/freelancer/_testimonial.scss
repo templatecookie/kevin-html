@@ -102,7 +102,7 @@
     transform: translateY(-50%);
     z-index: 99;
     color: var(--bs-gray-900);
-    transition: all 0.4 s ease-in-out;
+    transition: all 0.4s ease-in-out;
     // svg{
     //   path{
     //     stroke: var(--bs-gray-900);
@@ -113,7 +113,7 @@
       right: 0;
     }
     &:hover{
-      transition: all 0.4 s ease-in-out;
+      transition: all 0.4s ease-in-out;
       background: var(--bs-primary-500);
       border: 2px solid var(--bs-primary-500);
       color: var(--bs-white);
