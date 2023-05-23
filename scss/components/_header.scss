@@ -361,16 +361,16 @@
       padding: 32px 0;
     }
     .site-navbar{
-      align-items: end;
+      // align-items: end;
     }
   .site-header__brand{
     .logo{
       display: block;
       padding: 20px;
       background: var(--bs-gray-900);
-      padding-top: 45px;
+      padding-top: 20px;
       @media (min-width:992px) {
-        padding-top: 56px;
+        padding-top: 20px;
       }
       .text{
         font-family: 'JetBrains Mono', sans-serif;
