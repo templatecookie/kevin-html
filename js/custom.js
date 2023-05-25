@@ -1,5 +1,20 @@
 (function($) {
     ("use strict");
+
+    // Preloader Start
+    $(window).on('load', function () {
+        $('#preloader_inner').fadeOut();
+        $('#preloader')
+            .delay(350)
+            .fadeOut('slow');
+        $('body')
+            .delay(350);
+
+        // Onload Scroll To Top
+        $(window).scrollTop(0);
+    });
+    // Preloader End
+
     /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       Nice Select Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
