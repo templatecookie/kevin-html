@@ -851,78 +851,6 @@ small {
   }
 }
 
-.text-bg-dev-linear-gradient {
-  color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
-}
-
-.bg-bg-dev-linear-gradient {
-  background-color: linear-gradient(180deg, rgba(222, 228, 218, 0) 0%, #DEE4DA 100%);
-}
-
-.text-bg-ui-linear-gradient {
-  color: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
-}
-
-.bg-bg-ui-linear-gradient {
-  background-color: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.8) 100%);
-}
-
-.text-bg-ui-linear-gradient-2 {
-  color: linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
-}
-
-.bg-bg-ui-linear-gradient-2 {
-  background-color: linear-gradient(180deg, rgba(255, 244, 237, 0.7) 0%, #FFD4B8 85.03%);
-}
-
-.text-bg-ui-linear-gradient-3 {
-  color: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
-}
-
-.bg-bg-ui-linear-gradient-3 {
-  background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1F3 100%);
-}
-
-.text-bg-ui-linear-gradient-4 {
-  color: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
-}
-
-.bg-bg-ui-linear-gradient-4 {
-  background-color: linear-gradient(180deg, rgba(243, 236, 255, 0.4) 0%, rgba(243, 236, 255, 0) 100%);
-}
-
-.text-bg-ui-linear-gradient-5 {
-  color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
-}
-
-.bg-bg-ui-linear-gradient-5 {
-  background-color: linear-gradient(180deg, rgba(240, 241, 243, 0.6) 0%, rgba(243, 236, 255, 0.6) 100%);
-}
-
-.text-bg-ui-linear-gradient-6 {
-  color: linear-gradient(90deg, #132238 0%, rgba(19, 34, 56, 0.8) 43.44%, rgba(19, 34, 56, 0) 100%);
-}
-
-.bg-bg-ui-linear-gradient-6 {
-  background-color: linear-gradient(90deg, #132238 0%, rgba(19, 34, 56, 0.8) 43.44%, rgba(19, 34, 56, 0) 100%);
-}
-
-.text-bg-ui-linear-gradient-7 {
-  color: linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
-}
-
-.bg-bg-ui-linear-gradient-7 {
-  background-color: linear-gradient(180deg, #F0F1F3 0%, rgba(240, 241, 243, 0) 100%);
-}
-
-.text-bg-ui-linear-gradient-8 {
-  color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
-}
-
-.bg-bg-ui-linear-gradient-8 {
-  background-color: linear-gradient(180deg, rgba(232, 241, 252, 0.6) 0%, rgba(232, 241, 252, 0) 100%);
-}
-
 .text-border-one {
   color: #e6e8eb;
 }
@@ -955,13 +883,13 @@ small {
   background-color: #F3ECFF;
 }
 
-.text-opacity-2 {
+/* .text-opacity-2 {
   color: 1;
 }
 
 .bg-opacity-2 {
   background-color: 1;
-}
+} */
 
 .text-bg-dev-services {
   color: rgba(222, 228, 218, 0.7);

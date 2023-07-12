@@ -2682,7 +2682,7 @@ progress {
   background-color: #fff;
   border-color: rgba(128, 138, 142, 0.2);
   outline: 0;
-  box-shadow: 0;
+  box-shadow: none;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.88em;
@@ -3010,10 +3010,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0;
+  box-shadow: 0 0 0 1px #fff;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0;
+  box-shadow: 0 0 0 1px #fff;
 }
 .form-range::-moz-focus-outer {
   border: 0;
