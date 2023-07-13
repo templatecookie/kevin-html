@@ -53,11 +53,17 @@ document.querySelector(".menu-overlay").addEventListener("click", () => {
 });
 
 function toggleMenu() {
+    submenuAll.forEach(function(submenu) {
+        submenu.classList.remove('active');
+    });
     menu.classList.toggle("active");
     document.querySelector(".menu-overlay").classList.toggle("active");
 }
 
 function showSubMenu(hasChildren) {
+    submenuAll.forEach(function(submenu) {
+        submenu.classList.remove('active');
+    });
     for (let i = 0; submenuAll.length < i; i++) {
         submenuAll[i].classList.remove("active");
     }
@@ -68,8 +74,8 @@ function showSubMenu(hasChildren) {
     const menuTitle = hasChildren.querySelector(".drop-trigger").textContent;
     subMenuTextArray.push(menuTitle);
 
-    menu.querySelector(".current-menu-title").innerHTML = menuTitle;
-    menu.querySelector(".mobile-menu-head").classList.add("active");
+    // menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+    // menu.querySelector(".mobile-menu-head").classList.add("active");
 }
 window.onresize = function() {
     if (this.innerWidth > 992) {
