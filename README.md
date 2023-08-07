@@ -1,13 +1,13 @@
 # [templatecookie.com](https://templatecookie.com)
 FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
 
-# [Jobpilot](https://appkite-html.netlify.app/)
+# [Jobpilot](https://kevin-html.vercel.app/)
 
-> App landing html template based on bootstrap framework
+> Kevin Personal Portfolio HTML template based on SCSS and Bootstrap
 
-This project is a bootstrap version [Appkite App Landing Page](https://jobpilot-html.netlify.app/) designed with HTML & CSS.
+This project is a bootstrap version [Kevin Portfolio HTML Template](https://kevin-html.vercel.app/) designed with HTML & CSS.
 
-Check the [Live Demo here](https://jobpilot-html.netlify.app/).
+Check the [Live Demo here](https://kevin-html.vercel.app/).
 
 
 ## Credits
