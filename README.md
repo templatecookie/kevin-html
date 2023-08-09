@@ -3,26 +3,14 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Kevin - Personal Portfolio HTML Template](https://www.templatecookie.com/products)
 
-> Comforty is an eCommerce HTML template. In this template, you found everything that needs for an eCommerce website like add-to-cart, wishlist, order tracking, user dashboard, settings, checkout page, etc.
+> Kevin is a personal protfolio HTML template with 6+ landing pages for different professions.
 
-Check the [Live Demo here](https://comforty-ecommerce-html.netlify.app/).
+Check the [Live Demo here](https://kevin-html.vercel.app/).
 
 ![](screenshot.png)
 
 ## Pages List
-- Home (Landing Page)
-- Shop (Product Page)
-- Product Details
-- About
-- Account Setting
-- Sign In
-- Sign Up
-- Forget Password
-- Change Password
-- 404
-- Checkout
-- Cart
-- Wishlist
+- 
 
 ## Framework & Technologies
 - tailwind
