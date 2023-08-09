@@ -3,17 +3,32 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Kevin - Personal Portfolio HTML Template](https://www.templatecookie.com/products)
 
-> Kevin is a personal protfolio HTML template with 6+ landing pages for different professions.
+> Kevin is a personal portfolio HTML template with 8+ landing pages for different professions.
 
 Check the [Live Demo here](https://kevin-html.vercel.app/).
 
 ![](screenshot.png)
 
 ## Pages List
-- 
+- Developer Portfolio
+- Photographer Portfolio
+- UI/UX Designer Portfolio
+- Lawyer Portfolio
+- Doctor Portfolio
+- Freelancer Portfolio
+- Product Designer Portfolio
+- Resume
+- Services List
+- Service Details
+- Projects List
+- Project Detials
+- Blog List
+- Blog Details
+
 
 ## Framework & Technologies
-- tailwind
+- scss
+- 
 - jQuery
 
 ## Credits
