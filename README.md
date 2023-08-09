@@ -27,8 +27,12 @@ Check the [Live Demo here](https://kevin-html.vercel.app/).
 
 
 ## Framework & Technologies
+- bootstrap
 - scss
-- 
+- fancy
+- counter
+- theme mode switcher
+- aos
 - jQuery
 
 ## Credits
