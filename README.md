@@ -10,20 +10,20 @@ Check the [Live Demo here](https://kevin-html.vercel.app/).
 ![](screenshot.png)
 
 ## Pages List
-- Developer Portfolio
-- Photographer Portfolio
-- UI/UX Designer Portfolio
-- Lawyer Portfolio
-- Doctor Portfolio
-- Freelancer Portfolio
-- Product Designer Portfolio
-- Resume
-- Services List
-- Service Details
-- Projects List
-- Project Detials
-- Blog List
-- Blog Details
+- [Developer Portfolio](https://kevin-html.vercel.app/)
+- [Photographer Portfolio](https://kevin-html.vercel.app/photographer.html)
+- [UI/UX Designer Portfolio](https://kevin-html.vercel.app/designer.html)
+- [Lawyer Portfolio](https://kevin-html.vercel.app/lawyer.html)
+- [Doctor Portfolio](https://kevin-html.vercel.app/doctor.html)
+- [Freelancer Portfolio](https://kevin-html.vercel.app/freelancer.html)
+- [Product Designer Portfolio](https://kevin-html.vercel.app/product-designer.html)
+- [Resume](https://kevin-html.vercel.app/resume.html)
+- [Service List](https://kevin-html.vercel.app/service.html)
+- [Service Details](https://kevin-html.vercel.app/service-detail.html)
+- [Projects List](https://kevin-html.vercel.app/project.html)
+- [Project Details](https://kevin-html.vercel.app/project-details.html)
+- [Blog List](https://kevin-html.vercel.app/article.html)
+- [Blog Details](https://kevin-html.vercel.app/article-details.html)
 
 
 ## Framework & Technologies
