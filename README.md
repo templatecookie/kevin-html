@@ -27,13 +27,12 @@ Check the [Live Demo here](https://kevin-html.vercel.app/).
 
 
 ## Framework & Technologies
-- bootstrap
-- scss
-- fancy
-- counter
-- theme mode switcher
-- aos
-- jQuery
+- [bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [scss](https://sass-lang.com/)
+- [fancy box](http://fancybox.net/)
+- [counter](https://codepen.io/powro01/pen/MJoLdE)
+- [aos](https://michalsnik.github.io/aos/)
+- [jQuery](https://jquery.com/)
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
